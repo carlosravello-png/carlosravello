@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas Digitales — Carlos Eduardo Ravello Joo · BikeLab Studio</title>
+    <meta name="description" content="Herramientas digitales de ingeniería ciclista creadas por Carlos Eduardo Ravello Joo. SAG Calculator, FIT Analyzer, Di2 & AXS Diagnostic. Metodología Monte Carlo. BikeLab Studio, Trujillo, Perú.">
+    <meta name="author" content="Carlos Eduardo Ravello Joo">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://carlosravello.com/herramientas.html" />
+    <link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas.html" />
+    <link rel="alternate" hreflang="en" href="https://carlosravello.com/tools.html" />
+    <link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas.html" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://carlosravello.com/herramientas.html",
+          "name": "Herramientas Digitales — Carlos Eduardo Ravello Joo",
+          "url": "https://carlosravello.com/herramientas.html",
+          "inLanguage": "es",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "isPartOf": { "@type": "WebSite", "url": "https://carlosravello.com" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://carlosravello.com/#person",
+          "name": "Carlos Eduardo Ravello Joo",
+          "url": "https://carlosravello.com",
+          "sameAs": [
+            "https://orcid.org/0009-0007-5631-7436",
+            "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
+            "https://github.com/carlosravello-png",
+            "https://www.instagram.com/bikelab.studio.peru/"
+          ]
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://www.bikelabstudio.com/calculadora-sag#app",
+          "name": "SAG Calculator — BikeLab Studio",
+          "url": "https://www.bikelabstudio.com/calculadora-sag",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "applicationCategory": "SportsApplication",
+          "operatingSystem": "Web",
+          "programmingLanguage": ["HTML", "JavaScript", "Python"],
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Modelo físico politrópico de doble cámara para calibración de SAG en suspensiones MTB. 132 modelos, 10 marcas, 10.000 iteraciones Monte Carlo en Python. Acceso libre.",
+          "featureList": [
+            "132 modelos de suspensión MTB catalogados",
+            "Fox Racing Shox, RockShox, Öhlins, SR Suntour, Manitou, Marzocchi, DVO, Cane Creek",
+            "Modelo físico de doble cámara politrópica con γ propietario",
+            "10.000 iteraciones Monte Carlo por calibración en Python",
+            "Calibración inversa con tablas oficiales de fabricante",
+            "33 cuadros con curvas de leverage catalogados",
+            "Cálculo de SAG de rueda real con leverage ratio"
+          ],
+          "sameAs": "https://www.bikelabstudio.com/articles/white-paper-sag-model-es.html"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://www.bikelabstudio.com/fit-analyzer#app",
+          "name": "FIT Analyzer — BikeLab Studio",
+          "url": "https://www.bikelabstudio.com/fit-analyzer",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "applicationCategory": "SportsApplication",
+          "operatingSystem": "Web",
+          "programmingLanguage": ["HTML", "JavaScript", "Python"],
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Procesador nativo de archivos .FIT de Garmin, Wahoo y Coros. Analiza desacoplamiento cardíaco, variabilidad de potencia y estabilidad en ascensos con incertidumbre Monte Carlo.",
+          "featureList": [
+            "Procesamiento nativo de archivos .FIT sin subida a servidores",
+            "Compatible con Garmin, Wahoo y Coros",
+            "Análisis de desacoplamiento cardíaco",
+            "Variabilidad de potencia y estabilidad en ascensos",
+            "Cuantificación de incertidumbre Monte Carlo"
+          ],
+          "sameAs": "https://www.bikelabstudio.com/articles/white-paper-fit-analyzer-es.html"
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://www.bikelabstudio.com/calculadora-bateria#app",
+          "name": "Di2 & AXS Diagnostic — BikeLab Studio",
+          "url": "https://www.bikelabstudio.com/calculadora-bateria",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Web",
+          "programmingLanguage": "HTML",
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Árbol de diagnóstico interactivo para Shimano Di2 y SRAM AXS. Identifica fallas en tres capas: energía, comunicación y mecánica. El 60% de las fallas en cambios electrónicos son de protocolo, no mecánicas.",
+          "featureList": [
+            "Diagnóstico completo Shimano Di2",
+            "Diagnóstico completo SRAM AXS",
+            "Árbol lógico de tres capas: energía, comunicación, mecánica",
+            "Identificación de crash mode, firmware y pogo pin",
+            "Acceso libre sin registro"
+          ]
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://carlosravello.com/#mcd",
+          "name": "Modelo de Coherencia Dinámica (MCD)",
+          "alternateName": "MCD",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "description": "Marco teórico propio que postula que la persistencia funcional de sistemas complejos se sostiene por la coherencia entre tres dominios: energía, información y propósito. Integra termodinámica de sistemas alejados del equilibrio, autopoiesis y simulación estocástica. Base metodológica de las herramientas digitales de BikeLab Studio.",
+          "keywords": ["coherencia dinámica", "sistemas complejos", "Monte Carlo", "autopoiesis", "termodinámica", "pseudo-ratio Ω", "Índice de Coherencia Dinámica ICD"],
+          "inLanguage": "es"
+        },
+        {
+          "@type": "CreativeWork",
+          "@id": "https://www.bikelabstudio.com/#industrial-noir",
+          "name": "Industrial Noir",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "publisher": { "@type": "Organization", "name": "BikeLab Studio", "url": "https://www.bikelabstudio.com" },
+          "description": "Manifiesto filosófico y postura técnica de BikeLab Studio. Industrial Noir no es una estética — es la decisión de no suavizar lo que la ingeniería no suaviza. Rigor técnico, silencio editorial, criterio demostrable sobre consenso popular.",
+          "keywords": ["ingeniería ciclista", "rigor técnico", "taller de bicicletas Trujillo", "mantenimiento de precisión", "anti-mediocridad", "criterio técnico", "BikeLab Studio Perú"],
+          "inLanguage": "es",
+          "isPartOf": { "@type": "WebSite", "@id": "https://www.bikelabstudio.com/#website" }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg:      #060606;
+            --text:    #cecece;
+            --muted:   #525252;
+            --border:  #1c1c1c;
+            --accent:  #b8976a;
+            --white:   #f0f0f0;
+            --serif:   'Georgia', 'Times New Roman', 'Cambria', serif;
+            --mono:    'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --sans:    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        ::selection { background: var(--text); color: var(--bg); }
+
+        a { color: inherit; text-decoration: none; }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 10vh 28px 10vh;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+
+        .nav-id {
+            font-family: var(--mono);
+            font-size: 0.64rem;
+            color: var(--muted);
+            letter-spacing: 0.14em;
+        }
+
+        .nav-id a:hover { color: var(--white); }
+
+        .lang-switch { display: flex; gap: 6px; }
+
+        .lang-btn {
+            font-family: var(--mono);
+            font-size: 0.64rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            color: var(--muted);
+            transition: all 0.2s;
+        }
+
+        .lang-btn.active {
+            color: var(--bg);
+            background: var(--white);
+            border-color: var(--white);
+        }
+
+        .lang-btn:not(.active):hover {
+            color: var(--white);
+            border-color: #3a3a3a;
+        }
+
+        header { margin-bottom: 88px; }
+
+        h1 {
+            font-family: var(--serif);
+            font-size: 2.75rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            line-height: 1.15;
+            color: var(--white);
+            margin-bottom: 14px;
+        }
+
+        .title-label {
+            display: block;
+            font-family: var(--mono);
+            font-size: 0.70rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            margin-bottom: 32px;
+        }
+
+        .back-link {
+            font-family: var(--mono);
+            font-size: 0.70rem;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            transition: color 0.2s;
+        }
+
+        .back-link:hover { color: var(--white); }
+
+        section { margin-bottom: 76px; }
+
+        h2 {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.22em;
+            color: var(--muted);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 36px;
+        }
+
+        .bio p {
+            font-size: 1rem;
+            color: var(--text);
+            line-height: 1.85;
+            margin-bottom: 22px;
+        }
+
+        .bio p:last-child { margin-bottom: 0; }
+
+        .bio em {
+            font-family: var(--serif);
+            font-style: italic;
+            color: #c4aa80;
+        }
+
+        .bio strong {
+            color: var(--white);
+            font-weight: 500;
+        }
+
+        blockquote {
+            border-left: 2px solid var(--accent);
+            margin: 28px 0 8px 0;
+            padding: 16px 24px;
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: var(--accent);
+            letter-spacing: 0.02em;
+            line-height: 1.8;
+        }
+
+        .mcd-block {
+            border: 1px solid var(--border);
+            padding: 28px 30px;
+            position: relative;
+            margin-bottom: 36px;
+        }
+
+        .mcd-block::before {
+            content: "// MODELO DE COHERENCIA DINÁMICA — MCD";
+            position: absolute;
+            top: -9px;
+            left: 16px;
+            background: var(--bg);
+            padding: 0 8px;
+            font-family: var(--mono);
+            font-size: 0.56rem;
+            color: var(--accent);
+            letter-spacing: 0.12em;
+        }
+
+        .mcd-block p {
+            font-size: 0.92rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+
+        .mcd-block p:last-child { margin-bottom: 0; }
+
+        .mcd-axes {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-top: 16px;
+        }
+
+        .mcd-tag {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            color: var(--accent);
+            border: 1px solid #2a2218;
+            padding: 2px 8px;
+            letter-spacing: 0.06em;
+        }
+
+        .tool {
+            padding: 32px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .tool:first-child { border-top: 1px solid var(--border); }
+
+        .tool-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+
+        .tool h3 {
+            font-family: var(--serif);
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--white);
+        }
+
+        .tool h3 a:hover {
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        .tool-url {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--muted);
+            letter-spacing: 0.05em;
+        }
+
+        .tool-label {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--accent);
+            letter-spacing: 0.10em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .tool-problem {
+            font-size: 1rem;
+            color: var(--text);
+            line-height: 1.8;
+            margin-bottom: 18px;
+        }
+
+        .tool-tech {
+            font-size: 0.91rem;
+            color: var(--muted);
+            line-height: 1.72;
+            margin-bottom: 18px;
+        }
+
+        .tool-tech a {
+            color: var(--text);
+            border-bottom: 1px solid var(--border);
+            transition: border-color 0.2s;
+        }
+
+        .tool-tech a:hover { border-color: var(--muted); }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 20px;
+        }
+
+        .tag {
+            font-family: var(--mono);
+            font-size: 0.58rem;
+            color: var(--muted);
+            border: 1px solid var(--border);
+            padding: 2px 7px;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .tool-cta {
+            display: inline-block;
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--bg);
+            background: var(--white);
+            padding: 8px 18px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s;
+        }
+
+        .tool-cta:hover { background: var(--accent); }
+
+        footer {
+            margin-top: 88px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .footer-copy {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--muted);
+            letter-spacing: 0.08em;
+        }
+
+        .footer-mcd {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--border);
+            letter-spacing: 0.08em;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .wrapper { padding: 8vh 20px 8vh; }
+            .tool-header { flex-direction: column; gap: 4px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav aria-label="Navegación">
+            <span class="nav-id"><a href="/">carlosravello.com</a></span>
+            <div class="lang-switch">
+                <a href="/herramientas.html" class="lang-btn active" aria-current="page">ES</a>
+                <a href="/tools.html" class="lang-btn">EN</a>
+            </div>
+        </nav>
+
+        <header>
+            <h1>Herramientas<br>Digitales</h1>
+            <span class="title-label">Carlos Eduardo Ravello Joo · BikeLab Studio · Trujillo, Perú</span>
+            <a href="/" class="back-link">← carlosravello.com</a>
+        </header>
+
+        <main>
+
+            <section id="por-que">
+                <h2>Por qué existen</h2>
+                <div class="bio">
+                    <p>Durante años llevé mis bicicletas a talleres en Trujillo y el patrón era siempre el mismo: trabajo chicha, piezas cambiadas sin diagnóstico, criterio sustituido por confianza ciega en la experiencia anecdótica. No era negligencia — era ausencia total de método. <em>Nadie había decidido que esto merecía ser preciso.</em></p>
+                    <p>La falta de rigor no es un accidente local. Es estructural. En Perú el ciclismo de montaña se organiza alrededor de competencias donde siempre ganan los mismos, comunidades donde todos se conocen y nadie cuestiona nada, y talleres donde el diagnóstico es visual y el criterio es la reputación. Nadie construye herramientas. Nadie publica metodología. Nadie verifica nada porque nadie ha decidido que verificar sea necesario.</p>
+                    <p>El mismo problema existe en la exportación internacional de mascotas, en la nutrición deportiva, en el análisis de entrenamiento. <strong>Hay un déficit crónico de seriedad técnica</strong> en disciplinas donde la imprecisión tiene consecuencias reales: una suspensión mal calibrada destruye un descenso, un protocolo veterinario mal ejecutado destruye un viaje.</p>
+                    <p>No pedí permiso para existir en ese espacio. Usé los mismos conocimientos en Python y Monte Carlo que desarrollé construyendo el MCD — un metamodelo que trata la coherencia como variable medible — y los apliqué al problema más concreto posible: <strong>que las bicicletas funcionen con exactitud demostrable, no con fe.</strong></p>
+                </div>
+            </section>
+
+            <section id="industrial-noir">
+                <h2>Industrial Noir</h2>
+                <div class="bio">
+                    <p>Industrial Noir no es una estética. No es un filtro. No es la paleta de colores que elegimos porque se ve bien en pantalla. <strong>Es una postura técnica.</strong> La decisión de no suavizar lo que la ingeniería no suaviza.</p>
+                    <p>A muchos les aterran las sombras. A nosotros no. Las sombras son donde vive la mecánica real: en el interior de un cubo, en la interfaz entre pastilla y disco, en la cadena que nadie limpia hasta que ya es tarde. La grasa negra en los guantes no es imagen de marca — es el registro de que algo fue hecho correctamente.</p>
+                    <p>El taller de BikeLab Studio es un cuarto dentro de una veterinaria en Trujillo. No hay música ambient ni café de especialidad. Hay una mesa de trabajo con tapete verde, herramientas de clase mundial, grasa, torque y criterio técnico. Ese es el currículum.</p>
+                    <p>Las herramientas digitales de esta página son <em>el mismo criterio técnico del taller, traducido a una interfaz.</em> La brecha entre el ciclista y la ingeniería de su bicicleta es innecesariamente grande. Las calculadoras, los diagnósticos, los modelos físicos — existen para cerrar esa brecha. Construidas desde Trujillo. Disponibles para cualquier ciclista en el mundo.</p>
+                    <blockquote>No buscamos consenso.<br>El consenso es el promedio.<br>Y el promedio no afina un rodamiento.</blockquote>
+                </div>
+            </section>
+
+            <section id="metodo">
+                <h2>El método</h2>
+                <div class="mcd-block">
+                    <p>Las herramientas que aparecen en esta página no se diseñaron desde el ciclismo. Se diseñaron desde un marco más amplio: el <strong>Modelo de Coherencia Dinámica (MCD)</strong>, un metamodelo propio que postula que la persistencia funcional de sistemas complejos — físicos, biológicos u organizacionales — se sostiene por la coherencia entre tres dominios interdependientes: <em>energía, información y propósito</em>.</p>
+                    <p>La aplicación al problema de suspensiones MTB fue directa: una horquilla de doble cámara es un sistema físico complejo con variables acopladas y comportamiento no lineal. El método correcto no es una fórmula de regla de tres — es un modelo politrópico calibrado con datos reales de fabricante, validado mediante simulación estocástica con 10.000 iteraciones Monte Carlo ejecutadas en Python.</p>
+                    <p>El mismo principio opera en el diagnóstico de cambios electrónicos y en el análisis de archivos de entrenamiento: <em>modelar el máximo de escenarios posibles antes de emitir un criterio.</em></p>
+                    <div class="mcd-axes">
+                        <span class="mcd-tag">Pseudo-ratio Ω</span>
+                        <span class="mcd-tag">Índice de Coherencia Dinámica ICD</span>
+                        <span class="mcd-tag">Simulación Monte Carlo</span>
+                        <span class="mcd-tag">Sistemas no lineales</span>
+                        <span class="mcd-tag">Termodinámica aplicada</span>
+                        <span class="mcd-tag">Autopoiesis</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="herramientas">
+                <h2>Las herramientas</h2>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://www.bikelabstudio.com/calculadora-sag" target="_blank" rel="noopener">SAG Calculator</a></h3>
+                        <span class="tool-url">bikelabstudio.com/calculadora-sag</span>
+                    </div>
+                    <div class="tool-label">WebApplication · Python · Monte Carlo · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: ninguna herramienta en español calculaba el SAG de suspensión MTB desde física real. Todo era tablas de presión genéricas o recomendaciones del manual. La presión correcta depende del peso del ciclista, el leverage ratio del cuadro, la temperatura y el modelo exacto de suspensión — variables que no caben en una tabla.</p>
+                    <p class="tool-tech">Construida sobre un modelo físico de doble cámara politrópica con coeficiente γ propietario, calibrado contra tablas oficiales de Fox, RockShox, Öhlins y SR Suntour. Cada modelo del catálogo — <a href="https://www.bikelabstudio.com/articles/white-paper-sag-model-es.html" target="_blank" rel="noopener">132 suspensiones en total, 10 marcas</a> — se valida con 10.000 iteraciones Monte Carlo ejecutadas en Python antes de incorporarse al índice. El resultado es una calibración inversa: dado el SAG objetivo, la herramienta calcula la presión exacta, no al revés.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Monte Carlo · 10.000 iter.</span>
+                        <span class="tag">132 modelos</span>
+                        <span class="tag">10 marcas</span>
+                        <span class="tag">Modelo politrópico</span>
+                        <span class="tag">Calibración inversa</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/calculadora-sag" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
+                </div>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://www.bikelabstudio.com/calculadora-bateria" target="_blank" rel="noopener">Di2 & AXS Diagnostic</a></h3>
+                        <span class="tool-url">bikelabstudio.com/calculadora-bateria</span>
+                    </div>
+                    <div class="tool-label">WebApplication · HTML · Árbol de diagnóstico · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: el 60% de las fallas en cambios electrónicos Shimano Di2 y SRAM AXS no son mecánicas — son de protocolo de comunicación o gestión de energía. La mayoría de talleres los diagnostica como si fueran cambios mecánicos y cambia piezas que funcionan. El resultado es costo innecesario y el problema sin resolver.</p>
+                    <p class="tool-tech">Árbol de decisión lógico estructurado en tres capas independientes: <em>energía</em> (batería, carga, voltaje), <em>comunicación</em> (protocolo EW-SD50, pogo pin, pairing, crash mode, firmware) y <em>mecánica</em> (ajuste físico, indexación, límites). Cada capa se diagnostica en orden antes de pasar a la siguiente. Construido en HTML vanilla sin dependencias externas.</p>
+                    <div class="tags">
+                        <span class="tag">Shimano Di2</span>
+                        <span class="tag">SRAM AXS</span>
+                        <span class="tag">3 capas diagnóstico</span>
+                        <span class="tag">HTML vanilla</span>
+                        <span class="tag">Sin registro</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/calculadora-bateria" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
+                </div>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://www.bikelabstudio.com/fit-analyzer" target="_blank" rel="noopener">FIT Analyzer</a></h3>
+                        <span class="tool-url">bikelabstudio.com/fit-analyzer</span>
+                    </div>
+                    <div class="tool-label">WebApplication · Python · Monte Carlo · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: los archivos .FIT de Garmin, Wahoo y Coros contienen datos de entrenamiento que la mayoría de ciclistas nunca analiza más allá de tiempo y distancia. El desacoplamiento cardíaco, la variabilidad de potencia y la estabilidad en ascensos son señales de rendimiento real que los datos ya tienen pero ninguna plataforma gratuita procesa con criterio técnico.</p>
+                    <p class="tool-tech">Procesador nativo de archivos .FIT que opera localmente — el archivo no se sube a ningún servidor. Analiza <a href="https://www.bikelabstudio.com/articles/white-paper-fit-analyzer-es.html" target="_blank" rel="noopener">desacoplamiento cardíaco, variabilidad de potencia y estabilidad en ascensos</a> con cuantificación de incertidumbre Monte Carlo. El mismo principio de la SAG Calculator: modelar el máximo de escenarios antes de emitir un número.</p>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Monte Carlo</span>
+                        <span class="tag">Archivos .FIT</span>
+                        <span class="tag">Garmin · Wahoo · Coros</span>
+                        <span class="tag">Procesamiento local</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/fit-analyzer" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Perú</span>
+            <span class="footer-mcd">MODELO_COHERENCIA_DINÁMICA</span>
+        </footer>
+
+    </div>
+</body>
+</html>
