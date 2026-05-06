@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Tools — Carlos Eduardo Ravello Joo · BikeLab Studio</title>
-    <meta name="description" content="Digital cycling engineering tools created by Carlos Eduardo Ravello Joo. SAG Calculator, FIT Analyzer, Di2 & AXS Diagnostic. Monte Carlo methodology. BikeLab Studio, Trujillo, Peru.">
+    <title>Digital Tools — Carlos Eduardo Ravello Joo · BikeLab Studio & Zoovet Travel</title>
+    <meta name="description" content="Digital tools created by Carlos Eduardo Ravello Joo. SAG Calculator, FIT Analyzer, Di2 & AXS Diagnostic (BikeLab Studio) and Pet Travel Planner, kennels directory (Zoovet Travel). Monte Carlo methodology. Trujillo, Peru.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -35,8 +35,46 @@
             "https://orcid.org/0009-0007-5631-7436",
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
-            "https://www.instagram.com/bikelab.studio.peru/"
+            "https://www.instagram.com/bikelab.studio.peru/",
+            "https://www.bikelabstudio.com/#carlos-ravello",
+            "https://zoovettravel.com/#carlos-ravello"
           ]
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://zoovettravel.com/pet-travel-planner/#app",
+          "name": "Pet Travel Planner — Zoovet Travel",
+          "url": "https://zoovettravel.com/pet-travel-planner/",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Web",
+          "inLanguage": ["es", "en", "fr"],
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Trilingual tool that computes the ICD-Travel (Dynamic Coherence Index) across three diagnostic axes: animal physiological state, owner preparation, and destination compliance. Designed for families in the process of international relocation or travel with pets.",
+          "featureList": [
+            "Trilingual: Spanish, English and French",
+            "ICD-Travel computation across three independent axes",
+            "Official sources by destination country",
+            "Viability traffic light with technical justification",
+            "Free access, no registration"
+          ],
+          "isBasedOn": { "@id": "https://carlosravello.com/#mcd" }
+        },
+        {
+          "@type": "WebApplication",
+          "@id": "https://zoovettravel.com/kennels-en.html#app",
+          "name": "Kennels Directory — Zoovet Travel",
+          "url": "https://zoovettravel.com/kennels-en.html",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
+          "applicationCategory": "HealthApplication",
+          "operatingSystem": "Web",
+          "inLanguage": ["es", "en", "fr"],
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Trilingual directory of kennels and pet boarding facilities for animals in international export or import processes. Filtered by species, IATA compliance, quarantine infrastructure and required zoosanitary certifications."
         },
         {
           "@type": "WebApplication",
@@ -301,7 +339,7 @@
 
         <header>
             <h1>Digital<br>Tools</h1>
-            <span class="title-label">Carlos Eduardo Ravello Joo · BikeLab Studio · Trujillo, Peru</span>
+            <span class="title-label">Carlos Eduardo Ravello Joo · BikeLab Studio · Zoovet Travel</span>
             <a href="/en.html" class="back-link">← carlosravello.com</a>
         </header>
 
@@ -336,9 +374,15 @@
                     <p>The same principle operates in electronic shifting diagnostics and training file analysis: <em>model the maximum possible scenarios before issuing a criterion.</em></p>
                     <div class="mcd-axes">
                         <span class="mcd-tag">Pseudo-ratio Ω</span>
-                        <span class="mcd-tag">Dynamic Coherence Index ICD</span>
-                        <span class="mcd-tag">Monte Carlo Simulation</span>
-                        <span class="mcd-tag">Non-linear systems</span>
+                        <span class="mcd-tag">ICD · Dynamic Coherence Index</span>
+                        <span class="mcd-tag">Monte Carlo · 10,000 iter.</span>
+                        <span class="mcd-tag">Polytropic model PVᵞ = const.</span>
+                        <span class="mcd-tag">Differential evolution · Storn &amp; Price 1997</span>
+                        <span class="mcd-tag">Inverse calibration · bisection</span>
+                        <span class="mcd-tag">Instrumental uncertainty by source</span>
+                        <span class="mcd-tag">Dynamic thresholds by configuration</span>
+                        <span class="mcd-tag">Sensitivity analysis</span>
+                        <span class="mcd-tag">Layered decision tree</span>
                         <span class="mcd-tag">Applied thermodynamics</span>
                         <span class="mcd-tag">Autopoiesis</span>
                     </div>
@@ -350,68 +394,24 @@
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://www.bikelabstudio.com/articles/sag-calculator-en.html" target="_blank" rel="noopener">SAG Calculator</a></h3>
-                        <span class="tool-url">bikelabstudio.com/articles/sag-calculator-en.html</span>
+                        <h3><a href="https://www.bikelabstudio.com/articles/sag-calculator-en.html" target="_blank" rel="noopener">SAG Calculator v5.0</a></h3>
+                        <span class="tool-url">bikelabstudio.com · ES / EN</span>
                     </div>
-                    <div class="tool-label">WebApplication · Python · Monte Carlo · Free access</div>
-                    <p class="tool-problem">The problem it solves: no tool in Spanish calculated MTB suspension SAG from real physics. Everything was generic pressure tables or manual recommendations. Correct pressure depends on rider weight, frame leverage ratio, temperature and the exact suspension model — variables that don't fit in a table.</p>
-                    <p class="tool-tech">Built on a dual-chamber polytropic physical model with proprietary γ coefficient, calibrated against official Fox, RockShox, Öhlins and SR Suntour tables. Each model in the catalogue — <a href="https://www.bikelabstudio.com/articles/white-paper-sag-model.html" target="_blank" rel="noopener">132 suspensions total, 10 brands</a> — is validated with 10,000 Monte Carlo iterations in Python before being added to the index. The result is inverse calibration: given the target SAG, the tool calculates the exact pressure, not the other way around.</p>
+                    <div class="tool-label">Physical model · Monte Carlo · Differential evolution · 132 models · Free access</div>
+                    <p class="tool-problem">The problem it solves: the pressure-SAG relationship in MTB suspensions is non-linear. It depends on positive and negative chamber volume, internal geometry, installed tokens, rider weight, operating temperature and frame leverage ratio. Manufacturer pressure tables are catalog approximations that don't model chamber interaction. No existing commercial tool calculates real wheel SAG in full-suspension bikes through leverage curve.</p>
+                    <p class="tool-tech">Built on a <strong>dual-chamber polytropic physical model</strong>: pressure in the positive chamber follows the polytropic law <em>PVᵞ = constant</em>, with a proprietary γ exponent empirically calibrated in the physical range between isothermal (γ=1.00) and adiabatic (γ=1.40) compression. The negative chamber is modeled as independent back-pressure. The SAG point is solved through <strong>inverse calibration</strong> — bisection algorithm combined with differential evolution (Storn &amp; Price, 1997) — using official Fox, RockShox, Öhlins and SR Suntour tables as ground truth. For rear shocks, integrates leverage curves from 33 catalogued frames. Each index model validated with <strong>10,000 Monte Carlo iterations</strong> before release. Measured confidence by segment: 72–76% entry-level, 83% mid, 83–89% mid-high and high-end (threshold ±2% SAG). <a href="https://www.bikelabstudio.com/articles/white-paper-sag-model.html" target="_blank" rel="noopener">Full white paper →</a></p>
                     <div class="tags">
-                        <span class="tag">Python</span>
+                        <span class="tag">132 models · 10 brands</span>
+                        <span class="tag">33 frames with leverage</span>
+                        <span class="tag">Fox · RockShox · Öhlins · SR Suntour</span>
                         <span class="tag">Monte Carlo · 10,000 iter.</span>
-                        <span class="tag">132 models</span>
-                        <span class="tag">10 brands</span>
-                        <span class="tag">Polytropic model</span>
+                        <span class="tag">Differential evolution</span>
                         <span class="tag">Inverse calibration</span>
+                        <span class="tag">XC · Trail · Enduro · DH · E-MTB</span>
                     </div>
                     <a href="https://www.bikelabstudio.com/articles/sag-calculator-en.html" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
                 </div>
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic.html" target="_blank" rel="noopener">Di2 & AXS Diagnostic</a></h3>
-                        <span class="tool-url">bikelabstudio.com/articles/di2-axs-diagnostic.html</span>
-                    </div>
-                    <div class="tool-label">WebApplication · HTML · Diagnostic tree · Free access</div>
-                    <p class="tool-problem">The problem it solves: 60% of Shimano Di2 and SRAM AXS failures are not mechanical — they are communication protocol or power management failures. Most shops diagnose them as mechanical shifters and replace parts that work. The result is unnecessary cost and the problem unsolved.</p>
-                    <p class="tool-tech">Logical decision tree structured in three independent layers: <em>power</em> (battery, charge, voltage), <em>communication</em> (EW-SD50 protocol, pogo pin, pairing, crash mode, firmware) and <em>mechanical</em> (physical adjustment, indexing, limits). Each layer is diagnosed in sequence before moving to the next. Built in vanilla HTML with no external dependencies.</p>
-                    <div class="tags">
-                        <span class="tag">Shimano Di2</span>
-                        <span class="tag">SRAM AXS</span>
-                        <span class="tag">3-layer diagnostics</span>
-                        <span class="tag">Vanilla HTML</span>
-                        <span class="tag">No registration</span>
-                    </div>
-                    <a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic.html" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
-                </div>
-
-                <div class="tool">
-                    <div class="tool-header">
-                        <h3><a href="https://www.bikelabstudio.com/articles/fit-analyzer-en.html" target="_blank" rel="noopener">FIT Analyzer</a></h3>
-                        <span class="tool-url">bikelabstudio.com/articles/fit-analyzer-en.html</span>
-                    </div>
-                    <div class="tool-label">WebApplication · Python · Monte Carlo · Free access</div>
-                    <p class="tool-problem">The problem it solves: .FIT files from Garmin, Wahoo and Coros contain training data that most cyclists never analyze beyond time and distance. Cardiac decoupling, power variability and climbing stability are real performance signals that the data already contains but no free platform processes with technical rigor.</p>
-                    <p class="tool-tech">Native .FIT file processor that operates locally — the file is not uploaded to any server. Analyzes <a href="https://www.bikelabstudio.com/articles/white-paper-fit-analyzer.html" target="_blank" rel="noopener">cardiac decoupling, power variability and climbing stability</a> with Monte Carlo uncertainty quantification. The same principle as the SAG Calculator: model the maximum possible scenarios before issuing a number.</p>
-                    <div class="tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Monte Carlo</span>
-                        <span class="tag">.FIT files</span>
-                        <span class="tag">Garmin · Wahoo · Coros</span>
-                        <span class="tag">Local processing</span>
-                    </div>
-                    <a href="https://www.bikelabstudio.com/articles/fit-analyzer-en.html" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
-                </div>
-
-            </section>
-
-        </main>
-
-        <footer>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Peru</span>
-            <span class="footer-mcd">DYNAMIC_COHERENCE_MODEL</span>
-        </footer>
-
-    </div>
-</body>
-</html>
+                        <h3><a href="ht
