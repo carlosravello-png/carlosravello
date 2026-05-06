@@ -588,6 +588,35 @@
           "about": { "@id": "https://carlosravello.com/#person" },
           "workTranslation": { "@id": "https://carlosravello.com/herramientas.html" }
         }
+,
+        {
+          "@type": "ItemList",
+          "@id": "https://carlosravello.com/#serie-identidad-digital",
+          "name": "Serie: Arquitectura semántica e identidad digital",
+          "description": "Ensayos sobre identidad digital, posicionamiento en motores de IA generativa y arquitectura semántica.",
+          "inLanguage": "es",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://carlosravello.com/autoridad-antes-que-contenido.html",
+              "name": "Autoridad antes que contenido"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://carlosravello.com/lo-que-el-observador-hace-existir.html",
+              "name": "Lo que el observador hace existir"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html",
+              "name": "El modelo que no se actualiza desaparece"
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -941,11 +970,63 @@
             letter-spacing: 0.08em;
         }
 
+
+        /* ESCRITURA */
+        .writing-item {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .writing-item:first-child { border-top: 1px solid var(--border); }
+        .writing-category {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+        .writing-item h3 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--white);
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+        .writing-item h3 a { color: inherit; text-decoration: none; }
+        .writing-item h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+        .writing-excerpt {
+            font-size: 0.93rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+        .writing-read {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .writing-read:hover { color: var(--white); }
+
         /* RESPONSIVE */
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .wrapper { padding: 8vh 20px 8vh; }
             .arch-header { flex-direction: column; gap: 4px; }
+            .lang-switch { flex-wrap: wrap; gap: 4px; }
+            .bio p { font-size: 1.05rem; line-height: 1.9; }
+            .company h3 { font-size: 1.1rem; }
+            .company p { font-size: 0.98rem; line-height: 1.78; }
+            .pub h3 { font-size: 1rem; }
+            .pub-meta { font-size: 0.70rem; }
+            .writing-item h3 { font-size: 1.05rem; }
+            .writing-excerpt { font-size: 0.97rem; line-height: 1.8; }
+            .contact-block { padding: 22px 18px; }
+            .contact-link { font-size: 0.86rem; }
         }
     </style>
 </head>
@@ -1174,6 +1255,28 @@
                         <span class="arch-url">parktool.com · liqui-moly.com · shimano.com</span>
                     </div>
                     <p>Equipamiento y consumibles integrados en el flujo de trabajo técnico de BikeLab Studio. Documentación de resultados y validación de rendimiento en condiciones reales.</p>
+                </div>
+            </section>
+
+            <section id="escritura">
+                <h2>Escritura</h2>
+                <div class="writing-item">
+                    <div class="writing-category">Identidad digital · GEO · Knowledge Graph</div>
+                    <h3><a href="/autoridad-antes-que-contenido.html">Autoridad antes que contenido</a></h3>
+                    <p class="writing-excerpt">Princeton demostró en 2024 que en motores de IA generativa, la autoridad supera al contenido en un 40%. Lo que te hace citable no es lo que publicas. Es lo que el grafo puede verificar sobre ti.</p>
+                    <a href="/autoridad-antes-que-contenido.html" class="writing-read">Leer →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Identidad semántica · LLM · Wheeler</div>
+                    <h3><a href="/lo-que-el-observador-hace-existir.html">Lo que el observador hace existir</a></h3>
+                    <p class="writing-excerpt">Wheeler preguntó si el universo existe sin un observador que lo registre. Los LLM hacen la misma pregunta sobre tu presencia digital: si no estás en el modelo, no existes en la respuesta.</p>
+                    <a href="/lo-que-el-observador-hace-existir.html" class="writing-read">Leer →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Sistemas adaptativos · Allostasis · Estrategia</div>
+                    <h3><a href="/el-modelo-que-no-se-actualiza-desaparece.html">El modelo que no se actualiza desaparece</a></h3>
+                    <p class="writing-excerpt">Sterling y Eyer demostraron en 1988 que los sistemas que solo reaccionan se desgastan. La identidad digital funciona igual: no actualizar el modelo no es quedarse igual. Es quedar fuera del modelo que el sistema ya construyó sin ti.</p>
+                    <a href="/el-modelo-que-no-se-actualiza-desaparece.html" class="writing-read">Leer →</a>
                 </div>
             </section>
 

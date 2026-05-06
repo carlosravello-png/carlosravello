@@ -535,6 +535,35 @@
           "about": { "@id": "https://carlosravello.com/#person" },
           "translationOfWork": { "@id": "https://carlosravello.com/tools.html" }
         }
+,
+        {
+          "@type": "ItemList",
+          "@id": "https://carlosravello.com/en.html#serie-digital-identity",
+          "name": "Series: Semantic architecture and digital identity",
+          "description": "Essays on digital identity, positioning in generative AI engines, and semantic architecture.",
+          "inLanguage": "en",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "url": "https://carlosravello.com/authority-before-content.html",
+              "name": "Authority before content"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "url": "https://carlosravello.com/what-the-observer-makes-real.html",
+              "name": "What the observer makes real"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "url": "https://carlosravello.com/the-model-that-stops-updating-disappears.html",
+              "name": "The model that stops updating disappears"
+            }
+          ]
+        }
       ]
     }
     </script>
@@ -879,10 +908,61 @@
             letter-spacing: 0.08em;
         }
 
+        /* WRITING */
+        .writing-item {
+            padding: 28px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .writing-item:first-child { border-top: 1px solid var(--border); }
+        .writing-category {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+        .writing-item h3 {
+            font-family: var(--serif);
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--white);
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+        .writing-item h3 a { color: inherit; text-decoration: none; }
+        .writing-item h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
+        .writing-excerpt {
+            font-size: 0.93rem;
+            color: var(--muted);
+            line-height: 1.75;
+            margin-bottom: 14px;
+        }
+        .writing-read {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            color: var(--accent);
+            text-decoration: none;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .writing-read:hover { color: var(--white); }
+
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .wrapper { padding: 8vh 20px 8vh; }
             .arch-header { flex-direction: column; gap: 4px; }
+            .lang-switch { flex-wrap: wrap; gap: 4px; }
+            .bio p { font-size: 1.05rem; line-height: 1.9; }
+            .company h3 { font-size: 1.1rem; }
+            .company p { font-size: 0.98rem; line-height: 1.78; }
+            .pub h3 { font-size: 1rem; }
+            .pub-meta { font-size: 0.70rem; }
+            .writing-item h3 { font-size: 1.05rem; }
+            .writing-excerpt { font-size: 0.97rem; line-height: 1.8; }
+            .contact-block { padding: 22px 18px; }
+            .contact-link { font-size: 0.86rem; }
         }
     </style>
 </head>
@@ -1111,6 +1191,28 @@
                         <span class="arch-url">parktool.com · liqui-moly.com · shimano.com</span>
                     </div>
                     <p>Equipment and consumables integrated into BikeLab Studio's technical workflow. Performance documentation and real-world result validation.</p>
+                </div>
+            </section>
+
+            <section id="writing">
+                <h2>Writing</h2>
+                <div class="writing-item">
+                    <div class="writing-category">Digital identity · GEO · Knowledge Graph</div>
+                    <h3><a href="/authority-before-content.html">Authority before content</a></h3>
+                    <p class="writing-excerpt">Princeton confirmed in 2024 that in generative AI engines, authority outperforms content by 40%. What makes you citable isn't what you publish. It's what the graph can verify about you.</p>
+                    <a href="/authority-before-content.html" class="writing-read">Read →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Semantic identity · LLM · Wheeler</div>
+                    <h3><a href="/what-the-observer-makes-real.html">What the observer makes real</a></h3>
+                    <p class="writing-excerpt">Wheeler asked whether the universe exists without an observer to register it. LLMs ask the same question about your digital presence: if you're not in the model, you don't exist in the response.</p>
+                    <a href="/what-the-observer-makes-real.html" class="writing-read">Read →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Adaptive systems · Allostasis · Strategy</div>
+                    <h3><a href="/the-model-that-stops-updating-disappears.html">The model that stops updating disappears</a></h3>
+                    <p class="writing-excerpt">Sterling and Eyer showed in 1988 that systems that only react wear out. Digital identity works the same way: not updating the model isn't staying the same. It's being left out of the model the system already built without you.</p>
+                    <a href="/the-model-that-stops-updating-disappears.html" class="writing-read">Read →</a>
                 </div>
             </section>
 
