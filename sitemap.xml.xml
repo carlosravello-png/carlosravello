@@ -66,4 +66,58 @@
     <priority>1.0</priority>
   </url>
 
+  <url>
+    <loc>https://carlosravello.com/autoridad-antes-que-contenido.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/autoridad-antes-que-contenido.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/authority-before-content.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/autoridad-antes-que-contenido.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/authority-before-content.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/autoridad-antes-que-contenido.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/authority-before-content.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/autoridad-antes-que-contenido.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/lo-que-el-observador-hace-existir.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/lo-que-el-observador-hace-existir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/what-the-observer-makes-real.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/lo-que-el-observador-hace-existir.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/what-the-observer-makes-real.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/lo-que-el-observador-hace-existir.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/what-the-observer-makes-real.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/lo-que-el-observador-hace-existir.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-model-that-stops-updating-disappears.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/the-model-that-stops-updating-disappears.html</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-model-that-stops-updating-disappears.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
 </urlset>
