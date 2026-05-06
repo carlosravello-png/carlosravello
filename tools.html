@@ -199,6 +199,10 @@
         .nav-id { font-family: var(--mono); font-size: 0.64rem; color: var(--muted); letter-spacing: 0.14em; }
         .nav-id a:hover { color: var(--white); }
 
+        .nav-sections { display: flex; gap: 6px 18px; flex-wrap: wrap; }
+        .nav-sections a { font-family: var(--mono); font-size: 0.64rem; color: var(--muted); text-decoration: none; transition: color 0.2s; }
+        .nav-sections a:hover { color: var(--white); }
+
         .lang-switch { display: flex; gap: 6px; }
 
         .lang-btn {
@@ -331,6 +335,11 @@
 
         <nav aria-label="Navigation">
             <span class="nav-id"><a href="/en.html">carlosravello.com</a></span>
+            <div class="nav-sections">
+                <a href="#tools">BikeLab Studio</a>
+                <a href="#zoovet-travel">Zoovet Travel</a>
+                <a href="#method">Method</a>
+            </div>
             <div class="lang-switch">
                 <a href="/herramientas.html" class="lang-btn">ES</a>
                 <a href="/tools.html" class="lang-btn active" aria-current="page">EN</a>
@@ -372,6 +381,7 @@
                     <p>The tools on this page were not designed from cycling. They were designed from a broader framework: the <strong>Dynamic Coherence Model (MCD)</strong>, a proprietary metamodel postulating that the functional persistence of complex systems — physical, biological or organizational — is sustained by coherence between three interdependent domains: <em>energy, information and purpose</em>.</p>
                     <p>The application to the MTB suspension problem was direct: a dual-chamber fork is a complex physical system with coupled variables and non-linear behavior. The correct method is not a rule-of-three formula — it is a polytropic model calibrated with real manufacturer data, validated through stochastic simulation with 10,000 Monte Carlo iterations in Python.</p>
                     <p>The same principle operates in electronic shifting diagnostics and training file analysis: <em>model the maximum possible scenarios before issuing a criterion.</em></p>
+                    <p>Validation methods are selected based on data type and model complexity. <strong>Monte Carlo simulation</strong> to quantify uncertainty across thousands of simultaneous parameter scenarios. <strong>Sensitivity analysis</strong> to identify which variables determine the result and which are noise. <strong>Statistical bootstrap</strong> to estimate confidence intervals when real data is limited. <strong>Latin Hypercube Sampling</strong> when the parameter space is multidimensional and requires efficient coverage. <strong>Goodness-of-fit tests</strong> — Kolmogorov-Smirnov or Shapiro-Wilk — to verify that model distributions match what the real data shows. The result is a tool with quantified uncertainty, not a number without backing.</p>
                     <div class="mcd-axes">
                         <span class="mcd-tag">Pseudo-ratio Ω</span>
                         <span class="mcd-tag">ICD · Dynamic Coherence Index</span>
@@ -414,4 +424,103 @@
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="ht
+                        <h3><a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic.html" target="_blank" rel="noopener">Di2 & AXS Diagnostic v1.0</a></h3>
+                        <span class="tool-url">bikelabstudio.com · ES / EN</span>
+                    </div>
+                    <div class="tool-label">Directed decision tree · 3 layers · 8 nodes · 26 options · Bilingual · Free access</div>
+                    <p class="tool-problem">The problem it solves: 60% of Shimano Di2 and SRAM AXS failures are not mechanical — they are communication protocol or power management failures. Most shops diagnose them as mechanical shifters, replace parts that work, and return the problem unsolved. No app. No registration. No prior technical knowledge required.</p>
+                    <p class="tool-tech"><strong>Directed decision tree</strong> implemented as a structured JavaScript object, built in vanilla HTML with no external dependencies. Diagnosis operates in three sequential, independent layers: <em>power</em> (battery, charge, E-Tube wiring), <em>communication</em> (wireless pairing, firmware, crash mode, pogo pin, junction box) and <em>mechanical</em> (indexing, limits, physical adjustment). Each layer is exhausted before moving to the next. Logic navigates 8 question nodes and 26 decision options with full backtrack support. Covers Shimano Di2 11-speed and 12-speed, SRAM AXS Road (Red, Force, Rival) and SRAM AXS MTB (XX, X01, GX Eagle). Based on official Shimano E-Tube and SRAM AXS technical documentation.</p>
+                    <div class="tags">
+                        <span class="tag">Shimano Di2 11s · 12s</span>
+                        <span class="tag">SRAM AXS Road · MTB</span>
+                        <span class="tag">8 nodes · 26 options</span>
+                        <span class="tag">3 layers · power / comm. / mech.</span>
+                        <span class="tag">Vanilla HTML · no dependencies</span>
+                        <span class="tag">Bilingual ES/EN</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic.html" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
+                </div>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://www.bikelabstudio.com/articles/fit-analyzer-en.html" target="_blank" rel="noopener">FIT Analyzer</a></h3>
+                        <span class="tool-url">bikelabstudio.com · ES / EN</span>
+                    </div>
+                    <div class="tool-label">Instrumental uncertainty model · Monte Carlo · Local processing · 5 metrics · Free access</div>
+                    <p class="tool-problem">The problem it solves: raw .FIT data carries documented instrumental noise — ±1–2 rpm in cadence (magnet/accelerometer), ±0.5–1.5 km/h in GPS speed, ±2–5m in barometric altitude, ±1–3% in power. Diagnosing performance from that data without an uncertainty model is producing conclusions without statistical backing. No free platform quantifies that uncertainty before issuing a number. The file never leaves the browser — nothing is uploaded to any server.</p>
+                    <p class="tool-tech">Native FIT v2.1 protocol parsing (Garmin FIT SDK) in pure JavaScript, fully local processing. The tool segments the session by temporal continuity, applies an <strong>instrumental uncertainty model per data source</strong>, and calculates 5 primary metrics with Monte Carlo validation and <strong>dynamic thresholds</strong> calibrated by discipline, suspension type, drivetrain and wheel diameter: (1) local cadence variance, (2) effective development proxy speed/cadence, (3) Climbing Stability Index (CSI), (4) Variability Index NP/AP, (5) cardiac decoupling Pw:HR. The white paper cites 8 verifiable DOIs in scientific literature. <a href="https://www.bikelabstudio.com/articles/white-paper-fit-analyzer.html" target="_blank" rel="noopener">Full white paper →</a></p>
+                    <div class="tags">
+                        <span class="tag">FIT v2.1 · Garmin · Wahoo · Coros</span>
+                        <span class="tag">Local processing · no server</span>
+                        <span class="tag">5 primary metrics</span>
+                        <span class="tag">Instrumental uncertainty</span>
+                        <span class="tag">Monte Carlo</span>
+                        <span class="tag">Dynamic thresholds</span>
+                        <span class="tag">8 DOIs · white paper</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/articles/fit-analyzer-en.html" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
+                </div>
+
+            </section>
+
+            <section id="numbers">
+                <h2>The numbers</h2>
+                <div class="bio">
+                    <p><strong>3 tools</strong> in production. <strong>10 brands</strong> of suspension catalogued. <strong>132 models</strong> of MTB suspension indexed. <strong>33 frames</strong> with leverage curves. <strong>10,000 Monte Carlo iterations</strong> per model before release. <strong>5 primary metrics</strong> of performance analysis with instrumental uncertainty model. <strong>8 decision nodes</strong> covering the full failure tree for electronic drivetrains. <strong>10 DOIs</strong> verifiable in the white paper corpus. <strong>2 ScholarlyArticles</strong> published with explicit methodology. Coverage: XC, Trail, Enduro, DH, E-MTB, power analysis, electronic diagnostics. Available in <strong>Spanish and English</strong>. Free access for any cyclist in the world.</p>
+                    <p>The same method. Different problems. Tools that work because they are built from verifiable physics and statistics, not from shop intuition.</p>
+                    <blockquote>Built from Trujillo.<br>Available anywhere.</blockquote>
+                </div>
+
+            </section>
+
+            <section id="zoovet-travel">
+                <h2>Zoovet Travel · International pet export</h2>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">Pet Travel Planner</a></h3>
+                        <span class="tool-url">zoovettravel.com/pet-travel-planner/</span>
+                    </div>
+                    <div class="tool-label">WebApplication · ICD-Travel · Trilingual ES / EN / FR · Free access</div>
+                    <p class="tool-problem">The problem it solves: taking a pet abroad involves dozens of variables that change by country, airline, species and calendar — FAVN serology with specific time windows, zoosanitary certificates with issuance deadlines, breed restrictions, quarantine protocols, ISO microchip. No tool unifies those variables into a verifiable pre-departure diagnostic. A family that discovers a protocol error at the airport already failed months earlier.</p>
+                    <p class="tool-tech">Computes the <strong>ICD-Travel (Dynamic Coherence Index)</strong> across three independent diagnostic axes: animal physiological state, owner preparation, and destination compliance. Each axis produces a signal that the planner combines into a viability traffic light with technical justification and verifiable official sources by country. Available in <a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Spanish</a> and <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">French</a>.</p>
+                    <div class="tags">
+                        <span class="tag">ICD-Travel</span>
+                        <span class="tag">Trilingual ES/EN/FR</span>
+                        <span class="tag">SENASA · FAVN · RNATT</span>
+                        <span class="tag">Official sources by country</span>
+                        <span class="tag">Viability traffic light</span>
+                    </div>
+                    <a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
+                </div>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener">Kennels Directory</a></h3>
+                        <span class="tool-url">zoovettravel.com/kennels/</span>
+                    </div>
+                    <div class="tool-label">WebApplication · Filtered directory · Trilingual ES / EN / FR · Free access</div>
+                    <p class="tool-problem">The problem it solves: a family in the process of international relocation needs kennels that meet specific criteria that most generic directories don't filter — IATA compliance, quarantine infrastructure, capacity to manage zoosanitary certificates, restricted breed acceptance. Finding an inadequate kennel weeks before the trip has concrete, irreversible consequences.</p>
+                    <p class="tool-tech">Trilingual directory with filtering by species, IATA compliance, quarantine infrastructure and type of zoosanitary certifications the facility can manage. Built as a reference for families actively in the process of international pet export or import — not as a generic commercial listing.</p>
+                    <div class="tags">
+                        <span class="tag">Trilingual ES/EN/FR</span>
+                        <span class="tag">IATA filter</span>
+                        <span class="tag">Quarantine</span>
+                        <span class="tag">Restricted breeds</span>
+                        <span class="tag">Export · Import</span>
+                    </div>
+                    <a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener" class="tool-cta">View directory →</a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Peru</span>
+            <span class="footer-mcd">DYNAMIC_COHERENCE_MODEL</span>
+        </footer>
+
+    </div>
+</body>
+</html>

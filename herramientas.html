@@ -250,6 +250,22 @@
 
         .nav-id a:hover { color: var(--white); }
 
+        .nav-sections {
+            display: flex;
+            gap: 6px 18px;
+            flex-wrap: wrap;
+        }
+
+        .nav-sections a {
+            font-family: var(--mono);
+            font-size: 0.64rem;
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .nav-sections a:hover { color: var(--white); }
+
         .lang-switch { display: flex; gap: 6px; }
 
         .lang-btn {
@@ -529,6 +545,11 @@
 
         <nav aria-label="Navegación">
             <span class="nav-id"><a href="/">carlosravello.com</a></span>
+            <div class="nav-sections">
+                <a href="#herramientas">BikeLab Studio</a>
+                <a href="#zoovet-travel">Zoovet Travel</a>
+                <a href="#metodo">Método</a>
+            </div>
             <div class="lang-switch">
                 <a href="/herramientas.html" class="lang-btn active" aria-current="page">ES</a>
                 <a href="/tools.html" class="lang-btn">EN</a>
@@ -570,6 +591,7 @@
                     <p>Las herramientas que aparecen en esta página no se diseñaron desde el ciclismo. Se diseñaron desde un marco más amplio: el <strong>Modelo de Coherencia Dinámica (MCD)</strong>, un metamodelo propio que postula que la persistencia funcional de sistemas complejos — físicos, biológicos u organizacionales — se sostiene por la coherencia entre tres dominios interdependientes: <em>energía, información y propósito</em>.</p>
                     <p>La aplicación al problema de suspensiones MTB fue directa: una horquilla de doble cámara es un sistema físico complejo con variables acopladas y comportamiento no lineal. El método correcto no es una fórmula de regla de tres — es un modelo politrópico calibrado con datos reales de fabricante, validado mediante simulación estocástica con 10.000 iteraciones Monte Carlo ejecutadas en Python.</p>
                     <p>El mismo principio opera en el diagnóstico de cambios electrónicos y en el análisis de archivos de entrenamiento: <em>modelar el máximo de escenarios posibles antes de emitir un criterio.</em></p>
+                    <p>Los métodos de validación se seleccionan según el tipo de dato y la complejidad del modelo. <strong>Simulación Monte Carlo</strong> para cuantificar incertidumbre sobre miles de escenarios de parámetros simultáneos. <strong>Análisis de sensibilidad</strong> para identificar qué variables determinan el resultado y cuáles son ruido. <strong>Bootstrap estadístico</strong> para estimar intervalos de confianza cuando los datos reales son limitados. <strong>Latin Hypercube Sampling</strong> cuando el espacio de parámetros es multidimensional y requiere cobertura eficiente. <strong>Tests de bondad de ajuste</strong> — Kolmogorov-Smirnov o Shapiro-Wilk — para verificar que las distribuciones del modelo corresponden a los datos reales. El resultado es una herramienta con incertidumbre cuantificada, no un número sin respaldo.</p>
                     <div class="mcd-axes">
                         <span class="mcd-tag">Pseudo-ratio Ω</span>
                         <span class="mcd-tag">ICD · Índice de Coherencia Dinámica</span>
@@ -636,4 +658,78 @@
                     </div>
                     <div class="tool-label">Modelo de incertidumbre instrumental · Monte Carlo · Procesamiento local · 5 métricas · Acceso libre</div>
                     <p class="tool-problem">El problema que resuelve: los datos crudos de archivos .FIT tienen ruido instrumental documentado — ±1-2 rpm en cadencia (magneto/acelerómetro), ±0.5-1.5 km/h en velocidad GPS, ±2-5m en altitud barométrica, ±1-3% en potencia. Diagnosticar rendimiento desde esos datos sin un modelo de incertidumbre es producir conclusiones sin respaldo estadístico. Ninguna plataforma gratuita cuantifica esa incertidumbre antes de emitir un número. El archivo no sale del navegador — no se sube a ningún servidor.</p>
-                    <p class="tool-tech">Parseo nativo del protocolo FIT v2.1 (Garmin FIT SDK) en JavaScript puro, procesado completamente local. La herramienta segmenta la sesión por continuidad temporal, aplica un <strong>modelo de incertidumbre instrumental por fuente de dato</strong>, y calcula 5 métricas primarias con validación Monte Carlo y <st
+                    <p class="tool-tech">Parseo nativo del protocolo FIT v2.1 (Garmin FIT SDK) en JavaScript puro, procesado completamente local. La herramienta segmenta la sesión por continuidad temporal, aplica un <strong>modelo de incertidumbre instrumental por fuente de dato</strong>, y calcula 5 métricas primarias con validación Monte Carlo y <strong>umbrales dinámicos</strong> calibrados por disciplina, tipo de suspensión, transmisión y diámetro de rueda: (1) varianza local de cadencia, (2) desarrollo efectivo proxy velocidad/cadencia, (3) Climbing Stability Index (CSI), (4) Variability Index NP/AP, (5) desacoplamiento cardíaco Pw:HR. El white paper cita 8 DOIs verificables en literatura científica. <a href="https://www.bikelabstudio.com/articles/white-paper-fit-analyzer-es.html" target="_blank" rel="noopener">White paper completo →</a></p>
+                    <div class="tags">
+                        <span class="tag">FIT v2.1 · Garmin · Wahoo · Coros</span>
+                        <span class="tag">Procesamiento local · sin servidor</span>
+                        <span class="tag">5 métricas primarias</span>
+                        <span class="tag">Incertidumbre instrumental</span>
+                        <span class="tag">Monte Carlo</span>
+                        <span class="tag">Umbrales dinámicos</span>
+                        <span class="tag">8 DOIs · white paper</span>
+                    </div>
+                    <a href="https://www.bikelabstudio.com/articles/fit-analyzer-es.html" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
+                </div>
+
+            </section>
+
+            <section id="numeros">
+                <h2>Los números</h2>
+                <div class="bio">
+                    <p><strong>3 herramientas</strong> en producción. <strong>10 marcas</strong> de suspensión catalogadas. <strong>132 modelos</strong> de suspensión MTB indexados. <strong>33 cuadros</strong> con curvas de leverage. <strong>10.000 iteraciones Monte Carlo</strong> por modelo antes de publicación. <strong>5 métricas primarias</strong> de análisis de rendimiento con modelo de incertidumbre instrumental. <strong>8 nodos de decisión</strong> cubriendo la totalidad del árbol de fallas en transmisiones electrónicas. <strong>10 DOIs</strong> verificables en el corpus de white papers. <strong>2 ScholarlyArticles</strong> publicados con metodología explícita. Cobertura: XC, Trail, Enduro, DH, E-MTB, análisis de potencia, diagnóstico electrónico. Disponibles en <strong>español e inglés</strong>. Acceso libre para cualquier ciclista en el mundo.</p>
+                    <p>El mismo método. Problemas distintos. Herramientas que funcionan porque están construidas desde física y estadística verificables, no desde intuición de taller.</p>
+                    <blockquote>Construidas desde Trujillo.<br>Disponibles en cualquier lugar.</blockquote>
+                </div>
+            </section>
+
+            <section id="zoovet-travel">
+                <h2>Zoovet Travel · Exportación internacional de mascotas</h2>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Planificador de Viaje para Mascotas</a></h3>
+                        <span class="tool-url">zoovettravel.com/planificador-viaje-mascota/</span>
+                    </div>
+                    <div class="tool-label">WebApplication · ICD-Travel · Trilingüe ES / EN / FR · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: llevar una mascota al extranjero involucra docenas de variables que cambian por país, por aerolínea, por especie y por calendario — serología FAVN con ventana de tiempo específica, certificados zoosanitarios con plazos de emisión, restricciones de raza, protocolos de cuarentena, microchip ISO. No existe ninguna herramienta que unifique esas variables en un diagnóstico previo verificable. Una familia que descubre un error de protocolo en el aeropuerto ya falló meses antes.</p>
+                    <p class="tool-tech">Computa el <strong>Índice de Coherencia Dinámica ICD-Travel</strong> sobre tres ejes diagnósticos independientes: estado fisiológico del animal, preparación del propietario, y cumplimiento de requisitos del destino. Cada eje produce una señal que el planificador combina en un semáforo de viabilidad con justificación técnica y fuentes oficiales verificables por país. Disponible en <a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">inglés</a> y <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">francés</a>.</p>
+                    <div class="tags">
+                        <span class="tag">ICD-Travel</span>
+                        <span class="tag">Trilingüe ES/EN/FR</span>
+                        <span class="tag">SENASA · FAVN · RNATT</span>
+                        <span class="tag">Fuentes oficiales por país</span>
+                        <span class="tag">Semáforo de viabilidad</span>
+                    </div>
+                    <a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
+                </div>
+
+                <div class="tool">
+                    <div class="tool-header">
+                        <h3><a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener">Directorio de Kennels</a></h3>
+                        <span class="tool-url">zoovettravel.com/kennels.html</span>
+                    </div>
+                    <div class="tool-label">WebApplication · Directorio filtrado · Trilingüe ES / EN / FR · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: una familia en proceso de relocalización internacional necesita kennels que cumplan criterios específicos que la mayoría de directorios genéricos no filtra — cumplimiento IATA, infraestructura de cuarentena, capacidad de gestión de certificados zoosanitarios, aceptación de razas restringidas. Encontrar un kennel inadecuado a semanas del viaje tiene consecuencias concretas e irreversibles.</p>
+                    <p class="tool-tech">Directorio trilingüe con filtrado por especie, cumplimiento IATA, infraestructura de cuarentena y tipo de certificaciones zoosanitarias que el hospedaje puede gestionar. Construido como referencia para familias en proceso activo de exportación o importación internacional de mascotas — no como listado comercial genérico.</p>
+                    <div class="tags">
+                        <span class="tag">Trilingüe ES/EN/FR</span>
+                        <span class="tag">Filtro IATA</span>
+                        <span class="tag">Cuarentena</span>
+                        <span class="tag">Razas restringidas</span>
+                        <span class="tag">Exportación · Importación</span>
+                    </div>
+                    <a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener" class="tool-cta">Ver directorio →</a>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Perú</span>
+            <span class="footer-mcd">MODELO_COHERENCIA_DINÁMICA</span>
+        </footer>
+
+    </div>
+</body>
+</html>
