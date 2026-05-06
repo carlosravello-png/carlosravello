@@ -388,6 +388,41 @@
             color: var(--bg);
         }
 
+        .diagnostico-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            max-width: 480px;
+            background: var(--border);
+        }
+
+        .diagnostico-action {
+            background: var(--bg);
+            color: var(--accent);
+            font-family: var(--mono);
+            font-size: 0.65rem;
+            font-weight: 400;
+            letter-spacing: 0.28em;
+            text-transform: uppercase;
+            padding: 18px 20px;
+            text-decoration: none;
+            display: block;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .diagnostico-action:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        .diagnostico-action-sub {
+            font-size: 0.58rem;
+            font-family: var(--mono);
+            color: var(--muted);
+            letter-spacing: 0.14em;
+            margin-top: 12px;
+        }
+
         footer {
             margin-top: 88px;
             padding-top: 24px;
@@ -532,4 +567,41 @@
 
                     <div class="case">
                         <div class="case-id">Case 03</div>
-                        <h3><a href="https://ww
+                        <h3><a href="https://www.katsudomo.com" rel="noopener" target="_blank">Katsudōmo</a></h3>
+                        <p>Japanese street food. Lima, Peru.</p>
+                        <div class="case-metric">
+                            GBP entity · Yatai identity<br>
+                            Semantic architecture
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="diagnosis">
+                <h2>Diagnosis</h2>
+                <p class="diagnostico-intro">
+                    The first meeting is free.<br>
+                    <strong>The formal diagnosis has a price.</strong>
+                </p>
+                <p class="diagnostico-intro">
+                    If you got here you already know what you need.<br>
+                    You just need to know if your case is operable.
+                </p>
+                <div class="diagnostico-actions">
+                    <a href="https://wa.me/51977647243?text=Hi%20Carlos%2C%20I%27m%20interested%20in%20a%20diagnosis" class="diagnostico-action" target="_blank" rel="noopener">WhatsApp → +51 977 647 243</a>
+                    <a href="mailto:carlos.ravello@zoovettravel.com" class="diagnostico-action">carlos.ravello@zoovettravel.com</a>
+                </div>
+                <p class="diagnostico-action-sub">Typical response time: under 24 h.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Peru</span>
+            <span class="footer-surgery">BRAND_RECONSTRUCTIVE_SURGERY</span>
+        </footer>
+
+    </div>
+</body>
+</html>
