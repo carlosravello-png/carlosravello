@@ -625,7 +625,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #525252;
+            --muted:   #6e6e6e;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -665,7 +665,7 @@
 
         .nav-id {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.14em;
         }
@@ -738,10 +738,10 @@
 
         h2 {
             font-family: var(--mono);
-            font-size: 0.68rem;
+            font-size: 0.74rem;
             text-transform: uppercase;
             letter-spacing: 0.22em;
-            color: var(--muted);
+            color: var(--text);
             border-bottom: 1px solid var(--border);
             padding-bottom: 12px;
             margin-bottom: 36px;
@@ -800,9 +800,9 @@
         }
 
         .company p {
-            font-size: 0.93rem;
+            font-size: 1rem;
             color: var(--muted);
-            line-height: 1.72;
+            line-height: 1.8;
         }
 
         .tags {
@@ -855,7 +855,7 @@
 
         .pub-meta {
             font-family: var(--mono);
-            font-size: 0.63rem;
+            font-size: 0.74rem;
             color: var(--muted);
             letter-spacing: 0.04em;
         }
@@ -897,9 +897,9 @@
         }
 
         .arch-item p {
-            font-size: 0.91rem;
+            font-size: 0.97rem;
             color: var(--muted);
-            line-height: 1.7;
+            line-height: 1.78;
         }
 
         /* CONTACT */
@@ -917,7 +917,7 @@
             background: var(--bg);
             padding: 0 8px;
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.68rem;
             color: var(--muted);
             letter-spacing: 0.12em;
         }
@@ -958,14 +958,14 @@
 
         .footer-copy {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.08em;
         }
 
         .footer-mcd {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             color: var(--border);
             letter-spacing: 0.08em;
         }
@@ -1012,41 +1012,205 @@
         }
         .writing-read:hover { color: var(--white); }
 
+        /* POSITIONING LINE */
+        .positioning-line {
+            font-family: var(--serif);
+            font-size: clamp(1rem, 2.4vw, 1.14rem);
+            color: var(--muted);
+            font-style: italic;
+            line-height: 1.78;
+            margin-top: 22px;
+            max-width: 560px;
+        }
+
+        /* HAMBURGER TRIGGER */
+        .nav-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 7px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 8px;
+            margin: -8px;
+            width: 44px;
+            height: 44px;
+            position: relative;
+            z-index: 1001;
+        }
+        .nav-toggle-line {
+            display: block;
+            height: 1px;
+            background: var(--muted);
+            transition: width 0.28s cubic-bezier(0.4,0,0.2,1),
+                        transform 0.28s cubic-bezier(0.4,0,0.2,1),
+                        background 0.2s ease;
+        }
+        .nav-toggle-line:first-child { width: 22px; }
+        .nav-toggle-line:last-child  { width: 13px; }
+        .nav-toggle:hover .nav-toggle-line,
+        .nav-toggle:focus-visible .nav-toggle-line { background: var(--white); }
+        .nav-toggle[aria-expanded="true"] .nav-toggle-line:first-child {
+            width: 18px;
+            transform: translateY(4px) rotate(45deg);
+            background: var(--white);
+        }
+        .nav-toggle[aria-expanded="true"] .nav-toggle-line:last-child {
+            width: 18px;
+            transform: translateY(-4px) rotate(-45deg);
+            background: var(--white);
+        }
+
+        /* FULL-SCREEN OVERLAY */
+        .nav-overlay {
+            position: fixed;
+            inset: 0;
+            background: #060606;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.38s cubic-bezier(0.4,0,0.2,1);
+        }
+        .nav-overlay.is-open {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .nav-overlay-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2px;
+            text-align: center;
+        }
+        .nav-overlay-link {
+            font-family: var(--serif);
+            font-size: clamp(2.4rem, 9vw, 4rem);
+            font-weight: 400;
+            color: var(--muted);
+            text-decoration: none;
+            letter-spacing: -0.025em;
+            line-height: 1.22;
+            opacity: 0;
+            transform: translateY(16px);
+            transition: color 0.22s ease,
+                        opacity 0.35s ease,
+                        transform 0.35s ease;
+        }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) {
+            opacity: 1; transform: translateY(0);
+            transition-delay: 0.06s;
+        }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) {
+            opacity: 1; transform: translateY(0);
+            transition-delay: 0.13s;
+        }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) {
+            opacity: 1; transform: translateY(0);
+            transition-delay: 0.20s;
+        }
+        .nav-overlay-link:hover { color: var(--white); }
+        .nav-overlay-divider {
+            width: 28px;
+            height: 1px;
+            background: var(--border);
+            margin: 32px 0 28px;
+            opacity: 0;
+            transition: opacity 0.3s 0.28s ease;
+        }
+        .nav-overlay.is-open .nav-overlay-divider { opacity: 1; }
+        .nav-overlay-lang {
+            display: flex;
+            gap: 24px;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s 0.30s ease, transform 0.3s 0.30s ease;
+        }
+        .nav-overlay.is-open .nav-overlay-lang {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .nav-overlay-lang-btn {
+            font-family: var(--mono);
+            font-size: 0.72rem;
+            color: var(--muted);
+            text-decoration: none;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+        .nav-overlay-lang-btn.active,
+        .nav-overlay-lang-btn:hover { color: var(--white); }
+
         /* RESPONSIVE */
-        @media (max-width: 600px) {
-            h1 { font-size: 2rem; }
-            .wrapper { padding: 8vh 20px 8vh; }
+        @media (max-width: 768px) {
+            .nav-toggle  { display: flex; }
+            .desktop-nav { display: none !important; }
+        }
+        @media (max-width: 768px) {
+            h1 { font-size: clamp(1.9rem, 7.5vw, 2.5rem); }
+            .wrapper { padding: 7vh 22px 7vh; }
             .arch-header { flex-direction: column; gap: 4px; }
-            .lang-switch { flex-wrap: wrap; gap: 4px; }
             .bio p { font-size: 1.05rem; line-height: 1.9; }
-            .company h3 { font-size: 1.1rem; }
-            .company p { font-size: 0.98rem; line-height: 1.78; }
+            .company h3 { font-size: 1.12rem; }
+            .company p { font-size: 1rem; line-height: 1.82; }
             .pub h3 { font-size: 1rem; }
-            .pub-meta { font-size: 0.70rem; }
-            .writing-item h3 { font-size: 1.05rem; }
-            .writing-excerpt { font-size: 0.97rem; line-height: 1.8; }
-            .contact-block { padding: 22px 18px; }
-            .contact-link { font-size: 0.86rem; }
+            .pub-meta { font-size: 0.76rem; }
+            .pub-type { font-size: 0.72rem; }
+            .writing-item h3 { font-size: 1.08rem; }
+            .writing-excerpt { font-size: 1rem; line-height: 1.82; }
+            .writing-category { font-size: 0.74rem; }
+            .writing-read { font-size: 0.74rem; }
+            .contact-block { padding: 24px 18px; }
+            .contact-link { font-size: 0.88rem; }
+            .positioning-line { font-size: 1rem; max-width: 100%; }
+            .authority-links { gap: 8px 14px; }
+            section { margin-bottom: 58px; }
+            .title-label { font-size: 0.72rem; letter-spacing: 0.14em; }
         }
     </style>
 </head>
 <body>
     <div class="wrapper">
 
-        <nav aria-label="Selector de idioma">
+        <nav aria-label="Navegación principal">
             <span class="nav-id">carlosravello.com</span>
-            <div class="lang-switch">
+            <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn active" aria-current="page">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
-                <a href="/herramientas.html" class="lang-btn">Herramientas</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia</a>
             </div>
+            <button class="nav-toggle" id="navToggle"
+                    aria-label="Abrir menú" aria-expanded="false"
+                    aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
         </nav>
+
+        <div class="nav-overlay" id="navOverlay"
+             role="dialog" aria-modal="true" aria-label="Menú de navegación">
+            <div class="nav-overlay-inner">
+                <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
+                <a href="/estrategia.html" class="nav-overlay-link">Estrategia</a>
+                <a href="#escritura" class="nav-overlay-link">Escritura</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/" class="nav-overlay-lang-btn active">ES</a>
+                    <a href="/en.html" class="nav-overlay-lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
 
         <header>
             <h1>Carlos Eduardo<br>Ravello Joo</h1>
             <span class="title-label">Fundador · Investigador Independiente · Trujillo, Perú</span>
+            <p class="positioning-line">Diseño la infraestructura semántica que determina lo que Google, los LLM y las personas correctas deciden que eres.</p>
             <div class="authority-links">
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="me noopener">Zenodo</a>
@@ -1064,6 +1228,28 @@
                     <p>Fundo y opero sistemas con metodología de ingeniería aplicada. Cada entidad que construyo — un laboratorio ciclista, una clínica veterinaria especializada, una barra de street food, una plataforma académica — parte del mismo criterio: exactitud documentada o no existe.</p>
                     <p>Diseño, construyo y dirijo mis propios ecosistemas. La investigación publicada bajo DOI verificable — <a href="https://www.bikelabstudio.com/articles/grasas-tribologia-es.html" target="_blank" rel="noopener">tribología</a>, <a href="https://zenodo.org/records/19229092" target="_blank" rel="noopener">termodinámica</a>, <a href="https://zenodo.org/records/19229331" target="_blank" rel="noopener">eficiencia de transmisión</a>, <a href="https://zenodo.org/records/19229364" target="_blank" rel="noopener">huella de carbono</a> — es el sustrato científico de lo que ejecuto en cada uno de ellos.</p>
                     <p>El <em>Modelo de Coherencia Dinámica</em> es el sistema que hace que todo esto sea consistente: identidad técnica precisa, criterio documentado y tolerancia cero al trabajo improvisado. Es el modo en que funciona mi ecosistema — y el marco desde el que diseño el de otros cuando el caso lo merece.</p>
+                </div>
+            </section>
+
+            <section id="escritura">
+                <h2>Escritura</h2>
+                <div class="writing-item">
+                    <div class="writing-category">Identidad digital · GEO · Knowledge Graph</div>
+                    <h3><a href="/autoridad-antes-que-contenido.html">Autoridad antes que contenido</a></h3>
+                    <p class="writing-excerpt">Princeton demostró en 2024 que en motores de IA generativa, la autoridad supera al contenido en un 40%. Lo que te hace citable no es lo que publicas. Es lo que el grafo puede verificar sobre ti.</p>
+                    <a href="/autoridad-antes-que-contenido.html" class="writing-read">Leer →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Identidad semántica · LLM · Wheeler</div>
+                    <h3><a href="/lo-que-el-observador-hace-existir.html">Lo que el observador hace existir</a></h3>
+                    <p class="writing-excerpt">Wheeler preguntó si el universo existe sin un observador que lo registre. Los LLM hacen la misma pregunta sobre tu presencia digital: si no estás en el modelo, no existes en la respuesta.</p>
+                    <a href="/lo-que-el-observador-hace-existir.html" class="writing-read">Leer →</a>
+                </div>
+                <div class="writing-item">
+                    <div class="writing-category">Sistemas adaptativos · Allostasis · Estrategia</div>
+                    <h3><a href="/el-modelo-que-no-se-actualiza-desaparece.html">El modelo que no se actualiza desaparece</a></h3>
+                    <p class="writing-excerpt">Sterling y Eyer demostraron en 1988 que los sistemas que solo reaccionan se desgastan. La identidad digital funciona igual: no actualizar el modelo no es quedarse igual. Es quedar fuera del modelo que el sistema ya construyó sin ti.</p>
+                    <a href="/el-modelo-que-no-se-actualiza-desaparece.html" class="writing-read">Leer →</a>
                 </div>
             </section>
 
@@ -1258,27 +1444,6 @@
                 </div>
             </section>
 
-            <section id="escritura">
-                <h2>Escritura</h2>
-                <div class="writing-item">
-                    <div class="writing-category">Identidad digital · GEO · Knowledge Graph</div>
-                    <h3><a href="/autoridad-antes-que-contenido.html">Autoridad antes que contenido</a></h3>
-                    <p class="writing-excerpt">Princeton demostró en 2024 que en motores de IA generativa, la autoridad supera al contenido en un 40%. Lo que te hace citable no es lo que publicas. Es lo que el grafo puede verificar sobre ti.</p>
-                    <a href="/autoridad-antes-que-contenido.html" class="writing-read">Leer →</a>
-                </div>
-                <div class="writing-item">
-                    <div class="writing-category">Identidad semántica · LLM · Wheeler</div>
-                    <h3><a href="/lo-que-el-observador-hace-existir.html">Lo que el observador hace existir</a></h3>
-                    <p class="writing-excerpt">Wheeler preguntó si el universo existe sin un observador que lo registre. Los LLM hacen la misma pregunta sobre tu presencia digital: si no estás en el modelo, no existes en la respuesta.</p>
-                    <a href="/lo-que-el-observador-hace-existir.html" class="writing-read">Leer →</a>
-                </div>
-                <div class="writing-item">
-                    <div class="writing-category">Sistemas adaptativos · Allostasis · Estrategia</div>
-                    <h3><a href="/el-modelo-que-no-se-actualiza-desaparece.html">El modelo que no se actualiza desaparece</a></h3>
-                    <p class="writing-excerpt">Sterling y Eyer demostraron en 1988 que los sistemas que solo reaccionan se desgastan. La identidad digital funciona igual: no actualizar el modelo no es quedarse igual. Es quedar fuera del modelo que el sistema ya construyó sin ti.</p>
-                    <a href="/el-modelo-que-no-se-actualiza-desaparece.html" class="writing-read">Leer →</a>
-                </div>
-            </section>
 
             <section id="contacto">
                 <h2>Contacto</h2>
@@ -1295,4 +1460,51 @@
         </main>
 
         <footer>
-            <span cl
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Perú</span>
+            <span class="footer-mcd">MCD · Modelo de Coherencia Dinámica</span>
+        </footer>
+
+    </div>
+
+    <script>
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+
+        function openMenu() {
+            overlay.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            toggle.setAttribute('aria-label', 'Cerrar menú');
+            document.body.style.overflow = 'hidden';
+            if (links.length) links[0].focus();
+        }
+        function closeMenu() {
+            overlay.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menú');
+            document.body.style.overflow = '';
+            toggle.focus();
+        }
+
+        toggle.addEventListener('click', function () {
+            overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', function (e) {
+            if (e.target === overlay) closeMenu();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+        });
+        links.forEach(function (l) {
+            l.addEventListener('click', function () {
+                if (l.getAttribute('href').charAt(0) === '#') {
+                    closeMenu();
+                }
+            });
+        });
+    })();
+    </script>
+</body>
+</html>
