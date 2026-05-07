@@ -949,6 +949,29 @@
         }
         .writing-read:hover { color: var(--white); }
 
+        .nav-toggle { display:none; flex-direction:column; justify-content:center; align-items:flex-end; gap:7px; background:none; border:none; cursor:pointer; padding:8px; margin:-8px; width:44px; height:44px; position:relative; z-index:1001; }
+        .nav-toggle-line { display:block; height:1px; background:var(--muted); transition:width 0.28s cubic-bezier(0.4,0,0.2,1), transform 0.28s cubic-bezier(0.4,0,0.2,1), background 0.2s ease; }
+        .nav-toggle-line:first-child { width:22px; }
+        .nav-toggle-line:last-child  { width:13px; }
+        .nav-toggle:hover .nav-toggle-line { background:var(--white); }
+        .nav-toggle[aria-expanded="true"] .nav-toggle-line:first-child { width:18px; transform:translateY(4px) rotate(45deg); background:var(--white); }
+        .nav-toggle[aria-expanded="true"] .nav-toggle-line:last-child { width:18px; transform:translateY(-4px) rotate(-45deg); background:var(--white); }
+        .nav-overlay { position:fixed; inset:0; background:#060606; z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.38s cubic-bezier(0.4,0,0.2,1); }
+        .nav-overlay.is-open { opacity:1; pointer-events:all; }
+        .nav-overlay-inner { display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center; }
+        .nav-overlay-link { font-family:var(--serif); font-size:clamp(2.4rem,9vw,4rem); font-weight:400; color:var(--muted); text-decoration:none; letter-spacing:-0.025em; line-height:1.22; opacity:0; transform:translateY(16px); transition:color 0.22s ease, opacity 0.35s ease, transform 0.35s ease; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.06s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.13s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.20s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.27s; }
+        .nav-overlay-link:hover { color:var(--white); }
+        .nav-overlay-divider { width:28px; height:1px; background:var(--border); margin:32px 0 28px; opacity:0; transition:opacity 0.3s 0.32s ease; }
+        .nav-overlay.is-open .nav-overlay-divider { opacity:1; }
+        .nav-overlay-lang { display:flex; gap:24px; opacity:0; transform:translateY(10px); transition:opacity 0.3s 0.36s ease, transform 0.3s 0.36s ease; }
+        .nav-overlay.is-open .nav-overlay-lang { opacity:1; transform:translateY(0); }
+        .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
+        .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
+        @media (max-width: 768px) { .nav-toggle { display:flex; } .desktop-nav { display:none !important; } }
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .wrapper { padding: 8vh 20px 8vh; }
@@ -969,20 +992,38 @@
 <body>
     <div class="wrapper">
 
-        <nav aria-label="Language selector">
+        <nav aria-label="Navegación principal">
             <span class="nav-id">carlosravello.com</span>
-            <div class="lang-switch">
+            <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn active" aria-current="page">EN</a>
+                <a href="/sobre-mi.html" class="lang-btn">About</a>
                 <a href="/tools.html" class="lang-btn">Tools</a>
                 <a href="/services.html" class="lang-btn">Work</a>
                 <a href="/strategy.html" class="lang-btn">Strategy</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
         </nav>
+        <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+            <div class="nav-overlay-inner">
+                <a href="/sobre-mi.html" class="nav-overlay-link">About</a>
+                <a href="/escritura.html" class="nav-overlay-link">Writing</a>
+                <a href="/services.html" class="nav-overlay-link">Work</a>
+                <a href="/strategy.html" class="nav-overlay-link">Strategy</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/" class="nav-overlay-lang-btn">ES</a>
+                    <a href="/en.html" class="nav-overlay-lang-btn active">EN</a>
+                </div>
+            </div>
+        </div>
 
         <header>
             <h1>Carlos Eduardo<br>Ravello Joo</h1>
-            <span class="title-label">Founder · Independent Researcher · Trujillo, Peru</span>
+            <span class="title-label">Semantic Architecture Agency · Digital Identity · Trujillo, Peru</span>
             <div class="authority-links">
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="me noopener">Zenodo</a>
@@ -1231,4 +1272,57 @@
         </main>
 
         <footer>
-            <sp
+            <sp                    <p>Field evaluation of brake components — pads and hydraulic systems — under tribological analysis protocol. Integration into BikeLab Studio's brake diagnosis framework.</p>
+                </div>
+
+                <div class="arch-item">
+                    <div class="arch-header">
+                        <h3>Magura</h3>
+                        <span class="arch-url">magura.com</span>
+                    </div>
+                    <p>Precision technical intervention on Magura forks and dampers. Technical rescue and factory tolerance recovery under applied engineering methodology.</p>
+                </div>
+
+                <div class="arch-item">
+                    <div class="arch-header">
+                        <h3>Park Tool · Liqui-Moly · Shimano</h3>
+                        <span class="arch-url">parktool.com · liqui-moly.com · shimano.com</span>
+                    </div>
+                    <p>Equipment and consumables integrated into the BikeLab Studio technical workflow. Performance documentation and real-world validation under controlled conditions.</p>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2>Contact</h2>
+                <div class="contact-block">
+                    <p>I work with entities that know what they need: digital identity with technical rigor, semantic web architecture and positioning strategy built from the inside — not from a template. If your case is serious, <a href="/strategy.html" style="color:inherit; border-bottom:1px solid currentColor;">start here</a>.</p>
+                    <div class="contact-links">
+                        <a href="https://wa.me/51977647243?text=Hi%20Carlos%2C%20I'm%20interested%20in%20a%20diagnosis" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
+                        <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
+                        <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/carlos-ravello-joo</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Peru</span>
+            <span class="footer-mcd">MCD · Dynamic Coherence Model</span>
+        </footer>
+
+    </div>
+
+    <script>
+    (function() {
+        var btn=document.getElementById('navToggle'), overlay=document.getElementById('navOverlay');
+        if(!btn||!overlay) return;
+        function openMenu(){ overlay.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Close menu'); document.body.style.overflow='hidden'; }
+        function closeMenu(){ overlay.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Open menu'); document.body.style.overflow=''; btn.focus(); }
+        btn.addEventListener('click', function(){ overlay.classList.contains('is-open')?closeMenu():openMenu(); });
+        document.addEventListener('keydown', function(e){ if(e.key==='Escape'&&overlay.classList.contains('is-open')) closeMenu(); });
+        overlay.querySelectorAll('.nav-overlay-link').forEach(function(l){ l.addEventListener('click', function(){ closeMenu(); }); });
+    })();
+    </script>
+</body>
+</html>

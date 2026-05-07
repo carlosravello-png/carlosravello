@@ -590,6 +590,46 @@
         }
 ,
         {
+          "@type": "FAQPage",
+          "@id": "https://carlosravello.com/#faq",
+          "url": "https://carlosravello.com/#faq",
+          "inLanguage": "es",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Qué es la arquitectura semántica y por qué importa ahora?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Es la disciplina que estructura tu entidad digital para que Google, los motores de IA generativa y el Knowledge Graph puedan verificar quién eres. Un estudio de Princeton (KDD 2024) demostró que en motores como Perplexity o Gemini, la autoridad estructural supera al contenido en un 40%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Por qué mi negocio no aparece en las respuestas de ChatGPT o Google IA?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Los motores de IA generativa no leen tu web — leen el grafo que construyeron sobre ella. Si tu entidad no tiene Schema.org, ORCID, Wikidata o sameAs verificables, no existes en su modelo. No es problema de contenido: es problema de estructura."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿En qué se diferencia esto del SEO tradicional?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El SEO tradicional optimiza para keywords. La arquitectura semántica construye entidades verificables: personas, organizaciones, publicaciones con DOI, relaciones entre entidades. El resultado no son posiciones — es que el sistema decide que eres la respuesta."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cómo empiezo a trabajar con Carlos Ravello?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El primer paso es un diagnóstico de identidad digital: se audita tu presencia actual en el Knowledge Graph, Schema.org, Wikidata y sameAs. A partir de ahí se diseña la estrategia de arquitectura semántica."
+              }
+            }
+          ]
+        },
+        {
           "@type": "ItemList",
           "@id": "https://carlosravello.com/#serie-identidad-digital",
           "name": "Serie: Arquitectura semántica e identidad digital",
@@ -1113,6 +1153,10 @@
             opacity: 1; transform: translateY(0);
             transition-delay: 0.20s;
         }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) {
+            opacity: 1; transform: translateY(0);
+            transition-delay: 0.27s;
+        }
         .nav-overlay-link:hover { color: var(--white); }
         .nav-overlay-divider {
             width: 28px;
@@ -1145,6 +1189,69 @@
         }
         .nav-overlay-lang-btn.active,
         .nav-overlay-lang-btn:hover { color: var(--white); }
+
+        /* AGENCY LINE */
+        .agency-descriptor {
+            display: inline-block;
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            color: var(--muted);
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            border: 1px solid var(--border);
+            padding: 4px 12px;
+            margin-bottom: 24px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            padding: 26px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .faq-item:first-child { border-top: 1px solid var(--border); }
+        .faq-question {
+            font-family: var(--serif);
+            font-size: 1.06rem;
+            font-weight: 400;
+            color: var(--white);
+            line-height: 1.42;
+            margin-bottom: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+        }
+        .faq-question::after {
+            content: '+';
+            font-family: var(--mono);
+            font-size: 0.9rem;
+            color: var(--accent);
+            min-width: 16px;
+            text-align: right;
+            transition: transform 0.22s ease;
+        }
+        .faq-item.is-open .faq-question::after {
+            content: '−';
+        }
+        .faq-answer {
+            font-size: 0.97rem;
+            color: var(--muted);
+            line-height: 1.82;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.32s cubic-bezier(0.4,0,0.2,1), padding-top 0.2s ease;
+        }
+        .faq-item.is-open .faq-answer {
+            max-height: 300px;
+            padding-top: 8px;
+        }
+        .faq-answer a {
+            color: var(--accent);
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .faq-answer a:hover { border-bottom-color: var(--accent); }
 
         /* RESPONSIVE */
         @media (max-width: 768px) {
@@ -1182,6 +1289,8 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn active" aria-current="page">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
+                <a href="/sobre-mi.html" class="lang-btn">Sobre mí</a>
+                <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia</a>
             </div>
@@ -1196,9 +1305,10 @@
         <div class="nav-overlay" id="navOverlay"
              role="dialog" aria-modal="true" aria-label="Menú de navegación">
             <div class="nav-overlay-inner">
+                <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
+                <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia</a>
-                <a href="#escritura" class="nav-overlay-link">Escritura</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/" class="nav-overlay-lang-btn active">ES</a>
@@ -1209,7 +1319,8 @@
 
         <header>
             <h1>Carlos Eduardo<br>Ravello Joo</h1>
-            <span class="title-label">Fundador · Investigador Independiente · Trujillo, Perú</span>
+            <span class="title-label">Agencia de Arquitectura Semántica · Identidad Digital · Trujillo, Perú</span>
+
             <p class="positioning-line">Diseño la infraestructura semántica que determina lo que Google, los LLM y las personas correctas deciden que eres.</p>
             <div class="authority-links">
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
@@ -1250,6 +1361,26 @@
                     <h3><a href="/el-modelo-que-no-se-actualiza-desaparece.html">El modelo que no se actualiza desaparece</a></h3>
                     <p class="writing-excerpt">Sterling y Eyer demostraron en 1988 que los sistemas que solo reaccionan se desgastan. La identidad digital funciona igual: no actualizar el modelo no es quedarse igual. Es quedar fuera del modelo que el sistema ya construyó sin ti.</p>
                     <a href="/el-modelo-que-no-se-actualiza-desaparece.html" class="writing-read">Leer →</a>
+                </div>
+            </section>
+
+            <section id="faq" aria-label="Preguntas frecuentes">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Qué es la arquitectura semántica y por qué importa ahora?</div>
+                    <div class="faq-answer">Es la disciplina que estructura tu entidad digital para que Google, los motores de IA generativa y el Knowledge Graph puedan verificar quién eres — no solo indexar lo que escribes. Un estudio de Princeton (KDD 2024) demostró que en motores como Perplexity o Gemini, la autoridad estructural supera al contenido en un 40%. <a href="/autoridad-antes-que-contenido.html">Leer el análisis completo →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Por qué mi negocio no aparece en las respuestas de ChatGPT o Google IA?</div>
+                    <div class="faq-answer">Los motores de IA generativa no leen tu web — leen el grafo que construyeron sobre ella. Si tu entidad no tiene Schema.org, ORCID, Wikidata o sameAs verificables, no existes en su modelo. No es problema de contenido: es problema de estructura. <a href="/estrategia.html">Ver cómo se resuelve →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿En qué se diferencia esto del SEO tradicional?</div>
+                    <div class="faq-answer">El SEO tradicional optimiza para keywords. La arquitectura semántica construye entidades verificables: personas, organizaciones, publicaciones con DOI, relaciones entre entidades. El resultado no son posiciones — es que el sistema decide que eres la respuesta. <a href="/sobre-mi.html">Ver el método aplicado →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Cómo empiezo a trabajar con Carlos Ravello?</div>
+                    <div class="faq-answer">El primer paso es un diagnóstico de identidad digital: se audita tu presencia actual en el Knowledge Graph, Schema.org, Wikidata y sameAs. A partir de ahí se diseña la estrategia. <a href="/servicios.html">Ver servicios →</a></div>
                 </div>
             </section>
 
@@ -1467,6 +1598,22 @@
     </div>
 
     <script>
+    // FAQ accordion
+    (function() {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function(item) {
+            var q = item.querySelector('.faq-question');
+            if (!q) return;
+            function toggle() {
+                var isOpen = item.classList.contains('is-open');
+                items.forEach(function(i){ i.classList.remove('is-open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
+                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+            }
+            q.addEventListener('click', toggle);
+            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+        });
+    })();
+
     (function () {
         var toggle  = document.getElementById('navToggle');
         var overlay = document.getElementById('navOverlay');
