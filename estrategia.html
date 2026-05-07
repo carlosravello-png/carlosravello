@@ -57,7 +57,6 @@
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
             "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch",
-            "https://www.instagram.com/bikelab.studio.peru/",
             "https://www.threads.net/@bikelab.studio",
             "https://www.bikelabstudio.com/#carlos-ravello",
             "https://zoovettravel.com/#carlos-ravello"
@@ -96,17 +95,17 @@
             {
               "@type": "Question",
               "name": "¿Cuánto tiempo tarda en funcionar la arquitectura semántica?",
-              "acceptedAnswer": { "@type": "Answer", "text": "La arquitectura semántica no es una campaña: es infraestructura. El Knowledge Graph de Google actualiza la información de entidades verificadas en ciclos de entre 2 y 8 semanas según la densidad de señales. Un estudio de Princeton (KDD 2024) sobre GEO mostró que los resultados en motores de IA generativa son sensibles a cambios estructurales dentro de las primeras semanas de indexación." }
+              "acceptedAnswer": { "@type": "Answer", "text": "El tiempo depende de la distancia entre lo que el sistema puede verificar y lo que la entidad realmente es. Cuando esa brecha es pequeña, el movimiento es rápido. Cuando es grande, el trabajo es más profundo antes de que algo sea visible. El diagnóstico lo determina." }
             },
             {
               "@type": "Question",
               "name": "¿Funciona para negocios pequeños o solo para marcas grandes?",
-              "acceptedAnswer": { "@type": "Answer", "text": "La arquitectura semántica funciona mejor en nichos precisos. Una entidad con DOI verificable, Wikidata, Schema @graph y sameAs coherentes supera a cualquier marca grande en su nicho específico porque el Knowledge Graph no mide presupuesto: mide coherencia estructural. Los nichos de ultra-especialización tienen ventaja intrínseca en este sistema." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Funciona mejor en nichos precisos con algo real que documentar. Las marcas grandes tienen presupuesto. Las entidades bien estructuradas tienen gravedad semántica. No son lo mismo — y el sistema lo sabe." }
             },
             {
               "@type": "Question",
               "name": "¿Por qué HTML vanilla y no WordPress o Webflow?",
-              "acceptedAnswer": { "@type": "Answer", "text": "Los CMS generan markup que no se puede controlar completamente — y el Schema.org @graph que posiciona en el Knowledge Graph requiere control total sobre el JSON-LD. Un sitio en HTML vanilla carga en menos de 1 segundo, sin JavaScript innecesario. No usamos WordPress porque WordPress no puede reproducir esto." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Porque el control total sobre el marcado no es negociable en nuestro proceso. Los CMS generan dependencias que no podemos gestionar. La precisión de la arquitectura requiere un entorno sin intermediarios. No usamos WordPress porque no podríamos hacer lo que hacemos con WordPress." }
             },
             {
               "@type": "Question",
@@ -116,7 +115,7 @@
             {
               "@type": "Question",
               "name": "¿Qué incluye el diagnóstico de identidad digital?",
-              "acceptedAnswer": { "@type": "Answer", "text": "El diagnóstico audita: presencia actual en el Knowledge Graph de Google, coherencia del Schema.org @graph existente, estado de entidades verificables (Wikidata, ORCID, LinkedIn, sameAs), gaps entre lo que el sistema puede verificar y lo que la entidad realmente es, y estimación de la brecha de autoridad semántica vs. la competencia directa." }
+              "acceptedAnswer": { "@type": "Answer", "text": "Hay criterios. Trabajamos con entidades que tienen algo real que documentar. El diagnóstico inicial determina si el caso es operable — y esa es la pregunta que importa, no cuánto presupuesto hay." }
             },
             {
               "@type": "Question",
@@ -607,6 +606,15 @@
             .wrapper { padding: 8vh 20px 8vh; }
             .cases-grid { grid-template-columns: 1fr; }
         }
+    
+        /* Footer */
+        footer { display: flex; justify-content: space-between; align-items: flex-end; padding: 60px 0 40px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 16px; }
+        .footer-left { display: flex; flex-direction: column; gap: 6px; }
+        .footer-copy { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.08em; }
+        .footer-tagline { font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: #2e2e2e; }
+        .footer-cta { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; text-decoration: none; }
+        .footer-cta:hover { color: var(--white); border-bottom-color: var(--accent); }
+    
     </style>
 </head>
 <body>
@@ -645,7 +653,7 @@
             </div>
         </div>
 
-        <nav aria-label="Breadcrumb" class="breadcrumb">
+        <nav aria-label="Miga de pan" class="breadcrumb">
             <a href="/">carlosravello.com</a>
             <span>›</span>
             <span>Estrategia</span>
@@ -654,17 +662,18 @@
         <header>
             <h1>Gravedad,<br>no visibilidad.</h1>
             <span class="title-label">Estrategia Digital · Brand Reconstructive Surgery · Carlos Eduardo Ravello Joo</span>
-            <p class="founding-phrase">Diseñamos realidades digitales que posicionan su entidad por autoridad y gravedad — no por trends ni modas pasajeras.</p>
+            <p class="header-lead">Diseñamos realidades digitales que posicionan su entidad por autoridad y gravedad — no por trends ni modas pasajeras.</p>
+            <a href="/" class="back-link">← carlosravello.com</a>
         </header>
 
         <main>
 
-            <section id="apertura">
+            <section id="diferencia">
                 <h2>La diferencia</h2>
                 <div class="bio">
                     <p>Hay una diferencia entre una marca que busca ser vista y una que no puede ser ignorada. La primera persigue atención. La segunda la genera sin pedirla.</p>
-                    <p>No trabajamos con marcas que buscan ser populares. Trabajamos con las que entienden que la popularidad es el promedio — y el promedio no construye autoridad.</p>
-                    <p>Lo que construimos es <strong>gravedad semántica</strong>: ecosistemas de identidad tan coherentes, tan verificables, tan estructurados, que los sistemas que deciden qué existe y qué no — buscadores, modelos de lenguaje, bases de datos académicas — describen tu marca con tus propias palabras sin que nadie les haya dicho cómo hacerlo.</p>
+                    <p>No trabajamos con marcas que quieren ser populares. Trabajamos con las que entienden que la popularidad es el promedio — y el promedio no construye autoridad.</p>
+                    <p>Lo que construimos es <strong>gravedad semántica</strong>: ecosistemas de identidad tan coherentes, tan verificables, tan estructurados, que los sistemas que deciden qué existe y qué no — buscadores, modelos de lenguaje, bases de datos académicas — describen tu marca con tus propias palabras sin que nadie les diga cómo.</p>
                     <p>Eso no es marketing. Es arquitectura.</p>
                 </div>
             </section>
@@ -672,9 +681,9 @@
             <section id="visual">
                 <h2>Lo visual</h2>
                 <div class="bio">
-                    <p>La fotografía de tendencia caduca en semanas. La foto grupal con sonrisa corporativa no dice nada de lo que realmente hacen. La imagen generada por IA no tiene autor — y eso se nota.</p>
-                    <p>Trabajamos con producción visual de autor. Cada encuadre construido con criterio propio, postproducción real, lenguaje visual que no imita ninguna tendencia porque no necesita validación externa. La identidad visual que diseñamos es la misma postura técnica expresada en otro medio: densa, reconocible, sin concesiones al gusto fácil.</p>
-                    <p>La imagen de una marca debería responder una sola pregunta antes de que alguien lea una palabra: <em>¿esto merece ser tomado en serio?</em></p>
+                    <p>La fotografía de tendencia caduca en semanas. La foto grupal con sonrisas corporativas no dice nada sobre lo que realmente hacen. Las imágenes generadas por IA no tienen autor — y eso se nota.</p>
+                    <p>Trabajamos con producción visual original. Cada fotograma construido con criterio propio, postproducción real, lenguaje visual que no imita ninguna tendencia porque no necesita validación externa. La identidad visual que diseñamos está calibrada para <strong>Optical Character Recognition</strong>: cada imagen, cada fotografía, cada pieza visual le habla a los algoritmos en el idioma de tu entidad.</p>
+                    <p>La imagen de una marca debe responder una pregunta antes de que alguien lea una palabra: <em>¿esto merece ser tomado en serio?</em></p>
                     <p>Si la respuesta no es inmediata, la imagen está fallando.</p>
                 </div>
             </section>
@@ -682,40 +691,39 @@
             <section id="psicologia">
                 <h2>La psicología</h2>
                 <div class="bio">
-                    <p>No trabajamos con neuroventas. No con psicoventas. No con "triggers de conversión" ni con arquitectura de decisión diseñada para vencer la resistencia del cliente.</p>
+                    <p>No trabajamos con neuromarketing. No con "disparadores de conversión" ni con arquitectura de decisión diseñada para vencer la resistencia del cliente.</p>
                     <p>Eso es manipulación con vocabulario técnico. No es lo que hacemos.</p>
                     <p>Usamos psicología para una sola cosa: <strong>entender cómo quieres ser recordado</strong>.</p>
-                    <p>Qué quieres que piense alguien que te busca por primera vez. Cómo quieres que te describa la inteligencia artificial cuando alguien hace una consulta en tu nicho. Qué coherencia existe entre lo que eres, lo que produces y lo que el mundo puede verificar de ti de forma independiente.</p>
-                    <p>Una identidad que no puede ser verificada es frágil. Una que se sostiene sola — porque tiene estructura, no porque alguien la está empujando — esa es la que dura.</p>
+                    <p>Qué quieres que alguien piense cuando te busca por primera vez. Cómo quieres que la inteligencia artificial te describa cuando alguien consulta tu nicho. Qué coherencia existe entre lo que eres, lo que produces y lo que el mundo puede verificar independientemente sobre ti.</p>
+                    <p>Una identidad que no puede verificarse es frágil. Una que se sostiene sola — porque tiene estructura, no porque alguien la empuje — es la que dura.</p>
                 </div>
             </section>
 
-            <section id="autopoiesis">
+            <section id="principio">
                 <h2>El principio</h2>
                 <div class="bio">
-                    <p>Varela y Maturana definieron la autopoiesis como la capacidad de un sistema de producir y reproducir sus propios componentes. El sistema no responde al entorno — decide qué información deja entrar y qué emite hacia afuera.</p>
+                    <p>Varela y Maturana definieron la autopoiesis como la capacidad de un sistema de producir y reproducir sus propios componentes. El sistema no responde al entorno — decide qué información entra y qué emite hacia afuera.</p>
                     <p><strong>Una marca que opera desde ese principio no reacciona al mercado. Lo precede.</strong></p>
-                    <p>Nosotros decidimos qué información dar. Qué mostrar y qué no. Qué parte de la metodología se documenta públicamente y qué parte opera en silencio. La opacidad estratégica no es secretismo — es la condición que hace posible la autoridad. El mago que explica el truco deja de ser mago.</p>
+                    <p>Decidimos qué información dar. Qué mostrar y qué no. Qué parte de la metodología se documenta públicamente y qué parte opera en silencio. La opacidad estratégica no es secretismo — es la condición que hace posible la autoridad. El mago que explica el truco deja de ser mago.</p>
                 </div>
             </section>
 
             <section id="resultado">
                 <h2>El resultado</h2>
                 <div class="bio">
-                    <p>Las webs ayudan a vender. Los ecosistemas crean gravedad.</p>
-                    <p>Cuando la arquitectura es correcta, la competencia no necesita ser atacada — se hunde sola en el SERP porque no puede sostener el peso semántico de lo que construimos. No porque no tenga recursos. Porque no tiene estructura.</p>
-                    <blockquote>El santo grial del posicionamiento no es el primer lugar en Google.<br>Es que Google — y la IA que lo está reemplazando — te describa a ti.<br>Con tus palabras. Sin que nadie se lo haya pedido.</blockquote>
-                    <p>Eso ya lo tenemos. Es lo que vendemos.</p>
+                    <p>Los sitios web ayudan a vender. Los ecosistemas crean gravedad.</p>
+                    <p>Cuando la arquitectura es correcta, la competencia no necesita ser atacada — se hunde sola en el SERP porque no puede sostener el peso semántico de lo que construimos. No por falta de recursos. Por falta de estructura.</p>
+                    <blockquote>El santo grial del posicionamiento no es el primer lugar en Google.<br>Es que Google — y la IA que lo está reemplazando — te describa.<br>Con tus palabras. Sin que nadie le pida.</blockquote>
+                    <p>Ya tenemos eso. Es lo que vendemos.</p>
                 </div>
             </section>
 
-            <section id="herramientas-digitales">
+            <section id="herramientas">
                 <h2>Herramientas digitales como activo</h2>
                 <div class="bio">
-                    <p>Una herramienta digital construida con metodología real no es un complemento de marketing. Es un activo que trabaja solo: captura intención de búsqueda específica, demuestra competencia técnica antes de que alguien haya hablado con nadie, y convierte usuarios en clientes porque resuelve un problema concreto y verificable.</p>
-                    <p>El proceso es directo: el cliente define el nicho y el problema. Nosotros construimos la herramienta — en HTML vanilla sin dependencias externas, con la lógica interna validada mediante los métodos que correspondan al tipo de dato y la complejidad del modelo.</p>
-                    <p>Según el nicho, aplicamos <strong>simulación Monte Carlo</strong> para modelar la incertidumbre sobre miles de escenarios de parámetros simultáneos. <strong>Análisis de sensibilidad</strong> para identificar qué variables impactan más el resultado — y cuáles son ruido. <strong>Bootstrap estadístico</strong> para estimar intervalos de confianza cuando los datos reales son limitados. <strong>Latin Hypercube Sampling</strong> cuando el espacio de parámetros es multidimensional y necesita cobertura eficiente. <strong>Tests de bondad de ajuste</strong> — Kolmogorov-Smirnov o Shapiro-Wilk — para verificar que las distribuciones del modelo corresponden a lo que los datos reales muestran.</p>
-                    <p>El resultado es una herramienta con incertidumbre cuantificada, no una interfaz que produce números sin respaldo. La diferencia entre un modelo calibrado y una calculadora de marketing es la misma que entre un diagnóstico y una estimación optimista. Los clientes que trabajan en nichos donde la imprecisión tiene consecuencias reales entienden esa diferencia sin que sea necesario explicarla.</p>
+                    <p>Una herramienta digital construida con metodología real no es un add-on de marketing. Es un activo que trabaja solo: captura intención de búsqueda específica, demuestra competencia técnica antes de que alguien haya hablado con nadie, y convierte usuarios en clientes porque resuelve un problema concreto y verificable.</p>
+                    <p>El proceso es directo: el cliente define el nicho y el problema. Nosotros construimos la herramienta — en HTML vanilla sin dependencias externas, con lógica interna validada por los métodos que el tipo de dato y la complejidad del modelo requieran.</p>
+                    <p>El resultado es una herramienta con incertidumbre cuantificada, no una interfaz que produce números sin respaldo. La diferencia entre un modelo calibrado y una calculadora de marketing es la misma que entre un diagnóstico y una estimación optimista.</p>
                 </div>
             </section>
 
@@ -726,7 +734,7 @@
                     <div class="case">
                         <div class="case-id">Caso 01</div>
                         <h3><a href="https://www.bikelabstudio.com" rel="noopener" target="_blank">BikeLab Studio</a></h3>
-                        <p>Ingeniería ciclista de precisión. Trujillo, Perú.</p>
+                        <p>Ingeniería ciclista de precisión.</p>
                         <div class="case-metric">
                             Local Pack <strong>#1</strong> · DOIs verificables<br>
                             Industrial &amp; Scientific Noir
@@ -736,7 +744,7 @@
                     <div class="case">
                         <div class="case-id">Caso 02</div>
                         <h3><a href="https://zoovettravel.com" rel="noopener" target="_blank">Zoovet Travel</a></h3>
-                        <p>Exportación internacional de mascotas. Perú.</p>
+                        <p>Exportación internacional de mascotas.</p>
                         <div class="case-metric">
                             Google AI Overview · Trilingüe ES/EN/FR<br>
                             Schema @graph · Wikidata
@@ -746,7 +754,7 @@
                     <div class="case">
                         <div class="case-id">Caso 03</div>
                         <h3><a href="https://www.katsudomo.com" rel="noopener" target="_blank">Katsudōmo</a></h3>
-                        <p>Japanese street food. Lima, Perú.</p>
+                        <p>Street food japonés. Lima.</p>
                         <div class="case-metric">
                             Entidad GBP · Identidad yatai<br>
                             Arquitectura semántica
@@ -756,90 +764,124 @@
                 </div>
             </section>
 
-            <section id="faq-estrategia" aria-label="Preguntas frecuentes sobre estrategia digital">
-                <h2>Preguntas que recibimos</h2>
+            <section id="faq-estrategia">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-list" id="faqList">
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Cuánto tiempo tarda en funcionar la arquitectura semántica?</div>
-                    <div class="faq-answer">La arquitectura semántica no es una campaña: es infraestructura. El Knowledge Graph de Google actualiza la información de entidades verificadas en ciclos de entre 2 y 8 semanas según la densidad de señales. Un estudio de Princeton (KDD 2024) sobre GEO mostró que los resultados en motores de IA generativa son sensibles a cambios estructurales dentro de las primeras semanas de indexación. <strong>La pregunta correcta no es cuánto tarda. Es cuánto tiempo llevas sin tener la estructura.</strong></div>
-                </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Cuánto tiempo tarda en funcionar?</button>
+                        <div class="faq-answer">
+                            <p>El tiempo depende de la distancia entre lo que el sistema puede verificar y lo que la entidad realmente es. Cuando esa brecha es pequeña, el movimiento es rápido. Cuando es grande, el trabajo es más profundo antes de que algo sea visible. El diagnóstico lo determina.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Funciona para negocios pequeños o solo para marcas grandes?</div>
-                    <div class="faq-answer">La arquitectura semántica funciona mejor en nichos precisos — que son exactamente donde operan los negocios que no pueden competir en volumen. Una entidad con DOI verificable, Wikidata, Schema @graph y sameAs coherentes supera a cualquier marca grande en su nicho específico porque el Knowledge Graph no mide presupuesto: mide coherencia estructural. <strong>Los nichos de ultra-especialización tienen ventaja intrínseca en este sistema.</strong></div>
-                </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Funciona para negocios pequeños o solo para marcas grandes?</button>
+                        <div class="faq-answer">
+                            <p>Funciona mejor en nichos precisos con algo real que documentar. Las marcas grandes tienen presupuesto. Las entidades bien estructuradas tienen gravedad semántica. No son lo mismo — y el sistema lo sabe.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Por qué HTML vanilla y no WordPress o Webflow?</div>
-                    <div class="faq-answer">Los CMS generan markup que no se puede controlar completamente — y el Schema.org @graph que posiciona en el Knowledge Graph requiere control total sobre el JSON-LD. Además, la velocidad de carga es una señal de autoridad técnica: un sitio en HTML vanilla con <a href="/herramientas.html">herramientas propias</a> carga en menos de 1 segundo, sin JavaScript innecesario. <strong>No usamos WordPress porque WordPress no puede reproducir esto.</strong></div>
-                </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Por qué HTML vanilla y no WordPress o Webflow?</button>
+                        <div class="faq-answer">
+                            <p>Porque el control total sobre el marcado no es negociable en nuestro proceso. Los CMS generan dependencias que no podemos gestionar. La precisión de la arquitectura requiere un entorno sin intermediarios. No usamos WordPress porque no podríamos hacer lo que hacemos con WordPress.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Trabajan con cualquier tipo de negocio o hay criterios de selección?</div>
-                    <div class="faq-answer">Hay criterios de selección. Trabajamos con entidades que tienen algo verificable que documentar — un método propio, publicaciones, especialización técnica demostrable, o trayectoria que puede estructurarse en Schema. No trabajamos con negocios que solo necesitan tráfico genérico o posicionamiento de keywords sin sustrato de autoridad. <strong>El diagnóstico inicial determina si el caso es operable.</strong></div>
-                </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Trabajan con cualquier tipo de negocio?</button>
+                        <div class="faq-answer">
+                            <p>Hay criterios. Trabajamos con entidades que tienen algo real que documentar. El diagnóstico inicial determina si el caso es operable — y esa es la pregunta que importa, no cuánto presupuesto hay.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Qué incluye el diagnóstico de identidad digital?</div>
-                    <div class="faq-answer">El diagnóstico audita: presencia actual en el Knowledge Graph de Google, coherencia del Schema.org @graph existente, estado de entidades verificables (Wikidata, ORCID, LinkedIn, sameAs), gaps entre lo que el sistema puede verificar y lo que la entidad realmente es, y una estimación de la brecha de autoridad semántica vs. la competencia directa. <strong>Es un análisis estructural, no un informe de palabras clave.</strong></div>
-                </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Qué incluye el diagnóstico de identidad digital?</button>
+                        <div class="faq-answer">
+                            <p>Es confidencial. Lo que podemos decir: al final del diagnóstico, sabemos exactamente por qué tu entidad no aparece donde debería, y si es un problema que podemos resolver. El diagnóstico tiene un costo. No es una consulta gratuita disfrazada de reunión.</p>
+                        </div>
+                    </div>
 
-                <div class="faq-item">
-                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Pueden garantizar resultados específicos en Google?</div>
-                    <div class="faq-answer">No garantizamos posiciones — nadie con credibilidad lo hace. Lo que sí garantizamos es que la estructura construida es la que Google y los motores de IA generativa reconocen como autoridad verificable. Lo que hacemos es lo que los estudios académicos sobre GEO (Princeton, 2024) y sobre Knowledge Graph Embedding identifican como los factores que determinan quién aparece en las respuestas de la IA. <strong>La diferencia entre una garantía de posición y una garantía de estructura es la diferencia entre marketing y ingeniería.</strong></div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Pueden garantizar resultados en Google?</button>
+                        <div class="faq-answer">
+                            <p>No garantizamos posiciones. Garantizamos que la estructura construida es la que los sistemas de búsqueda e inteligencia artificial reconocen como autoridad verificable. Si la entidad tiene gravedad semántica real, aparece. Si no tiene estructura, ningún presupuesto compra eso.</p>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
             <section id="diagnostico">
                 <h2>Diagnóstico</h2>
                 <p class="diagnostico-intro">
-                    La primera reunión es sin costo.<br>
+                    La primera reunión es gratuita.<br>
                     <strong>El diagnóstico formal tiene precio.</strong>
                 </p>
                 <p class="diagnostico-intro">
-                    Si llegaste aquí ya sabes lo que necesitas.<br>
-                    Solo necesitas saber si tu caso es operable.
+                    Si llegaste hasta aquí ya sabes lo que necesitas.<br>
+                    Solo falta saber si tu caso es operable.
                 </p>
                 <div class="diagnostico-actions">
-                    <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20me%20interesa%20un%20diagn%C3%B3stico" class="diagnostico-action" target="_blank" rel="noopener">WhatsApp → +51 977 647 243</a>
+                    <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagnóstico" class="diagnostico-action" target="_blank" rel="noopener">WhatsApp → +51 977 647 243</a>
                     <a href="mailto:carlos.ravello@zoovettravel.com" class="diagnostico-action">carlos.ravello@zoovettravel.com</a>
                 </div>
-                <p class="diagnostico-action-sub">Tiempo de respuesta habitual: menos de 24 h.</p>
+                <p class="diagnostico-action-sub">Tiempo de respuesta: menos de 24 h.</p>
             </section>
 
         </main>
 
         <footer>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Perú</span>
-            <span class="footer-surgery">BRAND_RECONSTRUCTIVE_SURGERY</span>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
+            </div>
+            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagnóstico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
         </footer>
 
     </div>
 
     <script>
-    // Hamburger nav
     (function() {
-        var btn = document.getElementById('navToggle');
+        // Hamburger nav
+        var toggle = document.getElementById('navToggle');
         var overlay = document.getElementById('navOverlay');
-        if (!btn || !overlay) return;
-        function openMenu() { overlay.classList.add('is-open'); btn.setAttribute('aria-expanded','true'); btn.setAttribute('aria-label','Cerrar menú'); document.body.style.overflow='hidden'; }
-        function closeMenu() { overlay.classList.remove('is-open'); btn.setAttribute('aria-expanded','false'); btn.setAttribute('aria-label','Abrir menú'); document.body.style.overflow=''; btn.focus(); }
-        btn.addEventListener('click', function(){ overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
-        document.addEventListener('keydown', function(e){ if(e.key==='Escape' && overlay.classList.contains('is-open')) closeMenu(); });
-    })();
-    // FAQ accordion
-    (function() {
-        var items = document.querySelectorAll('.faq-item');
-        items.forEach(function(item) {
-            var q = item.querySelector('.faq-question');
-            if (!q) return;
-            function toggle() {
-                var isOpen = item.classList.contains('is-open');
-                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
-                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+        if (toggle && overlay) {
+            toggle.addEventListener('click', function() {
+                var isOpen = overlay.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', isOpen);
+                toggle.classList.toggle('is-open', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) {
+                    overlay.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+                    overlay.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+
+        // FAQ accordion
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            var btn = item.querySelector('.faq-question');
+            if (btn) {
+                btn.addEventListener('click', function() {
+                    var isOpen = item.classList.toggle('is-open');
+                    btn.setAttribute('aria-expanded', isOpen);
+                });
             }
-            q.addEventListener('click', toggle);
-            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
         });
     })();
     </script>

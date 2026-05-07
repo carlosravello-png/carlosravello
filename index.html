@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Eduardo Ravello Joo — Fundador e Investigador Independiente · Trujillo, Perú</title>
-    <meta name="description" content="Carlos Eduardo Ravello Joo. Fundador de BikeLab Studio y Zoovet Travel. Investigador independiente con publicaciones DOI en tribología, termodinámica y análisis de carbono. Trujillo, Perú.">
+    <title>Carlos Eduardo Ravello Joo — Arquitectura Semántica · Identidad Digital Verificable · Agencia Global</title>
+    <meta name="description" content="Arquitectura de identidad digital verificable. Diseñamos entidades con nodos semánticos entrelazados que Google, los LLM y el Knowledge Graph leen como autoridad estructural. Coherencia dinámica, gravedad semántica, presencia impenetrable al algoritmo.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -44,7 +44,6 @@
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
             "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch",
-            "https://www.instagram.com/bikelab.studio.peru/",
             "https://www.threads.net/@bikelab.studio",
             "https://www.bikelabstudio.com/#carlos-ravello",
             "https://zoovettravel.com/#carlos-ravello"
@@ -58,7 +57,6 @@
               "sameAs": [
                 "https://www.linkedin.com/company/bikelabstudio",
                 "https://www.crunchbase.com/organization/bikelabstudio",
-                "https://www.instagram.com/bikelab.studio.peru/",
                 "https://www.threads.net/@bikelab.studio",
                 "https://www.youtube.com/@bikelabstudio",
                 "https://www.behance.net/bikelabstudio"
@@ -137,7 +135,6 @@
                 "https://www.linkedin.com/company/zoovet-travel",
                 "https://www.crunchbase.com/organization/zoovet-travel",
                 "https://www.facebook.com/Zoovet.Trujillo",
-                "https://www.instagram.com/zoovet.trujillo/",
                 "https://www.tiktok.com/@zoovet.trujillo"
               ],
               "address": {
@@ -991,9 +988,15 @@
             border-top: 1px solid var(--border);
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 16px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
         .footer-copy {
@@ -1003,12 +1006,29 @@
             letter-spacing: 0.08em;
         }
 
-        .footer-mcd {
-            font-family: var(--mono);
-            font-size: 0.70rem;
-            color: var(--border);
-            letter-spacing: 0.08em;
+        .footer-tagline {
+            font-family: var(--serif);
+            font-size: 0.82rem;
+            font-style: italic;
+            color: #2e2e2e;
+            letter-spacing: 0.02em;
         }
+
+        .footer-cta {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            color: var(--accent);
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            text-decoration: none;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+            white-space: nowrap;
+            align-self: flex-end;
+        }
+
+        .footer-cta:hover { color: var(--white); border-bottom-color: var(--accent); }
 
 
         /* ESCRITURA */
@@ -1319,7 +1339,7 @@
 
         <header>
             <h1>Carlos Eduardo<br>Ravello Joo</h1>
-            <span class="title-label">Agencia de Arquitectura Semántica · Identidad Digital · Trujillo, Perú</span>
+            <span class="title-label">Arquitectura Semántica · Identidad Digital · Agencia Global</span>
 
             <p class="positioning-line">Diseño la infraestructura semántica que determina lo que Google, los LLM y las personas correctas deciden que eres.</p>
             <div class="authority-links">
@@ -1327,18 +1347,20 @@
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch" target="_blank" rel="me noopener">Zenodo</a>
                 <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="me noopener">LinkedIn</a>
                 <a href="https://github.com/carlosravello-png" target="_blank" rel="me noopener">GitHub</a>
-                <a href="https://www.instagram.com/bikelab.studio.peru/" target="_blank" rel="me noopener">Instagram</a>
             </div>
         </header>
 
         <main>
 
-            <section id="sobre-mi">
-                <h2>Sobre mí</h2>
+            <section id="el-trabajo">
+                <h2>El trabajo</h2>
                 <div class="bio">
-                    <p>Fundo y opero sistemas con metodología de ingeniería aplicada. Cada entidad que construyo — un laboratorio ciclista, una clínica veterinaria especializada, una barra de street food, una plataforma académica — parte del mismo criterio: exactitud documentada o no existe.</p>
-                    <p>Diseño, construyo y dirijo mis propios ecosistemas. La investigación publicada bajo DOI verificable — <a href="https://www.bikelabstudio.com/articles/grasas-tribologia-es.html" target="_blank" rel="noopener">tribología</a>, <a href="https://zenodo.org/records/19229092" target="_blank" rel="noopener">termodinámica</a>, <a href="https://zenodo.org/records/19229331" target="_blank" rel="noopener">eficiencia de transmisión</a>, <a href="https://zenodo.org/records/19229364" target="_blank" rel="noopener">huella de carbono</a> — es el sustrato científico de lo que ejecuto en cada uno de ellos.</p>
-                    <p>El <em>Modelo de Coherencia Dinámica</em> es el sistema que hace que todo esto sea consistente: identidad técnica precisa, criterio documentado y tolerancia cero al trabajo improvisado. Es el modo en que funciona mi ecosistema — y el marco desde el que diseño el de otros cuando el caso lo merece.</p>
+                    <p>No somos una agencia de marketing digital. No gestionamos redes, no producimos contenido en volumen, no optimizamos lo que ya existe. <strong>Diseñamos entidades digitales verificables</strong> — con nodos semánticos entrelazados que Google, las IAs generativas y el Knowledge Graph leen como autoridad estructural, no como ruido.</p>
+                    <p>Trabajamos de forma manual. Cada entidad tiene una identidad propia, una visión que le pertenece — y no puede sostener el peso de ser quien no es por mucho tiempo. No evaluamos solo el posicionamiento: evaluamos la <em>coherencia dinámica</em> entre lo que dices, lo que haces y cómo te ves. Son tres ejes que casi nadie mide juntos — y cuya desalineación destruye la autoridad antes de que el algoritmo tenga oportunidad de establecerla.</p>
+                    <p>Nuestro trabajo es integral. No conocemos solo al dueño ni al responsable de SEO. Conocemos la cultura de la empresa, su clima, cada persona que la compone — porque la imagen global solo es global cuando todo lo que la rodea transmite el mismo mensaje al mundo.</p>
+                    <p>Diseñamos identidad visual calibrada para <strong>Optical Character Recognition</strong>. Cada imagen, cada fotografía, cada pieza visual le habla a los algoritmos en el idioma de tu entidad — y Google, cuando activa el OCR, lee lo que diseñamos para que diga.</p>
+                    <p>La estrategia es construir una entidad verificable con <strong>nodos semánticos entrelazados</strong> que Google pese, posicione y defienda en los primeros resultados. Una presencia impenetrable al cambio del algoritmo — donde TikTok, Facebook e Instagram no puedan erosionar lo que el grafo ya decidió que eres.</p>
+                    <p>No hay dos estrategias iguales. Una clínica no sigue las mismas reglas que un despacho de abogados. Una inmobiliaria no usa el mismo Schema que un estudio de ingeniería. Cada arquitectura es artesanal — diseñada para esa entidad específica, tejiendo la red de comunicación entre ella y el internet a medida.</p>
                 </div>
             </section>
 
@@ -1372,15 +1394,15 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Por qué mi negocio no aparece en las respuestas de ChatGPT o Google IA?</div>
-                    <div class="faq-answer">Los motores de IA generativa no leen tu web — leen el grafo que construyeron sobre ella. Si tu entidad no tiene Schema.org, ORCID, Wikidata o sameAs verificables, no existes en su modelo. No es problema de contenido: es problema de estructura. <a href="/estrategia.html">Ver cómo se resuelve →</a></div>
+                    <div class="faq-answer">La IA no juzga: pesa datos. Desde 2025, los modelos de lenguaje priorizan entidades con las que han interactuado activamente. Si tu entidad no se comunica con la IA, los modelos no te conocen — y lo que no conocen no lo citan. <a href="/estrategia.html">Ver la estrategia →</a></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿En qué se diferencia esto del SEO tradicional?</div>
-                    <div class="faq-answer">El SEO tradicional optimiza para keywords. La arquitectura semántica construye entidades verificables: personas, organizaciones, publicaciones con DOI, relaciones entre entidades. El resultado no son posiciones — es que el sistema decide que eres la respuesta. <a href="/sobre-mi.html">Ver el método aplicado →</a></div>
+                    <div class="faq-answer">El SEO tradicional persigue posiciones. Nosotros construimos gravedad semántica — la diferencia entre ser encontrado y ser inevitable. El sistema no te posiciona porque te optimizaste: te posiciona porque decidió que eres la respuesta. <a href="/sobre-mi.html">Ver el método →</a></div>
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Cómo empiezo a trabajar con Carlos Ravello?</div>
-                    <div class="faq-answer">El primer paso es un diagnóstico de identidad digital: se audita tu presencia actual en el Knowledge Graph, Schema.org, Wikidata y sameAs. A partir de ahí se diseña la estrategia. <a href="/servicios.html">Ver servicios →</a></div>
+                    <div class="faq-answer">Aplicamos nuestra metodología y software propietario para medir la coherencia de tu entidad digital: entre lo que dices, lo que haces y cómo te ves. Lo que encontramos determina la arquitectura que ejecutamos. No hay dos iguales. <a href="/servicios.html">Ver cómo trabajamos →</a></div>
                 </div>
             </section>
 
@@ -1390,7 +1412,7 @@
                 <div class="company">
                     <div class="company-header">
                         <h3><a href="https://www.bikelabstudio.com" target="_blank" rel="noopener">BikeLab Studio</a></h3>
-                        <span class="company-year">Est. Mayo 2025 · Trujillo, La Libertad</span>
+                        <span class="company-year">Est. Mayo 2025</span>
                     </div>
                     <p>Laboratorio de ingeniería ciclista. Mecánica orientada a evidencia: <a href="https://zenodo.org/records/19229092" target="_blank" rel="noopener">análisis termodinámico</a>, <a href="https://www.bikelabstudio.com/articles/grasas-tribologia-es.html" target="_blank" rel="noopener">tribología aplicada</a>, <a href="https://www.bikelabstudio.com/articles/sag-calculator-es.html" target="_blank" rel="noopener">suspensiones MTB</a> e <a href="https://zenodo.org/records/19229331" target="_blank" rel="noopener">ingeniería de transmisión</a>. No somos populares. Somos precisos. Publicaciones DOI-verificables indexadas en Zenodo y OpenAIRE. Herramientas de simulación computacional de acceso libre — la <a href="https://www.bikelabstudio.com/articles/sag-calculator-es.html" target="_blank" rel="noopener">SAG Calculator</a> corre 10.000 iteraciones Monte Carlo en Python por calibración.</p>
                     <div class="tags">
@@ -1405,7 +1427,7 @@
                 <div class="company">
                     <div class="company-header">
                         <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
-                        <span class="company-year">Est. Mayo 2013 · Trujillo, La Libertad</span>
+                        <span class="company-year">Est. Mayo 2013</span>
                     </div>
                     <p>Clínica veterinaria especializada en exportación e importación internacional de mascotas. Más de 12 años ejecutando protocolos SENASA y certificaciones zoosanitarias para familias que viajan o se mudan globalmente. Entidad verificada en Wikidata. Servicio en español, inglés y francés.</p>
                     <div class="tags">
@@ -1476,32 +1498,10 @@
                 <div class="pub">
                     <div class="pub-type">Serie Editorial · BikeLab Studio — 10 episodios</div>
                     <h3><a href="https://www.bikelabstudio.com/articles/scientific-noir-en.html" target="_blank" rel="noopener">Scientific Noir: Física Aplicada a la Bicicleta</a></h3>
-                    <div class="pub-meta">Entropía · fatiga · corrosión · fricción · coherencia de sistemas · Trujillo 2026</div>
+                    <div class="pub-meta">Entropía · fatiga · corrosión · fricción · coherencia de sistemas · 2026</div>
                 </div>
             </section>
 
-            <section id="arquitectura">
-                <h2>Arquitectura Web · Estrategia de Identidad Digital</h2>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3><a href="https://www.bikelabstudio.com" target="_blank" rel="noopener">BikeLab Studio</a></h3>
-                        <span class="arch-url">bikelabstudio.com</span>
-                    </div>
-                    <p>Diseño completo, arquitectura semántica y estrategia de identidad digital. Schema @graph multilingüe (ES/EN), white papers técnicos tipificados como TechArticle y ScholarlyArticle, tres herramientas digitales — <a href="https://www.bikelabstudio.com/articles/sag-calculator-es.html" target="_blank" rel="noopener">SAG Calculator</a>, <a href="https://www.bikelabstudio.com/articles/fit-analyzer-es.html" target="_blank" rel="noopener">FIT Analyzer</a>, <a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic-es.html" target="_blank" rel="noopener">Di2 &amp; AXS Diagnostic</a> — serie <a href="https://www.bikelabstudio.com/articles/scientific-noir-en.html" target="_blank" rel="noopener">Scientific Noir</a> como CreativeWorkSeries. Entidad en LinkedIn y Crunchbase.</p>
-                    <div class="tags">
-                        <span class="tag">Diseño</span>
-                        <span class="tag">Schema @graph</span>
-                        <span class="tag">Bilingüe ES/EN</span>
-                        <span class="tag">Herramientas Propietarias</span>
-                    </div>
-                </div>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
-                        <span class="arch-url">zoovettravel.com</span>
-                    </div>
                     <p>Diseño completo y estrategia SEO en tres idiomas (ES/EN/FR). Schema institucional veterinario, integración de perfiles de autoridad médica con ORCID, publicaciones Zenodo sobre fisiología de transporte animal. Entidad verificada en Wikidata Q138788858.</p>
                     <div class="tags">
                         <span class="tag">Diseño</span>
@@ -1516,12 +1516,11 @@
                         <h3><a href="https://alexeisravello.com" target="_blank" rel="noopener">Alexeis Alberto Ravello Joo</a></h3>
                         <span class="arch-url">alexeisravello.com</span>
                     </div>
-                    <p>Plataforma académica para el Dr. Alexeis Alberto Ravello Joo — investigador RENACYT Nivel VII, PhD PUCP con equivalencia Universitat de Barcelona. Schema @graph con Person, ScholarlyArticle con DOIs reales, Thesis y credenciales académicas verificables.</p>
+                    <p>Plataforma académica para el Dr. Alexeis Alberto Ravello Joo — investigador RENACYT Nivel VII. Schema @graph con Person, ScholarlyArticle con DOIs reales y credenciales académicas verificables.</p>
                     <div class="tags">
                         <span class="tag">Diseño</span>
                         <span class="tag">Schema Académico</span>
                         <span class="tag">RENACYT · ORCID</span>
-                        <span class="tag">DOIs Verificables</span>
                     </div>
                 </div>
 
@@ -1530,7 +1529,7 @@
                         <h3><a href="https://www.katsudomo.com" target="_blank" rel="noopener">Katsudōmo</a></h3>
                         <span class="arch-url">katsudomo.com</span>
                     </div>
-                    <p>Identidad visual completa y arquitectura web para dark kitchen de street food japonesa en Lima. PWA setup, hreflang ES/JA, Schema LocalBusiness, optimización de Open Graph y Twitter Card.</p>
+                    <p>Identidad visual completa y arquitectura web para dark kitchen de street food japonesa en Lima. PWA, hreflang ES/JA, Schema LocalBusiness.</p>
                     <div class="tags">
                         <span class="tag">Diseño</span>
                         <span class="tag">Identidad Visual</span>
@@ -1539,49 +1538,12 @@
                 </div>
             </section>
 
-            <section id="colaboraciones">
-                <h2>Validación Técnica de Producto</h2>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3>Stan's NoTubes</h3>
-                        <span class="arch-url">notubes.com</span>
-                    </div>
-                    <p>Validación técnica de sellante tubeless en condiciones de campo. Integración en el protocolo de mantenimiento preventivo de BikeLab Studio.</p>
-                </div>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3>Jagwire</h3>
-                        <span class="arch-url">jagwire.com</span>
-                    </div>
-                    <p>Evaluación de componentes de freno en campo — pastillas y sistemas hidráulicos bajo protocolo de análisis tribológico. "Interface confirmed. Field data supports the standard."</p>
-                </div>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3>Magura</h3>
-                        <span class="arch-url">magura.com</span>
-                    </div>
-                    <p>Intervención técnica de precisión en horquillas y amortiguadores Magura. Rescate técnico y recuperación de tolerancias de fábrica bajo ingeniería aplicada.</p>
-                </div>
-
-                <div class="arch-item">
-                    <div class="arch-header">
-                        <h3>Park Tool · Liqui-Moly · Shimano</h3>
-                        <span class="arch-url">parktool.com · liqui-moly.com · shimano.com</span>
-                    </div>
-                    <p>Equipamiento y consumibles integrados en el flujo de trabajo técnico de BikeLab Studio. Documentación de resultados y validación de rendimiento en condiciones reales.</p>
-                </div>
-            </section>
-
-
             <section id="contacto">
                 <h2>Contacto</h2>
                 <div class="contact-block">
-                    <p>Trabajo con entidades que saben lo que necesitan: identidad digital con criterio técnico, arquitectura web semántica y estrategia de posicionamiento construida desde adentro, no desde una plantilla. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
+                    <p>Trabajamos con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
                     <div class="contact-links">
-                        <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20me%20interesa%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
+                        <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20quiero%20iniciar%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
                         <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
                         <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/carlos-ravello-joo</a>
                     </div>
@@ -1591,8 +1553,11 @@
         </main>
 
         <footer>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo · Trujillo, Perú</span>
-            <span class="footer-mcd">MCD · Modelo de Coherencia Dinámica</span>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
+            </div>
+            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
         </footer>
 
     </div>
@@ -1606,7 +1571,7 @@
             if (!q) return;
             function toggle() {
                 var isOpen = item.classList.contains('is-open');
-                items.forEach(function(i){ i.classList.remove('is-open'); i.querySelector('.faq-question').setAttribute('aria-expanded','false'); });
+                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
                 if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
             }
             q.addEventListener('click', toggle);
@@ -1619,7 +1584,6 @@
         var overlay = document.getElementById('navOverlay');
         if (!toggle || !overlay) return;
         var links = overlay.querySelectorAll('.nav-overlay-link');
-
         function openMenu() {
             overlay.classList.add('is-open');
             toggle.setAttribute('aria-expanded', 'true');
@@ -1634,21 +1598,16 @@
             document.body.style.overflow = '';
             toggle.focus();
         }
-
         toggle.addEventListener('click', function () {
             overlay.classList.contains('is-open') ? closeMenu() : openMenu();
         });
-        overlay.addEventListener('click', function (e) {
-            if (e.target === overlay) closeMenu();
-        });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
         });
         links.forEach(function (l) {
             l.addEventListener('click', function () {
-                if (l.getAttribute('href').charAt(0) === '#') {
-                    closeMenu();
-                }
+                if (l.getAttribute('href').charAt(0) === '#') closeMenu();
             });
         });
     })();
