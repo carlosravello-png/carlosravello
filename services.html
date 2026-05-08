@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work — Carlos Eduardo Ravello Joo · Semantic Web Architecture, Digital Identity, Positioning Strategy</title>
-    <meta name="description" content="Carlos Eduardo Ravello Joo. Digital craftsman. Pure HTML web architecture, semantic digital identity, visual production with Blackmagic ecosystem, entity positioning in the Knowledge Graph. Research, gastronomy, cycling engineering, specialized veterinary.">
+    <meta name="description" content="Semantic architecture services, verifiable digital identity and structured content strategy for brands and professionals in Latin America.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -378,6 +378,16 @@
             .wrapper { padding: 8vh 20px 8vh; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://carlosravello.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://carlosravello.com/services.html"}
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -390,6 +400,13 @@
             </div>
         </nav>
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol style="list-style:none;padding:0;margin:0 0 32px;display:flex;gap:6px;font-family:var(--mono);font-size:0.62rem;color:var(--muted);letter-spacing:0.08em;">
+                <li><a href="/" style="color:var(--muted);text-decoration:none;">Inicio</a></li>
+                <li style="opacity:0.4;">›</li>
+                <li style="color:var(--accent);">Services</li>
+            </ol>
+        </nav>
         <header>
             <h1>Work</h1>
             <span class="title-label">Carlos Eduardo Ravello Joo · Digital Craftsman · Global Agency</span>

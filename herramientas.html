@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Herramientas Digitales — Carlos Eduardo Ravello Joo · BikeLab Studio & Zoovet Travel</title>
-    <meta name="description" content="Herramientas digitales creadas por Carlos Eduardo Ravello Joo. SAG Calculator, FIT Analyzer, Di2 & AXS Diagnostic (BikeLab Studio) y Planificador de Viaje para Mascotas, directorio de kennels (Zoovet Travel). Metodología Monte Carlo. Perú.">
+    <meta name="description" content="Herramientas digitales con metodología declarada: Monte Carlo, Bootstrap, análisis de sensibilidad. Para investigadores, consultores y sectores productivos.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -538,6 +538,16 @@
             .tool-header { flex-direction: column; gap: 4px; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://carlosravello.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Herramientas Digitales", "item": "https://carlosravello.com/herramientas.html"}
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -555,6 +565,13 @@
             </div>
         </nav>
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol style="list-style:none;padding:0;margin:0 0 32px;display:flex;gap:6px;font-family:var(--mono);font-size:0.62rem;color:var(--muted);letter-spacing:0.08em;">
+                <li><a href="/" style="color:var(--muted);text-decoration:none;">Inicio</a></li>
+                <li style="opacity:0.4;">›</li>
+                <li style="color:var(--accent);">Herramientas</li>
+            </ol>
+        </nav>
         <header>
             <h1>Herramientas<br>Digitales</h1>
             <span class="title-label">Carlos Eduardo Ravello Joo · BikeLab Studio · Zoovet Travel</span>
@@ -566,6 +583,8 @@
             <section id="por-que">
                 <h2>Por qué existen</h2>
                 <div class="bio">
+                    <p>El patrón siempre es el mismo: hay un problema técnico con consecuencias reales, existe la metodología para modelarlo con rigor, y nadie ha construido todavía la herramienta. Esa combinación es suficiente razón.</p>
+                    <p>El primero que encontré fue en ciclismo.</p>
                     <p>Durante años llevé mis bicicletas a talleres en talleres locales y el patrón era siempre el mismo: trabajo chicha, piezas cambiadas sin diagnóstico, criterio sustituido por confianza ciega en la experiencia anecdótica. No era negligencia — era ausencia total de método. <em>Nadie había decidido que esto merecía ser preciso.</em></p>
                     <p>La falta de rigor no es un accidente local. Es estructural. En Perú el ciclismo de montaña se organiza alrededor de competencias donde siempre ganan los mismos, comunidades donde todos se conocen y nadie cuestiona nada, y talleres donde el diagnóstico es visual y el criterio es la reputación. Nadie construye herramientas. Nadie publica metodología. Nadie verifica nada porque nadie ha decidido que verificar sea necesario.</p>
                     <p>El mismo problema existe en la exportación internacional de mascotas, en la nutrición deportiva, en el análisis de entrenamiento. <strong>Hay un déficit crónico de seriedad técnica</strong> en disciplinas donde la imprecisión tiene consecuencias reales: una suspensión mal calibrada destruye un descenso, un protocolo veterinario mal ejecutado destruye un viaje.</p>
@@ -576,8 +595,8 @@
             <section id="industrial-noir">
                 <h2>Industrial Noir</h2>
                 <div class="bio">
-                    <p>Industrial Noir no es una estética. No es un filtro. No es la paleta de colores que elegimos porque se ve bien en pantalla. <strong>Es una postura técnica.</strong> La decisión de no suavizar lo que la ingeniería no suaviza.</p>
-                    <p>A muchos les aterran las sombras. A nosotros no. Las sombras son donde vive la mecánica real: en el interior de un cubo, en la interfaz entre pastilla y disco, en la cadena que nadie limpia hasta que ya es tarde. La grasa negra en los guantes no es imagen de marca — es el registro de que algo fue hecho correctamente.</p>
+                    <p>Industrial Noir no es una estética. No es un filtro. No es la paleta de colores que elijo porque se ve bien en pantalla. <strong>Es una postura técnica.</strong> La decisión de no suavizar lo que la ingeniería no suaviza.</p>
+                    <p>A muchos les aterran las sombras. A mí no. Las sombras son donde vive la mecánica real: en el interior de un cubo, en la interfaz entre pastilla y disco, en la cadena que nadie limpia hasta que ya es tarde. La grasa negra en los guantes no es imagen de marca — es el registro de que algo fue hecho correctamente.</p>
                     <p>El taller de BikeLab Studio es un cuarto dentro de una veterinaria . No hay música ambient ni café de especialidad. Hay una mesa de trabajo con tapete verde, herramientas de clase mundial, grasa, torque y criterio técnico. Ese es el currículum.</p>
                     <p>Las herramientas digitales de esta página son <em>el mismo criterio técnico del taller, traducido a una interfaz.</em> La brecha entre el ciclista y la ingeniería de su bicicleta es innecesariamente grande. Las calculadoras, los diagnósticos, los modelos físicos — existen para cerrar esa brecha. Disponibles para cualquier ciclista en el mundo.</p>
                     <blockquote>No buscamos consenso.<br>El consenso es el promedio.<br>Y el promedio no afina un rodamiento.</blockquote>

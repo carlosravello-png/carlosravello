@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instrumentos estadísticos para investigadores — metodología declarada · Carlos Eduardo Ravello Joo</title>
+    <meta name="description" content="Instrumentos estadísticos para investigadores en LatAm: Bootstrap, Monte Carlo, Bonferroni, Latin Hypercube. Tú traes los datos. Yo construyo la herramienta.">
+    <meta name="author" content="Carlos Eduardo Ravello Joo">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords" content="herramientas estadísticas para investigadores, Monte Carlo online gratis, bootstrap no paramétrico web, alternativa SPSS español, calculadora estadística tesis Perú, simulador científico latinoamérica, instrumento metodológico investigación, herramienta análisis sensibilidad investigadores">
+
+    <link rel="canonical" href="https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html" />
+    <link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html" />
+    <link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Carlos Ravello", "item": "https://carlosravello.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Instrumentos para Investigadores", "item": "https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html" }
+          ]
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html",
+          "name": "Instrumentos estadísticos para investigadores — metodología declarada · Carlos Eduardo Ravello Joo",
+          "url": "https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html",
+          "inLanguage": "es",
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "isPartOf": { "@type": "WebSite", "url": "https://carlosravello.com" },
+          "description": "Fabricación de herramientas web con metodología estadística declarada para investigadores en Latinoamérica. Monte Carlo, bootstrap no paramétrico, análisis de sensibilidad, Latin Hypercube Sampling. El investigador trae los datos. Carlos Eduardo Ravello Joo construye el instrumento.",
+          "keywords": "herramientas estadísticas investigadores, Monte Carlo online, bootstrap no paramétrico, análisis de sensibilidad, alternativa SPSS, instrumentos metodológicos, investigación latinoamérica"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://carlosravello.com/#person",
+          "name": "Carlos Eduardo Ravello Joo",
+          "url": "https://carlosravello.com",
+          "sameAs": [
+            "https://orcid.org/0009-0007-5631-7436",
+            "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
+            "https://github.com/carlosravello-png",
+            "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch"
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html#servicio",
+          "name": "Fabricación de Instrumentos Estadísticos para Investigadores",
+          "provider": { "@id": "https://carlosravello.com/#person" },
+          "description": "Construcción de herramientas web con metodología estadística declarada para investigadores en Latinoamérica. Monte Carlo computacional, bootstrap no paramétrico, análisis de sensibilidad, corrección de Bonferroni, Latin Hypercube Sampling. El investigador aporta el corpus y la pregunta de investigación. El instrumento resultante es publicable, citable y defensible en comité.",
+          "serviceType": "Desarrollo de Instrumentos Estadísticos de Investigación",
+          "areaServed": ["Perú", "Colombia", "Chile", "México", "Argentina", "Latinoamérica"],
+          "inLanguage": "es",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Instrumentos disponibles",
+            "itemListElement": [
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Simulador Monte Carlo para investigación" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Calculadora bootstrap no paramétrico" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Análisis de sensibilidad de variables" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Matriz de convergencia con codificación binaria" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Árbol de diagnóstico metodológico" } },
+              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Planificador estadístico con reglas de investigación" } }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://carlosravello.com/herramientas-para-herramientas-para-herramientas-para-investigadores.html#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Necesito saber programar para usar los instrumentos?",
+              "acceptedAnswer": { "@type": "Answer", "text": "No. El instrumento vive en la web, funciona en el navegador y produce resultados sin que necesites instalar nada ni escribir código. Tú defines el problema. El instrumento hace el cálculo." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Puedo citar la herramienta en mi paper o tesis?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Sí. Cada instrumento tiene autoría declarada, metodología trazable y URL permanente. Es citable como software de investigación. La metodología estadística aplicada está documentada en el instrumento mismo." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo tarda en construirse el instrumento?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Depende de la complejidad del corpus y la metodología requerida. El diagnóstico inicial — gratuito — determina el alcance y el tiempo real. No hay estimaciones optimistas: el diagnóstico lo mide." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Necesitas acceso a mis datos de investigación?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Solo los necesarios para calibrar el modelo. Todo bajo acuerdo de confidencialidad. No es necesario compartir el corpus completo para construir el instrumento — solo los parámetros de calibración." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Es una alternativa gratuita a SPSS o Stata?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Es distinto. SPSS y Stata son plataformas genéricas. Lo que construyo son instrumentos específicos para tu problema de investigación, con metodología declarada y contexto latinoamericano. No reemplazan un software estadístico general — resuelven un problema que ese software no puede resolver bien para tu corpus específico." }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Trabajas con cualquier disciplina o hay restricciones?",
+              "acceptedAnswer": { "@type": "Answer", "text": "El instrumento es metodológico, no disciplinar. Ciencias ambientales, epidemiología, ciencias sociales, econometría, antropología cultural, ingeniería, agronomía. Lo que importa es que el problema tenga estructura estadística que modelar. El diagnóstico determina si es operable." }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --bg:      #060606;
+            --text:    #cecece;
+            --muted:   #6e6e6e;
+            --border:  #1c1c1c;
+            --accent:  #b8976a;
+            --white:   #f0f0f0;
+            --serif:   'Georgia', 'Times New Roman', 'Cambria', serif;
+            --mono:    'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --sans:    -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: inherit; text-decoration: none; }
+
+        .wrapper {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 10vh 32px 10vh;
+        }
+
+        /* Nav */
+        nav[aria-label="Navegación principal"] {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 80px;
+        }
+        .nav-id a { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.1em; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .lang-btn {
+            font-family: var(--mono); font-size: 0.68rem; color: var(--muted);
+            letter-spacing: 0.12em; text-transform: uppercase;
+            border: 1px solid transparent; padding: 3px 8px; border-radius: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .lang-btn.active { color: var(--white); border-color: var(--muted); }
+        .lang-btn:not(.active):hover { color: var(--text); border-color: var(--border); }
+
+        /* Desktop nav links */
+        .desktop-nav { display: flex; gap: 6px; align-items: center; }
+        @media (max-width: 768px) {
+            .nav-toggle  { display: flex; }
+            .desktop-nav { display: none !important; }
+        }
+
+        /* Hamburger */
+        .nav-toggle {
+            display: none; flex-direction: column; justify-content: center;
+            gap: 5px; background: none; border: none; cursor: pointer;
+            padding: 4px; width: 32px; height: 32px;
+        }
+        .nav-toggle-line {
+            width: 22px; height: 1px; background: var(--muted);
+            transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+            transform-origin: center;
+        }
+        .nav-toggle.is-open .nav-toggle-line:nth-child(1) { transform: translateY(6px) rotate(45deg); }
+        .nav-toggle.is-open .nav-toggle-line:nth-child(2) { transform: translateY(-6px) rotate(-45deg); }
+
+        .nav-overlay {
+            position: fixed; inset: 0; background: var(--bg);
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; pointer-events: none;
+            transition: opacity 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 100;
+        }
+        .nav-overlay.is-open { opacity: 1; pointer-events: all; }
+        .nav-overlay-inner { display: flex; flex-direction: column; align-items: center; gap: 32px; }
+        .nav-overlay-link {
+            font-family: var(--serif); font-size: 2rem; color: var(--muted);
+            letter-spacing: -0.02em;
+            transform: translateY(20px); opacity: 0;
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.4s, color 0.2s;
+        }
+        .nav-overlay.is-open .nav-overlay-link { transform: translateY(0); opacity: 1; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) { transition-delay: 0.05s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) { transition-delay: 0.12s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) { transition-delay: 0.19s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) { transition-delay: 0.26s; }
+        .nav-overlay-link:hover, .nav-overlay-link.current { color: var(--white); }
+        .nav-overlay-divider { width: 40px; height: 1px; background: var(--border); }
+        .nav-overlay-lang { display: flex; gap: 12px; }
+        .nav-overlay-lang-btn {
+            font-family: var(--mono); font-size: 0.7rem; color: var(--muted);
+            letter-spacing: 0.15em; text-transform: uppercase;
+            transform: translateY(20px); opacity: 0;
+            transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.30s, opacity 0.4s 0.30s, color 0.2s;
+        }
+        .nav-overlay.is-open .nav-overlay-lang-btn { transform: translateY(0); opacity: 1; }
+        .nav-overlay-lang-btn.active { color: var(--accent); }
+
+        /* Breadcrumb */
+        .breadcrumb {
+            font-family: var(--mono); font-size: 0.68rem; color: var(--muted);
+            letter-spacing: 0.08em; margin-bottom: 60px;
+            display: flex; gap: 8px; align-items: center;
+        }
+        .breadcrumb a:hover { color: var(--text); }
+
+        /* Header */
+        header { margin-bottom: 80px; }
+        h1 {
+            font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: normal; line-height: 1.15; color: var(--white);
+            letter-spacing: -0.02em; margin-bottom: 20px;
+        }
+        .title-label {
+            font-family: var(--mono); font-size: 0.68rem; color: var(--muted);
+            letter-spacing: 0.15em; text-transform: uppercase; display: block;
+            margin-bottom: 16px;
+        }
+        .header-lead {
+            font-family: var(--serif); font-size: 1.05rem; color: var(--muted);
+            font-style: italic; line-height: 1.6; margin-bottom: 24px;
+        }
+        .back-link {
+            font-family: var(--mono); font-size: 0.68rem; color: var(--muted);
+            letter-spacing: 0.1em;
+            transition: color 0.2s;
+        }
+        .back-link:hover { color: var(--accent); }
+
+        /* Main */
+        main { display: flex; flex-direction: column; gap: 72px; }
+
+        h2 {
+            font-family: var(--mono); font-size: 0.68rem; color: var(--accent);
+            letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 28px;
+        }
+
+        .bio p {
+            color: var(--text); margin-bottom: 20px; font-size: 0.975rem;
+            line-height: 1.8;
+        }
+        .bio p:last-child { margin-bottom: 0; }
+        .bio strong { color: var(--white); font-weight: 500; }
+        .bio em { color: var(--muted); font-style: italic; }
+
+        /* Nicho grid */
+        .nicho-grid { display: flex; flex-direction: column; gap: 32px; }
+        .nicho-item {
+            border-left: 1px solid var(--border);
+            padding-left: 24px;
+        }
+        .nicho-label {
+            font-family: var(--mono); font-size: 0.62rem; color: var(--accent);
+            letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 10px;
+        }
+        .nicho-body {
+            font-size: 0.95rem; color: var(--text); line-height: 1.75;
+        }
+        .nicho-golpe {
+            font-family: var(--mono); font-size: 0.78rem; color: var(--white);
+            letter-spacing: 0.05em; margin-top: 10px; display: block;
+        }
+
+        /* Metodología declarada */
+        .metodo-list { display: flex; flex-direction: column; gap: 16px; }
+        .metodo-item { display: flex; gap: 20px; align-items: flex-start; }
+        .metodo-tag {
+            font-family: var(--mono); font-size: 0.6rem; color: var(--accent);
+            letter-spacing: 0.15em; text-transform: uppercase;
+            border: 1px solid var(--border); padding: 3px 8px; border-radius: 2px;
+            white-space: nowrap; margin-top: 3px; min-width: 90px; text-align: center;
+        }
+        .metodo-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+
+        /* FAQ */
+        .faq-item { padding: 24px 0; border-bottom: 1px solid var(--border); }
+        .faq-item:first-child { border-top: 1px solid var(--border); }
+        .faq-question {
+            width: 100%; background: none; border: none; cursor: pointer;
+            display: flex; justify-content: space-between; align-items: flex-start;
+            gap: 16px; text-align: left;
+            font-family: var(--sans); font-size: 0.925rem; color: var(--text);
+            line-height: 1.5; padding: 0;
+        }
+        .faq-question::after { content: '+'; font-family: var(--mono); font-size: 0.9rem; color: var(--accent); min-width: 16px; text-align: right; }
+        .faq-item.is-open .faq-question::after { content: '−'; }
+        .faq-answer {
+            max-height: 0; overflow: hidden;
+            transition: max-height 0.35s ease, padding-top 0.2s;
+            font-size: 0.9rem; color: var(--muted); line-height: 1.75;
+        }
+        .faq-item.is-open .faq-answer { max-height: 300px; padding-top: 14px; }
+
+        /* CTA / Diagnóstico */
+        .diagnostico-intro {
+            font-size: 0.975rem; color: var(--text); line-height: 1.8;
+            margin-bottom: 16px;
+        }
+        .diagnostico-actions { display: flex; flex-direction: column; gap: 12px; margin: 28px 0 16px; }
+        .diagnostico-action {
+            font-family: var(--mono); font-size: 0.72rem; color: var(--accent);
+            letter-spacing: 0.12em; text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+            align-self: flex-start;
+        }
+        .diagnostico-action:hover { color: var(--white); border-bottom-color: var(--accent); }
+        .diagnostico-sub {
+            font-family: var(--mono); font-size: 0.65rem; color: var(--muted);
+            letter-spacing: 0.08em;
+        }
+
+        /* Footer */
+        footer {
+            display: flex; justify-content: space-between; align-items: flex-end;
+            padding: 60px 0 40px; border-top: 1px solid var(--border);
+            flex-wrap: wrap; gap: 16px;
+        }
+        .footer-left { display: flex; flex-direction: column; gap: 6px; }
+        .footer-copy { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.08em; }
+        .footer-tagline { font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: #2e2e2e; }
+        .footer-cta {
+            font-family: var(--mono); font-size: 0.62rem; color: var(--accent);
+            letter-spacing: 0.18em; text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .footer-cta:hover { color: var(--white); border-bottom-color: var(--accent); }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav aria-label="Navegación principal">
+            <span class="nav-id"><a href="/">carlosravello.com</a></span>
+            <div class="lang-switch desktop-nav">
+                <a href="/" class="lang-btn">ES</a>
+                <a href="/en.html" class="lang-btn">EN</a>
+                <a href="/sobre-mi.html" class="lang-btn">Sobre mí</a>
+                <a href="/escritura.html" class="lang-btn">Escritura</a>
+                <a href="/servicios.html" class="lang-btn">Trabajo</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
+                <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
+            </div>
+            <button class="nav-toggle" id="navToggle"
+                    aria-label="Abrir menú" aria-expanded="false"
+                    aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay"
+             role="dialog" aria-modal="true" aria-label="Menú de navegación">
+            <div class="nav-overlay-inner">
+                <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
+                <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
+                <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
+                <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/herramientas-para-herramientas-para-herramientas-para-investigadores.html" class="nav-overlay-lang-btn active">ES</a>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Miga de pan" class="breadcrumb">
+            <a href="/">carlosravello.com</a>
+            <span>›</span>
+            <span>Instrumentos para investigadores</span>
+        </nav>
+
+        <header>
+            <h1>Construyo instrumentos<br>para medir lo que<br>nadie más puede medir aquí.</h1>
+            <span class="title-label">Herramientas estadísticas · Metodología declarada · Carlos Eduardo Ravello Joo</span>
+            <p class="header-lead">Tú traes los datos y la pregunta de investigación. Yo construyo el instrumento estadístico que los ordena, los calibra y produce resultados publicables, citables y defensibles en comité.</p>
+            <a href="/" class="back-link">← carlosravello.com</a>
+        </header>
+
+        <main>
+
+            <section id="el-problema">
+                <h2>El problema real</h2>
+                <div class="bio">
+                    <p>SPSS tiene licencia que la universidad provincial no puede pagar. Stata también. MATLAB tampoco. R requiere una curva de aprendizaje que el investigador con dos tesis en paralelo no tiene tiempo de recorrer. Los modelos genéricos estadounidenses no tienen parámetros de suelo andino, población rural peruana, datos climáticos amazónicos ni regulaciones SENASA.</p>
+                    <p>El resultado es siempre el mismo: Excel artesanal, plantilla casera, o recurrir a un consultor en EE.UU. que cobra en dólares, no conoce el contexto y entrega un instrumento que no puede defender frente a un comité peruano.</p>
+                    <p><strong>No hay herramientas web especializadas para investigadores latinoamericanos con metodología estadística declarada.</strong> Eso es el vacío. Y ese vacío es lo que trabajo.</p>
+                </div>
+            </section>
+
+            <section id="el-proceso">
+                <h2>El proceso</h2>
+                <div class="bio">
+                    <p>No necesito entender tu campo. Necesito entender tu problema estadístico.</p>
+                    <p>Tú defines la pregunta de investigación, el corpus y los datos disponibles. Yo determino qué metodología es la correcta — <strong>Monte Carlo computacional</strong> si hay incertidumbre que modelar, <strong>bootstrap no paramétrico</strong> si la muestra es pequeña o heterogénea y no quieres asumir distribución normal, <strong>análisis de sensibilidad</strong> para saber qué variable mueve el resultado y cuál es ruido, <strong>corrección de Bonferroni</strong> si testeas múltiples hipótesis simultáneamente.</p>
+                    <p>El instrumento resultante vive en la web, funciona en el navegador sin instalación, tiene autoría declarada, metodología trazable y URL permanente. <strong>Es citable como software de investigación.</strong></p>
+                    <p>No hay estimaciones optimistas. El diagnóstico inicial — gratuito — determina el alcance, la metodología exacta y el tiempo real de construcción.</p>
+                </div>
+            </section>
+
+            <section id="nichos">
+                <h2>Quién me necesita</h2>
+                <div class="nicho-grid">
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Ciencias ambientales</div>
+                        <p class="nicho-body">Un investigador necesita modelar la dispersión de contaminantes en una cuenca amazónica con variables climáticas locales que ningún modelo genérico incorpora. Los datos existen. El instrumento que los procesa con incertidumbre cuantificada, no.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Epidemiología y salud pública</div>
+                        <p class="nicho-body">Un epidemiólogo de universidad regional necesita calcular sensibilidad y especificidad de una prueba diagnóstica con datos de población serrana. SPSS disponible solo en la sede central. El comité exige metodología declarada.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Ciencias sociales</div>
+                        <p class="nicho-body">Un investigador necesita bootstrap sobre una muestra de 80 comunidades rurales para estimar rangos de confianza sin asumir distribución normal. La muestra es heterogénea. Excel no puede. R intimida. La tesis no espera.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Econometría y políticas públicas</div>
+                        <p class="nicho-body">Un economista necesita un simulador de impacto de política pública con Monte Carlo sobre variables macroeconómicas locales — no datos de EE.UU., datos reales de la región, con los sesgos y las irregularidades que eso implica.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Humanidades y ciencias sociales cuantitativas</div>
+                        <p class="nicho-body">Un investigador tiene un argumento hermenéutico sólido y necesita sostenerlo con respaldo cuantitativo no paramétrico sobre un corpus cultural heterogéneo. Codificación binaria de variables estructurales, intervalos de confianza con bootstrap, análisis de convergencia con corrección de Bonferroni. Sin psicometría clásica, sin supuestos de normalidad.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                    <div class="nicho-item">
+                        <div class="nicho-label">Ingeniería y física aplicada</div>
+                        <p class="nicho-body">Un ingeniero necesita simulaciones Monte Carlo para dosimetría, propiedades de materiales o control de calidad en construcción — con sus datos, no con tablas genéricas de normas que no aplican al contexto local.</p>
+                        <span class="nicho-golpe">Esa herramienta no existe. La construyo.</span>
+                    </div>
+
+                </div>
+            </section>
+
+            <section id="metodologia">
+                <h2>Metodología declarada</h2>
+                <div class="metodo-list">
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Monte Carlo</span>
+                        <span class="metodo-desc">Cuando el problema tiene incertidumbre que modelar — miles de iteraciones sobre distribuciones de parámetros reales. El resultado no es un número: es un rango con probabilidad asociada.</span>
+                    </div>
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Bootstrap</span>
+                        <span class="metodo-desc">Bootstrap no paramétrico para intervalos de confianza cuando la muestra es pequeña, heterogénea o culturalmente diversa y no cumple supuestos de normalidad. Sin SPSS. Sin restricciones de licencia.</span>
+                    </div>
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Sensibilidad</span>
+                        <span class="metodo-desc">Análisis de sensibilidad para identificar qué variables mueven el resultado y cuáles son ruido. Separa lo que importa de lo que parece que importa.</span>
+                    </div>
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Bonferroni</span>
+                        <span class="metodo-desc">Corrección de Bonferroni para control de error tipo I cuando se testean múltiples hipótesis simultáneamente. La convergencia no aparece por azar.</span>
+                    </div>
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Latin Hypercube</span>
+                        <span class="metodo-desc">Latin Hypercube Sampling cuando el espacio de parámetros es multidimensional y requiere cobertura eficiente sin explotar el tiempo de cómputo.</span>
+                    </div>
+                    <div class="metodo-item">
+                        <span class="metodo-tag">Bondad de ajuste</span>
+                        <span class="metodo-desc">Tests Kolmogorov-Smirnov o Shapiro-Wilk para verificar que las distribuciones del modelo coincidan con lo que los datos reales muestran — no lo que la teoría asume.</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Necesito saber programar?</button>
+                        <div class="faq-answer">No. El instrumento vive en la web, funciona en el navegador y produce resultados sin que necesites instalar nada ni escribir código. Tú defines el problema. El instrumento hace el cálculo.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Puedo citar la herramienta en mi paper o tesis?</button>
+                        <div class="faq-answer">Sí. Cada instrumento tiene autoría declarada, metodología trazable y URL permanente. Es citable como software de investigación. La metodología estadística aplicada está documentada en el instrumento mismo.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Cuánto tiempo tarda en construirse?</button>
+                        <div class="faq-answer">Depende de la complejidad del corpus y la metodología requerida. El diagnóstico inicial — gratuito — determina el alcance y el tiempo real. No hay estimaciones optimistas: el diagnóstico lo mide.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Necesitas acceso a mis datos?</button>
+                        <div class="faq-answer">Solo los necesarios para calibrar el modelo. Todo bajo acuerdo de confidencialidad. No es necesario compartir el corpus completo — solo los parámetros de calibración.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Es una alternativa gratuita a SPSS o Stata?</button>
+                        <div class="faq-answer">Es distinto. SPSS y Stata son plataformas genéricas. Lo que construyo son instrumentos específicos para tu problema de investigación, con metodología declarada y contexto latinoamericano. No reemplazan un software estadístico general — resuelven lo que ese software no puede resolver bien para tu corpus específico.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">¿Con qué disciplinas trabajas?</button>
+                        <div class="faq-answer">El instrumento es metodológico, no disciplinar. Ciencias ambientales, epidemiología, ciencias sociales, econometría, antropología cultural, ingeniería, agronomía. Lo que importa es que el problema tenga estructura estadística que modelar. El diagnóstico determina si es operable.</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto-investigador">
+                <h2>Escríbeme</h2>
+                <p class="diagnostico-intro">Si tienes los datos y la pregunta, yo tengo el instrumento.</p>
+                <p class="diagnostico-intro">El diagnóstico inicial es gratuito. Cuéntame el problema — no el campo, el problema estadístico específico. Si es operable, te digo cómo.</p>
+                <div class="diagnostico-actions">
+                    <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20soy%20investigador%20y%20necesito%20una%20herramienta%20estadística%20para%20mi%20investigación.%20Quisiera%20un%20diagnóstico." class="diagnostico-action" target="_blank" rel="noopener">WhatsApp → +51 977 647 243</a>
+                    <a href="mailto:carlos.ravello@zoovettravel.com?subject=Herramienta%20estadística%20para%20investigación" class="diagnostico-action">carlos.ravello@zoovettravel.com</a>
+                </div>
+                <p class="diagnostico-sub">Tiempo de respuesta: menos de 24 h.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
+            </div>
+            <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20soy%20investigador%20y%20necesito%20una%20herramienta%20estadística%20para%20mi%20investigación." class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
+        </footer>
+
+    </div>
+
+    <script>
+    (function() {
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (toggle && overlay) {
+            toggle.addEventListener('click', function() {
+                var isOpen = overlay.classList.toggle('is-open');
+                toggle.setAttribute('aria-expanded', isOpen);
+                toggle.classList.toggle('is-open', isOpen);
+                document.body.style.overflow = isOpen ? 'hidden' : '';
+            });
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) {
+                    overlay.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+                    overlay.classList.remove('is-open');
+                    toggle.setAttribute('aria-expanded', 'false');
+                    toggle.classList.remove('is-open');
+                    document.body.style.overflow = '';
+                }
+            });
+        }
+        var faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(function(item) {
+            var btn = item.querySelector('.faq-question');
+            if (btn) {
+                btn.addEventListener('click', function() {
+                    var isOpen = item.classList.toggle('is-open');
+                    btn.setAttribute('aria-expanded', isOpen);
+                });
+            }
+        });
+    })();
+    </script>
+</body>
+</html>

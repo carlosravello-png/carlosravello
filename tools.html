@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Tools — Carlos Eduardo Ravello Joo · BikeLab Studio & Zoovet Travel</title>
-    <meta name="description" content="Digital tools created by Carlos Eduardo Ravello Joo. SAG Calculator, FIT Analyzer, Di2 & AXS Diagnostic (BikeLab Studio) and Pet Travel Planner, kennels directory (Zoovet Travel). Monte Carlo methodology. Peru.">
+    <meta name="description" content="Digital tools built with declared methodology: Monte Carlo, Bootstrap, sensitivity analysis. For researchers and consultants in Latin America.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -328,6 +328,16 @@
             .tool-header { flex-direction: column; gap: 4px; }
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://carlosravello.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Digital Tools", "item": "https://carlosravello.com/tools.html"}
+      ]
+    }
+    </script>
 </head>
 <body>
     <div class="wrapper">
@@ -345,6 +355,13 @@
             </div>
         </nav>
 
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ol style="list-style:none;padding:0;margin:0 0 32px;display:flex;gap:6px;font-family:var(--mono);font-size:0.62rem;color:var(--muted);letter-spacing:0.08em;">
+                <li><a href="/" style="color:var(--muted);text-decoration:none;">Inicio</a></li>
+                <li style="opacity:0.4;">›</li>
+                <li style="color:var(--accent);">Tools</li>
+            </ol>
+        </nav>
         <header>
             <h1>Digital<br>Tools</h1>
             <span class="title-label">Carlos Eduardo Ravello Joo · BikeLab Studio · Zoovet Travel</span>

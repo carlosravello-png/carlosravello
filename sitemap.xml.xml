@@ -120,6 +120,7 @@
 
   <url>
     <loc>https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</loc>
+    <lastmod>2026-05-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-model-that-stops-updating-disappears.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
@@ -129,11 +130,21 @@
 
   <url>
     <loc>https://carlosravello.com/the-model-that-stops-updating-disappears.html</loc>
+    <lastmod>2026-05-07</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-model-that-stops-updating-disappears.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/herramientas-para-investigadores.html</loc>
+    <lastmod>2026-05-07</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
   </url>
 
 </urlset>

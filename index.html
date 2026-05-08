@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Eduardo Ravello Joo — Arquitectura Semántica · Identidad Digital Verificable · Agencia Global</title>
-    <meta name="description" content="Arquitectura de identidad digital verificable. Diseñamos entidades con nodos semánticos entrelazados que Google, los LLM y el Knowledge Graph leen como autoridad estructural. Coherencia dinámica, gravedad semántica, presencia impenetrable al algoritmo.">
+    <meta name="description" content="Arquitectura semántica y gravedad digital para marcas e investigadores. Identidad verificable, herramientas estadísticas, estrategia construida desde adentro.">
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
@@ -25,7 +25,7 @@
           "url": "https://carlosravello.com",
           "email": "carlos.ravello@zoovettravel.com",
           "jobTitle": "Fundador e Investigador Independiente",
-          "description": "Fundador de BikeLab Studio y Zoovet Travel. Investigador independiente con publicaciones DOI en tribología, termodinámica, eficiencia de transmisión y huella de carbono. Diseñador de ecosistemas web semánticos. Trujillo, La Libertad, Perú.",
+          "description": "Fundador de BikeLab Studio y Zoovet Travel. Investigador independiente con publicaciones DOI en tribología, termodinámica, eficiencia de transmisión y huella de carbono. Diseñador de ecosistemas web semánticos.",
           "knowsAbout": [
             "Ingeniería de Precisión",
             "Tribología",
@@ -98,7 +98,7 @@
               "url": "https://zoovettravel.com",
               "foundingDate": "2013-05",
               "slogan": "Más de 12 años ejecutando protocolos SENASA para familias que se mudan o viajan con sus animales.",
-              "description": "Clínica veterinaria especializada en exportación e importación internacional de mascotas. Protocolos SENASA, certificaciones zoosanitarias, serología de rabia RNATT/FAVN, microchip ISO 11784/11785. Trujillo, La Libertad, Perú.",
+              "description": "Clínica veterinaria especializada en exportación e importación internacional de mascotas. Protocolos SENASA, certificaciones zoosanitarias, serología de rabia RNATT/FAVN, microchip ISO 11784/11785.",
               "identifier": [
                 { "@type": "PropertyValue", "propertyID": "RUC", "value": "10433053678" }
               ],
@@ -179,7 +179,7 @@
             {
               "@type": "Occupation",
               "name": "Fundador e Investigador Independiente",
-              "occupationLocation": { "@type": "City", "name": "Trujillo" },
+              "occupationLocation": { "@type": "Country", "name": "Peru" },
               "skills": "Ingeniería de Precisión, Tribología, Termodinámica, Arquitectura Web Semántica, Knowledge Graph"
             },
             {
@@ -495,7 +495,7 @@
           "name": "BikeLab Studio",
           "url": "https://www.bikelabstudio.com",
           "creator": { "@id": "https://carlosravello.com/#person" },
-          "description": "Laboratorio de ingeniería ciclista en Trujillo, Perú. Diseño, arquitectura web y estrategia SEO: Carlos Eduardo Ravello Joo."
+          "description": "Laboratorio de ingeniería ciclista en Perú. Diseño, arquitectura web y estrategia SEO: Carlos Eduardo Ravello Joo."
         },
         {
           "@type": "SoftwareApplication",
@@ -664,7 +664,7 @@
           "inLanguage": "es",
           "isPartOf": { "@id": "https://carlosravello.com/#website" },
           "author": { "@id": "https://carlosravello.com/#person" },
-          "description": "Documentación técnica de las tres herramientas digitales creadas por Carlos Eduardo Ravello Joo: SAG Calculator, FIT Analyzer y Di2 & AXS Diagnostic. Método Monte Carlo, Modelo de Coherencia Dinámica, HTML vanilla. Trujillo, Perú.",
+          "description": "Documentación técnica de las tres herramientas digitales creadas por Carlos Eduardo Ravello Joo: SAG Calculator, FIT Analyzer y Di2 & AXS Diagnostic. Método Monte Carlo, Modelo de Coherencia Dinámica, HTML vanilla.",
           "about": { "@id": "https://carlosravello.com/#person" },
           "translationOfWork": { "@id": "https://carlosravello.com/tools.html" }
         },
@@ -676,7 +676,7 @@
           "inLanguage": "en",
           "isPartOf": { "@id": "https://carlosravello.com/#website" },
           "author": { "@id": "https://carlosravello.com/#person" },
-          "description": "Technical documentation of the three digital tools built by Carlos Eduardo Ravello Joo: SAG Calculator, FIT Analyzer and Di2 & AXS Diagnostic. Monte Carlo method, Dynamic Coherence Model, vanilla HTML. Trujillo, Peru.",
+          "description": "Technical documentation of the three digital tools built by Carlos Eduardo Ravello Joo: SAG Calculator, FIT Analyzer and Di2 & AXS Diagnostic. Monte Carlo method, Dynamic Coherence Model, vanilla HTML.",
           "about": { "@id": "https://carlosravello.com/#person" },
           "workTranslation": { "@id": "https://carlosravello.com/herramientas.html" }
         }
@@ -1129,9 +1129,10 @@
         /* ESCRITURA */
         .writing-item {
             padding: 28px 0;
-            border-bottom: 1px solid var(--border);
+            border-bottom: 1px solid #252525;
         }
-        .writing-item:first-child { border-top: 1px solid var(--border); }
+        .writing-item:first-child { border-top: 1px solid #252525; }
+        .writing-item:hover { background: rgba(255,255,255,0.018); border-radius: 3px; }
         .writing-category {
             font-family: var(--mono);
             font-size: 0.60rem;
@@ -1152,7 +1153,7 @@
         .writing-item h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
         .writing-excerpt {
             font-size: 0.93rem;
-            color: var(--muted);
+            color: #9a9a9a;
             line-height: 1.75;
             margin-bottom: 14px;
         }
@@ -1407,7 +1408,8 @@
                 <a href="/sobre-mi.html" class="lang-btn">Sobre mí</a>
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
-                <a href="/estrategia.html" class="lang-btn">Estrategia</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
+                <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
             </div>
             <button class="nav-toggle" id="navToggle"
                     aria-label="Abrir menú" aria-expanded="false"
@@ -1423,7 +1425,8 @@
                 <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
-                <a href="/estrategia.html" class="nav-overlay-link">Estrategia</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
+                <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/" class="nav-overlay-lang-btn active">ES</a>
@@ -1450,10 +1453,10 @@
             <section id="el-trabajo">
                 <h2>El trabajo</h2>
                 <div class="bio">
-                    <p>No somos una agencia de marketing digital. No gestionamos redes, no producimos contenido en volumen, no optimizamos lo que ya existe. <strong>Diseñamos entidades digitales verificables</strong> — con nodos semánticos entrelazados que Google, las IAs generativas y el Knowledge Graph leen como autoridad estructural, no como ruido.</p>
-                    <p>Trabajamos de forma manual. Cada entidad tiene una identidad propia, una visión que le pertenece — y no puede sostener el peso de ser quien no es por mucho tiempo. No evaluamos solo el posicionamiento: evaluamos la <em>coherencia dinámica</em> entre lo que dices, lo que haces y cómo te ves. Son tres ejes que casi nadie mide juntos — y cuya desalineación destruye la autoridad antes de que el algoritmo tenga oportunidad de establecerla.</p>
-                    <p>Nuestro trabajo es integral. No conocemos solo al dueño ni al responsable de SEO. Conocemos la cultura de la empresa, su clima, cada persona que la compone — porque la imagen global solo es global cuando todo lo que la rodea transmite el mismo mensaje al mundo.</p>
-                    <p>Diseñamos identidad visual calibrada para <strong>Optical Character Recognition</strong>. Cada imagen, cada fotografía, cada pieza visual le habla a los algoritmos en el idioma de tu entidad — y Google, cuando activa el OCR, lee lo que diseñamos para que diga.</p>
+                    <p>No soy una agencia de marketing digital. No gestiono redes, no produzco contenido en volumen, no optimizo lo que ya existe. <strong>Diseño entidades digitales verificables</strong> — con nodos semánticos entrelazados que Google, las IAs generativas y el Knowledge Graph leen como autoridad estructural, no como ruido.</p>
+                    <p>Trabajo de forma manual. Cada entidad tiene una identidad propia, una visión que le pertenece — y no puede sostener el peso de ser quien no es por mucho tiempo. No evalúo solo el posicionamiento: evalúo la <em>coherencia dinámica</em> entre lo que dices, lo que haces y cómo te ves. Son tres ejes que casi nadie mide juntos — y cuya desalineación destruye la autoridad antes de que el algoritmo tenga oportunidad de establecerla.</p>
+                    <p>Mi trabajo es integral. No conozco solo al dueño ni al responsable de SEO. Conozco la cultura de la empresa, su clima, cada persona que la compone — porque la imagen global solo es global cuando todo lo que la rodea transmite el mismo mensaje al mundo.</p>
+                    <p>Diseño identidad visual calibrada para <strong>Optical Character Recognition</strong>. Cada imagen, cada fotografía, cada pieza visual le habla a los algoritmos en el idioma de tu entidad — y Google, cuando activa el OCR, lee lo que diseño para que diga.</p>
                     <p>La estrategia es construir una entidad verificable con <strong>nodos semánticos entrelazados</strong> que Google pese, posicione y defienda en los primeros resultados. Una presencia impenetrable al cambio del algoritmo — donde TikTok, Facebook e Instagram no puedan erosionar lo que el grafo ya decidió que eres.</p>
                     <p>No hay dos estrategias iguales. Una clínica no sigue las mismas reglas que un despacho de abogados. Una inmobiliaria no usa el mismo Schema que un estudio de ingeniería. Cada arquitectura es artesanal — diseñada para esa entidad específica, tejiendo la red de comunicación entre ella y el internet a medida.</p>
                 </div>
@@ -1470,7 +1473,7 @@
                     <p>Construyo también herramientas para investigadores — matrices de convergencia cultural con codificación binaria, <strong>calibración estadística de metodología</strong> con bootstrap no paramétrico e intervalos de confianza sobre corpus heterogéneos sin asumir distribución normal, corrección de Bonferroni para control de error tipo I en análisis múltiple. Para el investigador que necesita sostener un argumento hermenéutico con respaldo cuantitativo no paramétrico — esa herramienta no existe. La construyo.</p>
                     <p>Cada herramienta que construyo es un activo SEO propio — se indexa, captura la intención de búsqueda del profesional que tiene ese problema exacto, y convierte usuarios en clientes antes de que alguien haya hablado con nadie.</p>
                 </div>
-                <a href="/herramientas.html" class="writing-read">Ver herramientas →</a>
+                <a href="/herramientas-para-investigadores.html" class="writing-read">Instrumentos para investigadores →</a>
             </section>
 
             <section id="escritura">
@@ -1511,7 +1514,7 @@
                 </div>
                 <div class="faq-item">
                     <div class="faq-question" tabindex="0" role="button" aria-expanded="false">¿Cómo empiezo a trabajar con Carlos Ravello?</div>
-                    <div class="faq-answer">Aplicamos nuestra metodología y software propietario para medir la coherencia de tu entidad digital: entre lo que dices, lo que haces y cómo te ves. Lo que encontramos determina la arquitectura que ejecutamos. No hay dos iguales. <a href="/servicios.html">Ver cómo trabajamos →</a></div>
+                    <div class="faq-answer">Aplico mi metodología y software propietario para medir la coherencia de tu entidad digital: entre lo que dices, lo que haces y cómo te ves. Lo que encontramos determina la arquitectura que ejecutamos. No hay dos iguales. <a href="/servicios.html">Ver cómo trabajamos →</a></div>
                 </div>
             </section>
 
@@ -1650,7 +1653,7 @@
             <section id="contacto">
                 <h2>Contacto</h2>
                 <div class="contact-block">
-                    <p>Trabajamos con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
+                    <p>Trabajo con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
                     <div class="contact-links">
                         <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20quiero%20iniciar%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
                         <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
