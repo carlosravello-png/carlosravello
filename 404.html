@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 — Página no encontrada · carlosravello.com</title>
+    <meta name="robots" content="noindex, follow" />
+    <style>
+        :root {
+            --bg: #060606; --text: #cecece; --muted: #6e6e6e;
+            --border: #1c1c1c; --accent: #b8976a; --white: #f0f0f0;
+            --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --serif: 'Georgia', 'Times New Roman', serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg); color: var(--text);
+            font-family: var(--mono); min-height: 100vh;
+            display: flex; align-items: center; justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+        .container {
+            text-align: center; padding: 40px 24px; max-width: 480px;
+        }
+        .code {
+            font-size: clamp(5rem, 18vw, 9rem); font-family: var(--serif);
+            font-weight: 400; color: var(--border); line-height: 1;
+            letter-spacing: -0.04em; display: block; margin-bottom: 32px;
+        }
+        h1 {
+            font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.4rem);
+            font-weight: 400; color: var(--white); margin-bottom: 16px;
+            letter-spacing: -0.02em;
+        }
+        p {
+            font-size: 0.80rem; color: var(--muted); line-height: 1.8;
+            letter-spacing: 0.04em; margin-bottom: 40px;
+        }
+        .back {
+            font-family: var(--mono); font-size: 0.68rem;
+            color: var(--accent); text-decoration: none;
+            letter-spacing: 0.16em; text-transform: uppercase;
+            border-bottom: 1px solid var(--accent); padding-bottom: 2px;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .back:hover { color: var(--white); border-color: var(--white); }
+        .divider {
+            width: 24px; height: 1px; background: var(--border);
+            margin: 32px auto;
+        }
+        .site-id {
+            font-size: 0.60rem; color: var(--muted);
+            letter-spacing: 0.18em; text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="code">404</span>
+        <h1>Esta página no existe.</h1>
+        <p>La URL que buscas no forma parte del grafo.<br>Puede que haya cambiado de nombre o nunca existió.</p>
+        <a href="/" class="back">← Volver al inicio</a>
+        <div class="divider"></div>
+        <span class="site-id">carlosravello.com</span>
+    </div>
+</body>
+</html>

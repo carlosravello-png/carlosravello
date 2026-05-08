@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://carlosravello.com/sitemap.xml
+Sitemap: https://carlosravello.com/sitemap.xml.xml

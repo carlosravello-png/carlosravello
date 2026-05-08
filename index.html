@@ -8,6 +8,17 @@
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
+        <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carlosravello.com/" />
+    <meta property="og:title" content="Carlos Eduardo Ravello Joo — Arquitectura Semántica" />
+    <meta property="og:description" content="Arquitectura semántica y gravedad digital para marcas e investigadores. Identidad verificable, herramientas estadísticas, estrategia construida desde adentro." />
+    <meta property="og:locale" content="es_PE" />
+    <meta property="og:site_name" content="carlosravello.com" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Carlos Eduardo Ravello Joo — Arquitectura Semántica" />
+    <meta name="twitter:description" content="Arquitectura semántica y gravedad digital para marcas e investigadores. Identidad verificable, herramientas estadísticas, estrategia construida desde adentro." />
     <link rel="canonical" href="https://carlosravello.com/" />
     <link rel="alternate" hreflang="es" href="https://carlosravello.com/" />
     <link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html" />
@@ -25,6 +36,7 @@
           "url": "https://carlosravello.com",
           "email": "carlos.ravello@zoovettravel.com",
           "jobTitle": "Fundador e Investigador Independiente",
+          "nationality": { "@type": "Country", "name": "Peru", "identifier": "PE" },
           "description": "Fundador de BikeLab Studio y Zoovet Travel. Investigador independiente con publicaciones DOI en tribología, termodinámica, eficiencia de transmisión y huella de carbono. Diseñador de ecosistemas web semánticos.",
           "knowsAbout": [
             "Ingeniería de Precisión",
@@ -810,8 +822,8 @@
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
-            border: 1px solid var(--border);
-            color: var(--muted);
+            border: 1px solid transparent;
+            color: var(--text);
             transition: all 0.2s;
         }
 
@@ -1023,8 +1035,8 @@
 
         .arch-url {
             font-family: var(--mono);
-            font-size: 0.60rem;
-            color: var(--muted);
+            font-size: 0.76rem;
+            color: #999;
             letter-spacing: 0.05em;
         }
 

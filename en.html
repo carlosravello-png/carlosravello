@@ -8,6 +8,17 @@
     <meta name="author" content="Carlos Eduardo Ravello Joo">
     <meta name="robots" content="index, follow">
 
+        <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carlosravello.com/en.html" />
+    <meta property="og:title" content="Carlos Eduardo Ravello Joo — Semantic Architecture" />
+    <meta property="og:description" content="Semantic architecture and digital gravity for brands, professionals and researchers. Verifiable identity, statistical tools and strategy built from within." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="carlosravello.com" />
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Carlos Eduardo Ravello Joo — Semantic Architecture" />
+    <meta name="twitter:description" content="Semantic architecture and digital gravity for brands, professionals and researchers. Verifiable identity, statistical tools and strategy built from within." />
     <link rel="canonical" href="https://carlosravello.com/en.html" />
     <link rel="alternate" hreflang="es" href="https://carlosravello.com/" />
     <link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html" />
@@ -25,6 +36,7 @@
           "url": "https://carlosravello.com",
           "email": "carlos.ravello@zoovettravel.com",
           "jobTitle": "Founder and Independent Researcher",
+          "nationality": { "@type": "Country", "name": "Peru", "identifier": "PE" },
           "description": "Founder of BikeLab Studio and Zoovet Travel. Independent researcher with DOI-verified publications in tribology, thermodynamics, drivetrain efficiency and carbon footprint analysis. Designer of semantic web ecosystems.",
           "knowsAbout": [
             "Precision Engineering",
@@ -621,8 +633,8 @@
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
-            border: 1px solid var(--border);
-            color: var(--muted);
+            border: 1px solid transparent;
+            color: var(--text);
             transition: all 0.2s;
         }
 
@@ -828,8 +840,8 @@
 
         .arch-url {
             font-family: var(--mono);
-            font-size: 0.60rem;
-            color: var(--muted);
+            font-size: 0.76rem;
+            color: #999;
             letter-spacing: 0.05em;
         }
 
@@ -893,8 +905,8 @@
 
         .footer-copy {
             font-family: var(--mono);
-            font-size: 0.60rem;
-            color: var(--muted);
+            font-size: 0.76rem;
+            color: #999;
             letter-spacing: 0.08em;
         }
 
@@ -998,10 +1010,11 @@
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn active" aria-current="page">EN</a>
                 <a href="/sobre-mi.html" class="lang-btn">About</a>
+                <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/tools.html" class="lang-btn">Tools</a>
                 <a href="/services.html" class="lang-btn">Work</a>
                 <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
-                <a href="/herramientas-para-investigadores.html" class="lang-btn">Researchers</a>
+                <a href="/researchers.html" class="lang-btn">Researchers</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
@@ -1011,10 +1024,10 @@
         <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
             <div class="nav-overlay-inner">
                 <a href="/sobre-mi.html" class="nav-overlay-link">About</a>
-                <a href="/escritura.html" class="nav-overlay-link">Writing</a>
+                <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
-                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Researchers</a>
+                <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/" class="nav-overlay-lang-btn">ES</a>

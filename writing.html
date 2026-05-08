@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing — Carlos Ravello</title>
+    <meta name="description" content="Articles on semantic architecture, digital identity and positioning strategy — written to last, not for the ephemeral content cycle." />
+    <link rel="alternate" hreflang="es" href="https://carlosravello.com/escritura.html" />
+    <link rel="alternate" hreflang="en" href="https://carlosravello.com/writing.html" />
+    <link rel="alternate" hreflang="x-default" href="https://carlosravello.com/escritura.html" />
+    <link rel="canonical" href="https://carlosravello.com/writing.html" />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://carlosravello.com/writing.html" />
+    <meta property="og:title" content="Writing — Carlos Ravello" />
+    <meta property="og:description" content="Articles on semantic architecture, digital identity and positioning strategy — written to last, not for the ephemeral content cycle." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="carlosravello.com" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Writing — Carlos Ravello" />
+    <meta name="twitter:description" content="Articles on semantic architecture, digital identity and positioning strategy — written to last, not for the ephemeral content cycle." />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "@id": "https://carlosravello.com/writing.html",
+      "name": "Writing — Carlos Ravello",
+      "description": "Articles on semantic architecture, digital identity and positioning strategy.",
+      "url": "https://carlosravello.com/writing.html",
+      "inLanguage": "en",
+      "author": { "@type": "Person", "@id": "https://carlosravello.com/#carlos" },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://carlosravello.com/en.html" },
+          { "@type": "ListItem", "position": 2, "name": "Writing", "item": "https://carlosravello.com/writing.html" }
+        ]
+      }
+    }
+    </script>
+    <style>
+        :root {
+            --bg: #060606; --text: #cecece; --muted: #6e6e6e;
+            --border: #1c1c1c; --accent: #b8976a; --white: #f0f0f0;
+            --serif: 'Georgia', 'Times New Roman', serif;
+            --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+            --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        .wrapper { max-width: 780px; margin: 0 auto; padding: 10vh 32px 10vh; }
+
+        nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; }
+        .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; text-decoration: none; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .lang-btn { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
+        .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
+        .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+        .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+        .desktop-nav { display: flex; gap: 6px; align-items: center; }
+        @media (max-width: 768px) { .nav-toggle { display: flex; } .desktop-nav { display: none !important; } }
+
+        .nav-overlay { position:fixed; inset:0; background:#060606; z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.38s cubic-bezier(0.4,0,0.2,1); }
+        .nav-overlay.is-open { opacity:1; pointer-events:all; }
+        .nav-overlay-inner { display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center; }
+        .nav-overlay-link { font-family:var(--serif); font-size:clamp(2.4rem,9vw,4rem); font-weight:400; color:var(--muted); text-decoration:none; letter-spacing:-0.025em; line-height:1.22; opacity:0; transform:translateY(16px); transition:color 0.22s ease, opacity 0.35s ease, transform 0.35s ease; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.06s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.13s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.20s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.27s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.34s; }
+        .nav-overlay-link:hover { color:var(--white); }
+        .nav-overlay-divider { width:28px; height:1px; background:var(--border); margin:32px 0 28px; opacity:0; transition:opacity 0.3s 0.32s ease; }
+        .nav-overlay.is-open .nav-overlay-divider { opacity:1; }
+        .nav-overlay-lang { display:flex; gap:24px; opacity:0; transform:translateY(10px); transition:opacity 0.3s 0.36s ease, transform 0.3s 0.36s ease; }
+        .nav-overlay.is-open .nav-overlay-lang { opacity:1; transform:translateY(0); }
+        .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
+        .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
+
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a:hover { color: var(--white); }
+        .breadcrumb span { color: #555; }
+
+        header { margin-bottom: 72px; }
+        h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; color: var(--white); line-height: 1.18; letter-spacing: -0.03em; margin-bottom: 20px; }
+        .header-lead { font-size: clamp(1rem, 2vw, 1.1rem); color: var(--muted); line-height: 1.75; max-width: 560px; }
+
+        .article-card { padding: 36px 0; border-bottom: 1px solid #252525; position: relative; }
+        .article-card:first-child { border-top: 1px solid #252525; }
+        .article-card:hover { background: rgba(255,255,255,0.018); border-radius: 3px; }
+        .card-num { font-family: var(--mono); font-size: 0.60rem; color: var(--border); letter-spacing: 0.1em; margin-bottom: 6px; }
+        .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+        .card-tag { font-family: var(--mono); font-size: 0.58rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid #2a2015; padding: 2px 8px; }
+        .article-card h3 { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.45rem); font-weight: 400; color: var(--white); line-height: 1.35; margin-bottom: 14px; }
+        .article-card h3 a { color: inherit; transition: color 0.2s; }
+        .article-card h3 a:hover { color: var(--accent); }
+        .card-excerpt { font-size: 0.97rem; color: #9a9a9a; line-height: 1.82; margin-bottom: 22px; }
+        .card-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+        .card-science { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); letter-spacing: 0.06em; }
+        .card-read { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; transition: color 0.2s; white-space: nowrap; }
+        .card-read:hover { color: var(--white); }
+        .card-lang { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); margin-left: 12px; transition: color 0.2s; text-decoration: none; }
+        .card-lang:hover { color: var(--text); }
+
+        footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+        .footer-back { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
+        .footer-back:hover { color: var(--white); }
+        .footer-copy { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); letter-spacing: 0.08em; }
+
+        @media (max-width: 600px) { .wrapper { padding: 8vh 20px 8vh; } h1 { font-size: 2rem; } .article-card { padding: 28px 0; } }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+
+        <nav aria-label="Main navigation">
+            <a href="/en.html" class="nav-id">carlosravello.com</a>
+            <div class="lang-switch desktop-nav">
+                <a href="/" class="lang-btn">ES</a>
+                <a href="/en.html" class="lang-btn">EN</a>
+                <a href="/sobre-mi.html" class="lang-btn">About</a>
+                <a href="/writing.html" class="lang-btn active" aria-current="page">Writing</a>
+                <a href="/services.html" class="lang-btn">Work</a>
+                <a href="/researchers.html" class="lang-btn">Researchers</a>
+                <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+            <div class="nav-overlay-inner">
+                <a href="/sobre-mi.html" class="nav-overlay-link">About</a>
+                <a href="/writing.html" class="nav-overlay-link">Writing</a>
+                <a href="/services.html" class="nav-overlay-link">Work</a>
+                <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
+                <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/escritura.html" class="nav-overlay-lang-btn">ES</a>
+                    <a href="/writing.html" class="nav-overlay-lang-btn active">EN</a>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+            <a href="/en.html">Home</a>
+            <span>›</span>
+            <span style="color: var(--accent);">Writing</span>
+        </nav>
+
+        <header>
+            <h1>Writing</h1>
+            <p class="header-lead">These articles are not content. They are structural arguments — each one documented with verifiable sources, designed to function as nodes in a knowledge graph, not as traffic bait.</p>
+        </header>
+
+        <main itemscope itemtype="https://schema.org/Blog">
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <div class="card-num">01 / 03</div>
+                <div class="card-tags">
+                    <span class="card-tag">GEO</span>
+                    <span class="card-tag">Knowledge Graph</span>
+                    <span class="card-tag">Digital Identity</span>
+                </div>
+                <h3 itemprop="name"><a href="/authority-before-content.html" itemprop="url">Authority before content</a></h3>
+                <p class="card-excerpt" itemprop="description">Princeton demonstrated in 2024 that in generative AI engines, authority outperforms content by 40%. What makes you citable is not what you publish. It is what the graph can verify about you. The architecture of your identity is the variable no editorial calendar can resolve.</p>
+                <div class="card-footer">
+                    <span class="card-science">Princeton KDD 2024 · GEO Study · 10,000 queries</span>
+                    <div>
+                        <a href="/authority-before-content.html" class="card-read">Read in English →</a>
+                        <a href="/autoridad-antes-que-contenido.html" class="card-lang">ES</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <div class="card-num">02 / 03</div>
+                <div class="card-tags">
+                    <span class="card-tag">Semantic Identity</span>
+                    <span class="card-tag">LLM</span>
+                    <span class="card-tag">Wheeler · it-from-bit</span>
+                </div>
+                <h3 itemprop="name"><a href="/what-the-observer-makes-real.html" itemprop="url">What the observer makes real</a></h3>
+                <p class="card-excerpt" itemprop="description">Wheeler asked whether the universe exists without an observer to register it. LLMs ask the same question about your digital presence: if you are not in the model, you do not exist in the answer. The difference between existing and being cited is not the work you do — it is the structure with which you document it.</p>
+                <div class="card-footer">
+                    <span class="card-science">Wheeler 1990 · it-from-bit · LLM hierarchy</span>
+                    <div>
+                        <a href="/what-the-observer-makes-real.html" class="card-read">Read in English →</a>
+                        <a href="/lo-que-el-observador-hace-existir.html" class="card-lang">ES</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card" itemscope itemtype="https://schema.org/Article">
+                <div class="card-num">03 / 03</div>
+                <div class="card-tags">
+                    <span class="card-tag">Adaptive Systems</span>
+                    <span class="card-tag">Allostasis</span>
+                    <span class="card-tag">Active Inference</span>
+                </div>
+                <h3 itemprop="name"><a href="/the-model-that-stops-updating-disappears.html" itemprop="url">The model that stops updating disappears</a></h3>
+                <p class="card-excerpt" itemprop="description">Sterling and Eyer demonstrated in 1988 that systems that only react wear out. Karl Friston formalized active inference as the only way a biological system avoids surprise. Digital identity works the same way: not updating the model is not staying the same. It is falling outside the model the system already built without you.</p>
+                <div class="card-footer">
+                    <span class="card-science">Sterling & Eyer 1988 · Friston active inference</span>
+                    <div>
+                        <a href="/the-model-that-stops-updating-disappears.html" class="card-read">Read in English →</a>
+                        <a href="/el-modelo-que-no-se-actualiza-desaparece.html" class="card-lang">ES</a>
+                    </div>
+                </div>
+            </article>
+
+        </main>
+
+        <footer>
+            <a href="/en.html" class="footer-back">← carlosravello.com</a>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+        </footer>
+
+    </div>
+    <script>
+        var toggle = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        toggle.addEventListener('click', function() {
+            var open = overlay.classList.toggle('is-open');
+            toggle.setAttribute('aria-expanded', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        });
+        overlay.addEventListener('click', function(e) {
+            if (e.target === overlay) {
+                overlay.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
+                overlay.classList.remove('is-open');
+                toggle.setAttribute('aria-expanded', 'false');
+                document.body.style.overflow = '';
+            }
+        });
+    </script>
+</body>
+</html>
