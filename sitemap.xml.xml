@@ -180,4 +180,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
+
+  <url>
+    <loc>https://carlosravello.com/metacognicion-2-0.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/metacognicion-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/metacognition-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/metacognicion-2-0.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/metacognition-2-0.html</loc>
+    <lastmod>2026-05-08</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/metacognicion-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/metacognition-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/metacognicion-2-0.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
 </urlset>
