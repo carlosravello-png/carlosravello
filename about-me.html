@@ -135,7 +135,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #6e6e6e;
+            --muted:   #8a8a8a;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -186,7 +186,7 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
@@ -420,7 +420,7 @@
 
         .stack-label {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.12em;
@@ -459,7 +459,7 @@
 
         .tool-item { padding: 24px 0; border-bottom: 1px solid var(--border); }
         .tool-item:first-child { border-top: 1px solid var(--border); }
-        .tool-tag { font-family: var(--mono); font-size: 0.60rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 7px; }
+        .tool-tag { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 7px; }
         .tool-item h3 { font-family: var(--serif); font-size: 1.05rem; font-weight: 400; color: var(--white); margin-bottom: 8px; }
         .tool-item h3 a:hover { text-decoration: underline; text-underline-offset: 4px; }
         .tool-item p { font-size: 0.92rem; color: var(--muted); line-height: 1.76; }
@@ -478,7 +478,7 @@
             background: var(--bg);
             padding: 0 8px;
             font-family: var(--mono);
-            font-size: 0.62rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.1em;
         }
@@ -496,7 +496,7 @@
 
         .pub-mini { padding: 18px 0; border-bottom: 1px solid var(--border); display: flex; gap: 16px; align-items: flex-start; }
         .pub-mini:first-child { border-top: 1px solid var(--border); }
-        .pub-doi { font-family: var(--mono); font-size: 0.58rem; color: var(--accent); letter-spacing: 0.06em; min-width: 80px; padding-top: 3px; white-space: nowrap; }
+        .pub-doi { font-family: var(--mono); font-size: 0.68rem; color: var(--accent); letter-spacing: 0.06em; min-width: 80px; padding-top: 3px; white-space: nowrap; }
         .pub-mini-title { font-family: var(--serif); font-size: 0.97rem; font-weight: 400; color: var(--white); line-height: 1.42; }
         .pub-mini-title a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
@@ -746,8 +746,8 @@
                     <span class="pub-mini-title"><a href="https://zenodo.org/records/19229364" target="_blank" rel="noopener">Carbon Footprint Analysis of Bicycle Manufacturing and Maintenance Cycles</a></span>
                 </div>
                 <div class="pub-mini" style="border-top: 1px solid var(--border); margin-top: 8px; padding-top: 20px;">
-                    <span class="pub-doi" style="color: #7a8f6a; font-size: 0.56rem; letter-spacing: 0.12em;">SERIES</span>
-                    <span class="pub-mini-title" style="font-family: var(--mono); font-size: 0.66rem; color: var(--muted); letter-spacing: 0.06em;">Metacognition 2.0 — Dynamic Coherence Model</span>
+                    <span class="pub-doi" style="color: #7a8f6a; font-size: 0.68rem; letter-spacing: 0.12em;">SERIES</span>
+                    <span class="pub-mini-title" style="font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em;">Metacognition 2.0 — Dynamic Coherence Model</span>
                 </div>
                 <div class="pub-mini">
                     <span class="pub-doi">DOI:20092009</span>
@@ -850,37 +850,4 @@
 
             function openMenu() {
                 overlay.classList.add('is-open');
-                btn.setAttribute('aria-expanded', 'true');
-                btn.setAttribute('aria-label', 'Close menu');
-                document.body.style.overflow = 'hidden';
-                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
-            }
-
-            function closeMenu() {
-                overlay.classList.remove('is-open');
-                btn.setAttribute('aria-expanded', 'false');
-                btn.setAttribute('aria-label', 'Open menu');
-                document.body.style.overflow = '';
-                btn.focus();
-            }
-
-            if (btn && overlay) {
-                btn.addEventListener('click', function() {
-                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-                });
-
-                overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-lang-btn').forEach(function(link) {
-                    link.addEventListener('click', function() {
-                        if (!link.getAttribute('href').startsWith('#')) return;
-                        closeMenu();
-                    });
-                });
-            }
-        })();
-    </script>
-</body>
-</html>
+                bt

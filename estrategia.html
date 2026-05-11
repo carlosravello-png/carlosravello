@@ -173,7 +173,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #6e6e6e;
+            --muted:   #8a8a8a;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -211,7 +211,7 @@
 
         .nav-id {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.14em;
         }
@@ -222,7 +222,7 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
@@ -353,7 +353,7 @@
 
         .case-id {
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.68rem;
             letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--accent);
@@ -378,15 +378,15 @@
 
         .case-metric {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             letter-spacing: 0.08em;
-            color: #2e2e2e;
+            color: var(--muted);
             border-top: 1px solid var(--border);
             padding-top: 12px;
             line-height: 1.7;
         }
 
-        .case-metric strong { color: #484848; font-weight: 400; }
+        .case-metric strong { color: var(--text); font-weight: 400; }
 
         /* DIAGNÓSTICO */
         .diagnostico-intro {
@@ -414,7 +414,7 @@
             color: var(--white);
             font-family: var(--mono);
             font-size: 0.82rem;
-            font-weight: 300;
+            font-weight: 400;
             padding: 18px 20px;
             width: 100%;
             resize: none;
@@ -424,7 +424,7 @@
 
         .diagnostico-form input::placeholder,
         .diagnostico-form textarea::placeholder {
-            color: #2e2e2e;
+            color: #5a5a5a;
             letter-spacing: 0.06em;
         }
 
@@ -440,7 +440,7 @@
             border: none;
             color: var(--accent);
             font-family: var(--mono);
-            font-size: 0.65rem;
+            font-size: 0.72rem;
             font-weight: 400;
             letter-spacing: 0.28em;
             text-transform: uppercase;
@@ -467,7 +467,7 @@
             background: var(--bg);
             color: var(--accent);
             font-family: var(--mono);
-            font-size: 0.65rem;
+            font-size: 0.72rem;
             font-weight: 400;
             letter-spacing: 0.28em;
             text-transform: uppercase;
@@ -483,7 +483,7 @@
         }
 
         .diagnostico-action-sub {
-            font-size: 0.58rem;
+            font-size: 0.70rem;
             font-family: var(--mono);
             color: var(--muted);
             letter-spacing: 0.14em;
@@ -510,7 +510,7 @@
 
         .footer-surgery {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.68rem;
             color: var(--border);
             letter-spacing: 0.12em;
             text-transform: uppercase;
@@ -625,8 +625,8 @@
         footer { display: flex; justify-content: space-between; align-items: flex-end; padding: 60px 0 40px; border-top: 1px solid var(--border); flex-wrap: wrap; gap: 16px; }
         .footer-left { display: flex; flex-direction: column; gap: 6px; }
         .footer-copy { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.08em; }
-        .footer-tagline { font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: #2e2e2e; }
-        .footer-cta { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; text-decoration: none; }
+        .footer-tagline { font-family: var(--serif); font-size: 0.82rem; font-style: italic; color: var(--muted); }
+        .footer-cta { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; text-decoration: none; }
         .footer-cta:hover { color: var(--white); border-bottom-color: var(--accent); }
     
     </style>
@@ -878,39 +878,4 @@
             toggle.addEventListener('click', function() {
                 var isOpen = overlay.classList.toggle('is-open');
                 toggle.setAttribute('aria-expanded', isOpen);
-                toggle.classList.toggle('is-open', isOpen);
-                document.body.style.overflow = isOpen ? 'hidden' : '';
-            });
-            overlay.addEventListener('click', function(e) {
-                if (e.target === overlay) {
-                    overlay.classList.remove('is-open');
-                    toggle.setAttribute('aria-expanded', 'false');
-                    toggle.classList.remove('is-open');
-                    document.body.style.overflow = '';
-                }
-            });
-            document.addEventListener('keydown', function(e) {
-                if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
-                    overlay.classList.remove('is-open');
-                    toggle.setAttribute('aria-expanded', 'false');
-                    toggle.classList.remove('is-open');
-                    document.body.style.overflow = '';
-                }
-            });
-        }
-
-        // FAQ accordion
-        var faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(function(item) {
-            var btn = item.querySelector('.faq-question');
-            if (btn) {
-                btn.addEventListener('click', function() {
-                    var isOpen = item.classList.toggle('is-open');
-                    btn.setAttribute('aria-expanded', isOpen);
-                });
-            }
-        });
-    })();
-    </script>
-</body>
-</html>
+                toggle.classList.toggle('is-open', isOpen

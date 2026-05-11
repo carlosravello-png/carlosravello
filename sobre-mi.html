@@ -135,7 +135,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #6e6e6e;
+            --muted:   #8a8a8a;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -187,7 +187,7 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
@@ -443,9 +443,9 @@
 
         .stack-item:nth-last-child(-n+2) { border-bottom: none; }
 
-        .stack-label {
+                .stack-label {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.12em;
@@ -522,7 +522,7 @@
 
         .tool-tag {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -563,7 +563,7 @@
             background: var(--bg);
             padding: 0 8px;
             font-family: var(--mono);
-            font-size: 0.62rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.1em;
         }
@@ -618,7 +618,7 @@
 
         .pub-doi {
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.68rem;
             color: var(--accent);
             letter-spacing: 0.06em;
             min-width: 80px;
@@ -718,7 +718,7 @@
             .pub-doi { min-width: auto; }
             .contact-entry { flex-direction: column; gap: 4px; }
             .mcd-block { padding: 24px 18px; }
-            .mcd-block::before { font-size: 0.58rem; }
+            .mcd-block::before { font-size: 0.68rem; }
             section { margin-bottom: 58px; }
         }
     </style>
@@ -912,8 +912,8 @@
                     <span class="pub-mini-title"><a href="https://zenodo.org/records/19229364" target="_blank" rel="noopener">Carbon Footprint Analysis of Bicycle Manufacturing and Maintenance Cycles</a></span>
                 </div>
                 <div class="pub-mini" style="border-top: 1px solid var(--border); margin-top: 8px; padding-top: 20px;">
-                    <span class="pub-doi" style="color: #7a8f6a; font-size: 0.56rem; letter-spacing: 0.12em;">SERIE</span>
-                    <span class="pub-mini-title" style="font-family: var(--mono); font-size: 0.66rem; color: var(--muted); letter-spacing: 0.06em;">Metacognición 2.0 — Modelo de Coherencia Dinámica</span>
+                    <span class="pub-doi" style="color: #7a8f6a; font-size: 0.68rem; letter-spacing: 0.12em;">SERIE</span>
+                    <span class="pub-mini-title" style="font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.06em;">Metacognición 2.0 — Modelo de Coherencia Dinámica</span>
                 </div>
                 <div class="pub-mini">
                     <span class="pub-doi">DOI:20092009</span>
@@ -1018,38 +1018,4 @@
 
             function openMenu() {
                 overlay.classList.add('is-open');
-                btn.setAttribute('aria-expanded', 'true');
-                btn.setAttribute('aria-label', 'Cerrar menú');
-                document.body.style.overflow = 'hidden';
-                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
-            }
-
-            function closeMenu() {
-                overlay.classList.remove('is-open');
-                btn.setAttribute('aria-expanded', 'false');
-                btn.setAttribute('aria-label', 'Abrir menú');
-                document.body.style.overflow = '';
-                btn.focus();
-            }
-
-            if (btn && overlay) {
-                btn.addEventListener('click', function() {
-                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-                });
-
-                overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-lang-btn').forEach(function(link) {
-                    link.addEventListener('click', function() {
-                        if (!link.getAttribute('href').startsWith('#')) return;
-                        closeMenu();
-                    });
-                });
-            }
-        })();
-    </script>
-</body>
-</html>
-            
+                btn.

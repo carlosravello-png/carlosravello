@@ -123,7 +123,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #525252;
+            --muted:   #8a8a8a;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -161,7 +161,7 @@
 
         .nav-id {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.14em;
         }
@@ -172,7 +172,7 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
@@ -301,7 +301,7 @@
 
         .case-id {
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.68rem;
             letter-spacing: 0.18em;
             text-transform: uppercase;
             color: var(--accent);
@@ -326,15 +326,15 @@
 
         .case-metric {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.70rem;
             letter-spacing: 0.08em;
-            color: #2e2e2e;
+            color: var(--muted);
             border-top: 1px solid var(--border);
             padding-top: 12px;
             line-height: 1.7;
         }
 
-        .case-metric strong { color: #484848; font-weight: 400; }
+        .case-metric strong { color: var(--text); font-weight: 400; }
 
         .diagnostico-intro {
             font-size: 1rem;
@@ -361,7 +361,7 @@
             color: var(--white);
             font-family: var(--mono);
             font-size: 0.82rem;
-            font-weight: 300;
+            font-weight: 400;
             padding: 18px 20px;
             width: 100%;
             resize: none;
@@ -371,7 +371,7 @@
 
         .diagnostico-form input::placeholder,
         .diagnostico-form textarea::placeholder {
-            color: #2e2e2e;
+            color: #5a5a5a;
             letter-spacing: 0.06em;
         }
 
@@ -385,7 +385,7 @@
             border: none;
             color: var(--accent);
             font-family: var(--mono);
-            font-size: 0.65rem;
+            font-size: 0.72rem;
             font-weight: 400;
             letter-spacing: 0.28em;
             text-transform: uppercase;
@@ -412,7 +412,7 @@
             background: var(--bg);
             color: var(--accent);
             font-family: var(--mono);
-            font-size: 0.65rem;
+            font-size: 0.72rem;
             font-weight: 400;
             letter-spacing: 0.28em;
             text-transform: uppercase;
@@ -428,7 +428,7 @@
         }
 
         .diagnostico-action-sub {
-            font-size: 0.58rem;
+            font-size: 0.70rem;
             font-family: var(--mono);
             color: var(--muted);
             letter-spacing: 0.14em;
@@ -455,7 +455,7 @@
 
         .footer-surgery {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.68rem;
             color: var(--border);
             letter-spacing: 0.12em;
             text-transform: uppercase;
@@ -597,34 +597,4 @@
                     <p>The Dynamic Coherence Model is documented in open-access publications, indexed in Zenodo and OpenAIRE with verifiable DOI. The methodology governing each intervention is documented, citable and signed:</p>
                     <p><a href="https://doi.org/10.5281/zenodo.20092009" target="_blank" rel="noopener" style="color:var(--accent)">doi.org/10.5281/zenodo.20092009</a> — <em>Metacognition 2.0 and Predictive Digital Identity: Coherence Archetypes in Knowledge Graphs</em></p>
                     <p><a href="https://doi.org/10.5281/zenodo.20112409" target="_blank" rel="noopener" style="color:var(--accent)">doi.org/10.5281/zenodo.20112409</a> — <em>The Profile You Didn't Write: Ocular biometrics, data brokers and algorithmic surveillance</em></p>
-                    <p>Signed with ORCID <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener" style="color:var(--accent)">0009-0007-5631-7436</a> and registered in <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener" style="color:var(--accent)">Wikidata Q139714842</a>. Not marketing theory. Documented method.</p>
-                </div>
-            </section>
-
-            <section id="diagnosis">
-                <h2>Diagnosis</h2>
-                <p class="diagnostico-intro">
-                    The first meeting is free.<br>
-                    <strong>The formal diagnosis has a price.</strong>
-                </p>
-                <p class="diagnostico-intro">
-                    If you got here you already know what you need.<br>
-                    You just need to know if your case is operable.
-                </p>
-                <div class="diagnostico-actions">
-                    <a href="https://wa.me/51977647243?text=Hi%20Carlos%2C%20I%27m%20interested%20in%20a%20diagnosis" class="diagnostico-action" target="_blank" rel="noopener">WhatsApp → +51 977 647 243</a>
-                    <a href="mailto:carlos.ravello@zoovettravel.com" class="diagnostico-action">carlos.ravello@zoovettravel.com</a>
-                </div>
-                <p class="diagnostico-action-sub">Typical response time: under 24 h.</p>
-            </section>
-
-        </main>
-
-        <footer>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
-            <span class="footer-surgery">BRAND_RECONSTRUCTIVE_SURGERY</span>
-        </footer>
-
-    </div>
-</body>
-</html>
+                    <p>Signed with ORCID <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener" style="color:var(--accent)">0009-0007-5631-7436</a> and registered in <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener" style="color:var(--accent)">Wikidata 

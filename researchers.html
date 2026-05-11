@@ -103,7 +103,7 @@
     </script>
     <style>
         :root {
-            --bg: #060606; --text: #cecece; --muted: #6e6e6e;
+            --bg: #060606; --text: #cecece; --muted: #8a8a8a;
             --border: #1c1c1c; --accent: #b8976a; --white: #f0f0f0;
             --serif: 'Georgia', 'Times New Roman', serif;
             --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
@@ -116,7 +116,7 @@
         nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; text-decoration: none; }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
-        .lang-btn { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
+        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
         .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
         .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
@@ -147,7 +147,7 @@
         .breadcrumb span { color: #555; }
 
         header { margin-bottom: 80px; }
-        .header-kicker { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        .header-kicker { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; display: block; }
         h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 400; color: var(--white); line-height: 1.15; letter-spacing: -0.03em; margin-bottom: 24px; }
         .header-lead { font-size: clamp(1rem, 2.2vw, 1.12rem); color: var(--muted); line-height: 1.82; max-width: 580px; }
 
@@ -160,13 +160,13 @@
 
         .problem-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 28px; }
         .problem-card { border: 1px solid var(--border); padding: 24px; }
-        .problem-sector { font-family: var(--mono); font-size: 0.58rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 10px; }
+        .problem-sector { font-family: var(--mono); font-size: 0.64rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 10px; }
         .problem-card p { font-size: 0.88rem; color: #9a9a9a; line-height: 1.7; }
         .problem-card strong { color: var(--text); }
 
         .method-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px; }
         .method-card { border-left: 2px solid var(--accent); padding: 16px 20px; }
-        .method-name { font-family: var(--mono); font-size: 0.64rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
+        .method-name { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 8px; }
         .method-desc { font-size: 0.86rem; color: #9a9a9a; line-height: 1.65; }
 
         .faq-item { border-bottom: 1px solid var(--border); }
@@ -178,7 +178,7 @@
         .faq-answer p { font-size: 0.93rem; color: #9a9a9a; line-height: 1.8; padding-bottom: 20px; }
 
         .contact-block { border: 1px solid var(--border); padding: 40px; margin-top: 8px; }
-        .contact-label { font-family: var(--mono); font-size: 0.60rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; display: block; }
+        .contact-label { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; display: block; }
         .contact-block h2 { font-size: clamp(1.2rem, 3vw, 1.6rem); margin-bottom: 16px; }
         .contact-block p { font-size: 0.93rem; color: #9a9a9a; line-height: 1.8; margin-bottom: 28px; }
         .contact-link { display: inline-block; font-family: var(--mono); font-size: 0.68rem; color: var(--accent); text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; border: 1px solid var(--accent); padding: 12px 24px; transition: all 0.22s; }
@@ -190,8 +190,8 @@
         .related-article-desc { font-size: 0.82rem; color: #888; margin-top: 4px; display: block; }
 
         footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-        .footer-copy { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); letter-spacing: 0.08em; }
-        .footer-back { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
+        .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; }
+        .footer-back { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
         .footer-back:hover { color: var(--white); }
 
         @media (max-width: 640px) {
@@ -408,20 +408,4 @@
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
                 overlay.classList.remove('is-open');
-                toggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-        var faqItems = document.querySelectorAll('.faq-item');
-        faqItems.forEach(function(item) {
-            var btn = item.querySelector('.faq-question');
-            var ans = item.querySelector('.faq-answer');
-            btn.addEventListener('click', function() {
-                var open = btn.getAttribute('aria-expanded') === 'true';
-                btn.setAttribute('aria-expanded', !open);
-                ans.style.maxHeight = open ? '0' : ans.scrollHeight + 'px';
-            });
-        });
-    </script>
-</body>
-</html>
+                to

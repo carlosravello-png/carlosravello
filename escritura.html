@@ -178,7 +178,7 @@
         :root {
             --bg:      #060606;
             --text:    #cecece;
-            --muted:   #6e6e6e;
+            --muted:   #8a8a8a;
             --border:  #1c1c1c;
             --accent:  #b8976a;
             --white:   #f0f0f0;
@@ -228,7 +228,7 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.64rem;
+            font-size: 0.70rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
@@ -390,7 +390,7 @@
 
         .card-num {
             font-family: var(--mono);
-            font-size: 0.60rem;
+            font-size: 0.68rem;
             color: var(--border);
             letter-spacing: 0.1em;
             margin-bottom: 6px;
@@ -405,7 +405,7 @@
 
         .card-tag {
             font-family: var(--mono);
-            font-size: 0.58rem;
+            font-size: 0.64rem;
             color: var(--accent);
             text-transform: uppercase;
             letter-spacing: 0.1em;
@@ -453,7 +453,7 @@
 
         .card-read {
             font-family: var(--mono);
-            font-size: 0.62rem;
+            font-size: 0.70rem;
             color: var(--accent);
             text-decoration: none;
             letter-spacing: 0.14em;
@@ -489,7 +489,7 @@
             background: var(--bg);
             padding: 0 8px;
             font-family: var(--mono);
-            font-size: 0.62rem;
+            font-size: 0.70rem;
             color: var(--muted);
             letter-spacing: 0.1em;
         }
@@ -692,37 +692,4 @@
     </div>
 
     <script>
-        (function() {
-            var btn     = document.getElementById('navToggle');
-            var overlay = document.getElementById('navOverlay');
-            var firstLink = overlay ? overlay.querySelector('.nav-overlay-link') : null;
-
-            function openMenu() {
-                overlay.classList.add('is-open');
-                btn.setAttribute('aria-expanded', 'true');
-                btn.setAttribute('aria-label', 'Cerrar menú');
-                document.body.style.overflow = 'hidden';
-                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
-            }
-
-            function closeMenu() {
-                overlay.classList.remove('is-open');
-                btn.setAttribute('aria-expanded', 'false');
-                btn.setAttribute('aria-label', 'Abrir menú');
-                document.body.style.overflow = '';
-                btn.focus();
-            }
-
-            if (btn && overlay) {
-                btn.addEventListener('click', function() {
-                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-                });
-            }
-        })();
-    </script>
-</body>
-</html>
+        (functio

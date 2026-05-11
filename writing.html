@@ -40,7 +40,7 @@
     </script>
     <style>
         :root {
-            --bg: #060606; --text: #cecece; --muted: #6e6e6e;
+            --bg: #060606; --text: #cecece; --muted: #8a8a8a;
             --border: #1c1c1c; --accent: #b8976a; --white: #f0f0f0;
             --serif: 'Georgia', 'Times New Roman', serif;
             --mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
@@ -53,7 +53,7 @@
         nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; text-decoration: none; }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
-        .lang-btn { font-family: var(--mono); font-size: 0.64rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
+        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
         .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
         .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
@@ -90,24 +90,24 @@
         .article-card { padding: 36px 0; border-bottom: 1px solid #252525; position: relative; }
         .article-card:first-child { border-top: 1px solid #252525; }
         .article-card:hover { background: rgba(255,255,255,0.018); border-radius: 3px; }
-        .card-num { font-family: var(--mono); font-size: 0.60rem; color: var(--border); letter-spacing: 0.1em; margin-bottom: 6px; }
+        .card-num { font-family: var(--mono); font-size: 0.68rem; color: var(--border); letter-spacing: 0.1em; margin-bottom: 6px; }
         .card-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
-        .card-tag { font-family: var(--mono); font-size: 0.58rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid #2a2015; padding: 2px 8px; }
+        .card-tag { font-family: var(--mono); font-size: 0.64rem; color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; border: 1px solid #2a2015; padding: 2px 8px; }
         .article-card h3 { font-family: var(--serif); font-size: clamp(1.2rem, 3vw, 1.45rem); font-weight: 400; color: var(--white); line-height: 1.35; margin-bottom: 14px; }
         .article-card h3 a { color: inherit; transition: color 0.2s; }
         .article-card h3 a:hover { color: var(--accent); }
         .card-excerpt { font-size: 0.97rem; color: #9a9a9a; line-height: 1.82; margin-bottom: 22px; }
         .card-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-        .card-science { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); letter-spacing: 0.06em; }
-        .card-read { font-family: var(--mono); font-size: 0.62rem; color: var(--accent); text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; transition: color 0.2s; white-space: nowrap; }
+        .card-science { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.06em; }
+        .card-read { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); text-decoration: none; letter-spacing: 0.14em; text-transform: uppercase; transition: color 0.2s; white-space: nowrap; }
         .card-read:hover { color: var(--white); }
-        .card-lang { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); margin-left: 12px; transition: color 0.2s; text-decoration: none; }
+        .card-lang { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); margin-left: 12px; transition: color 0.2s; text-decoration: none; }
         .card-lang:hover { color: var(--text); }
 
         footer { margin-top: 80px; padding-top: 32px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-        .footer-back { font-family: var(--mono); font-size: 0.62rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
+        .footer-back { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; letter-spacing: 0.12em; transition: color 0.2s; }
         .footer-back:hover { color: var(--white); }
-        .footer-copy { font-family: var(--mono); font-size: 0.60rem; color: var(--muted); letter-spacing: 0.08em; }
+        .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; }
 
         @media (max-width: 600px) { .wrapper { padding: 8vh 20px 8vh; } h1 { font-size: 2rem; } .article-card { padding: 28px 0; } }
     </style>
@@ -248,38 +248,4 @@
                         <a href="/el-perfil-que-no-escribiste.html" class="card-lang">ES</a>
                     </div>
                 </div>
-            </article>
-
-        </main>
-
-        <footer>
-            <a href="/en.html" class="footer-back">← carlosravello.com</a>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
-        </footer>
-
-    </div>
-    <script>
-        var toggle = document.getElementById('navToggle');
-        var overlay = document.getElementById('navOverlay');
-        toggle.addEventListener('click', function() {
-            var open = overlay.classList.toggle('is-open');
-            toggle.setAttribute('aria-expanded', open);
-            document.body.style.overflow = open ? 'hidden' : '';
-        });
-        overlay.addEventListener('click', function(e) {
-            if (e.target === overlay) {
-                overlay.classList.remove('is-open');
-                toggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
-                overlay.classList.remove('is-open');
-                toggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-    </script>
-</body>
-</html>
+       
