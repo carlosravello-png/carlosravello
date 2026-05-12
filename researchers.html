@@ -215,7 +215,6 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
-                <a href="/about-me.html" class="lang-btn">About</a>
                 <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/services.html" class="lang-btn">Work</a>
@@ -230,7 +229,6 @@
 
         <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
             <div class="nav-overlay-inner">
-                <a href="/about-me.html" class="nav-overlay-link">About</a>
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
                 <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
@@ -393,13 +391,19 @@
         <footer>
             <a href="/en.html" class="footer-back">← carlosravello.com</a>
             <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+            <a href="/about-me.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.60rem;color:#1c1c1c;text-decoration:none;letter-spacing:0.06em;">About</a>
         </footer>
 
     </div>
     <script>
         var toggle = document.getElementById('navToggle');
         var overlay = document.getElementById('navOverlay');
-        toggle.addEventListener('click', function() {
-            var open = overlay.classList.toggle('is-open');
-            toggle.setAttribute('aria-expanded', open);
-            document.body.style.overf
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
+    })();
+    </script>
+</body>
+</html>

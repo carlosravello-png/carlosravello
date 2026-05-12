@@ -581,7 +581,6 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
-                <a href="/about-me.html" class="lang-btn active" aria-current="page">About</a>
                 <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/services.html" class="lang-btn">Work</a>
@@ -599,7 +598,6 @@
         <div class="nav-overlay" id="navOverlay"
              role="dialog" aria-modal="true" aria-label="Navigation menu">
             <div class="nav-overlay-inner">
-                <a href="/about-me.html" class="nav-overlay-link current">About</a>
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/research.html" class="nav-overlay-link">Research</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
@@ -835,4 +833,76 @@
                     </div>
                     <div class="contact-entry">
                         <span class="contact-key">Email</span>
-                        <a href="m
+                        <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-val">carlos.ravello@zoovettravel.com</a>
+                    </div>
+                    <div class="contact-entry">
+                        <span class="contact-key">ORCID</span>
+                        <a href="https://orcid.org/0009-0007-5631-7436" class="contact-val" target="_blank" rel="me noopener">0009-0007-5631-7436</a>
+                    </div>
+                    <div class="contact-entry">
+                        <span class="contact-key">GitHub</span>
+                        <a href="https://github.com/carlosravello-png" class="contact-val" target="_blank" rel="me noopener">github.com/carlosravello-png</a>
+                    </div>
+                    <div class="contact-entry">
+                        <span class="contact-key">LinkedIn</span>
+                        <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" class="contact-val" target="_blank" rel="me noopener">carlos-ravello-joo</a>
+                    </div>
+                    <div class="contact-entry">
+                        <span class="contact-key">Location</span>
+                        <span class="contact-val" style="cursor:default">Peru · Global operation</span>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+            <span class="footer-mcd">MCD · Dynamic Coherence Model</span>
+            <a href="/about-me.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.60rem;color:#1c1c1c;text-decoration:none;letter-spacing:0.06em;">About</a>
+        </footer>
+
+    </div>
+
+    <script>
+        (function() {
+            var btn     = document.getElementById('navToggle');
+            var overlay = document.getElementById('navOverlay');
+            var firstLink = overlay ? overlay.querySelector('.nav-overlay-link') : null;
+
+            function openMenu() {
+                overlay.classList.add('is-open');
+                btn.setAttribute('aria-expanded', 'true');
+                btn.setAttribute('aria-label', 'Close menu');
+                document.body.style.overflow = 'hidden';
+                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
+            }
+
+            function closeMenu() {
+                overlay.classList.remove('is-open');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-label', 'Open menu');
+                document.body.style.overflow = '';
+                btn.focus();
+            }
+
+            if (btn && overlay) {
+                btn.addEventListener('click', function() {
+                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+                });
+
+                overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-lang-btn').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        if (!link.getAttribute('href').startsWith('#')) return;
+                        closeMenu();
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

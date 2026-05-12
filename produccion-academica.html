@@ -307,7 +307,6 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
-                <a href="/sobre-mi.html" class="lang-btn">Sobre mí</a>
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn active" aria-current="page">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
@@ -322,7 +321,6 @@
 
         <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menú de navegación">
             <div class="nav-overlay-inner">
-                <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/produccion-academica.html" class="nav-overlay-link active">Publicaciones</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
@@ -420,6 +418,7 @@
                 <span class="footer-tagline">Identidad verificable. Autoridad construida.</span>
             </div>
             <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
+            <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.60rem;color:#1c1c1c;text-decoration:none;letter-spacing:0.06em;">Sobre mí</a>
         </footer>
 
     </div>
@@ -431,4 +430,12 @@
         if (!toggle || !overlay) return;
         var links = overlay.querySelectorAll('.nav-overlay-link');
         function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
-        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow 
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
+    })();
+    </script>
+</body>
+</html>

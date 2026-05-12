@@ -546,7 +546,6 @@
             <span class="nav-id"><a href="/">carlosravello.com</a></span>
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">Inicio</a>
-                <a href="/sobre-mi.html" class="lang-btn">Sobre mí</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
@@ -562,7 +561,6 @@
         <div class="nav-overlay" id="navOverlay"
              role="dialog" aria-modal="true" aria-label="Menú de navegación">
             <div class="nav-overlay-inner">
-                <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
                 <a href="/escritura.html" class="nav-overlay-link current">Escritura</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
@@ -679,4 +677,54 @@
 
             <section id="acerca">
                 <h2>Sobre esta escritura</h2>
-                <div class="series-bl
+                <div class="series-block">
+                    <p>Estos ensayos no son divulgación. Son el registro documentado del sistema desde el que opero. Cada artículo cita su evidencia científica, enlaza sus fuentes y existe en dos idiomas — porque una entidad que no puede ser verificada en más de un idioma tiene la mitad del grafo.</p>
+                    <p style="margin-top:16px;">La serie continúa. El criterio de publicación es el mismo que el del resto del ecosistema: <strong>exactitud documentada o no existe</strong>.</p>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+            <span class="footer-mcd">MCD · Modelo de Coherencia Dinámica</span>
+            <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.60rem;color:#1c1c1c;text-decoration:none;letter-spacing:0.06em;">Sobre mí</a>
+        </footer>
+
+    </div>
+
+    <script>
+        (function() {
+            var btn     = document.getElementById('navToggle');
+            var overlay = document.getElementById('navOverlay');
+            var firstLink = overlay ? overlay.querySelector('.nav-overlay-link') : null;
+
+            function openMenu() {
+                overlay.classList.add('is-open');
+                btn.setAttribute('aria-expanded', 'true');
+                btn.setAttribute('aria-label', 'Cerrar menú');
+                document.body.style.overflow = 'hidden';
+                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
+            }
+
+            function closeMenu() {
+                overlay.classList.remove('is-open');
+                btn.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-label', 'Abrir menú');
+                document.body.style.overflow = '';
+                btn.focus();
+            }
+
+            if (btn && overlay) {
+                btn.addEventListener('click', function() {
+                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+                });
+
+                document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+                });
+            }
+        })();
+    </script>
+</body>
+</html>
