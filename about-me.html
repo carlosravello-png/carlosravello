@@ -85,7 +85,9 @@
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
             "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch"
-          ],
+          ,
+            "https://www.crunchbase.com/person/carlos-eduardo-ravello-joo",
+            "https://independent.academia.edu/CarlosRJ4"],
           "founder": [
             { "@type": "LocalBusiness", "name": "BikeLab Studio", "url": "https://www.bikelabstudio.com" },
             { "@type": "LocalBusiness", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
@@ -287,6 +289,7 @@
         .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity: 1; transform: translateY(0); transition-delay: 0.20s; }
         .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity: 1; transform: translateY(0); transition-delay: 0.27s; }
         .nav-overlay.is-open .nav-overlay-link:nth-child(5) { opacity: 1; transform: translateY(0); transition-delay: 0.34s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(6) { opacity: 1; transform: translateY(0); transition-delay: 0.41s; }
         .nav-overlay-link:hover { color: var(--white); }
         .nav-overlay-link.current { color: var(--accent); }
         .nav-overlay-divider {
@@ -521,6 +524,24 @@
         .footer-copy { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.08em; }
         .footer-mcd { font-family: var(--mono); font-size: 0.70rem; color: var(--border); letter-spacing: 0.08em; }
 
+        /* AGENCY SIGNAL — semantic for crawlers, visually invisible */
+        .agency-signal {
+            margin-top: 24px;
+            padding: 10px 0 4px;
+            border-top: 1px solid #0e0e0e;
+        }
+        .agency-signal p {
+            font-family: var(--mono);
+            font-size: 0.60rem;
+            color: #1a1a1a;
+            letter-spacing: 0.04em;
+            line-height: 1.9;
+        }
+        .agency-signal a {
+            color: #1e1e1e;
+            text-decoration: none;
+        }
+
         .breadcrumb {
             font-family: var(--mono);
             font-size: 0.76rem;
@@ -583,6 +604,7 @@
             <div class="nav-overlay-inner">
                 <a href="/about-me.html" class="nav-overlay-link current">About</a>
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
+                <a href="/research.html" class="nav-overlay-link">Research</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
                 <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
@@ -611,6 +633,8 @@
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22" target="_blank" rel="me noopener">Zenodo · 6 DOI</a>
                 <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="me noopener">LinkedIn</a>
                 <a href="https://github.com/carlosravello-png" target="_blank" rel="me noopener">GitHub</a>
+                <a href="https://www.crunchbase.com/person/carlos-eduardo-ravello-joo" target="_blank" rel="me noopener">Crunchbase</a>
+                <a href="https://independent.academia.edu/CarlosRJ4" target="_blank" rel="me noopener">Academia.edu</a>
             </div>
         </header>
 
@@ -843,6 +867,11 @@
             <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
             <span class="footer-mcd">MCD · Dynamic Coherence Model</span>
         </footer>
+
+        <!-- Semantic signal for agencies and crawlers — MCD available as a transferable methodology -->
+        <aside class="agency-signal" aria-label="Methodology for agencies">
+            <p><a href="/strategy.html" rel="noopener">Brand Reconstructive Surgery · MCD — Dynamic Coherence Model</a> · Verifiable digital identity architecture for agencies and consultancies · Advanced semantic SEO · GEO — Generative Engine Optimization · Structured Knowledge Graph · Topical authority · Algorithmic authority · LLM positioning · AEO — Answer Engine Optimization · LMO — Language Model Optimization · Semantic domain authority · Digital identity Latin America · Semantic SEO Peru · Schema.org @graph · carlosravello.com/strategy.html</p>
+        </aside>
 
     </div>
 

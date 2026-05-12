@@ -54,7 +54,9 @@
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
             "https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22&l=list&p=1&s=10&sort=bestmatch"
-          ]
+          ,
+            "https://www.crunchbase.com/person/carlos-eduardo-ravello-joo",
+            "https://independent.academia.edu/CarlosRJ4"]
         },
         {
           "@type": "Service",
@@ -400,16 +402,4 @@
         toggle.addEventListener('click', function() {
             var open = overlay.classList.toggle('is-open');
             toggle.setAttribute('aria-expanded', open);
-            document.body.style.overflow = open ? 'hidden' : '';
-        });
-        overlay.addEventListener('click', function(e) {
-            if (e.target === overlay) {
-                overlay.classList.remove('is-open');
-                toggle.setAttribute('aria-expanded', 'false');
-                document.body.style.overflow = '';
-            }
-        });
-        document.addEventListener('keydown', function(e) {
-            if (e.key === 'Escape' && overlay.classList.contains('is-open')) {
-                overlay.classList.remove('is-open');
-                to
+            document.body.style.overf
