@@ -470,29 +470,47 @@
         }
         /* ── Figuras científicas ── */
         .paper-fig {
-            margin: 0 0 40px 0;
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            overflow: hidden;
-            background: var(--bg);
+            margin: 0 0 44px 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
         }
         .paper-fig a.fig-zoom {
             display: block;
             cursor: zoom-in;
-            transition: opacity 0.2s;
+            position: relative;
+            transition: opacity 0.18s;
         }
-        .paper-fig a.fig-zoom:hover { opacity: 0.88; }
-        .paper-fig img { width: 100%; display: block; }
+        .paper-fig a.fig-zoom:hover { opacity: 0.85; }
+        .paper-fig a.fig-zoom::after {
+            content: '↗';
+            position: absolute;
+            bottom: 10px;
+            right: 12px;
+            font-size: 1rem;
+            color: var(--muted);
+            background: rgba(6,6,6,0.75);
+            padding: 3px 7px;
+            border: 1px solid var(--border);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .paper-fig img {
+            display: block;
+            min-width: 960px;
+            width: 960px;
+        }
         .paper-fig figcaption {
             font-family: var(--mono);
-            font-size: 0.68rem;
+            font-size: 0.66rem;
             color: var(--muted);
-            padding: 11px 18px;
+            margin-top: 12px;
+            padding-left: 14px;
+            border-left: 2px solid var(--border);
             letter-spacing: 0.07em;
-            border-top: 1px solid var(--border);
-            line-height: 1.8;
+            line-height: 1.85;
         }
-        .paper-fig figcaption strong { color: var(--text); font-weight: 600; }
+        .paper-fig figcaption strong { color: var(--text); }
         .paper-fig figcaption a { color: var(--accent); text-decoration: none; }
         .paper-fig figcaption a:hover { color: var(--white); }
     </style>

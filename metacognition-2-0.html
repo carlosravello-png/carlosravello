@@ -199,31 +199,49 @@
         .footer-back:hover { color: var(--white); }
         @media (max-width: 600px) { .wrapper { padding: 36px 18px 80px; } h1 { font-size: 1.55rem; } }
         /* ── Figuras científicas ── */
-        .body-text figure.paper-fig {
-            margin: 56px 0;
-            border: 1px solid var(--border);
-            border-radius: 2px;
-            overflow: hidden;
-            background: var(--bg);
+        .body-text .paper-fig {
+            margin: 60px 0;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            position: relative;
         }
-        .body-text figure.paper-fig a.fig-zoom {
+        .body-text .paper-fig a.fig-zoom {
             display: block;
             cursor: zoom-in;
-            transition: opacity 0.2s;
+            position: relative;
+            transition: opacity 0.18s;
         }
-        .body-text figure.paper-fig a.fig-zoom:hover { opacity: 0.88; }
-        .body-text figure.paper-fig img { width: 100%; display: block; }
-        .body-text figcaption {
-            font-family: var(--mono);
-            font-size: 0.66rem;
+        .body-text .paper-fig a.fig-zoom:hover { opacity: 0.85; }
+        .body-text .paper-fig a.fig-zoom::after {
+            content: '↗';
+            position: absolute;
+            bottom: 10px;
+            right: 12px;
+            font-size: 1rem;
             color: var(--muted);
-            padding: 10px 16px;
-            letter-spacing: 0.07em;
-            border-top: 1px solid var(--border);
-            line-height: 1.8;
+            background: rgba(6,6,6,0.75);
+            padding: 3px 7px;
+            border: 1px solid var(--border);
+            line-height: 1;
+            pointer-events: none;
         }
-        .body-text figcaption a { color: var(--accent); text-decoration: none; }
-        .body-text figcaption a:hover { color: var(--white); }
+        .body-text .paper-fig img {
+            display: block;
+            min-width: 960px;
+            width: 960px;
+        }
+        .body-text .paper-fig figcaption {
+            font-family: var(--mono);
+            font-size: 0.64rem;
+            color: var(--muted);
+            margin-top: 12px;
+            padding-left: 14px;
+            border-left: 2px solid var(--border);
+            letter-spacing: 0.07em;
+            line-height: 1.85;
+        }
+        .body-text .paper-fig figcaption a { color: var(--accent); text-decoration: none; }
+        .body-text .paper-fig figcaption a:hover { color: var(--white); }
     </style>
 </head>
 <body>
