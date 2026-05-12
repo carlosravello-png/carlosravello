@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" viewBox="0 0 1280 820" role="img">
+<title>Atributos personales predecibles desde la huella digital (Kosinski et al., 2013) / Private traits predictable from digital footprints (Kosinski et al., 2013)</title>
+<desc>Visualisation of the results published by Kosinski, Stillwell and Graepel in 2013 (PNAS 110(15): 5802–5805) on the predictability of private personal attributes from Facebook Likes, based on a study of 58,466 volunteers. Diagram by Carlos Eduardo Ravello Joo.</desc>
+
+    <rect width="1280" height="820" fill="#060606"></rect>
+
+    <text x="60" y="62" class="t-mono" font-size="11" letter-spacing="2" fill="#b8976a">FIG. 3 · KOSINSKI, STILLWELL &amp; GRAEPEL (2013)</text>
+    <line x1="60" y1="74" x2="1220" y2="74" stroke="#1e1e1e" stroke-width="1"></line>
+    <text x="60" y="112" class="t-serif" font-size="26" fill="#cecece">
+      Atributos personales predecibles desde la huella digital
+    </text>
+    <text x="60" y="138" class="t-sans" font-size="13" fill="#5e5e66">
+      Resultados del estudio PNAS con N = 58 466 voluntarios y 170 Me-gusta de Facebook por persona
+    </text>
+
+    
+    <text x="60" y="190" class="t-mono" font-size="10.5" letter-spacing="1.6" fill="#cecece">
+      A · ATRIBUTOS DICOTÓMICOS · AUC
+    </text>
+    <line x1="60" y1="200" x2="610" y2="200" stroke="#282828" stroke-width="1"></line>
+
+    
+    
+    
+    <line x1="430" y1="220" x2="430" y2="612" stroke="#2e2e38" stroke-width="0.8" stroke-dasharray="3 3"></line>
+    <text x="430" y="635" class="t-mono" font-size="9.5" text-anchor="middle" fill="#5e5e66">0.50</text>
+    <line x1="580" y1="220" x2="580" y2="612" stroke="#1e1e1e" stroke-width="0.6"></line>
+    <text x="580" y="635" class="t-mono" font-size="9.5" text-anchor="middle" fill="#5e5e66">1.00</text>
+    <text x="280" y="635" class="t-mono" font-size="9.5" text-anchor="middle" fill="#5e5e66">0</text>
+    <text x="370" y="649" class="t-sans" font-size="9.5" text-anchor="middle" fill="#484850" font-style="italic">
+      (azar)
+    </text>
+
+    
+    
+    
+    <g>
+      <text x="270" y="232" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Afroam. vs caucásico
+      </text>
+      <rect x="280" y="222" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="222" width="135" height="14" fill="#cecece"></rect>
+      <text x="572" y="232" class="t-mono" font-size="10.5" fill="#cecece">0.95</text>
+    </g>
+    <g>
+      <text x="270" y="268" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Homosexual ♂ vs hetero ♂
+      </text>
+      <rect x="280" y="258" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="258" width="114" height="14" fill="#cecece"></rect>
+      <text x="572" y="268" class="t-mono" font-size="10.5" fill="#cecece">0.88</text>
+    </g>
+    <g>
+      <text x="270" y="304" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Demócrata vs Republicano
+      </text>
+      <rect x="280" y="294" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="294" width="105" height="14" fill="#cecece"></rect>
+      <text x="572" y="304" class="t-mono" font-size="10.5" fill="#cecece">0.85</text>
+    </g>
+    <g>
+      <text x="270" y="340" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Cristiano vs musulmán
+      </text>
+      <rect x="280" y="330" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="330" width="96" height="14" fill="#cecece"></rect>
+      <text x="572" y="340" class="t-mono" font-size="10.5" fill="#cecece">0.82</text>
+    </g>
+    <g>
+      <text x="270" y="376" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Lesbiana ♀ vs hetero ♀
+      </text>
+      <rect x="280" y="366" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="366" width="75" height="14" fill="#cecece"></rect>
+      <text x="572" y="376" class="t-mono" font-size="10.5" fill="#cecece">0.75</text>
+    </g>
+    <g>
+      <text x="270" y="412" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Fumador
+      </text>
+      <rect x="280" y="402" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="402" width="69" height="14" fill="#cecece"></rect>
+      <text x="572" y="412" class="t-mono" font-size="10.5" fill="#cecece">0.73</text>
+    </g>
+    <g>
+      <text x="270" y="448" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Consume alcohol
+      </text>
+      <rect x="280" y="438" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="438" width="60" height="14" fill="#cecece"></rect>
+      <text x="572" y="448" class="t-mono" font-size="10.5" fill="#cecece">0.70</text>
+    </g>
+    <g>
+      <text x="270" y="484" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Soltero/a vs en relación
+      </text>
+      <rect x="280" y="474" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="474" width="51" height="14" fill="#cecece"></rect>
+      <text x="572" y="484" class="t-mono" font-size="10.5" fill="#cecece">0.67</text>
+    </g>
+    <g>
+      <text x="270" y="520" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Consume drogas
+      </text>
+      <rect x="280" y="510" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="510" width="45" height="14" fill="#cecece"></rect>
+      <text x="572" y="520" class="t-mono" font-size="10.5" fill="#cecece">0.65</text>
+    </g>
+    <g>
+      <text x="270" y="556" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Padres juntos hasta los 21
+      </text>
+      <rect x="280" y="546" width="150" height="14" fill="#2d2d2d"></rect>
+      <rect x="430" y="546" width="30" height="14" fill="#cecece"></rect>
+      <text x="572" y="556" class="t-mono" font-size="10.5" fill="#cecece">0.60</text>
+    </g>
+
+    <text x="280" y="595" class="t-sans" font-size="10" fill="#5e5e66" font-style="italic">
+      AUC = área bajo la curva ROC; 0.5 = azar, 1.0 = predicción perfecta
+    </text>
+
+    
+    <line x1="650" y1="190" x2="650" y2="612" stroke="#1e1e1e" stroke-width="0.8"></line>
+
+    
+    <text x="680" y="190" class="t-mono" font-size="10.5" letter-spacing="1.6" fill="#cecece">
+      B · GRANDES CINCO · correlación de Pearson
+    </text>
+    <line x1="680" y1="200" x2="1220" y2="200" stroke="#282828" stroke-width="1"></line>
+
+    
+    <line x1="900" y1="220" x2="900" y2="490" stroke="#2e2e38" stroke-width="0.6"></line>
+    <line x1="1150" y1="220" x2="1150" y2="490" stroke="#1e1e1e" stroke-width="0.6"></line>
+    <text x="900" y="510" class="t-mono" font-size="9.5" text-anchor="middle" fill="#5e5e66">0</text>
+    <text x="1150" y="510" class="t-mono" font-size="9.5" text-anchor="middle" fill="#5e5e66">0.50</text>
+
+    
+    <g>
+      <text x="890" y="246" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Apertura
+      </text>
+      <rect x="900" y="236" width="215" height="14" fill="#b8976a"></rect>
+      <text x="1162" y="246" class="t-mono" font-size="10.5" fill="#cecece">0.43</text>
+    </g>
+    <g>
+      <text x="890" y="290" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Extraversión
+      </text>
+      <rect x="900" y="280" width="200" height="14" fill="#b8976a"></rect>
+      <text x="1162" y="290" class="t-mono" font-size="10.5" fill="#cecece">0.40</text>
+    </g>
+    <g>
+      <text x="890" y="334" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Amabilidad
+      </text>
+      <rect x="900" y="324" width="150" height="14" fill="#b8976a"></rect>
+      <text x="1162" y="334" class="t-mono" font-size="10.5" fill="#cecece">0.30</text>
+    </g>
+    <g>
+      <text x="890" y="378" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Neuroticismo
+      </text>
+      <rect x="900" y="368" width="150" height="14" fill="#b8976a"></rect>
+      <text x="1162" y="378" class="t-mono" font-size="10.5" fill="#cecece">0.30</text>
+    </g>
+    <g>
+      <text x="890" y="422" class="t-sans" font-size="12" text-anchor="end" fill="#cecece">
+        Responsabilidad
+      </text>
+      <rect x="900" y="412" width="145" height="14" fill="#b8976a"></rect>
+      <text x="1162" y="422" class="t-mono" font-size="10.5" fill="#cecece">0.29</text>
+    </g>
+
+    <text x="680" y="558" class="t-sans" font-size="11" fill="#8a8a8a" font-style="italic">
+      Las correlaciones reportadas para los Cinco Grandes
+    </text>
+    <text x="680" y="575" class="t-sans" font-size="11" fill="#8a8a8a" font-style="italic">
+      resultan comparables a las obtenidas con cuestionarios
+    </text>
+    <text x="680" y="592" class="t-sans" font-size="11" fill="#8a8a8a" font-style="italic">
+      estándar de autorreporte de personalidad.
+    </text>
+
+    
+    <rect x="60" y="680" width="1160" height="68" fill="#110d04" stroke="#b8976a" stroke-width="1"></rect>
+    <text x="84" y="710" class="t-serif" font-size="14" fill="#cecece" font-style="italic">
+      «Los registros digitales de comportamiento humano fácilmente accesibles pueden ser usados para predecir
+    </text>
+    <text x="84" y="730" class="t-serif" font-size="14" fill="#cecece" font-style="italic">
+      automática y exactamente un amplio rango de atributos personales altamente sensibles.»
+    </text>
+
+    <line x1="60" y1="764" x2="1220" y2="764" stroke="#181818" stroke-width="1"></line>
+    <text x="60" y="786" class="t-mono" font-size="10" fill="#5e5e66">
+      Kosinski, M., Stillwell, D., &amp; Graepel, T. (2013). PNAS, 110(15), 5802–5805. doi:10.1073/pnas.1218772110
+    </text>
+    <text x="60" y="804" class="t-mono" font-size="9.5" fill="#484850">
+      Diagram by Carlos Eduardo Ravello Joo · ORCID 0009-0007-5631-7436 · carlosravello.com · CC BY-SA 4.0
+    </text>
+  
+</svg>

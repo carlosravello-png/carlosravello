@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" viewBox="0 0 1280 760" role="img">
+<title>Ley de la Variedad Requerida de Ashby (1956) / Ashby&#39;s Law of Requisite Variety (1956)</title>
+<desc>Diagram of the cybernetic principle formulated by W. Ross Ashby in An Introduction to Cybernetics (1956): only variety can absorb variety. A regulator can neutralise the variety of disturbances of a regulated system only if it possesses equal or greater variety. Diagram by Carlos Eduardo Ravello Joo.</desc>
+
+    <defs>
+  <style>
+    .t-serif { font-family: 'Crimson Pro', 'Crimson Text', Georgia, 'Times New Roman', serif; }
+    .t-mono  { font-family: 'JetBrains Mono', 'Courier New', Courier, monospace; }
+    .t-sans  { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif; }
+  </style>
+  <rdf:RDF>
+    <cc:Work rdf:about="">
+      <dc:title>Ley de la Variedad Requerida de Ashby (1956) / Ashby's Law of Requisite Variety (1956)</dc:title>
+      <dc:description>Diagram of the cybernetic principle formulated by W. Ross Ashby in An Introduction to Cybernetics (1956): only variety can absorb variety. A regulator can neutralise the variety of disturbances of a regulated system only if it possesses equal or greater variety. Diagram by Carlos Eduardo Ravello Joo.</dc:description>
+      <dc:creator><cc:Agent><dc:title>Carlos Eduardo Ravello Joo</dc:title></cc:Agent></dc:creator>
+      <dc:rights><cc:Agent><dc:title>Carlos Eduardo Ravello Joo · ORCID 0009-0007-5631-7436</dc:title></cc:Agent></dc:rights>
+      <dc:date>2025</dc:date>
+      <dc:format>image/svg+xml</dc:format>
+      <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+      <dc:source>https://archive.org/details/introductiontocy0000ashb</dc:source>
+      <dc:relation>https://carlosravello.com/metacognicion-2-0.html</dc:relation>
+      <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/4.0/"/>
+    </cc:Work>
+    <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/4.0/">
+      <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+      <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+      <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+      <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+      <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+    </cc:License>
+  </rdf:RDF>
+
+      <marker id="f4-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#cecece"></path>
+      </marker>
+    </defs>
+    <rect width="1280" height="760" fill="#060606"></rect>
+
+    <text x="60" y="62" class="t-mono" font-size="11" letter-spacing="2" fill="#b8976a">FIG. 4 · ASHBY (1956)</text>
+    <line x1="60" y1="74" x2="1220" y2="74" stroke="#1c1c1c" stroke-width="1"></line>
+    <text x="60" y="112" class="t-serif" font-size="26" fill="#cecece">
+      Ley de Variedad Requerida
+    </text>
+    <text x="60" y="138" class="t-sans" font-size="13" fill="#5e5e66">
+      «Sólo la variedad puede absorber variedad» — un principio fundacional de la cibernética
+    </text>
+
+    
+    
+    <rect x="100" y="320" width="180" height="100" fill="#0e0e0e" stroke="#282828" stroke-width="1.4"></rect>
+    <text x="190" y="358" class="t-serif" font-size="20" text-anchor="middle" fill="#cecece" font-weight="600">D</text>
+    <text x="190" y="382" class="t-sans" font-size="12" text-anchor="middle" fill="#8a8a8a">
+      Perturbación
+    </text>
+    <text x="190" y="402" class="t-sans" font-size="10.5" text-anchor="middle" fill="#5e5e66" font-style="italic">
+      fuente de variedad
+    </text>
+
+    
+    <rect x="540" y="320" width="200" height="100" fill="#0b0b0b" stroke="#282828" stroke-width="1.4"></rect>
+    <text x="640" y="358" class="t-serif" font-size="20" text-anchor="middle" fill="#cecece" font-weight="600">T</text>
+    <text x="640" y="382" class="t-sans" font-size="12" text-anchor="middle" fill="#8a8a8a">
+      Sistema objetivo
+    </text>
+    <text x="640" y="402" class="t-sans" font-size="10.5" text-anchor="middle" fill="#5e5e66" font-style="italic">
+      opera bajo influencia D y R
+    </text>
+
+    
+    <rect x="1000" y="320" width="180" height="100" fill="#110d04" stroke="#b8976a" stroke-width="1.4"></rect>
+    <text x="1090" y="358" class="t-serif" font-size="20" text-anchor="middle" fill="#cecece" font-weight="600">E</text>
+    <text x="1090" y="382" class="t-sans" font-size="12" text-anchor="middle" fill="#8a8a8a">
+      Variables esenciales
+    </text>
+    <text x="1090" y="402" class="t-sans" font-size="10.5" text-anchor="middle" fill="#5e5e66" font-style="italic">
+      resultado dentro de límites
+    </text>
+
+    
+    <rect x="540" y="540" width="200" height="100" fill="#0e0e0e" stroke="#282828" stroke-width="1.4"></rect>
+    <text x="640" y="578" class="t-serif" font-size="20" text-anchor="middle" fill="#cecece" font-weight="600">R</text>
+    <text x="640" y="602" class="t-sans" font-size="12" text-anchor="middle" fill="#cecece">
+      Regulador
+    </text>
+    <text x="640" y="622" class="t-sans" font-size="10.5" text-anchor="middle" fill="#5e5e66" font-style="italic">
+      acopla variedad a la perturbación
+    </text>
+
+    
+    <line x1="280" y1="370" x2="540" y2="370" stroke="#282828" stroke-width="1.4" marker-end="url(#f4-arrow)"></line>
+    <line x1="740" y1="370" x2="1000" y2="370" stroke="#282828" stroke-width="1.4" marker-end="url(#f4-arrow)"></line>
+    
+    <path d="M 540 570 Q 360 530 240 420" fill="none" stroke="#282828" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#f4-arrow)"></path>
+    <text x="370" y="500" class="t-sans" font-size="11" text-anchor="middle" fill="#cecece" font-style="italic">
+      (percibe perturbación)
+    </text>
+    
+    <line x1="640" y1="540" x2="640" y2="420" stroke="#282828" stroke-width="1.4" marker-end="url(#f4-arrow)"></line>
+    <text x="660" y="486" class="t-sans" font-size="11" fill="#cecece" font-style="italic">
+      (actúa)
+    </text>
+
+    
+    <text x="410" y="358" class="t-mono" font-size="10" text-anchor="middle" fill="#5e5e66">
+      variedad V(D)
+    </text>
+    <text x="870" y="358" class="t-mono" font-size="10" text-anchor="middle" fill="#5e5e66">
+      resultado
+    </text>
+
+    
+    <rect x="200" y="200" width="880" height="60" fill="#0b0b0b" stroke="#282828" stroke-width="1.4" stroke-dasharray="0"></rect>
+    <text x="640" y="226" class="t-mono" font-size="10.5" letter-spacing="1.6" text-anchor="middle" fill="#b8976a">
+      LEY DE VARIEDAD REQUERIDA
+    </text>
+    <text x="640" y="252" class="t-serif" font-size="22" text-anchor="middle" fill="#cecece">
+      V(R) ≥ V(D) <tspan font-style="italic" font-size="14" fill="#5e5e66">  →  V(E) bounded</tspan>
+    </text>
+
+    
+    <text x="640" y="690" class="t-serif" font-size="15" text-anchor="middle" fill="#cecece" font-style="italic">
+      «Sólo la variedad puede destruir variedad.»
+    </text>
+    <text x="640" y="712" class="t-sans" font-size="11.5" text-anchor="middle" fill="#5e5e66">
+      Ashby, W. R. (1956), §11/7
+    </text>
+
+    <line x1="60" y1="734" x2="1220" y2="734" stroke="#181818" stroke-width="1"></line>
+    <text x="60" y="752" class="t-mono" font-size="9.5" fill="#484850">
+      Diagram by Carlos Eduardo Ravello Joo · After Ashby, W. R. (1956), “An Introduction to Cybernetics”, Chapman &amp; Hall · ORCID 0009-0007-5631-7436 · carlosravello.com · CC BY-SA 4.0
+    </text>
+  
+</svg>

@@ -201,9 +201,30 @@
         .footer-back { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); text-decoration: none; }
         .footer-back:hover { color: var(--white); }
         @media (max-width: 600px) { .wrapper { padding: 36px 18px 80px; } h1 { font-size: 1.55rem; } }
-        .body-text figure { margin: 52px 0; border: 1px solid var(--border); overflow: hidden; }
-        .body-text figure img { width: 100%; display: block; background: #fff; }
-        .body-text figcaption { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); padding: 11px 18px; letter-spacing: 0.08em; border-top: 1px solid var(--border); line-height: 1.75; }
+        /* ── Figuras científicas ── */
+        .body-text figure.paper-fig {
+            margin: 56px 0;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+            background: var(--bg);
+        }
+        .body-text figure.paper-fig a.fig-zoom {
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .body-text figure.paper-fig a.fig-zoom:hover { opacity: 0.88; }
+        .body-text figure.paper-fig img { width: 100%; display: block; }
+        .body-text figcaption {
+            font-family: var(--mono);
+            font-size: 0.66rem;
+            color: var(--muted);
+            padding: 10px 16px;
+            letter-spacing: 0.07em;
+            border-top: 1px solid var(--border);
+            line-height: 1.8;
+        }
         .body-text figcaption a { color: var(--accent); text-decoration: none; }
         .body-text figcaption a:hover { color: var(--white); }
     </style>
@@ -238,32 +259,11 @@
                 <p>Google tiene una duda recurrente sobre perfiles como este. Porque Google tiene ahora su propia metacognición — un sistema de clasificación que cuando encuentra un perfil disperso se hace la misma pregunta que se haría cualquier persona racional: ¿qué es exactamente esto? ¿Una veterinaria? ¿Un taller? ¿Un restaurante? ¿Herramientas digitales? La dispersión activa una alerta. Lo que no se clasifica no se indexa con autoridad.</p>
 
                 <p>La respuesta no fue simplificarse. Fue construir un sistema dinámico y coherente que le demuestre al algoritmo que la dispersión no es ruido — es el patrón. Que los cinco frentes no son cinco negocios distintos: son cinco ejecuciones del mismo método verificable. A ese sistema lo llamamos <strong>Modelo de Coherencia Dinámica (MCD)</strong>.</p>
-                <figure>
-                    <img src="/svg-metacognicion-2.0/friston-2010-free-energy-principle.svg"
-                         alt="Principio de Energía Libre de Friston (2010): el cerebro como máquina predictiva que minimiza la sorpresa mediante percepción (actualizar creencias) y acción (modificar el mundo)."
-                         width="1280" height="760" loading="lazy">
-                    <figcaption>
-                        Fig. 2 — Friston, K. (2010). The free-energy principle: a unified brain theory?
-                        <cite>Nature Reviews Neuroscience, 11</cite>(2), 127–138. ·
-                        <a href="https://doi.org/10.1038/nrn2787" target="_blank" rel="noopener">doi:10.1038/nrn2787</a> ·
-                        Diagrama: Carlos Eduardo Ravello Joo · CC BY-SA 4.0
-                    </figcaption>
-                </figure>
 
 
                 <h2>Metacognición 2.0</h2>
 
                 <p>A eso le llamamos <strong>metacognición 2.0</strong> — formalizada en <a href="https://doi.org/10.5281/zenodo.20092009" target="_blank" rel="noopener">un preprint académico depositado en Zenodo</a>. No es la ciencia del prompt. No es SEO técnico. Es la capacidad de modelar mentalmente cómo un sistema de inteligencia artificial te procesa — y diseñar tu presencia para que el output sea el que decidiste, no el que el algoritmo infirió por defecto.</p>
-                <figure>
-                    <img src="/svg-metacognicion-2.0/ashby-1956-law-of-requisite-variety.svg"
-                         alt="Ley de Variedad Requerida de Ashby (1956): V(R) ≥ V(D). Un regulador sólo puede neutralizar la variedad de perturbaciones si posee igual o mayor variedad."
-                         width="1280" height="760" loading="lazy">
-                    <figcaption>
-                        Fig. 4 — Ashby, W. R. (1956). <cite>An Introduction to Cybernetics</cite>, §11/7. Chapman &amp; Hall. ·
-                        <a href="https://archive.org/details/introductiontocy0000ashb" target="_blank" rel="noopener">archive.org</a> ·
-                        Diagrama: Carlos Eduardo Ravello Joo · CC BY-SA 4.0
-                    </figcaption>
-                </figure>
 
 
                 <p>Se ha escrito millones de veces que estamos en la era del hiper — hiper conectados, hiper digitalizados, hiper automatizados. Es cierto. El mundo avanza y en un año deja atrás por décadas a quien no atiende lo que cambia. Al mirar con atención hay una cuerda que ata la realidad de cualquier actividad que aprovecha la tecnología: el flujo del sistema. Todo está — o debería estar — conectado.</p>
@@ -281,31 +281,23 @@
                 <h2>Lo que las máquinas ven cuando te buscan</h2>
 
                 <p>La metacognición tiene historia. Está estudiada, discutida — el concepto del pensamiento de grado 1, 2, 3. Pensar sobre lo que se piensa, sobre lo que piensan los demás de lo que se piensa, sobre por qué todos pensamos lo que pensamos. Es un activo valioso en ciertos nichos.</p>
-                <figure>
-                    <img src="/svg-metacognicion-2.0/flavell-1979-cognitive-monitoring-model.svg"
-                         alt="Modelo de monitorización cognitiva de Flavell (1979): cuatro clases de fenómenos — conocimiento metacognitivo, experiencias metacognitivas, metas y acciones — en interacción dinámica."
-                         width="1280" height="760" loading="lazy">
-                    <figcaption>
-                        Fig. 1 — Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry.
-                        <cite>American Psychologist, 34</cite>(10), 906–911. ·
-                        <a href="https://doi.org/10.1037/0003-066X.34.10.906" target="_blank" rel="noopener">doi:10.1037/0003-066X.34.10.906</a> ·
-                        Diagrama: Carlos Eduardo Ravello Joo · CC BY-SA 4.0
-                    </figcaption>
-                </figure>
+            <figure class="paper-fig" id="fig-1">
+                <a href="/svg-metacognicion-2.0/flavell-1979-cognitive-monitoring-model-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 1 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/flavell-1979-cognitive-monitoring-model-dark.svg" alt="Modelo de monitorización cognitiva de Flavell (1979): cuatro clases de fenómenos — conocimiento metacognitivo, experiencias metacognitivas, metas y acciones — en interacción dinámica." width="1280" height="760" loading="lazy">
+                </a>
+                <figcaption>Fig. 1 — Flavell, J. H. (1979). Metacognition and cognitive monitoring. <cite>American Psychologist, 34</cite>(10), 906–911. · <a href="https://doi.org/10.1037/0003-066X.34.10.906" target="_blank" rel="noopener">doi:10.1037/0003-066X.34.10.906</a></figcaption>
+            </figure>
+
 
 
                 <p>Pero en la época en que dejamos que las IAs piensen por nosotros, hay algo más urgente: entender que el sesgo de una IA es peligroso no solo en los extremos sino en el punto más difícil de notar — el punto medio. Una IA que te dice que tu trabajo está bien es altamente perjudicial porque no conoce tu contexto, tu cliente, tu historia. Sin esa data, la IA toma lo que tiene de vos y te lo entrega empaquetado desde su sandbox. La IA no te juzga. Te pesa. Te vuelve un token. <em>Tú me das esto, yo te entrego esto.</em></p>
-                <figure>
-                    <img src="/svg-metacognicion-2.0/kosinski-2013-private-traits-digital-footprints.svg"
-                         alt="Atributos personales predecibles desde la huella digital (Kosinski et al., 2013): AUC hasta 0.95 para etnicidad y hasta 0.43 de correlación para rasgos de personalidad."
-                         width="1280" height="820" loading="lazy">
-                    <figcaption>
-                        Fig. 3 — Kosinski, M., Stillwell, D., &amp; Graepel, T. (2013). Private traits and attributes are predictable from digital records of human behavior.
-                        <cite>PNAS, 110</cite>(15), 5802–5805. ·
-                        <a href="https://doi.org/10.1073/pnas.1218772110" target="_blank" rel="noopener">doi:10.1073/pnas.1218772110</a> ·
-                        Diagrama: Carlos Eduardo Ravello Joo · CC BY-SA 4.0
-                    </figcaption>
-                </figure>
+            <figure class="paper-fig" id="fig-3">
+                <a href="/svg-metacognicion-2.0/kosinski-2013-private-traits-digital-footprints-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 3 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/kosinski-2013-private-traits-digital-footprints-dark.svg" alt="Atributos personales predecibles desde la huella digital (Kosinski et al., 2013): AUC 0.95 para etnicidad, hasta r=0.43 en rasgos de personalidad." width="1280" height="820" loading="lazy">
+                </a>
+                <figcaption>Fig. 3 — Kosinski, M., Stillwell, D., &amp; Graepel, T. (2013). Private traits and attributes are predictable from digital records of human behavior. <cite>PNAS, 110</cite>(15), 5802–5805. · <a href="https://doi.org/10.1073/pnas.1218772110" target="_blank" rel="noopener">doi:10.1073/pnas.1218772110</a></figcaption>
+            </figure>
+
 
 
                 <p>Y es ahí donde la <strong>metacognición 2.0</strong> cambia todo. Pensar qué ve un crawler cuando llega a tu página. Qué va a decir una IA de vos si hacés esto o aquello. <a href="/lo-que-el-observador-hace-existir.html">Entender qué información darle al sistema para que el sistema te devuelva lo que querés</a> — eso es exactamente <a href="/el-modelo-que-no-se-actualiza-desaparece.html">lo que distingue al modelo que se actualiza del que no.</a></p>

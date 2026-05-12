@@ -468,6 +468,33 @@
             .download-block { flex-direction: column; align-items: flex-start; }
             .download-btn { width: 100%; text-align: center; }
         }
+        /* ── Figuras científicas ── */
+        .paper-fig {
+            margin: 0 0 40px 0;
+            border: 1px solid var(--border);
+            border-radius: 2px;
+            overflow: hidden;
+            background: var(--bg);
+        }
+        .paper-fig a.fig-zoom {
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.2s;
+        }
+        .paper-fig a.fig-zoom:hover { opacity: 0.88; }
+        .paper-fig img { width: 100%; display: block; }
+        .paper-fig figcaption {
+            font-family: var(--mono);
+            font-size: 0.68rem;
+            color: var(--muted);
+            padding: 11px 18px;
+            letter-spacing: 0.07em;
+            border-top: 1px solid var(--border);
+            line-height: 1.8;
+        }
+        .paper-fig figcaption strong { color: var(--text); font-weight: 600; }
+        .paper-fig figcaption a { color: var(--accent); text-decoration: none; }
+        .paper-fig figcaption a:hover { color: var(--white); }
     </style>
 </head>
 <body>
@@ -529,6 +556,46 @@
                 <span class="kw-tag">posicionamiento en IA Latinoamérica</span>
                 <span class="kw-tag">procesamiento de entidades</span>
             </div>
+
+
+            <!-- FIGURAS -->
+            <div class="section-label">Figuras</div>
+
+            <figure class="paper-fig" id="fig-1">
+                <a href="/svg-metacognicion-2.0/flavell-1979-cognitive-monitoring-model-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver Figura 1 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/flavell-1979-cognitive-monitoring-model-dark.svg"
+                         alt="Modelo de monitorización cognitiva de Flavell (1979): cuatro clases de fenómenos en interacción dinámica — conocimiento metacognitivo, experiencias metacognitivas, metas y acciones."
+                         width="1280" height="760" loading="lazy">
+                </a>
+                <figcaption><strong>Fig. 1.</strong> Flavell, J. H. (1979). Metacognition and cognitive monitoring: A new area of cognitive-developmental inquiry. <cite>American Psychologist, 34</cite>(10), 906–911. <a href="https://doi.org/10.1037/0003-066X.34.10.906" target="_blank" rel="noopener">doi:10.1037/0003-066X.34.10.906</a></figcaption>
+            </figure>
+
+            <figure class="paper-fig" id="fig-2">
+                <a href="/svg-metacognicion-2.0/friston-2010-free-energy-principle-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver Figura 2 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/friston-2010-free-energy-principle-dark.svg"
+                         alt="Principio de Energía Libre de Friston (2010): dos rutas para minimizar la sorpresa — percepción (actualizar creencias) y acción (modificar el mundo)."
+                         width="1280" height="760" loading="lazy">
+                </a>
+                <figcaption><strong>Fig. 2.</strong> Friston, K. (2010). The free-energy principle: a unified brain theory? <cite>Nature Reviews Neuroscience, 11</cite>(2), 127–138. <a href="https://doi.org/10.1038/nrn2787" target="_blank" rel="noopener">doi:10.1038/nrn2787</a></figcaption>
+            </figure>
+
+            <figure class="paper-fig" id="fig-3">
+                <a href="/svg-metacognicion-2.0/kosinski-2013-private-traits-digital-footprints-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver Figura 3 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/kosinski-2013-private-traits-digital-footprints-dark.svg"
+                         alt="Atributos personales predecibles desde la huella digital (Kosinski et al., 2013): AUC hasta 0.95 para etnicidad y r=0.43 para apertura."
+                         width="1280" height="820" loading="lazy">
+                </a>
+                <figcaption><strong>Fig. 3.</strong> Kosinski, M., Stillwell, D., &amp; Graepel, T. (2013). Private traits and attributes are predictable from digital records of human behavior. <cite>PNAS, 110</cite>(15), 5802–5805. <a href="https://doi.org/10.1073/pnas.1218772110" target="_blank" rel="noopener">doi:10.1073/pnas.1218772110</a></figcaption>
+            </figure>
+
+            <figure class="paper-fig" id="fig-4">
+                <a href="/svg-metacognicion-2.0/ashby-1956-law-of-requisite-variety-dark.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver Figura 4 en tamaño completo">
+                    <img src="/svg-metacognicion-2.0/ashby-1956-law-of-requisite-variety-dark.svg"
+                         alt="Ley de Variedad Requerida de Ashby (1956): V(R) ≥ V(D). El regulador absorbe la variedad de perturbaciones solo si posee igual o mayor variedad."
+                         width="1280" height="760" loading="lazy">
+                </a>
+                <figcaption><strong>Fig. 4.</strong> Ashby, W. R. (1956). <cite>An Introduction to Cybernetics</cite> (§11/7). Chapman &amp; Hall. <a href="https://archive.org/details/introductiontocy0000ashb" target="_blank" rel="noopener">archive.org</a></figcaption>
+            </figure>
 
             <!-- DESCARGA -->
             <div class="section-label">Texto completo</div>
