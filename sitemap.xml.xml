@@ -234,4 +234,65 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-profile-you-didnt-write.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
   </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/metacognicion-2-0.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/metacognition-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/metacognition-2-0.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/metacognition-2-0.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/the-profile-you-didnt-write.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/the-profile-you-didnt-write.html</loc>
+    <lastmod>2026-05-11</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/the-profile-you-didnt-write.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
 </urlset>
