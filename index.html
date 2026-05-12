@@ -1696,6 +1696,10 @@
             opacity: 1; transform: translateY(0);
             transition-delay: 0.34s;
         }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(6) {
+            opacity: 1; transform: translateY(0);
+            transition-delay: 0.41s;
+        }
         .nav-overlay-link:hover { color: var(--white); }
         .nav-overlay-divider {
             width: 28px;
@@ -1792,6 +1796,43 @@
         }
         .faq-answer a:hover { border-bottom-color: var(--accent); }
 
+
+        /* MOBILE SECTION CARDS — solo visible en celular */
+        .mobile-sections { display: none; }
+
+        @media (max-width: 768px) {
+            .mobile-sections {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1px;
+                background: var(--border);
+                margin-bottom: 52px;
+                border: 1px solid var(--border);
+            }
+            .mobile-section-card {
+                background: var(--bg);
+                padding: 16px 14px;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                text-decoration: none;
+            }
+            .mobile-section-label {
+                font-family: var(--mono);
+                font-size: 0.60rem;
+                color: var(--accent);
+                text-transform: uppercase;
+                letter-spacing: 0.14em;
+            }
+            .mobile-section-name {
+                font-family: var(--serif);
+                font-size: 1rem;
+                color: var(--white);
+                font-weight: 400;
+                line-height: 1.2;
+            }
+        }
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .nav-toggle  { display: flex; }
@@ -1848,6 +1889,7 @@
             <div class="nav-overlay-inner">
                 <a href="/sobre-mi.html" class="nav-overlay-link">Sobre mí</a>
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
+                <a href="/produccion-academica.html" class="nav-overlay-link">Publicaciones</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
@@ -1873,6 +1915,34 @@
             </div>
         </header>
 
+
+        <!-- MOBILE SECTION CARDS — solo visible en celular -->
+        <nav class="mobile-sections" aria-label="Secciones del sitio">
+            <a href="/sobre-mi.html" class="mobile-section-card">
+                <span class="mobile-section-label">01 · Perfil</span>
+                <span class="mobile-section-name">Sobre mí</span>
+            </a>
+            <a href="/escritura.html" class="mobile-section-card">
+                <span class="mobile-section-label">02 · Ideas</span>
+                <span class="mobile-section-name">Escritura</span>
+            </a>
+            <a href="/produccion-academica.html" class="mobile-section-card">
+                <span class="mobile-section-label">03 · DOI</span>
+                <span class="mobile-section-name">Publicaciones</span>
+            </a>
+            <a href="/servicios.html" class="mobile-section-card">
+                <span class="mobile-section-label">04 · Metodología</span>
+                <span class="mobile-section-name">Trabajo</span>
+            </a>
+            <a href="/herramientas-para-investigadores.html" class="mobile-section-card">
+                <span class="mobile-section-label">05 · Instrumentos</span>
+                <span class="mobile-section-name">Investigadores</span>
+            </a>
+            <a href="/estrategia.html" class="mobile-section-card">
+                <span class="mobile-section-label">06 · GEO · MCD</span>
+                <span class="mobile-section-name">Estrategia Digital</span>
+            </a>
+        </nav>
         <main>
 
             <section id="el-trabajo">
