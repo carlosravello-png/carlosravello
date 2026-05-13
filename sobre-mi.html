@@ -770,9 +770,9 @@
             align-items: flex-start;
         }
         .author-card-photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
+            width: 160px;
+            height: 220px;
+            border-radius: 0;
             object-fit: cover;
             object-position: center 20%;
             display: block;
@@ -806,6 +806,7 @@
             font-weight: 400;
             color: var(--white);
             letter-spacing: -0.02em;
+            text-transform: none;
             margin-bottom: 20px;
             padding-bottom: 16px;
             border-bottom: 1px solid var(--border);
@@ -823,12 +824,17 @@
                 grid-template-columns: 1fr;
                 gap: 32px;
             }
+            .author-card-left {
+                align-items: center;
+                text-align: center;
+            }
             .author-card-right {
                 border-left: none;
                 padding-left: 0;
                 border-top: 1px solid var(--border);
                 padding-top: 32px;
             }
+        }
     </style>
 </head>
 <body>
