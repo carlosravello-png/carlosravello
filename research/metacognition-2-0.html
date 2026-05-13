@@ -185,6 +185,74 @@
         .footer-back { font-family:var(--mono); font-size:0.68rem; color:var(--muted); text-decoration:none; }
         .footer-back:hover { color:var(--white); }
         @media (max-width:600px) { .download-block { flex-direction:column; align-items:flex-start; } .download-btn { width:100%; text-align:center; } }
+
+        /* ── Author byline ── */
+        .author-byline {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 56px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+        }
+        .author-byline img {
+            width: 56px;
+            height: 74px;
+            border-radius: 0;
+            object-fit: cover;
+            object-position: center 8%;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+            display: block;
+        }
+        .author-byline-text {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            line-height: 1.9;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        .author-byline-text strong { color: var(--text); }
+        .author-byline-text a {
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .author-byline-text a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ── Author byline ── */
+        .author-byline {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 56px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+        }
+        .author-byline img {
+            width: 56px;
+            height: 74px;
+            border-radius: 0;
+            object-fit: cover;
+            object-position: center 8%;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+            display: block;
+        }
+        .author-byline-text {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            line-height: 1.9;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        .author-byline-text strong { color: var(--text); }
+        .author-byline-text a { color: var(--muted); text-decoration: none; border-bottom: 1px solid transparent; transition: color 0.2s, border-color 0.2s; }
+        .author-byline-text a:hover { color: var(--accent); border-bottom-color: var(--accent); }
     </style>
 </head>
 <body>
@@ -289,6 +357,16 @@
                     <a href="/research/the-profile-you-didnt-write.html">02 — The Profile You Didn't Write: Ocular Biometrics and Semantic Authority</a>
                 </div>
             </div>
+                        <div class="author-byline">
+                <img src="/fotos-carlos-ravello/foto-secundaria-carlos-eduardo-ravello-joo.webp"
+                     alt="Carlos Eduardo Ravello Joo" width="1046" height="1600" loading="lazy">
+                <div class="author-byline-text">
+                    <strong>Carlos Eduardo Ravello Joo</strong><br>
+                    Independent researcher · Trujillo, Peru<br>
+                    <a href="/about-me.html">about me →</a>
+                </div>
+            </div>
+
             <div class="related" style="margin-top:16px;">
                 <span class="related-label">Related essays</span>
                 <div class="related-links">

@@ -757,75 +757,78 @@
 
         /* ── Author identity card ── */
         .author-card {
-            display: flex;
-            align-items: flex-start;
-            gap: 28px;
-            margin-bottom: 64px;
-            padding: 28px 0;
+            display: grid;
+            grid-template-columns: 260px 1fr;
+            gap: 56px;
+            margin-bottom: 0;
+            padding: 56px 0 64px 0;
             border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
         }
-        .author-card-photo {
-            flex-shrink: 0;
-            width: 100px;
-            height: 100px;
-            border-radius: 0;
-            object-fit: cover;
-            object-position: center 12%;
-            border: 1px solid var(--border);
-            display: block;
-            transition: border-color 0.3s;
-        }
-        .author-card-photo:hover { border-color: var(--accent); }
-        .author-card-info {
+        .author-card-left {
             display: flex;
             flex-direction: column;
-            gap: 6px;
-            padding-top: 4px;
+            align-items: flex-start;
+        }
+        .author-card-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center 20%;
+            display: block;
+            margin-bottom: 24px;
         }
         .author-card-name {
             font-family: var(--serif);
-            font-size: 1.05rem;
+            font-size: 2.1rem;
             font-weight: 400;
             color: var(--white);
-            letter-spacing: -0.01em;
-            line-height: 1.25;
+            letter-spacing: -0.03em;
+            line-height: 1.15;
+            margin-bottom: 12px;
         }
         .author-card-role {
             font-family: var(--mono);
-            font-size: 0.59rem;
-            letter-spacing: 0.18em;
+            font-size: 0.60rem;
+            letter-spacing: 0.12em;
             color: var(--accent);
             text-transform: uppercase;
+            line-height: 1.9;
         }
-        .author-card-ids {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px 14px;
-            margin-top: 10px;
+        .author-card-right {
+            padding-top: 4px;
+            border-left: 1px solid var(--border);
+            padding-left: 48px;
         }
-        .author-card-ids a {
-            font-family: var(--mono);
-            font-size: 0.55rem;
-            letter-spacing: 0.10em;
-            color: var(--muted);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            padding-bottom: 1px;
-            transition: color 0.2s, border-color 0.2s;
+        .author-card-right h2 {
+            font-family: var(--serif);
+            font-size: 1.55rem;
+            font-weight: 400;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            margin-bottom: 20px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
         }
-        .author-card-ids a:hover {
-            color: var(--accent);
-            border-bottom-color: var(--accent);
+        .author-card-right .bio p {
+            font-size: 0.82rem;
+            color: var(--text);
+            line-height: 1.9;
+            letter-spacing: 0.025em;
+            margin-bottom: 14px;
         }
-        @media (max-width: 520px) {
-            .author-card { gap: 18px; }
-            .author-card-photo { width: 76px; height: 76px; }
-            .author-card-name { font-size: 0.94rem; }
-        }
-            .author-card-photo { width: 80px; height: 80px; }
-            .author-card-name { font-size: 0.92rem; }
-        }
+        .author-card-right .bio p:last-child { margin-bottom: 0; }
+        @media (max-width: 680px) {
+            .author-card {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+            .author-card-right {
+                border-left: none;
+                padding-left: 0;
+                border-top: 1px solid var(--border);
+                padding-top: 32px;
+            }
     </style>
 </head>
 <body>
@@ -884,26 +887,20 @@
 
             <!-- IDENTIDAD -->
 
-                        <div class="author-card" itemscope itemtype="https://schema.org/ImageObject">
-                <img src="/fotos-carlos-ravello/foto-secundaria-carlos-eduardo-ravello-joo.webp"
-                     alt="Carlos Eduardo Ravello Joo — arquitecto semántico, Trujillo, Perú"
-                     width="1046" height="1600"
-                     class="author-card-photo"
-                     itemprop="contentUrl"
-                     fetchpriority="high"
-                     loading="eager">
-                <div class="author-card-info">
-                    <span class="author-card-name">Carlos Eduardo Ravello Joo</span>
-                    <span class="author-card-role">Arquitecto Semántico · Trujillo, Perú</span>
-                    <div class="author-card-ids">
-                        <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
-                        <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener">Wikidata Q139714842</a>
-                        <a href="https://scholar.google.com/citations?user=AxlI1dgAAAAJ" target="_blank" rel="me noopener">Google Scholar</a>
-                        <a href="https://www.researchgate.net/profile/Carlos-Ravello-Joo" target="_blank" rel="me noopener">ResearchGate</a>
-                    </div>
+                                    <div class="author-card" itemscope itemtype="https://schema.org/ImageObject">
+                <div class="author-card-left">
+                    <img src="/fotos-carlos-ravello/foto-primaria-carlos-eduardo-ravello-joo.webp"
+                         alt="Carlos Eduardo Ravello Joo — arquitecto semántico, Trujillo, Perú"
+                         width="735" height="1247"
+                         class="author-card-photo"
+                         itemprop="contentUrl"
+                         fetchpriority="high"
+                         loading="eager">
+                    <span class="author-card-name">Carlos Eduardo<br>Ravello Joo</span>
+                    <span class="author-card-role">Arquitecto Semántico<br>Trujillo, Perú</span>
                 </div>
-            </div>
-            <section id="identidad">
+                <div class="author-card-right">
+                    <section id="identidad">
                 <h2>Quién soy</h2>
                 <div class="bio">
                     <p>Fundo y opero sistemas con metodología de ingeniería aplicada. Cada entidad que construyo — un <a href="https://www.bikelabstudio.com" target="_blank" rel="noopener">laboratorio ciclista de precisión</a>, una <a href="https://zoovettravel.com" target="_blank" rel="noopener">clínica veterinaria internacional</a>, una barra de street food japonés, una plataforma académica — parte del mismo criterio: <strong>exactitud documentada o no existe</strong>.</p>
@@ -922,6 +919,9 @@
                     <p>Trabajo con casos seleccionados globalmente donde el problema real no es visibilidad: es que la entidad no está estructurada para ser reconocida por los sistemas que deciden su relevancia.</p>
                 </div>
             </section>
+                </div>
+            </div>
+            
 
             <!-- MCD -->
             <section id="mcd">

@@ -256,6 +256,44 @@
         }
         .body-text .paper-fig figcaption a { color: var(--accent); text-decoration: none; }
         .body-text .paper-fig figcaption a:hover { color: var(--white); }
+
+        /* ── Author byline ── */
+        .author-byline {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            margin-top: 56px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+        }
+        .author-byline img {
+            width: 56px;
+            height: 74px;
+            border-radius: 0;
+            object-fit: cover;
+            object-position: center 8%;
+            border: 1px solid var(--border);
+            flex-shrink: 0;
+            display: block;
+        }
+        .author-byline-text {
+            font-family: var(--mono);
+            font-size: 0.62rem;
+            line-height: 1.9;
+            letter-spacing: 0.06em;
+            color: var(--muted);
+        }
+        .author-byline-text strong { color: var(--text); }
+        .author-byline-text a {
+            color: var(--muted);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: color 0.2s, border-color 0.2s;
+        }
+        .author-byline-text a:hover {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
     </style>
 </head>
 <body>
