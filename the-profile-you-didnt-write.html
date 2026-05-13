@@ -265,9 +265,25 @@
         <div class="formula-block">
             PR(A) = (1&#8722;d) + d &times; &Sigma; PR(T)/C(T)
             <div class="formula-note">d = damping factor (0.85 in Google) · T = nodes pointing to A · C(T) = outbound links of each T</div>
+
+        <figure class="paper-fig" id="fig-1">
+            <a href="/svg-el-perfil-que-no-escribiste/brin-page-1998-pagerank-algorithm.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 1 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/brin-page-1998-pagerank-algorithm.svg" alt="Algoritmo PageRank de Brin y Page (1998): propagación de autoridad en un grafo dirigido donde cada nodo transfiere valor a sus vecinos." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 1 — Brin, S., &amp; Page, L. (1998). The anatomy of a large-scale hypertextual Web search engine. <cite>Computer Networks and ISDN Systems, 30</cite>(1-7), 107-117. · <a href="https://doi.org/10.1016/S0169-7552(98)00110-X" target="_blank" rel="noopener">doi:10.1016/S0169-7552(98)00110-X</a> · <a href="https://commons.wikimedia.org/wiki/File:Brin-page-1998-pagerank-algorithm.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
         </div>
 
         <p>In human terms: if you are connected to a node of <em>low authority or toxic reputation</em>, your own value decreases. Modern systems go further with Node2Vec — they convert each node in the graph into a numerical vector. <strong>Your digital identity is not a profile. It is a point in a high-dimensional space.</strong> Nodes close to you in that space inherit and transfer attributes automatically. A photo at a party doesn't taint you poetically. <em>It repositions you mathematically in that vector space</em> — and that repositioning has measurable consequences.</p>
+
+        <figure class="paper-fig" id="fig-2">
+            <a href="/svg-el-perfil-que-no-escribiste/grover-leskovec-2016-node2vec.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 2 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/grover-leskovec-2016-node2vec.svg" alt="Arquitectura Node2Vec de Grover y Leskovec (2016): aprendizaje de representaciones continuas para nodos en redes multidimensionales." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 2 — Grover, A., &amp; Leskovec, J. (2016). node2vec: Scalable feature learning for networks. <cite>KDD '16</cite>, 855-864. · <a href="https://doi.org/10.1145/2939672.2939754" target="_blank" rel="noopener">doi:10.1145/2939672.2939754</a> · <a href="https://commons.wikimedia.org/wiki/File:Grover-leskovec-2016-node2vec.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
 
         <h2>It's not new. It just has a new name.</h2>
 

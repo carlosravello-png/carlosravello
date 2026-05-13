@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1280 800" role="img">
+<title>node2vec: del grafo al espacio vectorial (Grover y Leskovec, 2016) / node2vec: from graph to vector space (Grover and Leskovec, 2016)</title>
+<desc>Diagram of the node2vec framework developed by Aditya Grover and Jure Leskovec in 2016 (Proceedings of the 22nd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining, pp. 855-864, doi:10.1145/2939672.2939754). The algorithm generates low-dimensional vector representations of graph nodes by performing biased random walks (controlled by parameters p and q) and optimizing a SkipGram-style objective. Nodes with similar contextual neighbourhoods are mapped to nearby positions in the embedding space, preserving both homophily and structural equivalence. Diagram by Carlos Eduardo Ravello Joo.</desc>
+
+
+<rect width="1280" height="800" fill="#ffffff"></rect>
+
+<text x="60" y="62" class="t-mono" font-size="11" letter-spacing="2" fill="#c0824a">FIG. · GROVER &amp; LESKOVEC (2016)</text>
+<line x1="60" y1="74" x2="1220" y2="74" stroke="#d4d6da" stroke-width="1"></line>
+<text x="60" y="112" class="t-serif" font-size="26" fill="#1a1a1a">node2vec: del grafo al espacio vectorial</text>
+<text x="60" y="138" class="t-sans" font-size="13" fill="#6b7280">Caminatas aleatorias sesgadas + SkipGram → representación de nodos en ℝᵈ</text>
+
+<defs>
+  <marker id="n2v-arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto">
+    <path d="M0,0 L10,5 L0,10 Z" fill="#2c3e50"></path>
+  </marker>
+</defs>
+
+
+<text x="60" y="190" class="t-mono" font-size="10.5" letter-spacing="1.6" fill="#2c3e50">A · GRAFO ORIGINAL · CAMINATA SESGADA</text>
+<line x1="60" y1="200" x2="430" y2="200" stroke="#1a1a1a" stroke-width="1"></line>
+
+<g id="n2v-graph">
+  
+  
+  <g stroke="#d4d6da" stroke-width="1">
+    <line x1="140" y1="280" x2="220" y2="320"></line>
+    <line x1="140" y1="280" x2="180" y2="380"></line>
+    <line x1="220" y1="320" x2="180" y2="380"></line>
+    <line x1="220" y1="320" x2="290" y2="340"></line>
+    <line x1="180" y1="380" x2="260" y2="430"></line>
+    <line x1="260" y1="430" x2="350" y2="450"></line>
+    <line x1="290" y1="340" x2="350" y2="450"></line>
+    <line x1="350" y1="450" x2="280" y2="540"></line>
+    <line x1="260" y1="430" x2="280" y2="540"></line>
+    <line x1="140" y1="280" x2="100" y2="370"></line>
+    <line x1="100" y1="370" x2="180" y2="380"></line>
+    <line x1="350" y1="450" x2="400" y2="380"></line>
+    <line x1="290" y1="340" x2="400" y2="380"></line>
+    <line x1="400" y1="380" x2="370" y2="280"></line>
+    <line x1="290" y1="340" x2="370" y2="280"></line>
+  </g>
+
+  
+  <g stroke="#c0824a" stroke-width="2.6" fill="none" marker-end="url(#n2v-arr)">
+    <line x1="140" y1="280" x2="218" y2="318"></line>
+  </g>
+  <g stroke="#c0824a" stroke-width="2.6" fill="none" marker-end="url(#n2v-arr)">
+    <line x1="222" y1="322" x2="287" y2="338"></line>
+  </g>
+  <g stroke="#c0824a" stroke-width="2.6" fill="none" marker-end="url(#n2v-arr)">
+    <line x1="293" y1="343" x2="347" y2="447"></line>
+  </g>
+  <g stroke="#c0824a" stroke-width="2.6" fill="none" marker-end="url(#n2v-arr)">
+    <line x1="348" y1="453" x2="283" y2="537"></line>
+  </g>
+
+  
+  <g>
+    
+    <circle cx="140" cy="280" r="14" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="220" cy="320" r="14" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="180" cy="380" r="14" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="100" cy="370" r="14" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    
+    <circle cx="290" cy="340" r="14" fill="#fef6e3" stroke="#1a1a1a" stroke-width="1.4"></circle>
+    
+    <circle cx="260" cy="430" r="14" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="350" cy="450" r="14" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="280" cy="540" r="14" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="400" cy="380" r="14" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1.2"></circle>
+    <circle cx="370" cy="280" r="14" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1.2"></circle>
+  </g>
+
+  
+  <text x="140" y="265" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">u</text>
+  <text x="220" y="305" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">1</text>
+  <text x="290" y="325" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">2</text>
+  <text x="350" y="435" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">3</text>
+  <text x="280" y="525" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">4</text>
+</g>
+
+<text x="60" y="620" class="t-sans" font-size="12" fill="#3d4248">
+  La caminata controla por dos parámetros:
+</text>
+<text x="60" y="640" class="t-mono" font-size="11.5" fill="#1a1a1a">
+  p · probabilidad de retorno (búsqueda BFS)
+</text>
+<text x="60" y="658" class="t-mono" font-size="11.5" fill="#1a1a1a">
+  q · probabilidad de salida (búsqueda DFS)
+</text>
+<text x="60" y="678" class="t-sans" font-size="11.5" fill="#6b7280" font-style="italic">
+  Permite balancear homofilia y equivalencia estructural.
+</text>
+
+
+<g transform="translate(490,380)">
+  <line x1="0" y1="20" x2="80" y2="20" stroke="#2c3e50" stroke-width="2.5" marker-end="url(#n2v-arr)"></line>
+  <text x="40" y="-2" class="t-mono" font-size="10" text-anchor="middle" fill="#2c3e50">SkipGram</text>
+  <text x="40" y="46" class="t-sans" font-size="10" text-anchor="middle" fill="#6b7280" font-style="italic">optimización</text>
+  <text x="40" y="60" class="t-sans" font-size="10" text-anchor="middle" fill="#6b7280" font-style="italic">de objetivo</text>
+</g>
+
+
+<text x="610" y="190" class="t-mono" font-size="10.5" letter-spacing="1.6" fill="#2c3e50">B · ESPACIO DE EMBEDDINGS ℝᵈ · PROYECCIÓN 2D</text>
+<line x1="610" y1="200" x2="1220" y2="200" stroke="#1a1a1a" stroke-width="1"></line>
+
+
+<line x1="660" y1="560" x2="1200" y2="560" stroke="#d4d6da" stroke-width="1"></line>
+<line x1="660" y1="220" x2="660" y2="560" stroke="#d4d6da" stroke-width="1"></line>
+<text x="1210" y="568" class="t-mono" font-size="10" fill="#9ca3af">d₁</text>
+<text x="652" y="218" class="t-mono" font-size="10" text-anchor="end" fill="#9ca3af">d₂</text>
+
+
+<g>
+  <circle cx="740" cy="470" r="10" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="770" cy="500" r="10" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="730" cy="510" r="10" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="800" cy="465" r="10" fill="#e8b3a0" stroke="#1a1a1a" stroke-width="1"></circle>
+  
+  <circle cx="755" cy="480" r="12" fill="#c0824a" stroke="#1a1a1a" stroke-width="1.6"></circle>
+  <text x="755" y="455" class="t-mono" font-size="10.5" text-anchor="middle" fill="#c0824a">u</text>
+
+  
+  <path d="M 710,500 Q 700,455 760,448 Q 810,440 820,485 Q 815,525 760,530 Z" fill="none" stroke="#c0824a" stroke-width="0.8" stroke-dasharray="3 3"></path>
+  <text x="765" y="555" class="t-mono" font-size="10" text-anchor="middle" fill="#c0824a">comunidad roja</text>
+</g>
+
+
+<circle cx="900" cy="380" r="11" fill="#fef6e3" stroke="#1a1a1a" stroke-width="1.4"></circle>
+<text x="900" y="362" class="t-mono" font-size="10" text-anchor="middle" fill="#6b7280">puente</text>
+
+
+<g>
+  <circle cx="1040" cy="270" r="10" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="1080" cy="290" r="10" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="1060" cy="320" r="10" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="1110" cy="260" r="10" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1"></circle>
+  <circle cx="1100" cy="330" r="10" fill="#a8c2d8" stroke="#1a1a1a" stroke-width="1"></circle>
+
+  <path d="M 1020,285 Q 1010,250 1070,250 Q 1130,250 1130,300 Q 1130,345 1075,345 Q 1020,340 1020,285 Z" fill="none" stroke="#2c3e50" stroke-width="0.8" stroke-dasharray="3 3"></path>
+  <text x="1075" y="365" class="t-mono" font-size="10" text-anchor="middle" fill="#2c3e50">comunidad azul</text>
+</g>
+
+<text x="900" y="510" class="t-sans" font-size="11.5" text-anchor="middle" fill="#3d4248" font-style="italic">
+  Nodos con contexto similar
+</text>
+<text x="900" y="528" class="t-sans" font-size="11.5" text-anchor="middle" fill="#3d4248" font-style="italic">
+  se proyectan en vecindarios próximos.
+</text>
+
+
+<g transform="translate(60,690)">
+  <rect x="0" y="0" width="1160" height="50" fill="#fef6e3" stroke="#c0824a" stroke-width="1"></rect>
+  <text x="20" y="20" class="t-mono" font-size="10.5" letter-spacing="1.6" fill="#c0824a">OBJETIVO DE OPTIMIZACIÓN</text>
+  <text x="580" y="36" class="t-serif" font-size="14" text-anchor="middle" fill="#1a1a1a">
+    max<tspan font-style="italic" baseline-shift="sub" font-size="9"> f</tspan>  Σ<tspan baseline-shift="sub" font-size="9">u∈V</tspan>  log Pr( N<tspan baseline-shift="sub" font-size="9">S</tspan>(u) | f(u) )
+  </text>
+</g>
+
+<line x1="60" y1="760" x2="1220" y2="760" stroke="#ececee" stroke-width="1"></line>
+<text x="60" y="778" class="t-mono" font-size="10" fill="#6b7280">Adaptado de Grover, A. &amp; Leskovec, J. (2016). node2vec: Scalable feature learning for networks. KDD &#39;16, 855–864. doi:10.1145/2939672.2939754</text>
+<text x="60" y="794" class="t-mono" font-size="9.5" fill="#9ca3af">Diagram by Carlos Eduardo Ravello Joo · ORCID 0009-0007-5631-7436 · Wikidata Q139714842 · carlosravello.com · CC BY-SA 4.0</text>
+
+</svg>

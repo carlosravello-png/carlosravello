@@ -328,9 +328,25 @@
         <div class="formula-block">
             PR(A) = (1&#8722;d) + d &times; &Sigma; PR(T)/C(T)
             <div class="formula-note">d = factor de amortiguación (0.85 en Google) · T = nodos que apuntan a A · C(T) = enlaces salientes de cada T</div>
+
+        <figure class="paper-fig" id="fig-1">
+            <a href="/svg-el-perfil-que-no-escribiste/brin-page-1998-pagerank-algorithm.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 1 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/brin-page-1998-pagerank-algorithm.svg" alt="Algoritmo PageRank de Brin y Page (1998): propagación de autoridad en un grafo dirigido donde cada nodo transfiere valor a sus vecinos." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 1 — Brin, S., &amp; Page, L. (1998). The anatomy of a large-scale hypertextual Web search engine. <cite>Computer Networks and ISDN Systems, 30</cite>(1-7), 107-117. · <a href="https://doi.org/10.1016/S0169-7552(98)00110-X" target="_blank" rel="noopener">doi:10.1016/S0169-7552(98)00110-X</a> · <a href="https://commons.wikimedia.org/wiki/File:Brin-page-1998-pagerank-algorithm.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
         </div>
 
         <p>En términos humanos: si estás conectado a un nodo de <em>baja autoridad o reputación tóxica</em>, tu propio valor desciende. Los sistemas modernos van más lejos con Node2Vec — convierten cada nodo del grafo en un vector numérico. <strong>Tu identidad digital no es un perfil. Es un punto en un espacio de alta dimensionalidad.</strong> Los nodos cercanos a ti en ese espacio heredan y transfieren atributos automáticamente. Una foto en una fiesta no te mancha poéticamente. <em>Te reposiciona matemáticamente en ese espacio vectorial</em> — y esa reposición tiene consecuencias medibles.</p>
+
+        <figure class="paper-fig" id="fig-2">
+            <a href="/svg-el-perfil-que-no-escribiste/grover-leskovec-2016-node2vec.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 2 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/grover-leskovec-2016-node2vec.svg" alt="Arquitectura Node2Vec de Grover y Leskovec (2016): aprendizaje de representaciones continuas para nodos en redes multidimensionales." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 2 — Grover, A., &amp; Leskovec, J. (2016). node2vec: Scalable feature learning for networks. <cite>KDD '16</cite>, 855-864. · <a href="https://doi.org/10.1145/2939672.2939754" target="_blank" rel="noopener">doi:10.1145/2939672.2939754</a> · <a href="https://commons.wikimedia.org/wiki/File:Grover-leskovec-2016-node2vec.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
 
         <h2>No es nuevo. Solo tiene nombre nuevo.</h2>
 
@@ -354,6 +370,14 @@
 
         <p>El <strong>reconocimiento de iris</strong> ya opera en aeropuertos de Dubai y Heathrow como sistema de identificación biométrica. Worldcoin — ahora rebautizada World, fundada por Sam Altman — escaneó el iris de millones de personas en países en desarrollo a cambio de criptomonedas. Operó en Perú, Kenya, India, Indonesia. Gente que entregó su iris por el equivalente a veinte dólares sin entender completamente qué estaba cediendo.</p>
 
+        <figure class="paper-fig" id="fig-3">
+            <a href="/svg-el-perfil-que-no-escribiste/iris-recognition-biometric-pipeline.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 3 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/iris-recognition-biometric-pipeline.svg" alt="Pipeline biométrico de reconocimiento de iris: desde la adquisición de la imagen hasta la extracción de características y generación del IrisCode." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 3 — Daugman, J. (2004). How iris recognition works. <cite>IEEE Transactions on Circuits and Systems for Video Technology, 14</cite>(1), 21-30. · <a href="https://doi.org/10.1109/TCSVT.2003.818350" target="_blank" rel="noopener">doi:10.1109/TCSVT.2003.818350</a> · <a href="https://commons.wikimedia.org/wiki/File:Iris-recognition-biometric-pipeline.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
+
         <p>Meta tiene patentes registradas para <strong>gaze tracking</strong> dentro del visor Quest — rastrear hacia dónde miras, cuánto tiempo, con qué intensidad. Lo que te interesa visualmente es dato de comportamiento tan valioso como lo que buscas en Google. Sistemas como Affectiva y Realeyes leen <em>microexpresiones faciales</em> en video con una precisión que supera la percepción humana. HireVue — plataforma de entrevistas automatizadas usada por cientos de empresas Fortune 500 — analiza tus expresiones durante la entrevista y genera un score de empleabilidad <strong>antes de que un humano vea tu CV</strong>.</p>
 
         <p>Y el <em>scleral pattern recognition</em> — el patrón de venas del ojo blanco — es más único que la huella dactilar y considerablemente más difícil de falsificar o alterar.</p>
@@ -365,6 +389,14 @@
         <h2>Los casos documentados</h2>
 
         <p>No hace falta buscar lejos. <strong>Cambridge Analytica</strong> construyó perfiles psicográficos de 87 millones de usuarios de Facebook — no los robó, los <em>infirió</em> a partir de una app de test de personalidad que 270,000 personas instalaron voluntariamente. Usando los permisos de la época, accedió a los datos de todos sus contactos y construyó modelos predictivos de comportamiento electoral con una precisión suficiente para influir en dos elecciones de escala histórica. Todo dentro del marco legal de ese momento.</p>
+
+        <figure class="paper-fig" id="fig-4">
+            <a href="/svg-el-perfil-que-no-escribiste/cambridge-analytica-2018-data-extraction-cascade.svg" target="_blank" rel="noopener" class="fig-zoom" aria-label="Ver figura 4 en tamaño completo">
+                <img src="/svg-el-perfil-que-no-escribiste/cambridge-analytica-2018-data-extraction-cascade.svg" alt="Cascada de extracción de datos de Cambridge Analytica (2018): propagación de recolección de perfiles psicográficos a través de grafos sociales de la plataforma." width="1280" height="760" loading="lazy">
+            </a>
+            <figcaption>Fig. 4 — Isaak, J., &amp; Hanna, M. J. (2018). User data privacy: Facebook, Cambridge Analytica, and privacy protection. <cite>Computer, 51</cite>(8), 56-59. · <a href="https://doi.org/10.1109/MC.2018.3191268" target="_blank" rel="noopener">doi:10.1109/MC.2018.3191268</a> · <a href="https://commons.wikimedia.org/wiki/File:Cambridge-analytica-2018-data-extraction-cascade.svg" target="_blank" rel="noopener">Wikimedia Commons (CC BY-SA 4.0)</a></figcaption>
+        </figure>
+
 
         <p>La <strong>FTC documentó en 2014</strong> que doce aplicaciones de salud y fitness compartieron datos de comportamiento con setenta y seis terceros distintos — incluyendo geolocalización, frecuencia cardíaca y patrones de actividad. <strong>John Hancock</strong>, aseguradora de vida, ajusta tus primas en tiempo real según lo que registra tu Apple Watch o Fitbit. <strong>LinkedIn</strong> opera un producto llamado Talent Insights que genera señales de <em>flight risk</em> — riesgo de que un empleado renuncie — basado en su actividad dentro de la plataforma, y lo vende a los empleadores.</p>
 
