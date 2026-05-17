@@ -2011,7 +2011,7 @@
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
             </div>
             <button class="nav-toggle" id="navToggle"
@@ -2028,7 +2028,7 @@
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/produccion-academica.html" class="nav-overlay-link">Publicaciones</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
@@ -2068,7 +2068,7 @@
             </a>
             <a href="/herramientas-para-investigadores.html" class="mobile-section-card">
                 <span class="mobile-section-label">05 · Instrumentos</span>
-                <span class="mobile-section-name">Investigadores</span>
+                <span class="mobile-section-name">Por Encargo</span>
             </a>
             <a href="/estrategia.html" class="mobile-section-card">
                 <span class="mobile-section-label">06 · GEO · MCD</span>
@@ -2344,89 +2344,4 @@
                         <h3><a href="https://www.katsudomo.com" target="_blank" rel="noopener">Katsudōmo</a></h3>
                         <span class="arch-url">katsudomo.com</span>
                     </div>
-                    <p>Identidad visual completa y arquitectura web para bar de street food japonesa en Lima. PWA, hreflang ES/JA, Schema LocalBusiness.</p>
-                    <div class="tags">
-                        <span class="tag">Diseño</span>
-                        <span class="tag">Identidad Visual</span>
-                        <span class="tag">PWA</span>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <div class="contact-block">
-                    <p>Trabajo con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
-                    <div class="contact-links">
-                        <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20quiero%20iniciar%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
-                        <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
-                        <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/carlos-ravello-joo</a>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer>
-            <div class="footer-left">
-                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
-                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
-                <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">Sobre mí</a>
-            </div>
-            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
-        </footer>
-
-    </div>
-
-    <script>
-    // FAQ accordion
-    (function() {
-        var items = document.querySelectorAll('.faq-item');
-        items.forEach(function(item) {
-            var q = item.querySelector('.faq-question');
-            if (!q) return;
-            function toggle() {
-                var isOpen = item.classList.contains('is-open');
-                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
-                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
-            }
-            q.addEventListener('click', toggle);
-            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
-        });
-    })();
-
-    (function () {
-        var toggle  = document.getElementById('navToggle');
-        var overlay = document.getElementById('navOverlay');
-        if (!toggle || !overlay) return;
-        var links = overlay.querySelectorAll('.nav-overlay-link');
-        function openMenu() {
-            overlay.classList.add('is-open');
-            toggle.setAttribute('aria-expanded', 'true');
-            toggle.setAttribute('aria-label', 'Cerrar menú');
-            document.body.style.overflow = 'hidden';
-            if (links.length) links[0].focus();
-        }
-        function closeMenu() {
-            overlay.classList.remove('is-open');
-            toggle.setAttribute('aria-expanded', 'false');
-            toggle.setAttribute('aria-label', 'Abrir menú');
-            document.body.style.overflow = '';
-            toggle.focus();
-        }
-        toggle.addEventListener('click', function () {
-            overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-        });
-        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
-        document.addEventListener('keydown', function (e) {
-            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-        });
-        links.forEach(function (l) {
-            l.addEventListener('click', function () {
-                if (l.getAttribute('href').charAt(0) === '#') closeMenu();
-            });
-        });
-    })();
-    </script>
-</body>
-</html>
+                    <p>Identidad visual completa y arquitectura web para bar de street f

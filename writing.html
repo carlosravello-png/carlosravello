@@ -131,7 +131,7 @@
                 <span class="nav-sep">·</span>
                 <a href="/writing.html" class="lang-btn active" aria-current="page">Writing</a>
                 <a href="/services.html" class="lang-btn">Work</a>
-                <a href="/researchers.html" class="lang-btn">Researchers</a>
+                <a href="/researchers.html" class="lang-btn">Bespoke Tools</a>
                 <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
@@ -145,7 +145,7 @@
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/research.html" class="nav-overlay-link">Research</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
-                <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
+                <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
@@ -280,9 +280,4 @@
         function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); document.body.style.overflow = ''; toggle.focus(); }
         toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
         overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
-        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
-        links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
-    })();
-    </script>
-</body>
-</html>
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMen

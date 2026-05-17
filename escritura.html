@@ -550,6 +550,10 @@
             .series-block { padding: 22px 18px; }
             section { margin-bottom: 58px; }
         }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a:hover { color: var(--white); }
+        .breadcrumb span { color: #555; }
     </style>
 </head>
 <body>
@@ -560,7 +564,7 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">Inicio</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
             </div>
             <button class="nav-toggle" id="navToggle"
@@ -576,7 +580,7 @@
             <div class="nav-overlay-inner">
                 <a href="/escritura.html" class="nav-overlay-link current">Escritura</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
@@ -585,6 +589,12 @@
                 </div>
             </div>
         </div>
+
+        <nav aria-label="Miga de pan" class="breadcrumb">
+            <a href="/">carlosravello.com</a>
+            <span>›</span>
+            <span>Escritura</span>
+        </nav>
 
         <header>
             <span class="page-label">Escritura · Identidad digital y arquitectura semántica</span>
@@ -719,43 +729,4 @@
         <footer>
             <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
             <span class="footer-mcd">MCD · Modelo de Coherencia Dinámica</span>
-            <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">Sobre mí</a>
-        </footer>
-
-    </div>
-
-    <script>
-        (function() {
-            var btn     = document.getElementById('navToggle');
-            var overlay = document.getElementById('navOverlay');
-            var firstLink = overlay ? overlay.querySelector('.nav-overlay-link') : null;
-
-            function openMenu() {
-                overlay.classList.add('is-open');
-                btn.setAttribute('aria-expanded', 'true');
-                btn.setAttribute('aria-label', 'Cerrar menú');
-                document.body.style.overflow = 'hidden';
-                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
-            }
-
-            function closeMenu() {
-                overlay.classList.remove('is-open');
-                btn.setAttribute('aria-expanded', 'false');
-                btn.setAttribute('aria-label', 'Abrir menú');
-                document.body.style.overflow = '';
-                btn.focus();
-            }
-
-            if (btn && overlay) {
-                btn.addEventListener('click', function() {
-                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-                });
-            }
-        })();
-    </script>
-</body>
-</html>
+            <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0

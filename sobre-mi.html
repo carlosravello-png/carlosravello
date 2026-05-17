@@ -954,6 +954,10 @@
                 padding-top: 32px;
             }
         }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a:hover { color: var(--white); }
+        .breadcrumb span { color: #555; }
     </style>
 </head>
 <body>
@@ -966,7 +970,7 @@
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="lang-btn">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
             </div>
             <button class="nav-toggle" id="navToggle"
@@ -983,7 +987,7 @@
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/produccion-academica.html" class="nav-overlay-link">Publicaciones</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Investigadores</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
@@ -992,6 +996,12 @@
                 </div>
             </div>
         </div>
+
+        <nav aria-label="Miga de pan" class="breadcrumb">
+            <a href="/">carlosravello.com</a>
+            <span>›</span>
+            <span>Sobre mí</span>
+        </nav>
 
         <header>
             <span class="page-label">Perfil · Identidad verificada</span>

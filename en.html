@@ -1427,7 +1427,7 @@
                 <a href="/tools.html" class="lang-btn">Tools</a>
                 <a href="/services.html" class="lang-btn">Work</a>
                 <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
-                <a href="/researchers.html" class="lang-btn">Researchers</a>
+                <a href="/researchers.html" class="lang-btn">Bespoke Tools</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
@@ -1440,7 +1440,7 @@
                 <a href="/research.html" class="nav-overlay-link">Research</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
-                <a href="/researchers.html" class="nav-overlay-link">Researchers</a>
+                <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/" class="nav-overlay-lang-btn">ES</a>
@@ -1476,8 +1476,8 @@
                 <span class="mobile-section-name">Work</span>
             </a>
             <a href="/researchers.html" class="mobile-section-card">
-                <span class="mobile-section-label">05 · Instruments</span>
-                <span class="mobile-section-name">Researchers</span>
+                <span class="mobile-section-label">05 · Bespoke</span>
+                <span class="mobile-section-name">Bespoke Tools</span>
             </a>
             <a href="/strategy.html" class="mobile-section-card">
                 <span class="mobile-section-label">06 · GEO · MCD</span>
@@ -1758,12 +1758,4 @@
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
         });
-        links.forEach(function (l) {
-            l.addEventListener('click', function () {
-                if (l.getAttribute('href').charAt(0) === '#') closeMenu();
-            });
-        });
-    })();
-    </script>
-</body>
-</html>
+        links.forEa
