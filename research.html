@@ -116,10 +116,11 @@
         nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:80px; }
         .nav-id { font-family:var(--mono); font-size:0.70rem; color:var(--muted); letter-spacing:0.14em; }
         .nav-id a:hover { color:var(--white); }
-        .lang-switch { display:flex; gap:6px; }
+        .lang-switch { display:flex; gap:6px; align-items:center; }
         .lang-btn { font-family:var(--mono); font-size:0.70rem; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; color:var(--text); transition:all 0.2s; }
         .lang-btn.active { color:var(--bg); background:var(--white); border-color:var(--white); }
         .lang-btn:not(.active):hover { color:var(--white); border-color:#3a3a3a; }
+        .nav-sep { color:var(--border); font-family:var(--mono); font-size:0.70rem; padding:0 2px; pointer-events:none; user-select:none; }
         .nav-toggle { display:none; flex-direction:column; justify-content:center; align-items:flex-end; gap:7px; background:none; border:none; cursor:pointer; padding:8px; margin:-8px; width:44px; height:44px; position:relative; z-index:1001; }
         .nav-toggle-line { display:block; height:1px; background:var(--muted); transition:width 0.28s cubic-bezier(0.4,0,0.2,1),transform 0.28s cubic-bezier(0.4,0,0.2,1),background 0.2s ease; }
         .nav-toggle-line:first-child { width:22px; }
@@ -194,6 +195,7 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
+                <span class="nav-sep">·</span>
                 <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn active" aria-current="page">Research</a>
                 <a href="/tools.html" class="lang-btn">Tools</a>
@@ -216,8 +218,8 @@
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
-                    <a href="/" class="nav-overlay-lang-btn">ES</a>
-                    <a href="/en.html" class="nav-overlay-lang-btn active">EN</a>
+                    <a href="/produccion-academica.html" class="nav-overlay-lang-btn">ES</a>
+                    <a href="/research.html" class="nav-overlay-lang-btn active">EN</a>
                 </div>
             </div>
         </div>
@@ -264,7 +266,7 @@
                 <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.20092009" target="_blank" rel="noopener">10.5281/zenodo.20092009</a></div>
                 <div class="paper-actions" style="margin-top:16px;">
                     <a href="/research/metacognition-2-0.html" class="paper-btn primary">View paper →</a>
-                    <a href="/metacognicion-2-0-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Download PDF</a>
+                    <a href="/metacognition-2-0-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Download PDF</a>
                     <a href="/metacognition-2-0.html" class="paper-btn">Essay version</a>
                 </div>
             </div>
@@ -287,7 +289,7 @@
                 <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.20112409" target="_blank" rel="noopener">10.5281/zenodo.20112409</a></div>
                 <div class="paper-actions" style="margin-top:16px;">
                     <a href="/research/the-profile-you-didnt-write.html" class="paper-btn primary">View paper →</a>
-                    <a href="/el-perfil-que-no-escribiste-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Download PDF</a>
+                    <a href="/the-profile-you-didnt-write-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Download PDF</a>
                     <a href="/the-profile-you-didnt-write.html" class="paper-btn">Essay version</a>
                 </div>
             </div>

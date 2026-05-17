@@ -1358,7 +1358,8 @@
             letter-spacing: 0.14em;
         }
 
-        .lang-switch { display: flex; gap: 6px; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
 
         .lang-btn {
             font-family: var(--mono);
@@ -2006,6 +2007,7 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn active" aria-current="page">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
+                <span class="nav-sep">·</span>
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>

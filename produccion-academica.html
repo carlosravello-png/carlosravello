@@ -129,7 +129,8 @@
         nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; }
         .nav-id a:hover { color: var(--white); }
-        .lang-switch { display: flex; gap: 6px; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
         .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); transition: all 0.2s; }
         .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
         .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
@@ -321,6 +322,7 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn">EN</a>
+                <span class="nav-sep">·</span>
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn active" aria-current="page">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
@@ -342,8 +344,8 @@
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
-                    <a href="/" class="nav-overlay-lang-btn">ES</a>
-                    <a href="/en.html" class="nav-overlay-lang-btn">EN</a>
+                    <a href="/produccion-academica.html" class="nav-overlay-lang-btn active">ES</a>
+                    <a href="/research.html" class="nav-overlay-lang-btn">EN</a>
                 </div>
             </div>
         </div>

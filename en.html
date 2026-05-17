@@ -1000,7 +1000,8 @@
             letter-spacing: 0.14em;
         }
 
-        .lang-switch { display: flex; gap: 6px; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
 
         .lang-btn {
             font-family: var(--mono);
@@ -1420,6 +1421,7 @@
             <div class="lang-switch desktop-nav">
                 <a href="/" class="lang-btn">ES</a>
                 <a href="/en.html" class="lang-btn active" aria-current="page">EN</a>
+                <span class="nav-sep">·</span>
                 <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/tools.html" class="lang-btn">Tools</a>

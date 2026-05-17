@@ -198,7 +198,8 @@
         .nav-id a { color: inherit; transition: color 0.2s; }
         .nav-id a:hover { color: var(--white); }
 
-        .lang-switch { display: flex; gap: 6px; }
+        .lang-switch { display: flex; gap: 6px; align-items: center; }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
 
         .lang-btn {
             font-family: var(--mono);
@@ -673,8 +674,9 @@
         <nav aria-label="Main navigation">
             <a href="/en.html" class="nav-id">carlosravello.com</a>
             <div class="lang-switch desktop-nav">
-                <a href="/" class="lang-btn">ES</a>
-                <a href="/en.html" class="lang-btn">EN</a>
+                <a href="/sobre-mi.html" class="lang-btn">ES</a>
+                <a href="/about-me.html" class="lang-btn active" aria-current="page">EN</a>
+                <span class="nav-sep">·</span>
                 <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/services.html" class="lang-btn">Work</a>
