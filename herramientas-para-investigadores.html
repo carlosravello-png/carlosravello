@@ -379,8 +379,8 @@
         <nav aria-label="Navegación principal">
             <span class="nav-id"><a href="/">carlosravello.com</a></span>
             <div class="lang-switch desktop-nav">
-                <a href="/" class="lang-btn">ES</a>
-                <a href="/en.html" class="lang-btn">EN</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn active" aria-current="page">ES</a>
+                <a href="/researchers.html" class="lang-btn">EN</a>
                 <span class="nav-sep">·</span>
                 <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
@@ -595,7 +595,4 @@
                 toggle.classList.toggle('is-open', isOpen);
                 document.body.style.overflow = isOpen ? 'hidden' : '';
             });
-        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
-        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
-        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
-        document.addEventListener('keydown', func
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus()
