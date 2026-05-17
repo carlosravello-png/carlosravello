@@ -4,7 +4,7 @@
 
   <url>
     <loc>https://carlosravello.com/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html"/>
     <changefreq>monthly</changefreq>
@@ -22,7 +22,7 @@
 
   <url>
     <loc>https://carlosravello.com/sobre-mi.html</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/sobre-mi.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/about-me.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/sobre-mi.html"/>
@@ -267,7 +267,7 @@
 
   <url>
     <loc>https://carlosravello.com/research/metacognition-2-0.html</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/metacognition-2-0.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/metacognicion-2-0.html"/>
@@ -287,83 +287,10 @@
 
   <url>
     <loc>https://carlosravello.com/research/the-profile-you-didnt-write.html</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-11</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/the-profile-you-didnt-write.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <!-- Metacognition 2.0 — EN PDF -->
-  <url>
-    <loc>https://carlosravello.com/metacognition-2-0-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- The Profile You Didn't Write — EN PDF -->
-  <url>
-    <loc>https://carlosravello.com/the-profile-you-didnt-write-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- Research pages — lastmod update -->
-  <!-- La Década del Influencer como Colapso Termodinámico — PDFs descargables -->
-  <url>
-    <loc>https://carlosravello.com/decada-influencer-colapso-termodinamico-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/influencer-decade-thermodynamic-collapse-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- La Década del Influencer como Colapso Termodinámico — Serie 03/2026 -->
-  <url>
-    <loc>https://carlosravello.com/decada-influencer-colapso-termodinamico.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/decada-influencer-colapso-termodinamico.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-influencer-decade-thermodynamic-collapse.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/decada-influencer-colapso-termodinamico.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/the-influencer-decade-thermodynamic-collapse.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/decada-influencer-colapso-termodinamico.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-influencer-decade-thermodynamic-collapse.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/decada-influencer-colapso-termodinamico.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/influencer-decade-thermodynamic-collapse-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/research/influencer-decade-thermodynamic-collapse-en.html</loc>
-    <lastmod>2026-05-17</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/influencer-decade-thermodynamic-collapse-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
