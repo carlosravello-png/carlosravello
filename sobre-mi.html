@@ -1282,37 +1282,18 @@
     </div>
 
     <script>
-        (function() {
-            var btn     = document.getElementById('navToggle');
-            var overlay = document.getElementById('navOverlay');
-            var firstLink = overlay ? overlay.querySelector('.nav-overlay-link') : null;
-
-            function openMenu() {
-                overlay.classList.add('is-open');
-                btn.setAttribute('aria-expanded', 'true');
-                btn.setAttribute('aria-label', 'Cerrar menú');
-                document.body.style.overflow = 'hidden';
-                if (firstLink) setTimeout(function(){ firstLink.focus(); }, 380);
-            }
-
-            function closeMenu() {
-                overlay.classList.remove('is-open');
-                btn.setAttribute('aria-expanded', 'false');
-                btn.setAttribute('aria-label', 'Abrir menú');
-                document.body.style.overflow = '';
-                btn.focus();
-            }
-
-            if (btn && overlay) {
-                btn.addEventListener('click', function() {
-                    overlay.classList.contains('is-open') ? closeMenu() : openMenu();
-                });
-
-                document.addEventListener('keydown', function(e) {
-                    if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
-                });
-
-                overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-lang-btn').forEach(function(link) {
-                    link.addEventListener('click', function() {
-                        if (!link.getAttribute('href').startsWith('#')) return;
-                        
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
+    }());
+    </script>
+</body>
+</html>
