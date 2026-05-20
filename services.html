@@ -189,6 +189,27 @@
             color: var(--white);
             border-color: #3a3a3a;
         }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
+        .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+        .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+        .desktop-nav { display: flex; gap: 6px; align-items: center; }
+        @media (max-width: 768px) { .nav-toggle { display: flex; } .desktop-nav { display: none !important; } }
+        .nav-overlay { position:fixed; inset:0; background:#060606; z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.38s cubic-bezier(0.4,0,0.2,1); }
+        .nav-overlay.is-open { opacity:1; pointer-events:all; }
+        .nav-overlay-inner { display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center; }
+        .nav-overlay-link { font-family:var(--serif); font-size:clamp(2.4rem,9vw,4rem); font-weight:400; color:var(--muted); text-decoration:none; letter-spacing:-0.025em; line-height:1.22; opacity:0; transform:translateY(16px); transition:color 0.22s ease, opacity 0.35s ease, transform 0.35s ease; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.06s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.13s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.20s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.27s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.34s; }
+        .nav-overlay-link:hover { color:var(--white); }
+        .nav-overlay-divider { width:28px; height:1px; background:var(--border); margin:32px 0 28px; opacity:0; transition:opacity 0.3s 0.32s ease; }
+        .nav-overlay.is-open .nav-overlay-divider { opacity:1; }
+        .nav-overlay-lang { display:flex; gap:24px; opacity:0; transform:translateY(10px); transition:opacity 0.3s 0.36s ease, transform 0.3s 0.36s ease; }
+        .nav-overlay.is-open .nav-overlay-lang { opacity:1; transform:translateY(0); }
+        .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
+        .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
 
         header { margin-bottom: 88px; }
 
@@ -413,13 +434,38 @@
 <body>
     <div class="wrapper">
 
-        <nav aria-label="Navigation">
-            <span class="nav-id"><a href="/en.html">carlosravello.com</a></span>
-            <div class="lang-switch">
+        <nav aria-label="Main navigation">
+            <a href="/en.html" class="nav-id">carlosravello.com</a>
+            <div class="lang-switch desktop-nav">
                 <a href="/servicios.html" class="lang-btn">ES</a>
                 <a href="/services.html" class="lang-btn active" aria-current="page">EN</a>
+                <span class="nav-sep">·</span>
+                <a href="/writing.html" class="lang-btn">Writing</a>
+                <a href="/research.html" class="lang-btn">Research</a>
+                <a href="/services.html" class="lang-btn active">Work</a>
+                <a href="/researchers.html" class="lang-btn">Bespoke Tools</a>
+                <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
         </nav>
+
+        <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Navigation menu">
+            <div class="nav-overlay-inner">
+                <a href="/writing.html" class="nav-overlay-link">Writing</a>
+                <a href="/research.html" class="nav-overlay-link">Research</a>
+                <a href="/services.html" class="nav-overlay-link">Work</a>
+                <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
+                <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/servicios.html" class="nav-overlay-lang-btn">ES</a>
+                    <a href="/services.html" class="nav-overlay-lang-btn active">EN</a>
+                </div>
+            </div>
+        </div>
 
         <nav class="breadcrumb" aria-label="Breadcrumb">
             <ol style="list-style:none;padding:0;margin:0 0 32px;display:flex;gap:6px;font-family:var(--mono);font-size:0.76rem;color:#999;letter-spacing:0.08em;">
@@ -570,5 +616,20 @@
         </footer>
 
     </div>
+
+    <script>
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Close menu'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
+    }());
+    </script>
 </body>
 </html>

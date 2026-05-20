@@ -180,6 +180,31 @@
         .lang-switch { display: flex; gap: 6px; }
         .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
         .lang-btn.active, .lang-btn:hover { color: var(--white); border-color: var(--muted); }
+        .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
+        .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
+        .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
+        .desktop-nav { display: flex; gap: 6px; align-items: center; }
+        @media (max-width: 768px) { .nav-toggle { display: flex; } .desktop-nav { display: none !important; } }
+        .nav-overlay { position:fixed; inset:0; background:#060606; z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.38s cubic-bezier(0.4,0,0.2,1); }
+        .nav-overlay.is-open { opacity:1; pointer-events:all; }
+        .nav-overlay-inner { display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center; }
+        .nav-overlay-link { font-family:var(--serif); font-size:clamp(2.4rem,9vw,4rem); font-weight:400; color:var(--muted); text-decoration:none; letter-spacing:-0.025em; line-height:1.22; opacity:0; transform:translateY(16px); transition:color 0.22s ease, opacity 0.35s ease, transform 0.35s ease; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(1) { opacity:1; transform:translateY(0); transition-delay:0.06s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(2) { opacity:1; transform:translateY(0); transition-delay:0.13s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.20s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.27s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.34s; }
+        .nav-overlay-link:hover { color:var(--white); }
+        .nav-overlay-divider { width:28px; height:1px; background:var(--border); margin:32px 0 28px; opacity:0; transition:opacity 0.3s 0.32s ease; }
+        .nav-overlay.is-open .nav-overlay-divider { opacity:1; }
+        .nav-overlay-lang { display:flex; gap:24px; opacity:0; transform:translateY(10px); transition:opacity 0.3s 0.36s ease, transform 0.3s 0.36s ease; }
+        .nav-overlay.is-open .nav-overlay-lang { opacity:1; transform:translateY(0); }
+        .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
+        .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a:hover { color: var(--white); }
+        .breadcrumb span { color: #555; }
         .article-meta { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); letter-spacing: 0.12em; margin-bottom: 40px; display: flex; gap: 24px; flex-wrap: wrap; }
         h1 { font-family: var(--sans); font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 600; color: var(--white); line-height: 1.25; margin-bottom: 40px; letter-spacing: -0.02em; }
         .body-text p { margin-bottom: 1.6em; color: var(--text); }
@@ -249,12 +274,45 @@
 </head>
 <body>
     <div class="wrapper">
-        <nav>
-            <span class="nav-id"><a href="/">carlosravello.com</a></span>
-            <div class="lang-switch">
+        <nav aria-label="Navegación principal">
+            <a href="/" class="nav-id">carlosravello.com</a>
+            <div class="lang-switch desktop-nav">
                 <a href="/decada-influencer-colapso-termodinamico.html" class="lang-btn active" aria-current="page">ES</a>
                 <a href="/the-influencer-decade-thermodynamic-collapse.html" class="lang-btn">EN</a>
+                <span class="nav-sep">·</span>
+                <a href="/escritura.html" class="lang-btn active">Escritura</a>
+                <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
+                <a href="/servicios.html" class="lang-btn">Trabajo</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
+                <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
             </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navOverlay">
+                <span class="nav-toggle-line"></span>
+                <span class="nav-toggle-line"></span>
+            </button>
+        </nav>
+
+        <div class="nav-overlay" id="navOverlay" role="dialog" aria-modal="true" aria-label="Menú de navegación">
+            <div class="nav-overlay-inner">
+                <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
+                <a href="/produccion-academica.html" class="nav-overlay-link">Publicaciones</a>
+                <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
+                <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
+                <div class="nav-overlay-divider"></div>
+                <div class="nav-overlay-lang">
+                    <a href="/decada-influencer-colapso-termodinamico.html" class="nav-overlay-lang-btn active">ES</a>
+                    <a href="/the-influencer-decade-thermodynamic-collapse.html" class="nav-overlay-lang-btn">EN</a>
+                </div>
+            </div>
+        </div>
+
+        <nav aria-label="Ruta de navegación" class="breadcrumb">
+            <a href="/">Inicio</a>
+            <span>›</span>
+            <a href="/escritura.html">Escritura</a>
+            <span>›</span>
+            <span style="color: var(--accent);">La Década Influencer</span>
         </nav>
 
         <article>
@@ -373,5 +431,20 @@
         </footer>
 
     </div>
+
+    <script>
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
+    }());
+    </script>
 </body>
 </html>
