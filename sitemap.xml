@@ -7,7 +7,7 @@
   ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html"/>
     <changefreq>monthly</changefreq>
@@ -16,7 +16,7 @@
 
   <url>
     <loc>https://carlosravello.com/en.html</loc>
-    <lastmod>2026-05-19</lastmod>
+    <lastmod>2026-05-20</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html"/>
     <changefreq>monthly</changefreq>
@@ -417,7 +417,7 @@
     <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -427,7 +427,7 @@
     <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -437,7 +437,7 @@
     <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
@@ -447,7 +447,7 @@
     <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
