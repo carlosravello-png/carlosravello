@@ -142,14 +142,15 @@
 
         .wrapper { max-width: 720px; margin: 0 auto; padding: 10vh 28px 10vh; }
 
-        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 80px; }
+        nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 40px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; }
         .nav-id a:hover { color: var(--white); }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
-        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); transition: all 0.2s; }
-        .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
-        .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
+        .lang-btn { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; border-bottom: 1px solid transparent; color: var(--muted); text-decoration: none; transition: all 0.2s; }
+        .nav-sep ~ .lang-btn { color: var(--text); }
+        .lang-btn.active { color: var(--accent); background: transparent; border-color: transparent; border-bottom-color: var(--accent); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
 
         .nav-toggle { display: none; flex-direction: column; justify-content: center; align-items: flex-end; gap: 7px; background: none; border: none; cursor: pointer; padding: 8px; margin: -8px; width: 44px; height: 44px; position: relative; z-index: 1001; }
         .nav-toggle-line { display: block; height: 1px; background: var(--muted); transition: width 0.28s cubic-bezier(0.4,0,0.2,1), transform 0.28s cubic-bezier(0.4,0,0.2,1), background 0.2s ease; }
@@ -328,10 +329,11 @@
         .footer-tagline { font-family: var(--mono); font-size: 0.68rem; color: #666; }
         .footer-cta { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.08em; transition: color 0.2s; }
         .footer-cta:hover { color: var(--white); }
-        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 24px; display: flex; gap: 0; align-items: center; }
         .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #555; }
+        .breadcrumb span { color: var(--accent); }
     </style>
 </head>
 <body>
@@ -372,7 +374,6 @@
 
         <nav aria-label="Miga de pan" class="breadcrumb">
             <a href="/">carlosravello.com</a>
-            <span>›</span>
             <span>Publicaciones</span>
         </nav>
 
@@ -384,7 +385,6 @@
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
                 <a href="https://scholar.google.com/citations?user=AxlI1dgAAAAJ" target="_blank" rel="me noopener">Google Scholar</a>
                     <a href="https://www.researchgate.net/profile/Carlos-Ravello-Joo" target="_blank" rel="me noopener">ResearchGate</a>
-                <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener">Wikidata Q139714842</a>
                 <a href="/research.html">English version →</a>
             </div>
         </header>
@@ -452,46 +452,33 @@
                     <span class="paper-year">Mayo 2026 · 7 p.</span>
                 </div>
                 <h3><a href="/produccion-academica/decada-influencer-colapso-termodinamico-es.html">La Década del Influencer como Colapso Termodinámico de la Información: Clausura Operacional, Alostasis del Conocimiento y Bifurcación del Ecosistema Digital (2012–2025)</a></h3>
-                <p class="paper-abstract">La crisis del ecosistema digital no es un fenómeno cultural pasajero: es el output matemáticamente predecible de una década de input masivo de baja densidad epistémica. Meta, Google, TikTok y la IA como sistema selectivo de diferencia real acumulada.</p>
-                <div class="paper-kw">
-                    <span>termodinámica de la información</span>
-                    <span>alostasis del conocimiento</span>
-                    <span>clausura operacional</span>
-                    <span>densidad epistémica</span>
-                    <span>estructuras disipativas</span>
-                    <span>economía de plataformas</span>
-                </div>
-                <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.20260383" target="_blank" rel="noopener">10.5281/zenodo.20260383</a></div>
-                <div class="paper-actions" style="margin-top:16px;">
-                    <a href="/produccion-academica/decada-influencer-colapso-termodinamico-es.html" class="paper-btn primary">Ver paper →</a>
-                    <a href="/decada-influencer-colapso-termodinamico-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Descargar PDF</a>
-                    <a href="/decada-influencer-colapso-termodinamico.html" class="paper-btn">Versión divulgación</a>
-                </div>
-            </div>
-
-            <div class="paper-card" style="margin-top:1px;">
-                <div class="paper-card-header">
-                    <span class="paper-num">04 · 2026</span>
-                    <span class="paper-year">Mayo 2026 · 12 p.</span>
-                </div>
-                <h3><a href="/produccion-academica/tercer-regimen-conocimiento-es.html">El Tercer Régimen del Conocimiento: La Inteligencia Artificial como Respuesta Emergente a los Límites de la Academia Clásica y los Repositorios Abiertos</a></h3>
-                <p class="paper-abstract">La academia clásica y los repositorios abiertos fracasan simultáneamente pero por razones opuestas: una por exceso de fricción, el otro por ausencia de filtros. Este paper argumenta que la IA no reemplaza a ninguno: emerge como el primer sistema capaz de operar sobre ambos modos de fallo a la vez, absorbiendo los costos de síntesis que ninguna institución puede sostener.</p>
-                <div class="paper-kw">
-                    <span>regímenes del conocimiento</span>
-                    <span>infraestructura epistémica</span>
-                    <span>inteligencia artificial</span>
-                    <span>repositorios abiertos</span>
-                    <span>costos de coordinación</span>
-                    <span>publicación académica</span>
-                </div>
-                <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.20298744" target="_blank" rel="noopener">10.5281/zenodo.20298744</a></div>
-                <div class="paper-actions" style="margin-top:16px;">
-                    <a href="/produccion-academica/tercer-regimen-conocimiento-es.html" class="paper-btn primary">Ver paper →</a>
-                    <a href="/tercer-regimen-conocimiento-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Descargar PDF</a>
-                    <a href="/tercer-regimen-del-conocimiento.html" class="paper-btn">Versión divulgación</a>
-                </div>
-            </div>
+                <p class="paper-abstract">La crisis del ecosistema digital no es un fenómeno cultural pasajero: es el output matemáticamente predecible de u
         </section>
 
-        <section>
-            <h2>Metodología y
+        <footer>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Identidad verificable. Autoridad construida.</span>
+                <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">Sobre mí</a>
+            </div>
+            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
+        </footer>
+
+    </div>
+
+    <script>
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
+    })();
+    </script>
+</body>
+</html>

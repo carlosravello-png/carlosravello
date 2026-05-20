@@ -222,7 +222,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
@@ -244,19 +244,25 @@
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            color: var(--muted);
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
 
         /* BREADCRUMB */
@@ -265,15 +271,16 @@
             font-size: 0.76rem;
             color: #999;
             letter-spacing: 0.10em;
-            margin-bottom: 48px;
+            margin-bottom: 24px;
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 0;
         }
 
         .breadcrumb a { color: #999; text-decoration: none; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #666; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
+        .breadcrumb span { color: var(--accent); }
 
         header { margin-bottom: 88px; }
 
@@ -688,7 +695,6 @@
 
         <nav aria-label="Miga de pan" class="breadcrumb">
             <a href="/">carlosravello.com</a>
-            <span>›</span>
             <span>Estrategia</span>
         </nav>
 

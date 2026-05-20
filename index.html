@@ -216,7 +216,6 @@
                                           "jobTitle": "Cofundadora — Médico Veterinaria y Zootecnista",
                                           "sameAs": [
                                                 "https://orcid.org/0009-0002-6837-5311",
-                                                "https://www.wikidata.org/wiki/Q138881218",
                                                 "https://jessica-camacho.com/#person"
                                           ]
                                     },
@@ -227,7 +226,6 @@
                                     }
                               ],
                               "sameAs": [
-                                    "https://www.wikidata.org/wiki/Q138788858",
                                     "https://www.linkedin.com/company/zoovet-travel",
                                     "https://www.crunchbase.com/organization/zoovet-travel",
                                     "https://www.facebook.com/Zoovet.Trujillo",
@@ -275,8 +273,7 @@
                         "@type": "Person",
                         "@id": "https://jessica-camacho.com/#person",
                         "name": "Jessica Ysabel Camacho García",
-                        "url": "https://jessica-camacho.com",
-                        "sameAs": "https://www.wikidata.org/wiki/Q138881218"
+                        "url": "https://jessica-camacho.com"
                   },
                   "hasOccupation": [
                         {
@@ -1348,12 +1345,12 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
             font-family: var(--mono);
-            font-size: 0.70rem;
+            font-size: 0.75rem;
             color: var(--muted);
             letter-spacing: 0.14em;
         }
@@ -1363,24 +1360,30 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.70rem;
+            font-size: 0.75rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            border-bottom: 1px solid transparent;
+            color: var(--muted);
+            text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
 
         /* HEADER */
@@ -2222,7 +2225,7 @@
                         <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
                         <span class="company-year">Est. Mayo 2013</span>
                     </div>
-                    <p>Clínica veterinaria especializada en exportación e importación internacional de mascotas. Más de 13 años ejecutando protocolos SENASA y certificaciones zoosanitarias para familias que viajan o se mudan globalmente. Entidad verificada en Wikidata. Servicio en español, inglés y francés.</p>
+                    <p>Clínica veterinaria especializada en exportación e importación internacional de mascotas. Más de 13 años ejecutando protocolos SENASA y certificaciones zoosanitarias para familias que viajan o se mudan globalmente. Servicio en español, inglés y francés.</p>
                     <div class="tags">
                         <span class="tag">Medicina Veterinaria</span>
                         <span class="tag">Logística Internacional</span>
@@ -2315,13 +2318,12 @@
                         <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
                         <span class="arch-url">zoovettravel.com</span>
                     </div>
-                    <p>Diseño completo y estrategia SEO en tres idiomas (ES/EN/FR). Schema institucional veterinario, integración de perfiles de autoridad médica con ORCID, publicaciones Zenodo sobre fisiología de transporte animal. Entidad verificada en Wikidata Q138788858.</p>
+                    <p>Diseño completo y estrategia SEO en tres idiomas (ES/EN/FR). Schema institucional veterinario, integración de perfiles de autoridad médica con ORCID, publicaciones Zenodo sobre fisiología de transporte animal. Entidad verificada.</p>
                     <p style="margin-top:14px; padding-top:14px; border-top:1px solid var(--border); font-size:0.80rem; color:var(--muted); line-height:1.85;">Glosario Regulatorio Veterinario Internacional — la primera referencia estructurada en español, inglés y francés sobre los términos que gobiernan el movimiento legal de animales entre países. FAVN, RFFIT, RNATT, SENASA, MPI, GACC, DEFRA, CFIA y dieciocho términos más — cada uno con definición de autoridad, contexto regulatorio, implicaciones clínicas reales y equivalencia verificable en las tres lenguas. Infraestructura de conocimiento especializado que no existía en este formato.</p>
                     <div class="tags">
                         <span class="tag">Diseño</span>
                         <span class="tag">Trilingüe ES/EN/FR</span>
                         <span class="tag">Schema Médico</span>
-                        <span class="tag">Wikidata</span>
                         <span class="tag">Glosario Regulatorio</span>
                     </div>
                 </div>
@@ -2344,4 +2346,172 @@
                         <h3><a href="https://www.katsudomo.com" target="_blank" rel="noopener">Katsudōmo</a></h3>
                         <span class="arch-url">katsudomo.com</span>
                     </div>
-                    <p>Identidad visual completa y arquitectura web para bar de street f
+                    <p>Identidad visual completa y arquitectura web para bar de street food japonesa en Lima. PWA, hreflang ES/JA, Schema LocalBusiness.</p>
+                    <div class="tags">
+                        <span class="tag">Diseño</span>
+                        <span class="tag">Identidad Visual</span>
+                        <span class="tag">PWA</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <div class="contact-block">
+                    <p>Trabajo con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
+                    <div class="contact-links">
+                        <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20quiero%20iniciar%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
+                        <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
+                        <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/carlos-ravello-joo</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
+                <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">Sobre mí</a>
+            </div>
+            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
+        </footer>
+
+    </div>
+
+    <script>
+    (function() {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function(item) {
+            var q = item.querySelector('.faq-question');
+            if (!q) return;
+            function toggle() {
+                var isOpen = item.classList.contains('is-open');
+                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
+                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+            }
+            q.addEventListener('click', toggle);
+            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+        });
+    })();
+
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() {
+            overlay.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            toggle.setAttribute('aria-label', 'Cerrar menú');
+            document.body.style.overflow = 'hidden';
+            if (links.length) links[0].focus();
+        }
+        function closeMenu() {
+            overlay.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menú');
+            document.body.style.overflow = '';
+            toggle.focus();
+        }
+        toggle.addEventListener('click', function () {
+            overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+        });
+        links.forEach(function (l) {
+            l.addEventListener('click', function () {
+                if (l.getAttribute('href').charAt(0) === '#') closeMenu();
+            });
+        });
+    })();
+    </script>
+</body>
+</html>ood japonesa en Lima. PWA, hreflang ES/JA, Schema LocalBusiness.</p>
+                    <div class="tags">
+                        <span class="tag">Diseño</span>
+                        <span class="tag">Identidad Visual</span>
+                        <span class="tag">PWA</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <div class="contact-block">
+                    <p>Trabajo con entidades que saben lo que necesitan: identidad digital verificable, arquitectura semántica construida desde adentro, estrategia que no se replica. Si tu caso es serio, <a href="/estrategia.html" style="color: inherit; border-bottom: 1px solid currentColor;">empieza aquí</a>.</p>
+                    <div class="contact-links">
+                        <a href="https://wa.me/51977647243?text=Hola%20Carlos%2C%20quiero%20iniciar%20un%20diagn%C3%B3stico" target="_blank" rel="noopener" class="contact-link">WhatsApp +51 977 647 243</a>
+                        <a href="mailto:carlos.ravello@zoovettravel.com" class="contact-link">carlos.ravello@zoovettravel.com</a>
+                        <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="noopener" class="contact-link">linkedin.com/in/carlos-ravello-joo</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravedad, visibilidad, entidades verificadas.</span>
+                <a href="/sobre-mi.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">Sobre mí</a>
+            </div>
+            <a href="https://wa.me/51977647243?text=Quiero%20iniciar%20un%20diagn%C3%B3stico" class="footer-cta" target="_blank" rel="noopener">Iniciar diagnóstico →</a>
+        </footer>
+
+    </div>
+
+    <script>
+    (function() {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function(item) {
+            var q = item.querySelector('.faq-question');
+            if (!q) return;
+            function toggle() {
+                var isOpen = item.classList.contains('is-open');
+                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
+                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+            }
+            q.addEventListener('click', toggle);
+            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+        });
+    })();
+
+    (function () {
+        var toggle  = document.getElementById('navToggle');
+        var overlay = document.getElementById('navOverlay');
+        if (!toggle || !overlay) return;
+        var links = overlay.querySelectorAll('.nav-overlay-link');
+        function openMenu() {
+            overlay.classList.add('is-open');
+            toggle.setAttribute('aria-expanded', 'true');
+            toggle.setAttribute('aria-label', 'Cerrar menú');
+            document.body.style.overflow = 'hidden';
+            if (links.length) links[0].focus();
+        }
+        function closeMenu() {
+            overlay.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.setAttribute('aria-label', 'Abrir menú');
+            document.body.style.overflow = '';
+            toggle.focus();
+        }
+        toggle.addEventListener('click', function () {
+            overlay.classList.contains('is-open') ? closeMenu() : openMenu();
+        });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
+        });
+        links.forEach(function (l) {
+            l.addEventListener('click', function () {
+                if (l.getAttribute('href').charAt(0) === '#') closeMenu();
+            });
+        });
+    })();
+    </script>
+</body>
+</html>

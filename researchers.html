@@ -131,13 +131,14 @@
         body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
         .wrapper { max-width: 780px; margin: 0 auto; padding: 10vh 32px 10vh; }
 
-        nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; }
+        nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; text-decoration: none; }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
-        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
-        .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
-        .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
+        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; border-bottom: 1px solid transparent; color: var(--muted); text-decoration: none; transition: all 0.2s; }
+        .nav-sep ~ .lang-btn { color: var(--text); }
+        .lang-btn.active { color: var(--accent); background: transparent; border-color: transparent; border-bottom-color: var(--accent); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
         .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
         .desktop-nav { display: flex; gap: 6px; align-items: center; }
@@ -160,10 +161,11 @@
         .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
         .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
 
-        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 24px; display: flex; gap: 0; align-items: center; }
         .breadcrumb a { color: #999; text-decoration: none; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #555; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
+        .breadcrumb span { color: var(--accent); }
 
         header { margin-bottom: 80px; }
         .header-kicker { font-family: var(--mono); font-size: 0.70rem; color: var(--accent); letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 20px; display: block; }
@@ -258,8 +260,7 @@
 
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <a href="/en.html">Home</a>
-            <span>›</span>
-            <span style="color: var(--accent);">Bespoke Tools</span>
+            <span>Bespoke Tools</span>
         </nav>
 
         <header>

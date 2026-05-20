@@ -198,7 +198,6 @@
               "jobTitle": "Co-founder — Veterinary Physician and Zootechnist",
               "sameAs": [
                 "https://orcid.org/0009-0002-6837-5311",
-                "https://www.wikidata.org/wiki/Q138881218",
                 "https://jessica-camacho.com/#person"
               ]
             },
@@ -209,7 +208,6 @@
             }
           ],
           "sameAs": [
-            "https://www.wikidata.org/wiki/Q138788858",
             "https://www.linkedin.com/company/zoovet-travel",
             "https://www.crunchbase.com/organization/zoovet-travel",
             "https://www.facebook.com/Zoovet.Trujillo",
@@ -245,8 +243,7 @@
         "@type": "Person",
         "@id": "https://jessica-camacho.com/#person",
         "name": "Jessica Ysabel Camacho García",
-        "url": "https://jessica-camacho.com",
-        "sameAs": "https://www.wikidata.org/wiki/Q138881218"
+        "url": "https://jessica-camacho.com"
       },
       "hasOccupation": [
         {
@@ -990,7 +987,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
@@ -1005,24 +1002,30 @@
 
         .lang-btn {
             font-family: var(--mono);
-            font-size: 0.70rem;
+            font-size: 0.75rem;
             letter-spacing: 0.14em;
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            border-bottom: 1px solid transparent;
+            color: var(--muted);
+            text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
 
         header { margin-bottom: 88px; }
@@ -1518,7 +1521,7 @@
                         <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
                         <span class="company-year">Est. May 2013</span>
                     </div>
-                    <p>Veterinary clinic specializing in international pet export and import. Over 12 years executing SENASA protocols and zoosanitary certifications for families relocating or traveling globally with their animals. Verified entity on Wikidata. Service in Spanish, English and French.</p>
+                    <p>Veterinary clinic specializing in international pet export and import. Over 12 years executing SENASA protocols and zoosanitary certifications for families relocating or traveling globally with their animals. Service in Spanish, English and French.</p>
                     <div class="tags">
                         <span class="tag">Veterinary Medicine</span>
                         <span class="tag">International Logistics</span>
@@ -1613,13 +1616,12 @@
                         <h3><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a></h3>
                         <span class="arch-url">zoovettravel.com</span>
                     </div>
-                    <p>Full design and three-language SEO strategy (ES/EN/FR). Veterinary institutional Schema, medical authority profiles with ORCID, Zenodo publications on animal transport physiology. Verified entity on Wikidata Q138788858.</p>
+                    <p>Full design and three-language SEO strategy (ES/EN/FR). Veterinary institutional Schema, medical authority profiles with ORCID, Zenodo publications on animal transport physiology. Verified entity.</p>
                     <p style="margin-top:14px; padding-top:14px; border-top:1px solid var(--border); font-size:0.80rem; color:var(--muted); line-height:1.85;">International Veterinary Regulatory Glossary — the first structured reference in Spanish, English and French covering the terms that govern the legal movement of animals between countries. FAVN, RFFIT, RNATT, SENASA, MPI, GACC, DEFRA, CFIA and eighteen more terms — each with its authoritative definition, regulatory context, real clinical implications and verified equivalence across all three languages. Not a general-purpose glossary. Specialized knowledge infrastructure that did not exist on the web in this format.</p>
                     <div class="tags">
                         <span class="tag">Design</span>
                         <span class="tag">Trilingual ES/EN/FR</span>
                         <span class="tag">Medical Schema</span>
-                        <span class="tag">Wikidata</span>
                     </div>
                 </div>
 

@@ -129,13 +129,14 @@
         ::selection { background:var(--text); color:var(--bg); }
         a { color:inherit; text-decoration:none; }
         .wrapper { max-width:720px; margin:0 auto; padding:10vh 28px 10vh; }
-        nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:80px; }
+        nav { display:flex; justify-content:space-between; align-items:center; margin-bottom:40px; }
         .nav-id { font-family:var(--mono); font-size:0.70rem; color:var(--muted); letter-spacing:0.14em; }
         .nav-id a:hover { color:var(--white); }
         .lang-switch { display:flex; gap:6px; align-items:center; }
-        .lang-btn { font-family:var(--mono); font-size:0.70rem; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; color:var(--text); transition:all 0.2s; }
-        .lang-btn.active { color:var(--bg); background:var(--white); border-color:var(--white); }
-        .lang-btn:not(.active):hover { color:var(--white); border-color:#3a3a3a; }
+        .lang-btn { font-family:var(--mono); font-size:0.75rem; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; border-bottom:1px solid transparent; color:var(--muted); text-decoration:none; transition:all 0.2s; }
+        .nav-sep ~ .lang-btn { color:var(--text); }
+        .lang-btn.active { color:var(--accent); background:transparent; border-color:transparent; border-bottom-color:var(--accent); }
+        .lang-btn:not(.active):hover { color:var(--white); border-color:transparent; border-bottom-color:#3a3a3a; }
         .nav-sep { color:var(--border); font-family:var(--mono); font-size:0.70rem; padding:0 2px; pointer-events:none; user-select:none; }
         .nav-toggle { display:none; flex-direction:column; justify-content:center; align-items:flex-end; gap:7px; background:none; border:none; cursor:pointer; padding:8px; margin:-8px; width:44px; height:44px; position:relative; z-index:1001; }
         .nav-toggle-line { display:block; height:1px; background:var(--muted); transition:width 0.28s cubic-bezier(0.4,0,0.2,1),transform 0.28s cubic-bezier(0.4,0,0.2,1),background 0.2s ease; }
@@ -201,10 +202,11 @@
         .footer-tagline { font-family:var(--mono); font-size:0.68rem; color:#666; }
         .footer-cta { font-family:var(--mono); font-size:0.70rem; color:var(--accent); letter-spacing:0.08em; transition:color 0.2s; }
         .footer-cta:hover { color:var(--white); }
-        .breadcrumb { font-family:var(--mono); font-size:0.76rem; color:#999; letter-spacing:0.08em; margin-bottom:60px; display:flex; gap:8px; align-items:center; }
+        .breadcrumb { font-family:var(--mono); font-size:0.76rem; color:#999; letter-spacing:0.08em; margin-bottom:24px; display:flex; gap:0; align-items:center; }
         .breadcrumb a { color:#999; text-decoration:none; }
+        .breadcrumb a::after { content:' · '; color:#3a3a3a; padding:0 2px; }
         .breadcrumb a:hover { color:var(--white); }
-        .breadcrumb span { color:#555; }
+        .breadcrumb span { color:var(--accent); }
     </style>
 </head>
 <body>
@@ -246,7 +248,6 @@
 
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <a href="/en.html">carlosravello.com</a>
-            <span>›</span>
             <span>Research</span>
         </nav>
 
@@ -258,7 +259,6 @@
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
                 <a href="https://scholar.google.com/citations?user=AxlI1dgAAAAJ" target="_blank" rel="me noopener">Google Scholar</a>
                     <a href="https://www.researchgate.net/profile/Carlos-Ravello-Joo" target="_blank" rel="me noopener">ResearchGate</a>
-                <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener">Wikidata Q139714842</a>
                 <a href="/produccion-academica.html">Versión en español →</a>
             </div>
         </header>
@@ -349,22 +349,7 @@
                     <span class="paper-year">May 2026 · 12 p.</span>
                 </div>
                 <h3><a href="/research/third-knowledge-regime-en.html">The Third Knowledge Regime: Artificial Intelligence as an Emergent Response to the Limits of Classical Academia and Open Repositories</a></h3>
-                <p class="paper-abstract">Classical academia and open repositories fail simultaneously but for opposite reasons — one by excessive friction, the other by absence of filters. This paper argues that AI does not replace either: it emerges as the first system capable of operating across both failure modes at once, absorbing synthesis costs that neither institution can bear.</p>
-                <div class="paper-kw">
-                    <span>knowledge regimes</span>
-                    <span>epistemic infrastructure</span>
-                    <span>artificial intelligence</span>
-                    <span>open repositories</span>
-                    <span>coordination costs</span>
-                    <span>academic publishing</span>
-                </div>
-                <div class="paper-doi">DOI: <a href="https://doi.org/10.5281/zenodo.20298744" target="_blank" rel="noopener">10.5281/zenodo.20298744</a></div>
-                <div class="paper-actions" style="margin-top:16px;">
-                    <a href="/research/third-knowledge-regime-en.html" class="paper-btn primary">View paper →</a>
-                    <a href="/third-knowledge-regime-carlos-eduardo-ravello-joo-2026.pdf" class="paper-btn" download>Download PDF</a>
-                    <a href="/the-third-knowledge-regime.html" class="paper-btn">Essay version</a>
-                </div>
-            </div>
+                <p class="paper-abstract">Classical academia and open repositories fail simultaneously but for opposite reasons — one by excessive friction, the other by absence of filters. This paper argues that AI does not replace either: it emerges as the first syst
         </section>
 
         <footer>

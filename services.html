@@ -154,7 +154,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
@@ -175,19 +175,25 @@
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            color: var(--muted);
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
@@ -468,9 +474,9 @@
         </div>
 
         <nav class="breadcrumb" aria-label="Breadcrumb">
-            <ol style="list-style:none;padding:0;margin:0 0 32px;display:flex;gap:6px;font-family:var(--mono);font-size:0.76rem;color:#999;letter-spacing:0.08em;">
+            <ol style="list-style:none;padding:0;margin:0 0 24px;display:flex;gap:6px;font-family:var(--mono);font-size:0.76rem;color:#999;letter-spacing:0.08em;">
                 <li><a href="/en.html" style="color:var(--muted);text-decoration:none;">carlosravello.com</a></li>
-                <li style="opacity:0.4;">›</li>
+                <li style="color:#3a3a3a;">·</li>
                 <li style="color:var(--accent);">Work</li>
             </ol>
         </nav>

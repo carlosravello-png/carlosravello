@@ -185,7 +185,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
@@ -208,20 +208,25 @@
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            color: var(--muted);
+            border-bottom: 1px solid transparent;
             text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
 
         .nav-toggle {
@@ -557,14 +562,15 @@
             font-family: var(--mono);
             font-size: 0.76rem;
             color: #999;
-            margin-bottom: 52px;
+            margin-bottom: 24px;
             display: flex;
-            gap: 8px;
+            gap: 0;
             align-items: center;
         }
         .breadcrumb a { color: #999; text-decoration: none; transition: color 0.2s; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #666; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
+        .breadcrumb span { color: var(--accent); }
 
         @media (max-width: 768px) {
             .nav-toggle  { display: flex; }
@@ -709,7 +715,6 @@
 
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <a href="/en.html">carlosravello.com</a>
-            <span>›</span>
             <span>About</span>
         </nav>
 
@@ -719,7 +724,6 @@
             <p class="header-lead">I design digital realities that position your entity through authority and gravity — not through trends or passing fashions.</p>
             <div class="authority-links">
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
-                <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener">Wikidata Q139714842</a>
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22" target="_blank" rel="me noopener">Zenodo · 6 DOI</a>
                 <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="me noopener">LinkedIn</a>
                 <a href="https://github.com/carlosravello-png" target="_blank" rel="me noopener">GitHub</a>
@@ -793,7 +797,7 @@
                     <div class="mcd-axes">
                         <div class="mcd-axis">
                             <span class="axis-num">01</span>
-                            <span class="axis-text"><strong>Precise technical identity.</strong> What you are must be verifiable by external systems: DOIs, ORCID, Wikidata, Schema.org @graph. Not descriptions — data.</span>
+                            <span class="axis-text"><strong>Precise technical identity.</strong> What you are must be confirmable by external systems — not through description, but through structure. If a system cannot independently verify your existence, you do not exist in its model.</span>
                         </div>
                         <div class="mcd-axis">
                             <span class="axis-num">02</span>
@@ -839,7 +843,7 @@
                     </div>
                     <div class="stack-item">
                         <div class="stack-label">Verifiable authority</div>
-                        <h3>ORCID · Zenodo · Wikidata</h3>
+                        <h3>The layer that graphs read before people do.</h3>
                         <p>Identity anchored in international scientific verification systems. sameAs linking between Person, Organization and academic platforms.</p>
                     </div>
                 </div>
@@ -933,9 +937,9 @@
                 <div class="repo-item">
                     <div class="repo-header">
                         <span class="repo-name"><a href="https://github.com/carlosravello-png/zoovet-travel" target="_blank" rel="noopener">zoovet-travel</a></span>
-                        <span class="repo-tech">HTML · Trilingual ES/EN/FR · Wikidata</span>
+                        <span class="repo-tech">HTML · Trilingual ES/EN/FR</span>
                     </div>
-                    <p><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a>. International veterinary clinic specialized in pet export. Trilingual SEO. Schema LocalBusiness + Wikidata Q138788858. Zoopedia: 20+ country guides.</p>
+                    <p><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a>. International veterinary clinic specialized in pet export. Trilingual SEO. Schema LocalBusiness. Zoopedia: 20+ country guides.</p>
                 </div>
 
                 <div class="repo-item">
@@ -1026,4 +1030,14 @@
                     if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu();
                 });
 
-    
+                overlay.querySelectorAll('.nav-overlay-link, .nav-overlay-lang-btn').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        if (!link.getAttribute('href').startsWith('#')) return;
+                        closeMenu();
+                    });
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

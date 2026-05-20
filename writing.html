@@ -35,7 +35,7 @@
       "description": "Articles on semantic architecture, digital identity and positioning strategy.",
       "url": "https://carlosravello.com/writing.html",
       "inLanguage": "en",
-      "author": { "@type": "Person", "@id": "https://carlosravello.com/#carlos" },
+      "author": { "@type": "Person", "@id": "https://carlosravello.com/#person" },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -57,13 +57,14 @@
         body { background: var(--bg); color: var(--text); font-family: var(--sans); line-height: 1.7; -webkit-font-smoothing: antialiased; }
         .wrapper { max-width: 780px; margin: 0 auto; padding: 10vh 32px 10vh; }
 
-        nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 80px; }
+        nav { display: flex; align-items: center; justify-content: space-between; margin-bottom: 40px; }
         .nav-id { font-family: var(--mono); font-size: 0.70rem; color: var(--muted); letter-spacing: 0.14em; text-decoration: none; }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
-        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; transition: all 0.2s; }
-        .lang-btn.active { color: var(--bg); background: var(--white); border-color: var(--white); }
-        .lang-btn:not(.active):hover { color: var(--white); border-color: #3a3a3a; }
+        .lang-btn { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; border-bottom: 1px solid transparent; color: var(--muted); text-decoration: none; transition: all 0.2s; }
+        .nav-sep ~ .lang-btn { color: var(--text); }
+        .lang-btn.active { color: var(--accent); background: transparent; border-color: transparent; border-bottom-color: var(--accent); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
         .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
         .desktop-nav { display: flex; gap: 6px; align-items: center; }
@@ -86,10 +87,11 @@
         .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
         .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
 
-        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 24px; display: flex; gap: 0; align-items: center; }
         .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #555; }
+        .breadcrumb span { color: var(--accent); }
 
         header { margin-bottom: 72px; }
         h1 { font-family: var(--serif); font-size: clamp(2rem, 5vw, 3rem); font-weight: 400; color: var(--white); line-height: 1.18; letter-spacing: -0.03em; margin-bottom: 20px; }
@@ -158,8 +160,7 @@
 
         <nav aria-label="Breadcrumb" class="breadcrumb">
             <a href="/en.html">Home</a>
-            <span>›</span>
-            <span style="color: var(--accent);">Writing</span>
+            <span>Writing</span>
         </nav>
 
         <header>
@@ -280,23 +281,7 @@
             <article class="article-card" itemscope itemtype="https://schema.org/Article">
                 <div class="card-num">07 / 07</div>
                 <div class="card-tags">
-                    <span class="card-tag">Knowledge Regime</span>
-                    <span class="card-tag">AI</span>
-                    <span class="card-tag">Epistemic Density</span>
-                </div>
-                <h3 itemprop="name"><a href="/the-third-knowledge-regime.html" itemprop="url">The third knowledge regime</a></h3>
-                <p class="card-excerpt" itemprop="description">Classical academia and open repositories fail simultaneously but for opposite reasons. AI does not replace either. It emerges as the first system capable of absorbing what both leave unresolved.</p>
-                <div class="card-footer">
-                    <span class="card-science">Kuhn · Popper · Merton · knowledge sociology</span>
-                    <div>
-                        <a href="/the-third-knowledge-regime.html" class="card-read">Read in English →</a>
-                        <a href="/tercer-regimen-del-conocimiento.html" class="card-lang">ES</a>
-                    </div>
-                </div>
-            </article>
-
-        </section>
-
+       
     </main>
 
         <footer>

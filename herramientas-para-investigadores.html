@@ -174,22 +174,24 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
         .nav-id a { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); letter-spacing: 0.1em; }
         .lang-switch { display: flex; gap: 6px; align-items: center; }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
         .lang-btn {
-            font-family: var(--mono); font-size: 0.76rem; color: #999;
+            font-family: var(--mono); font-size: 0.76rem; color: var(--muted);
             letter-spacing: 0.12em; text-transform: uppercase;
             border: 1px solid transparent; padding: 3px 8px; border-radius: 2px;
+            border-bottom: 1px solid transparent; text-decoration: none;
             transition: color 0.2s, border-color 0.2s;
         }
-        .lang-btn.active { color: var(--white); border-color: var(--muted); }
-        .lang-btn:not(.active):hover { color: var(--text); border-color: var(--border); }
+        .nav-sep ~ .lang-btn { color: var(--text); }
+        .lang-btn.active { color: var(--accent); background: transparent; border-color: transparent; border-bottom-color: var(--accent); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
 
         /* Desktop nav links */
-        .desktop-nav { display: flex; gap: 6px; align-items: center; }
+        .desktop-nav { display: flex; gap: 6px; align-items: center; margin-bottom: 40px; }
         @media (max-width: 768px) {
             .nav-toggle  { display: flex; }
             .desktop-nav { display: none !important; }
@@ -243,11 +245,14 @@
 
         /* Breadcrumb */
         .breadcrumb {
-            font-family: var(--mono); font-size: 0.76rem; color: #999;
-            letter-spacing: 0.08em; margin-bottom: 60px;
-            display: flex; gap: 8px; align-items: center;
+            font-family: var(--mono); font-size: 0.76rem; color: var(--muted);
+            letter-spacing: 0.08em; margin-bottom: 24px;
+            display: flex; gap: 0; align-items: center;
         }
-        .breadcrumb a:hover { color: var(--text); }
+        .breadcrumb a { color: #999; text-decoration: none; }
+        .breadcrumb a:hover { color: var(--white); }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
+        .breadcrumb span { color: var(--accent); }
 
         /* Header */
         header { margin-bottom: 80px; }
@@ -257,7 +262,7 @@
             letter-spacing: -0.02em; margin-bottom: 20px;
         }
         .title-label {
-            font-family: var(--mono); font-size: 0.76rem; color: #999;
+            font-family: var(--mono); font-size: 0.76rem; color: var(--muted);
             letter-spacing: 0.15em; text-transform: uppercase; display: block;
             margin-bottom: 16px;
         }
@@ -266,7 +271,7 @@
             font-style: italic; line-height: 1.6; margin-bottom: 24px;
         }
         .back-link {
-            font-family: var(--mono); font-size: 0.76rem; color: #999;
+            font-family: var(--mono); font-size: 0.76rem; color: var(--muted);
             letter-spacing: 0.1em;
             transition: color 0.2s;
         }
@@ -413,7 +418,6 @@
 
         <nav aria-label="Miga de pan" class="breadcrumb">
             <a href="/">carlosravello.com</a>
-            <span>›</span>
             <span>Instrumentos para investigadores</span>
         </nav>
 
@@ -595,4 +599,12 @@
                 toggle.classList.toggle('is-open', isOpen);
                 document.body.style.overflow = isOpen ? 'hidden' : '';
             });
-        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus()
+        function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+        toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+        overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+        document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+        links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
+    })();
+    </script>
+</body>
+</html>

@@ -305,7 +305,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 80px;
+            margin-bottom: 40px;
         }
 
         .nav-id {
@@ -327,19 +327,25 @@
             text-transform: uppercase;
             padding: 4px 10px;
             border: 1px solid transparent;
-            color: var(--text);
+            color: var(--muted);
+            border-bottom: 1px solid transparent;
+            text-decoration: none;
             transition: all 0.2s;
         }
 
+        .nav-sep ~ .lang-btn { color: var(--text); }
+
         .lang-btn.active {
-            color: var(--bg);
-            background: var(--white);
-            border-color: var(--white);
+            color: var(--accent);
+            background: transparent;
+            border-color: transparent;
+            border-bottom-color: var(--accent);
         }
 
         .lang-btn:not(.active):hover {
             color: var(--white);
-            border-color: #3a3a3a;
+            border-color: transparent;
+            border-bottom-color: #3a3a3a;
         }
 
         /* HAMBURGER TRIGGER */
@@ -954,10 +960,11 @@
                 padding-top: 32px;
             }
         }
-        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 60px; display: flex; gap: 8px; align-items: center; }
+        .breadcrumb { font-family: var(--mono); font-size: 0.76rem; color: #999; letter-spacing: 0.08em; margin-bottom: 24px; display: flex; gap: 0; align-items: center; }
         .breadcrumb a { color: #999; text-decoration: none; }
         .breadcrumb a:hover { color: var(--white); }
-        .breadcrumb span { color: #555; }
+        .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
+        .breadcrumb span { color: var(--accent); }
     </style>
 </head>
 <body>
@@ -1001,7 +1008,6 @@
 
         <nav aria-label="Miga de pan" class="breadcrumb">
             <a href="/">carlosravello.com</a>
-            <span>›</span>
             <span>Sobre mí</span>
         </nav>
 
@@ -1011,7 +1017,6 @@
             <p class="header-lead">Diseño realidades digitales que posicionan su entidad por autoridad y gravedad — no por trends ni modas pasajeras.</p>
             <div class="authority-links">
                 <a href="https://orcid.org/0009-0007-5631-7436" target="_blank" rel="me noopener">ORCID 0009-0007-5631-7436</a>
-                <a href="https://www.wikidata.org/wiki/Q139714842" target="_blank" rel="me noopener">Wikidata Q139714842</a>
                 <a href="https://zenodo.org/search?q=metadata.creators.person_or_org.name%3A%22ravello%20joo%2C%20carlos%20eduardo%22" target="_blank" rel="me noopener">Zenodo · 6 DOI</a>
                 <a href="https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262" target="_blank" rel="me noopener">LinkedIn</a>
                 <a href="https://github.com/carlosravello-png" target="_blank" rel="me noopener">GitHub</a>
@@ -1069,7 +1074,7 @@
                     <div class="mcd-axes">
                         <div class="mcd-axis">
                             <span class="axis-num">01</span>
-                            <span class="axis-text"><strong>Identidad técnica precisa.</strong> Lo que eres debe ser verificable por sistemas externos: DOIs, ORCID, Wikidata, Schema.org @graph. No descripciones, datos.</span>
+                            <span class="axis-text"><strong>Identidad técnica precisa.</strong> Lo que eres debe ser confirmable por sistemas externos — no por descripción, sino por estructura. Si un sistema no puede verificarte de forma independiente, no existes en su modelo.</span>
                         </div>
                         <div class="mcd-axis">
                             <span class="axis-num">02</span>
@@ -1116,7 +1121,7 @@
                     </div>
                     <div class="stack-item">
                         <div class="stack-label">Autoridad verificable</div>
-                        <h3>ORCID · Zenodo · Wikidata</h3>
+                        <h3>La capa que los grafos leen antes que las personas.</h3>
                         <p>Identidad anclada en sistemas de verificación científica internacional. sameAs linking entre Person, Organization y plataformas académicas.</p>
                     </div>
                 </div>
@@ -1218,9 +1223,9 @@
                 <div class="repo-item">
                     <div class="repo-header">
                         <span class="repo-name"><a href="https://github.com/carlosravello-png/zoovet-travel" target="_blank" rel="noopener">zoovet-travel</a></span>
-                        <span class="repo-tech">HTML · Trilingüe ES/EN/FR · Wikidata</span>
+                        <span class="repo-tech">HTML · Trilingüe ES/EN/FR</span>
                     </div>
-                    <p><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a>. Clínica veterinaria internacional especializada en exportación de mascotas. SEO trilingüe. Schema LocalBusiness + Wikidata Q138788858. Zoopedia: 20+ guías por país.</p>
+                    <p><a href="https://zoovettravel.com" target="_blank" rel="noopener">Zoovet Travel</a>. Clínica veterinaria internacional especializada en exportación de mascotas. SEO trilingüe. Schema LocalBusiness. Zoopedia: 20+ guías por país.</p>
                 </div>
 
                 <div class="repo-item">
@@ -1296,4 +1301,4 @@
     }());
     </script>
 </body>
-</html>
+</html>                                                                         
