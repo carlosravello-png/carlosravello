@@ -1305,24 +1305,43 @@
             border-top: 1px solid var(--border);
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
             flex-wrap: wrap;
-            gap: 8px;
+            gap: 16px;
+        }
+
+        .footer-left {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
         }
 
         .footer-copy {
             font-family: var(--mono);
-            font-size: 0.76rem;
-            color: #999;
+            font-size: 0.70rem;
+            color: var(--muted);
             letter-spacing: 0.08em;
         }
 
-        .footer-mcd {
-            font-family: var(--mono);
-            font-size: 0.68rem;
-            color: var(--border);
-            letter-spacing: 0.08em;
+        .footer-tagline {
+            font-family: var(--serif);
+            font-size: 0.82rem;
+            font-style: italic;
+            color: var(--muted);
+            letter-spacing: 0.02em;
         }
+
+        .footer-cta {
+            font-family: var(--mono);
+            font-size: 0.70rem;
+            color: var(--accent);
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s;
+        }
+        .footer-cta:hover { border-bottom-color: var(--accent); }
 
         /* WRITING */
         .writing-item {
@@ -1486,6 +1505,7 @@
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/research.html" class="nav-overlay-link">Research</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
+                <a href="/tools.html" class="nav-overlay-link">Tools</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
                 <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
                 <div class="nav-overlay-divider"></div>
@@ -1790,9 +1810,12 @@
         </main>
 
         <footer>
-            <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
-            <span class="footer-mcd">Gravity, not visibility.</span>
-            <a href="/about-me.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">About</a>
+            <div class="footer-left">
+                <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+                <span class="footer-tagline">Gravity, not visibility.</span>
+                <a href="/about-me.html" style="font-family:'JetBrains Mono','Courier New',monospace;font-size:0.58rem;color:#383838;text-decoration:none;letter-spacing:0.10em;text-transform:uppercase;">About</a>
+            </div>
+            <a href="https://wa.me/51977647243?text=I%20want%20to%20start%20a%20diagnostic" class="footer-cta" target="_blank" rel="noopener">Start diagnostic →</a>
         </footer>
 
     </div>
