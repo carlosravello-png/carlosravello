@@ -161,8 +161,10 @@
         .nav-id a { color: inherit; text-decoration: none; }
         .nav-id a:hover { color: var(--white); }
         .lang-switch { display: flex; gap: 6px; }
-        .lang-btn { font-family: var(--mono); font-size: 0.70rem; letter-spacing: 0.14em; padding: 4px 10px; border: 1px solid transparent; color: var(--text); text-decoration: none; white-space: nowrap; transition: all 0.2s; }
-        .lang-btn.active, .lang-btn:hover { color: var(--white); border-color: var(--muted); }
+        .lang-btn { font-family: var(--mono); font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; padding: 4px 10px; border: 1px solid transparent; border-bottom: 1px solid transparent; color: var(--muted); text-decoration: none; white-space: nowrap; transition: all 0.2s; }
+        .nav-sep ~ .lang-btn { color: var(--text); }
+        .lang-btn.active { color: var(--accent); background: transparent; border-color: transparent; border-bottom-color: var(--accent); }
+        .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
         .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
@@ -177,6 +179,7 @@
         .nav-overlay.is-open .nav-overlay-link:nth-child(3) { opacity:1; transform:translateY(0); transition-delay:0.20s; }
         .nav-overlay.is-open .nav-overlay-link:nth-child(4) { opacity:1; transform:translateY(0); transition-delay:0.27s; }
         .nav-overlay.is-open .nav-overlay-link:nth-child(5) { opacity:1; transform:translateY(0); transition-delay:0.34s; }
+        .nav-overlay.is-open .nav-overlay-link:nth-child(6) { opacity:1; transform:translateY(0); transition-delay:0.41s; }
         .nav-overlay-link:hover { color:var(--white); }
         .nav-overlay-divider { width:28px; height:1px; background:var(--border); margin:32px 0 28px; opacity:0; transition:opacity 0.3s 0.32s ease; }
         .nav-overlay.is-open .nav-overlay-divider { opacity:1; }
@@ -251,9 +254,10 @@
             <a href="/" class="nav-id">carlosravello.com</a>
             <div class="lang-switch desktop-nav">                <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn active">Publicaciones</a>
+                <a href="/herramientas.html" class="lang-btn">Herramientas</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
+                <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
             </div>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
@@ -265,9 +269,10 @@
             <div class="nav-overlay-inner">
                 <a href="/escritura.html" class="nav-overlay-link">Escritura</a>
                 <a href="/produccion-academica.html" class="nav-overlay-link">Publicaciones</a>
+                <a href="/herramientas.html" class="nav-overlay-link">Herramientas</a>
                 <a href="/servicios.html" class="nav-overlay-link">Trabajo</a>
-                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
                 <a href="/estrategia.html" class="nav-overlay-link">Estrategia Digital</a>
+                <a href="/herramientas-para-investigadores.html" class="nav-overlay-link">Por Encargo</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/produccion-academica/tercer-regimen-conocimiento-es.html" class="nav-overlay-lang-btn active">ES</a>
