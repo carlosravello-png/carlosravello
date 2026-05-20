@@ -561,18 +561,18 @@
         .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
         .breadcrumb a:hover { color: var(--white); }
         .breadcrumb span { color: var(--accent); }
-    </style>
+    
+        /* Floating language switcher */
+        .lang-float { position: fixed; bottom: 28px; right: 28px; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 14px; background: var(--bg); z-index: 900; transition: color 0.2s, border-color 0.2s; }
+        .lang-float:hover { color: var(--accent); border-color: var(--accent); }
+        </style>
 </head>
 <body>
     <div class="wrapper">
 
         <nav aria-label="Navegación principal">
             <span class="nav-id"><a href="/">carlosravello.com</a></span>
-            <div class="lang-switch desktop-nav">
-                <a href="/escritura.html" class="lang-btn active" aria-current="page">ES</a>
-                <a href="/writing.html" class="lang-btn">EN</a>
-                <span class="nav-sep">·</span>
-                <a href="/escritura.html" class="lang-btn active">Escritura</a>
+            <div class="lang-switch desktop-nav">                <a href="/escritura.html" class="lang-btn active">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>

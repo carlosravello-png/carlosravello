@@ -377,7 +377,11 @@
             .wrapper { padding: 8vh 20px 8vh; }
             .tool-header { flex-direction: column; gap: 4px; }
         }
-    </style>
+    
+        /* Floating language switcher */
+        .lang-float { position: fixed; bottom: 28px; right: 28px; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 14px; background: var(--bg); z-index: 900; transition: color 0.2s, border-color 0.2s; }
+        .lang-float:hover { color: var(--accent); border-color: var(--accent); }
+        </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -394,11 +398,7 @@
 
         <nav aria-label="Main navigation">
             <a href="/en.html" class="nav-id">carlosravello.com</a>
-            <div class="lang-switch desktop-nav">
-                <a href="/herramientas.html" class="lang-btn">ES</a>
-                <a href="/tools.html" class="lang-btn active" aria-current="page">EN</a>
-                <span class="nav-sep">·</span>
-                <a href="/writing.html" class="lang-btn">Writing</a>
+            <div class="lang-switch desktop-nav">                <a href="/writing.html" class="lang-btn">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/tools.html" class="lang-btn active" aria-current="page">Tools</a>
                 <a href="/services.html" class="lang-btn">Work</a>
@@ -625,5 +625,7 @@
         links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
     }());
     </script>
+
+    <a href="/herramientas.html" class="lang-float">ES</a>
 </body>
 </html>

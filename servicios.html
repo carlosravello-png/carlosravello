@@ -437,7 +437,11 @@
             h1 { font-size: 2rem; }
             .wrapper { padding: 8vh 20px 8vh; }
         }
-    </style>
+    
+        /* Floating language switcher */
+        .lang-float { position: fixed; bottom: 28px; right: 28px; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 14px; background: var(--bg); z-index: 900; transition: color 0.2s, border-color 0.2s; }
+        .lang-float:hover { color: var(--accent); border-color: var(--accent); }
+        </style>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -454,11 +458,7 @@
 
         <nav aria-label="Navegación principal">
             <span class="nav-id"><a href="/">carlosravello.com</a></span>
-            <div class="lang-switch desktop-nav">
-                <a href="/servicios.html" class="lang-btn active" aria-current="page">ES</a>
-                <a href="/services.html" class="lang-btn">EN</a>
-                <span class="nav-sep">·</span>
-                <a href="/escritura.html" class="lang-btn">Escritura</a>
+            <div class="lang-switch desktop-nav">                <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn active" aria-current="page">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
@@ -648,5 +648,7 @@
         links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
     }());
     </script>
+
+    <a href="/services.html" class="lang-float">EN</a>
 </body>
 </html>

@@ -189,7 +189,8 @@
             border: 1px solid transparent;
             color: var(--text);
             text-decoration: none;
-            transition: all 0.2s;
+                        white-space: nowrap;
+        transition: all 0.2s;
         }
         .lang-btn.active, .lang-btn:hover { color: var(--white); border-color: var(--muted); }
         .nav-sep { color: var(--border); font-family: var(--mono); font-size: 0.70rem; padding: 0 2px; pointer-events: none; user-select: none; }
@@ -506,18 +507,18 @@
             .download-block { flex-direction: column; align-items: flex-start; }
             .download-btn { width: 100%; text-align: center; }
         }
-    </style>
+    
+        /* Floating language switcher */
+        .lang-float { position: fixed; bottom: 28px; right: 28px; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 14px; background: var(--bg); z-index: 900; transition: color 0.2s, border-color 0.2s; }
+        .lang-float:hover { color: var(--accent); border-color: var(--accent); }
+        </style>
 </head>
 <body>
     <div class="wrapper">
 
         <nav aria-label="Navegación principal">
             <a href="/" class="nav-id">carlosravello.com</a>
-            <div class="lang-switch desktop-nav">
-                <a href="/produccion-academica/decada-influencer-colapso-termodinamico-es.html" class="lang-btn active" aria-current="page">ES</a>
-                <a href="/research/influencer-decade-thermodynamic-collapse-en.html" class="lang-btn">EN</a>
-                <span class="nav-sep">·</span>
-                <a href="/escritura.html" class="lang-btn">Escritura</a>
+            <div class="lang-switch desktop-nav">                <a href="/escritura.html" class="lang-btn">Escritura</a>
                 <a href="/produccion-academica.html" class="lang-btn active">Publicaciones</a>
                 <a href="/servicios.html" class="lang-btn">Trabajo</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
@@ -697,5 +698,7 @@
         links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
     }());
     </script>
+
+    <a href="/research/influencer-decade-thermodynamic-collapse-en.html" class="lang-float">EN</a>
 </body>
 </html>

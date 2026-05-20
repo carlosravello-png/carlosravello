@@ -121,18 +121,18 @@
         .footer-copy { font-family: var(--mono); font-size: 0.68rem; color: var(--muted); letter-spacing: 0.08em; }
 
         @media (max-width: 600px) { .wrapper { padding: 8vh 20px 8vh; } h1 { font-size: 2rem; } .article-card { padding: 28px 0; } }
-    </style>
+    
+        /* Floating language switcher */
+        .lang-float { position: fixed; bottom: 28px; right: 28px; font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.20em; text-transform: uppercase; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 7px 14px; background: var(--bg); z-index: 900; transition: color 0.2s, border-color 0.2s; }
+        .lang-float:hover { color: var(--accent); border-color: var(--accent); }
+        </style>
 </head>
 <body>
     <div class="wrapper">
 
         <nav aria-label="Main navigation">
             <a href="/en.html" class="nav-id">carlosravello.com</a>
-            <div class="lang-switch desktop-nav">
-                <a href="/escritura.html" class="lang-btn">ES</a>
-                <a href="/en.html" class="lang-btn">EN</a>
-                <span class="nav-sep">·</span>
-                <a href="/writing.html" class="lang-btn active" aria-current="page">Writing</a>
+            <div class="lang-switch desktop-nav">                <a href="/writing.html" class="lang-btn active" aria-current="page">Writing</a>
                 <a href="/research.html" class="lang-btn">Research</a>
                 <a href="/tools.html" class="lang-btn">Tools</a>
                 <a href="/services.html" class="lang-btn">Work</a>
