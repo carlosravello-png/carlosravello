@@ -191,7 +191,7 @@
         .lang-btn:not(.active):hover { color: var(--white); border-color: transparent; border-bottom-color: #3a3a3a; }
 
         /* Desktop nav links */
-        .desktop-nav { display: flex; gap: 6px; align-items: center; margin-bottom: 40px; }
+        .desktop-nav { display: flex; gap: 6px; align-items: center; }
         @media (max-width: 768px) {
             .nav-toggle  { display: flex; }
             .desktop-nav { display: none !important; }
@@ -605,6 +605,4 @@
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
         links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
     })();
-    </script>
-</body>
-</html>
+    </sc

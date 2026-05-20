@@ -133,7 +133,7 @@
         .nav-id { font-family:var(--mono); font-size:0.70rem; color:var(--muted); letter-spacing:0.14em; }
         .nav-id a:hover { color:var(--white); }
         .lang-switch { display:flex; gap:6px; align-items:center; }
-        .lang-btn { font-family:var(--mono); font-size:0.75rem; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; border-bottom:1px solid transparent; color:var(--muted); text-decoration:none; transition:all 0.2s; }
+        .lang-btn { font-family:var(--mono); font-size:0.75rem; letter-spacing:0.14em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; border-bottom:1px solid transparent; color:var(--muted); text-decoration:none; white-space:nowrap; transition:all 0.2s; }
         .nav-sep ~ .lang-btn { color:var(--text); }
         .lang-btn.active { color:var(--accent); background:transparent; border-color:transparent; border-bottom-color:var(--accent); }
         .lang-btn:not(.active):hover { color:var(--white); border-color:transparent; border-bottom-color:#3a3a3a; }
@@ -235,9 +235,10 @@
             <div class="nav-overlay-inner">
                 <a href="/writing.html" class="nav-overlay-link">Writing</a>
                 <a href="/research.html" class="nav-overlay-link active">Research</a>
+                <a href="/tools.html" class="nav-overlay-link">Tools</a>
                 <a href="/services.html" class="nav-overlay-link">Work</a>
-                <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
                 <a href="/strategy.html" class="nav-overlay-link">Digital Strategy</a>
+                <a href="/researchers.html" class="nav-overlay-link">Bespoke Tools</a>
                 <div class="nav-overlay-divider"></div>
                 <div class="nav-overlay-lang">
                     <a href="/produccion-academica.html" class="nav-overlay-lang-btn">ES</a>
