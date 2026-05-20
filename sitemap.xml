@@ -2,9 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
+  <!-- ══════════════════════════════════════════════
+       HOME
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/</loc>
-    <lastmod>2026-05-17</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html"/>
     <changefreq>monthly</changefreq>
@@ -13,13 +16,16 @@
 
   <url>
     <loc>https://carlosravello.com/en.html</loc>
-    <lastmod>2026-05-10</lastmod>
+    <lastmod>2026-05-19</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/en.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
+  <!-- ══════════════════════════════════════════════
+       ABOUT
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/sobre-mi.html</loc>
     <lastmod>2026-05-16</lastmod>
@@ -30,6 +36,19 @@
     <priority>0.95</priority>
   </url>
 
+  <url>
+    <loc>https://carlosravello.com/about-me.html</loc>
+    <lastmod>2026-05-16</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/sobre-mi.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/about-me.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/sobre-mi.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       WRITING / ESCRITURA
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/escritura.html</loc>
     <lastmod>2026-05-10</lastmod>
@@ -42,7 +61,7 @@
 
   <url>
     <loc>https://carlosravello.com/writing.html</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-05-10</lastmod>
     <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/escritura.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/writing.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/escritura.html"/>
@@ -50,6 +69,9 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- ══════════════════════════════════════════════
+       TOOLS / HERRAMIENTAS
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/herramientas.html</loc>
     <lastmod>2026-05-10</lastmod>
@@ -68,6 +90,29 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://carlosravello.com/herramientas-para-investigadores.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/researchers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/researchers.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/researchers.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       SERVICES / SERVICIOS
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/servicios.html</loc>
     <lastmod>2026-05-10</lastmod>
@@ -104,6 +149,9 @@
     <priority>1.0</priority>
   </url>
 
+  <!-- ══════════════════════════════════════════════
+       ESSAYS / ARTÍCULOS
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/autoridad-antes-que-contenido.html</loc>
     <lastmod>2026-05-10</lastmod>
@@ -164,37 +212,32 @@
     <priority>0.85</priority>
   </url>
 
+  <!-- ══════════════════════════════════════════════
+       RESEARCH INDEX / PRODUCCIÓN ACADÉMICA INDEX
+  ══════════════════════════════════════════════ -->
   <url>
-    <loc>https://carlosravello.com/herramientas-para-investigadores.html</loc>
-    <lastmod>2026-05-07</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/researchers.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <loc>https://carlosravello.com/produccion-academica.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
   <url>
-    <loc>https://carlosravello.com/researchers.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/researchers.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/herramientas-para-investigadores.html"/>
+    <loc>https://carlosravello.com/research.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
   </url>
 
-
-  <url>
-    <loc>https://carlosravello.com/about-me.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/sobre-mi.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/about-me.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/sobre-mi.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
+  <!-- ══════════════════════════════════════════════
+       PAPER 01 — Metacognición 2.0
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/metacognicion-2-0.html</loc>
     <lastmod>2026-05-08</lastmod>
@@ -213,46 +256,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/metacognicion-2-0.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.90</priority>
-  </url>
-
-
-  <url>
-    <loc>https://carlosravello.com/el-perfil-que-no-escribiste.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-profile-you-didnt-write.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
-  </url>
-  <url>
-    <loc>https://carlosravello.com/the-profile-you-didnt-write.html</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-profile-you-didnt-write.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/produccion-academica.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/research.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.95</priority>
   </url>
 
   <url>
@@ -275,6 +278,44 @@
     <priority>0.95</priority>
   </url>
 
+  <!-- Paper 01 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/metacognicion-2-0-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/metacognition-2-0-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       PAPER 02 — El perfil que no escribiste
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/el-perfil-que-no-escribiste.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-profile-you-didnt-write.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/the-profile-you-didnt-write.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-profile-you-didnt-write.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/el-perfil-que-no-escribiste.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
   <url>
     <loc>https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html</loc>
     <lastmod>2026-05-11</lastmod>
@@ -295,15 +336,14 @@
     <priority>0.95</priority>
   </url>
 
-  <!-- Metacognition 2.0 — EN PDF -->
+  <!-- Paper 02 — PDFs -->
   <url>
-    <loc>https://carlosravello.com/metacognition-2-0-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
+    <loc>https://carlosravello.com/el-perfil-que-no-escribiste-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-10</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.80</priority>
   </url>
 
-  <!-- The Profile You Didn't Write — EN PDF -->
   <url>
     <loc>https://carlosravello.com/the-profile-you-didnt-write-carlos-eduardo-ravello-joo-2026.pdf</loc>
     <lastmod>2026-05-17</lastmod>
@@ -311,23 +351,9 @@
     <priority>0.80</priority>
   </url>
 
-  <!-- Research pages — lastmod update -->
-  <!-- La Década del Influencer como Colapso Termodinámico — PDFs descargables -->
-  <url>
-    <loc>https://carlosravello.com/decada-influencer-colapso-termodinamico-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>https://carlosravello.com/influencer-decade-thermodynamic-collapse-carlos-eduardo-ravello-joo-2026.pdf</loc>
-    <lastmod>2026-05-17</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.80</priority>
-  </url>
-
-  <!-- La Década del Influencer como Colapso Termodinámico — Serie 03/2026 -->
+  <!-- ══════════════════════════════════════════════
+       PAPER 03 — La década del influencer
+  ══════════════════════════════════════════════ -->
   <url>
     <loc>https://carlosravello.com/decada-influencer-colapso-termodinamico.html</loc>
     <lastmod>2026-05-17</lastmod>
@@ -366,6 +392,79 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+  </url>
+
+  <!-- Paper 03 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/decada-influencer-colapso-termodinamico-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/influencer-decade-thermodynamic-collapse-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
+       PAPER 04 — El tercer régimen del conocimiento
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/tercer-regimen-del-conocimiento.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/the-third-knowledge-regime.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/tercer-regimen-del-conocimiento.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/the-third-knowledge-regime.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/third-knowledge-regime-en.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/research/third-knowledge-regime-en.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Paper 04 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/tercer-regimen-conocimiento-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/third-knowledge-regime-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
   </url>
 
 </urlset>
