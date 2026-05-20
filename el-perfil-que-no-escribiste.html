@@ -477,4 +477,60 @@
 
     <div class="zenodo-note">
         <p>Este artículo es la versión de divulgación del preprint académico:<br>
-        Ravello Joo, C. E. (2026). <em>El perfil que no escribiste: Identidad digital, biometría ocular y autoridad semántica en sistemas algorítm
+        Ravello Joo, C. E. (2026). <em>El perfil que no escribiste: Identidad digital, biometría ocular y autoridad semántica en sistemas algorítmicos predictivos.</em><br>
+        <a href="https://doi.org/10.5281/zenodo.20112409" target="_blank" rel="noopener">doi:10.5281/zenodo.20112409</a> · Zenodo · CC BY 4.0 · Mayo 2026<br>
+        Segundo preprint de la serie. El primero: <a href="https://doi.org/10.5281/zenodo.20092009" target="_blank" rel="noopener">doi:10.5281/zenodo.20092009</a></p>
+    <div class="author-byline">
+                <img src="/fotos-carlos-ravello/foto-secundaria-carlos-eduardo-ravello-joo.webp"
+                     alt="Carlos Eduardo Ravello Joo"
+                     width="1046" height="1600" loading="lazy">
+                <div class="author-byline-text">
+                    <strong style="color:var(--white); font-family:var(--serif); font-size: 1.35rem; font-weight: 400; letter-spacing: -0.02em;">Carlos Eduardo Ravello Joo</strong><br>
+                    Investigador independiente · Perú<br>
+                    <a href="/sobre-mi.html">sobre mí →</a>
+                </div>
+            </div>
+
+    <div class="related">
+        <span class="related-label">En la misma serie</span>
+        <div class="related-links">
+            <a href="/metacognicion-2-0.html">Metacognición 2.0: pensar sobre lo que piensan las máquinas →</a>
+            <a href="/autoridad-antes-que-contenido.html">Autoridad antes que contenido →</a>
+            <a href="/lo-que-el-observador-hace-existir.html">Lo que el observador hace existir →</a>
+            <a href="/el-modelo-que-no-se-actualiza-desaparece.html">El modelo que no se actualiza desaparece →</a>
+            <a href="/decada-influencer-colapso-termodinamico.html">La década del influencer como colapso termodinámico →</a>
+        </div>
+    </div>
+
+    <div class="article-cta">
+        <p>Si tienes un perfil que quieres construir — o reconstruir.</p>
+        <a href="/estrategia.html">Ver estrategia →</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://wa.me/51977647243" target="_blank" rel="noopener">WhatsApp →</a>
+    </div>
+
+    </div>
+
+    <footer>
+        <a href="/" class="footer-back">← carlosravello.com</a>
+        <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+    </footer>
+
+</div>
+
+<script>
+(function () {
+    var toggle  = document.getElementById('navToggle');
+    var overlay = document.getElementById('navOverlay');
+    if (!toggle || !overlay) return;
+    var links = overlay.querySelectorAll('.nav-overlay-link');
+    function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Cerrar menú'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+    function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Abrir menú'); document.body.style.overflow = ''; toggle.focus(); }
+    toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+    links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
+}());
+</script>
+</body>
+</html>

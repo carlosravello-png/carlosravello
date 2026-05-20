@@ -397,4 +397,59 @@
 
     <div class="zenodo-note">
         <p>This article is the divulgation version of the academic preprint:<br>
-        Ravello Joo, C. E. (2026). <em>The Profile You Didn't Write: Digital Identity, Ocular Biometrics and Semantic Authority in Predictive Algorithmic S
+        Ravello Joo, C. E. (2026). <em>The Profile You Didn't Write: Digital Identity, Ocular Biometrics and Semantic Authority in Predictive Algorithmic Systems.</em><br>
+        <a href="https://doi.org/10.5281/zenodo.20112409" target="_blank" rel="noopener">doi:10.5281/zenodo.20112409</a> · Zenodo · CC BY 4.0 · May 2026<br>
+        Second preprint in the series. First: <a href="https://doi.org/10.5281/zenodo.20092009" target="_blank" rel="noopener">doi:10.5281/zenodo.20092009</a></p>
+    <div class="author-byline">
+                <img src="/fotos-carlos-ravello/foto-secundaria-carlos-eduardo-ravello-joo.webp"
+                     alt="Carlos Eduardo Ravello Joo"
+                     width="1046" height="1600" loading="lazy">
+                <div class="author-byline-text">
+                    <strong style="color:var(--white); font-family:var(--serif); font-size: 1.35rem; font-weight: 400; letter-spacing: -0.02em;">Carlos Eduardo Ravello Joo</strong><br>
+                    Independent researcher · Peru<br>
+                    <a href="/about-me.html">about me →</a>
+                </div>
+            </div>
+
+    <div class="related">
+        <span class="related-label">In the same series</span>
+        <div class="related-links">
+            <a href="/metacognition-2-0.html">Metacognition 2.0: thinking about what machines think →</a>
+            <a href="/authority-before-content.html">Authority before content →</a>
+            <a href="/what-the-observer-makes-real.html">What the observer makes real →</a>
+            <a href="/the-model-that-stops-updating-disappears.html">The model that stops updating disappears →</a>
+        </div>
+    </div>
+
+    <div class="article-cta">
+        <p>If you have a profile you want to build — or rebuild.</p>
+        <a href="/strategy.html">See strategy →</a>
+        &nbsp;&nbsp;&nbsp;
+        <a href="https://wa.me/51977647243" target="_blank" rel="noopener">WhatsApp →</a>
+    </div>
+
+    </div>
+
+    <footer>
+        <a href="/" class="footer-back">← carlosravello.com</a>
+        <span class="footer-copy">© 2026 Carlos Eduardo Ravello Joo</span>
+    </footer>
+
+</div>
+
+<script>
+(function () {
+    var toggle  = document.getElementById('navToggle');
+    var overlay = document.getElementById('navOverlay');
+    if (!toggle || !overlay) return;
+    var links = overlay.querySelectorAll('.nav-overlay-link');
+    function openMenu() { overlay.classList.add('is-open'); toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Close menu'); document.body.style.overflow = 'hidden'; if (links.length) links[0].focus(); }
+    function closeMenu() { overlay.classList.remove('is-open'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Open menu'); document.body.style.overflow = ''; toggle.focus(); }
+    toggle.addEventListener('click', function () { overlay.classList.contains('is-open') ? closeMenu() : openMenu(); });
+    overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
+    links.forEach(function(link) { link.addEventListener('click', function() { if (!link.getAttribute('href') || !link.getAttribute('href').startsWith('#')) closeMenu(); }); });
+}());
+</script>
+</body>
+</html>
