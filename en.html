@@ -944,6 +944,34 @@
       "author": {
         "@id": "https://carlosravello.com/#person"
       }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://carlosravello.com/en.html#faq",
+      "url": "https://carlosravello.com/en.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is semantic architecture and why does it matter now?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is the discipline that structures your digital entity so that Google, generative AI engines, and the Knowledge Graph can verify who you are — not just index what you write. A Princeton study (KDD 2024) showed that in engines like Perplexity or Gemini, structural authority outperforms content by 40%." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why doesn't my business appear in ChatGPT or Google AI answers?",
+          "acceptedAnswer": { "@type": "Answer", "text": "AI doesn't judge: it weighs data. Since 2025, language models prioritize entities they have actively interacted with. If your entity doesn't communicate with the AI, the models don't know you — and what they don't know, they don't cite." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from traditional SEO?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Traditional SEO chases rankings. We build semantic gravity — the difference between being found and being inevitable. The system doesn't position you because you optimized: it positions you because it decided you are the answer." }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I start working with Carlos Ravello?",
+          "acceptedAnswer": { "@type": "Answer", "text": "I apply my methodology and proprietary software to measure the coherence of your digital entity: between what you say, what you do, and how you appear. What we find determines the architecture we execute. No two are the same." }
+        }
+      ]
     }
   ]
 }
@@ -1414,6 +1442,22 @@
                 line-height: 1.2;
             }
         }
+
+        /* FAQ */
+        .faq-item { padding: 26px 0; border-bottom: 1px solid var(--border); }
+        .faq-item:first-child { border-top: 1px solid var(--border); }
+        .faq-question {
+            font-family: var(--serif); font-size: 1.06rem; font-weight: 400;
+            color: var(--white); line-height: 1.42; margin-bottom: 10px;
+            cursor: pointer; display: flex; justify-content: space-between;
+            align-items: flex-start; gap: 16px;
+        }
+        .faq-question::after { content: '+'; font-family: var(--mono); font-size: 0.9rem; color: var(--accent); min-width: 16px; text-align: right; transition: transform 0.22s ease; }
+        .faq-item.is-open .faq-question::after { content: '−'; }
+        .faq-answer { font-size: 0.97rem; color: var(--muted); line-height: 1.82; max-height: 0; overflow: hidden; transition: max-height 0.32s cubic-bezier(0.4,0,0.2,1), padding-top 0.2s ease; }
+        .faq-item.is-open .faq-answer { max-height: 300px; padding-top: 8px; }
+        .faq-answer a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        .faq-answer a:hover { border-bottom-color: var(--accent); }
     </style>
 </head>
 <body>
@@ -1711,6 +1755,26 @@
                 </div>
             </section>
 
+            <section id="faq" aria-label="Frequently asked questions">
+                <h2>Frequently asked questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What is semantic architecture and why does it matter now?</div>
+                    <div class="faq-answer">It is the discipline that structures your digital entity so that Google, generative AI engines, and the Knowledge Graph can verify who you are — not just index what you write. A Princeton study (KDD 2024) showed that in engines like Perplexity or Gemini, structural authority outperforms content by 40%. <a href="/authority-before-content.html">Read the full analysis →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Why doesn't my business appear in ChatGPT or Google AI answers?</div>
+                    <div class="faq-answer">AI doesn't judge: it weighs data. Since 2025, language models prioritize entities they have actively interacted with. If your entity doesn't communicate with the AI, the models don't know you — and what they don't know, they don't cite. <a href="/strategy.html">See the strategy →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">How is this different from traditional SEO?</div>
+                    <div class="faq-answer">Traditional SEO chases rankings. We build semantic gravity — the difference between being found and being inevitable. The system doesn't position you because you optimized: it positions you because it decided you are the answer. <a href="/about-me.html">See the method →</a></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">How do I start working with Carlos Ravello?</div>
+                    <div class="faq-answer">I apply my methodology and proprietary software to measure the coherence of your digital entity: between what you say, what you do, and how you appear. What we find determines the architecture we execute. No two are the same. <a href="/services.html">See how we work →</a></div>
+                </div>
+            </section>
+
             <section id="contact">
                 <h2>Contact</h2>
                 <div class="contact-block">
@@ -1734,6 +1798,21 @@
     </div>
 
     <script>
+    (function() {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function(item) {
+            var q = item.querySelector('.faq-question');
+            if (!q) return;
+            function toggle() {
+                var isOpen = item.classList.contains('is-open');
+                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
+                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+            }
+            q.addEventListener('click', toggle);
+            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+        });
+    })();
+
     (function () {
         var toggle  = document.getElementById('navToggle');
         var overlay = document.getElementById('navOverlay');
@@ -1748,4 +1827,4 @@
     }());
     </script>
 </body>
-</html>
+</html>                                                    

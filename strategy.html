@@ -132,6 +132,44 @@
           ]
         }
       ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://carlosravello.com/strategy.html#faq",
+      "url": "https://carlosravello.com/strategy.html#faq",
+      "inLanguage": "en",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It depends on the gap between what the system can verify and what the entity actually is. When that gap is small, movement is fast. When it is large, the work goes deeper before anything becomes visible. The diagnostic determines it." }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work for small businesses or only large brands?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It works best in precise niches with something real to document. Large brands have budget. Well-structured entities have semantic gravity. They are not the same — and the system knows it." }
+        },
+        {
+          "@type": "Question",
+          "name": "Why HTML and not WordPress or Webflow?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The architecture requires a level of structural precision that no CMS platform can guarantee. What we build doesn't have an equivalent in any visual editor — because if it did, someone else would already be doing it." }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you work with any type of business?",
+          "acceptedAnswer": { "@type": "Answer", "text": "There are criteria. I work with entities that have something real to document. The initial diagnostic determines whether the case is operable — and that is the question that matters, not how much budget there is." }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the digital identity diagnostic include?",
+          "acceptedAnswer": { "@type": "Answer", "text": "It is confidential. What we can say: by the end of the diagnostic, we know exactly why your entity doesn't appear where it should, and whether it's a problem we can solve. The diagnostic has a cost. It is not a free consultation disguised as a meeting." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can you guarantee Google results?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We don't guarantee rankings. We guarantee that the structure we build is the one that search systems and artificial intelligence recognize as verifiable authority. If the entity has real semantic gravity, it appears. If it has no structure, no budget buys that." }
+        }
+      ]
     }
     </script>
 
@@ -510,6 +548,22 @@
             .wrapper { padding: 8vh 20px 8vh; }
             .cases-grid { grid-template-columns: 1fr; }
         }
+
+        /* FAQ */
+        .faq-item { padding: 26px 0; border-bottom: 1px solid var(--border); }
+        .faq-item:first-child { border-top: 1px solid var(--border); }
+        .faq-question {
+            font-family: var(--serif); font-size: 1.06rem; font-weight: 400;
+            color: var(--white); line-height: 1.42; margin-bottom: 10px;
+            cursor: pointer; display: flex; justify-content: space-between;
+            align-items: flex-start; gap: 16px;
+        }
+        .faq-question::after { content: '+'; font-family: var(--mono); font-size: 0.9rem; color: var(--accent); min-width: 16px; text-align: right; transition: transform 0.22s ease; }
+        .faq-item.is-open .faq-question::after { content: '−'; }
+        .faq-answer { font-size: 0.97rem; color: var(--muted); line-height: 1.82; max-height: 0; overflow: hidden; transition: max-height 0.32s cubic-bezier(0.4,0,0.2,1), padding-top 0.2s ease; }
+        .faq-item.is-open .faq-answer { max-height: 300px; padding-top: 8px; }
+        .faq-answer a { color: var(--accent); border-bottom: 1px solid transparent; transition: border-color 0.2s; }
+        .faq-answer a:hover { border-bottom-color: var(--accent); }
     </style>
 </head>
 <body>
@@ -669,6 +723,34 @@
                 </div>
             </section>
 
+
+            <section id="faq" aria-label="Frequently asked questions">
+                <h2>Frequently asked questions</h2>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">How long does it take to work?</div>
+                    <div class="faq-answer">It depends on the gap between what the system can verify and what the entity actually is. When that gap is small, movement is fast. When it is large, the work goes deeper before anything becomes visible. The diagnostic determines it.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Does it work for small businesses or only large brands?</div>
+                    <div class="faq-answer">It works best in precise niches with something real to document. Large brands have budget. Well-structured entities have semantic gravity. They are not the same — and the system knows it.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Why HTML and not WordPress or Webflow?</div>
+                    <div class="faq-answer">The architecture requires a level of structural precision that no CMS platform can guarantee. What we build doesn't have an equivalent in any visual editor — because if it did, someone else would already be doing it.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Do you work with any type of business?</div>
+                    <div class="faq-answer">There are criteria. I work with entities that have something real to document. The initial diagnostic determines whether the case is operable — and that is the question that matters, not how much budget there is.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">What does the digital identity diagnostic include?</div>
+                    <div class="faq-answer">It is confidential. What we can say: by the end of the diagnostic, we know exactly why your entity doesn't appear where it should, and whether it's a problem we can solve. The diagnostic has a cost. It is not a free consultation disguised as a meeting.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" tabindex="0" role="button" aria-expanded="false">Can you guarantee Google results?</div>
+                    <div class="faq-answer">We don't guarantee rankings. We guarantee that the structure we build is the one that search systems and artificial intelligence recognize as verifiable authority. If the entity has real semantic gravity, it appears. If it has no structure, no budget buys that.</div>
+                </div>
+            </section>
         </div>
 
         <footer>
@@ -679,6 +761,21 @@
     </div>
 
     <script>
+    (function() {
+        var items = document.querySelectorAll('.faq-item');
+        items.forEach(function(item) {
+            var q = item.querySelector('.faq-question');
+            if (!q) return;
+            function toggle() {
+                var isOpen = item.classList.contains('is-open');
+                items.forEach(function(i){ i.classList.remove('is-open'); var qi=i.querySelector('.faq-question'); if(qi) qi.setAttribute('aria-expanded','false'); });
+                if (!isOpen) { item.classList.add('is-open'); q.setAttribute('aria-expanded','true'); }
+            }
+            q.addEventListener('click', toggle);
+            q.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); toggle(); } });
+        });
+    })();
+
     (function () {
         var toggle  = document.getElementById('navToggle');
         var overlay = document.getElementById('navOverlay');
