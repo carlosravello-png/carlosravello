@@ -770,4 +770,9 @@
         overlay.addEventListener('click', function (e) { if (e.target === overlay) closeMenu(); });
         document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && overlay.classList.contains('is-open')) closeMenu(); });
         links.forEach(function (l) { l.addEventListener('click', function () { if (l.getAttribute('href').charAt(0) === '#') closeMenu(); }); });
-    })
+    }());
+    </script>
+
+    <a href="/writing.html" class="lang-float">EN</a>
+</body>
+</html>
