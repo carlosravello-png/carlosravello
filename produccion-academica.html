@@ -179,8 +179,11 @@
         .nav-overlay-lang-btn { font-family: var(--mono); font-size: 0.80rem; letter-spacing: 0.18em; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
         .nav-overlay-lang-btn:hover, .nav-overlay-lang-btn.active { color: var(--white); }
 
+        .nav-lang-side { margin-left: auto; padding-left: 20px; border-left: 1px solid #2a2a2a; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: color 0.2s; white-space: nowrap; }
+        .nav-lang-side:hover { color: var(--white); }
         @media (max-width: 768px) {
             .desktop-nav { display: none; }
+            .nav-lang-side { display: none; }
             .nav-toggle { display: flex; }
         }
 
@@ -352,6 +355,7 @@
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
             </div>
+            <a href="/research.html" class="nav-lang-side">EN</a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
                 <span class="nav-toggle-line"></span>

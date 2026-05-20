@@ -573,9 +573,12 @@
         .breadcrumb a::after { content: ' · '; color: #3a3a3a; padding: 0 2px; }
         .breadcrumb span { color: var(--accent); }
 
-        @media (max-width: 768px) {
+                .nav-lang-side { margin-left: auto; padding-left: 20px; border-left: 1px solid #2a2a2a; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: color 0.2s; white-space: nowrap; }
+        .nav-lang-side:hover { color: var(--white); }
+@media (max-width: 768px) {
             .nav-toggle  { display: flex; }
             .desktop-nav { display: none !important; }
+            .nav-lang-side { display: none; }
             h1 { font-size: clamp(1.9rem, 7.5vw, 2.5rem); }
             .wrapper { padding: 7vh 22px 7vh; }
             .bio p { font-size: 1.05rem; line-height: 1.9; }
@@ -691,6 +694,7 @@
                 <a href="/strategy.html" class="lang-btn">Digital Strategy</a>
                 <a href="/researchers.html" class="lang-btn">Bespoke Tools</a>
             </div>
+            <a href="/sobre-mi.html" class="nav-lang-side">ES</a>
             <button class="nav-toggle" id="navToggle"
                     aria-label="Open menu" aria-expanded="false"
                     aria-controls="navOverlay">

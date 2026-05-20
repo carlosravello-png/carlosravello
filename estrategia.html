@@ -636,9 +636,12 @@
         .faq-answer a:hover { border-bottom-color: var(--accent); }
         .faq-answer strong { color: var(--text); font-weight: 500; }
 
+        .nav-lang-side { margin-left: auto; padding-left: 20px; border-left: 1px solid #2a2a2a; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: color 0.2s; white-space: nowrap; }
+        .nav-lang-side:hover { color: var(--white); }
         @media (max-width: 768px) {
             .nav-toggle  { display: flex; }
             .desktop-nav { display: none !important; }
+            .nav-lang-side { display: none; }
         }
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
@@ -672,6 +675,7 @@
                 <a href="/estrategia.html" class="lang-btn active" aria-current="page">Estrategia Digital</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
             </div>
+            <a href="/strategy.html" class="nav-lang-side">EN</a>
             <button class="nav-toggle" id="navToggle"
                     aria-label="Abrir menú" aria-expanded="false"
                     aria-controls="navOverlay">

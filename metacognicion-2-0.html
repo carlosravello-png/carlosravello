@@ -194,7 +194,9 @@
         .nav-toggle { display: none; flex-direction: column; justify-content: center; gap: 5px; background: none; border: none; cursor: pointer; padding: 4px; }
         .nav-toggle-line { width: 22px; height: 1.5px; background: var(--text); transition: all 0.3s cubic-bezier(0.4,0,0.2,1); }
         .desktop-nav { display: flex; gap: 6px; align-items: center; }
-        @media (max-width: 768px) { .nav-toggle { display: flex; } .desktop-nav { display: none !important; } }
+                .nav-lang-side { margin-left: auto; padding-left: 20px; border-left: 1px solid #2a2a2a; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: color 0.2s; white-space: nowrap; }
+        .nav-lang-side:hover { color: var(--white); }
+        @media (max-width: 768px) { .nav-toggle { display: flex; } .desktop-nav { display: none !important; } .nav-lang-side { display: none; } }
         .nav-overlay { position:fixed; inset:0; background:#060606; z-index:1000; display:flex; align-items:center; justify-content:center; opacity:0; pointer-events:none; transition:opacity 0.38s cubic-bezier(0.4,0,0.2,1); }
         .nav-overlay.is-open { opacity:1; pointer-events:all; }
         .nav-overlay-inner { display:flex; flex-direction:column; align-items:center; gap:2px; text-align:center; }
@@ -344,6 +346,7 @@
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
             </div>
+            <a href="/metacognition-2-0.html" class="nav-lang-side">EN</a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
                 <span class="nav-toggle-line"></span>

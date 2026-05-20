@@ -434,7 +434,9 @@
         .nav-overlay.is-open .nav-overlay-lang { opacity:1; transform:translateY(0); }
         .nav-overlay-lang-btn { font-family:var(--mono); font-size:0.72rem; color:var(--muted); text-decoration:none; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.2s; }
         .nav-overlay-lang-btn.active, .nav-overlay-lang-btn:hover { color:var(--white); }
-        @media (max-width: 768px) { .nav-toggle { display:flex; } .desktop-nav { display:none !important; } }
+        .nav-lang-side { margin-left: auto; padding-left: 20px; border-left: 1px solid #2a2a2a; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent); text-decoration: none; transition: color 0.2s; white-space: nowrap; }
+        .nav-lang-side:hover { color: var(--white); }
+        @media (max-width: 768px) { .nav-toggle { display:flex; } .desktop-nav { display:none !important; } .nav-lang-side { display:none; } }
         @media (max-width: 600px) {
             h1 { font-size: 2rem; }
             .wrapper { padding: 8vh 20px 8vh; }
@@ -467,6 +469,7 @@
                 <a href="/estrategia.html" class="lang-btn">Estrategia Digital</a>
                 <a href="/herramientas-para-investigadores.html" class="lang-btn">Por Encargo</a>
             </div>
+            <a href="/services.html" class="nav-lang-side">EN</a>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navOverlay">
                 <span class="nav-toggle-line"></span>
                 <span class="nav-toggle-line"></span>
