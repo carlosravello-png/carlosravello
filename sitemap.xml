@@ -467,4 +467,15 @@
     <priority>0.80</priority>
   </url>
 
+
+  <!-- ══════════════════════════════════════════════
+       FEEDS
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/feed.xml</loc>
+    <lastmod>2026-05-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
 </urlset>

@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>Carlos Eduardo Ravello Joo — Arquitectura Semántica · Identidad Digital</title>
+    <link>https://carlosravello.com</link>
+    <description>Arquitectura semántica, identidad digital verificable, GEO y herramientas estadísticas para investigadores. Publicaciones en español e inglés.</description>
+    <language>es-PE</language>
+    <copyright>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</copyright>
+    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://carlosravello.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+    <dc:publisher>carlosravello.com</dc:publisher>
+    <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+
+    <!-- ═══════════════════════════════════════════════
+         HOME
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Carlos Eduardo Ravello Joo — Arquitectura Semántica · Identidad Digital Verificable · Agencia Global</title>
+      <link>https://carlosravello.com/</link>
+      <guid isPermaLink="true">https://carlosravello.com/</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <description>Arquitectura semántica y gravedad digital para marcas e investigadores. Identidad verificable, herramientas estadísticas y posicionamiento estructural ante buscadores e IA generativa.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>arquitectura semántica</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <category>Home</category>
+    </item>
+
+    <item>
+      <title>Carlos Eduardo Ravello Joo — Semantic Architecture Agency · Digital Identity</title>
+      <link>https://carlosravello.com/en.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/en.html</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 +0000</pubDate>
+      <description>Semantic architecture and digital gravity for brands, professionals and researchers. Verifiable identity, statistical tools and structural positioning for search engines and generative AI.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>semantic architecture</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <category>Home</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         PRODUCCIÓN ACADÉMICA / RESEARCH INDEX
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Producción Académica — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/produccion-academica.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprints académicos con DOI verificable. Metacognición 2.0, identidad digital, biometría ocular, knowledge graph y arquitectura semántica. Indexados en Zenodo, OpenAIRE y Google Scholar.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>preprints</dc:subject>
+      <dc:subject>DOI verificable</dc:subject>
+      <dc:subject>metacognición digital</dc:subject>
+      <dc:subject>ORCID</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <item>
+      <title>Research — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/research.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>Academic preprints with verifiable DOI. Metacognition 2.0, digital identity, ocular biometrics, knowledge graph and semantic architecture. Indexed in Zenodo, OpenAIRE and Google Scholar.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>academic preprints</dc:subject>
+      <dc:subject>verifiable DOI</dc:subject>
+      <dc:subject>digital metacognition</dc:subject>
+      <dc:subject>ORCID</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         PAPER 04 — El tercer régimen del conocimiento
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>El tercer régimen del conocimiento: IA como respuesta emergente a los límites de la academia y los repositorios</title>
+      <link>https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/tercer-regimen-conocimiento-es.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint. La ventaja operativa de la IA emerge de la eliminación de fricciones institucionales, no de inteligencia superior. DOI: 10.5281/zenodo.20298744.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>tercer régimen del conocimiento</dc:subject>
+      <dc:subject>fricción institucional</dc:subject>
+      <dc:subject>repositorios abiertos</dc:subject>
+      <dc:subject>inteligencia artificial</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <item>
+      <title>The Third Knowledge Regime: AI as Emergent Response to Academia and Open Repositories</title>
+      <link>https://carlosravello.com/research/third-knowledge-regime-en.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/third-knowledge-regime-en.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint. AI's operational advantage emerges from eliminating institutional frictions, not superior intelligence. DOI: 10.5281/zenodo.20298744.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>third knowledge regime</dc:subject>
+      <dc:subject>institutional friction</dc:subject>
+      <dc:subject>open repositories</dc:subject>
+      <dc:subject>artificial intelligence</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         PAPER 04 — Divulgación (root)
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>El tercer régimen del conocimiento: cuando la IA absorbe lo que la academia y los repositorios no pueden</title>
+      <link>https://carlosravello.com/tercer-regimen-del-conocimiento.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/tercer-regimen-del-conocimiento.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>La academia clásica y los repositorios abiertos fracasan simultáneamente pero por razones opuestas. La IA no reemplaza a ninguno: emerge en el espacio que ambos dejaron vacío.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>tercer régimen del conocimiento</dc:subject>
+      <dc:subject>inteligencia artificial</dc:subject>
+      <dc:subject>academia</dc:subject>
+      <dc:subject>arquitectura semántica</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>The third knowledge regime: when AI absorbs what academia and open repositories cannot</title>
+      <link>https://carlosravello.com/the-third-knowledge-regime.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/the-third-knowledge-regime.html</guid>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <description>Classical academia and open repositories fail simultaneously but for opposite reasons. AI does not replace either. It emerges in the space both left empty.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>third knowledge regime</dc:subject>
+      <dc:subject>artificial intelligence</dc:subject>
+      <dc:subject>academia</dc:subject>
+      <dc:subject>semantic architecture</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         PAPER 03 — La década del influencer
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>La Década del Influencer como Colapso Termodinámico de la Información</title>
+      <link>https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/decada-influencer-colapso-termodinamico-es.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint académico. La crisis de los sistemas de búsqueda como output predecible de una década de input de baja densidad epistémica. DOI: 10.5281/zenodo.20260383.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>termodinámica de la información</dc:subject>
+      <dc:subject>densidad epistémica</dc:subject>
+      <dc:subject>ecosistema digital</dc:subject>
+      <dc:subject>influencer</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <item>
+      <title>The Influencer Decade as Informational Thermodynamic Collapse</title>
+      <link>https://carlosravello.com/research/influencer-decade-thermodynamic-collapse-en.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/influencer-decade-thermodynamic-collapse-en.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint. The contemporary crisis of information search systems as the mathematically predictable output of a decade of low epistemic density input. DOI: 10.5281/zenodo.20260383.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>thermodynamics of information</dc:subject>
+      <dc:subject>epistemic density</dc:subject>
+      <dc:subject>digital ecosystem</dc:subject>
+      <dc:subject>influencer decade</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <item>
+      <title>La década del influencer como colapso termodinámico — Carlos Ravello</title>
+      <link>https://carlosravello.com/decada-influencer-colapso-termodinamico.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/decada-influencer-colapso-termodinamico.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>La crisis del ecosistema digital no es cultural. Es el output matemáticamente predecible de una década de input masivo de baja densidad epistémica.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>colapso termodinámico</dc:subject>
+      <dc:subject>ecosistema digital</dc:subject>
+      <dc:subject>densidad epistémica</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>The influencer decade as thermodynamic collapse — Carlos Ravello</title>
+      <link>https://carlosravello.com/the-influencer-decade-thermodynamic-collapse.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/the-influencer-decade-thermodynamic-collapse.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>The digital ecosystem crisis is not cultural. It is the mathematically predictable output of a decade of massive low epistemic density input.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>thermodynamic collapse</dc:subject>
+      <dc:subject>digital ecosystem</dc:subject>
+      <dc:subject>epistemic density</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <!-- Paper 02 academic EN — May 17 -->
+    <item>
+      <title>The Profile You Didn't Write: Ocular Biometrics and Semantic Authority</title>
+      <link>https://carlosravello.com/research/the-profile-you-didnt-write.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/the-profile-you-didnt-write.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>Academic preprint. Digital identity, ocular biometrics and semantic authority in predictive algorithmic systems. DOI: 10.5281/zenodo.20112409.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>ocular biometrics</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>semantic authority</dc:subject>
+      <dc:subject>algorithmic surveillance</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <!-- Paper 01 academic EN — May 17 -->
+    <item>
+      <title>Metacognition 2.0: Deliberate Digital Identity Design</title>
+      <link>https://carlosravello.com/research/metacognition-2-0.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/metacognition-2-0.html</guid>
+      <pubDate>Sat, 17 May 2026 00:00:00 +0000</pubDate>
+      <description>Academic preprint. Metacognition 2.0 and the Dynamic Coherence Model (DCM) as a response to algorithmic asymmetry in predictive AI systems. DOI: 10.5281/zenodo.20092009.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>metacognition 2.0</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>Dynamic Coherence Model</dc:subject>
+      <dc:subject>predictive AI</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         PAPER 01 & 02 — Academic ES (May 11)
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>El Perfil que no Escribiste: Biometría Ocular y Autoridad Semántica</title>
+      <link>https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/el-perfil-que-no-escribiste.html</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint académico. Identidad digital, biometría ocular y autoridad semántica en sistemas algorítmicos predictivos. DOI: 10.5281/zenodo.20112409.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>biometría ocular</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>autoridad semántica</dc:subject>
+      <dc:subject>vigilancia algorítmica</dc:subject>
+      <category>Producción Académica</category>
+    </item>
+
+    <item>
+      <title>Metacognición 2.0: Diseño Deliberado de Identidad Digital</title>
+      <link>https://carlosravello.com/produccion-academica/metacognicion-2-0.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/metacognicion-2-0.html</guid>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <description>Preprint académico. Se introduce el concepto de Metacognición 2.0 y el Modelo de Coherencia Dinámica (MCD) como respuesta a la asimetría algorítmica. DOI: 10.5281/zenodo.20092009.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>metacognición 2.0</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>Modelo de Coherencia Dinámica</dc:subject>
+      <dc:subject>sistemas predictivos</dc:subject>
+      <category>Producción Académica</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         SECTION PAGES — May 10
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Escritura — Carlos Eduardo Ravello Joo · Identidad Digital, GEO, Arquitectura Semántica</title>
+      <link>https://carlosravello.com/escritura.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/escritura.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Artículos de arquitectura semántica, identidad digital y estrategia de posicionamiento escritos para durar, no para el consumo efímero del algoritmo.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>escritura</dc:subject>
+      <dc:subject>arquitectura semántica</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>Writing — Carlos Ravello</title>
+      <link>https://carlosravello.com/writing.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/writing.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Articles on semantic architecture, digital identity and positioning strategy written to last, not for ephemeral algorithmic consumption.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>writing</dc:subject>
+      <dc:subject>semantic architecture</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <item>
+      <title>Gravedad, no visibilidad — Brand Reconstructive Surgery · Carlos Ravello Joo</title>
+      <link>https://carlosravello.com/estrategia.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/estrategia.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Estrategia digital con gravedad semántica: posicionamiento verificable, arquitectura de entidades y metodología declarada. Estructuras que duran porque están bien construidas.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>Brand Reconstructive Surgery</dc:subject>
+      <dc:subject>estrategia digital</dc:subject>
+      <dc:subject>gravedad semántica</dc:subject>
+      <dc:subject>Modelo de Coherencia Dinámica</dc:subject>
+      <category>Estrategia Digital</category>
+    </item>
+
+    <item>
+      <title>Gravity, not visibility — Brand Reconstructive Surgery · Carlos Ravello Joo</title>
+      <link>https://carlosravello.com/strategy.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/strategy.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Digital strategy with semantic gravity: verifiable positioning, entity architecture, declared methodology. Lasting structures built to withstand algorithmic shifts.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>Brand Reconstructive Surgery</dc:subject>
+      <dc:subject>digital strategy</dc:subject>
+      <dc:subject>semantic gravity</dc:subject>
+      <dc:subject>Dynamic Coherence Model</dc:subject>
+      <category>Digital Strategy</category>
+    </item>
+
+    <item>
+      <title>Herramientas Digitales — Carlos Eduardo Ravello Joo · BikeLab Studio &amp; Zoovet Travel</title>
+      <link>https://carlosravello.com/herramientas.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/herramientas.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Herramientas digitales con metodología declarada: Monte Carlo, Bootstrap, análisis de sensibilidad. Para investigadores, ciclistas y profesionales de exportación de mascotas.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>herramientas digitales</dc:subject>
+      <dc:subject>Monte Carlo</dc:subject>
+      <dc:subject>bootstrap estadístico</dc:subject>
+      <dc:subject>BikeLab Studio</dc:subject>
+      <category>Herramientas</category>
+    </item>
+
+    <item>
+      <title>Digital Tools — Carlos Eduardo Ravello Joo · BikeLab Studio &amp; Zoovet Travel</title>
+      <link>https://carlosravello.com/tools.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/tools.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Digital tools built with declared methodology: Monte Carlo, Bootstrap, sensitivity analysis. For researchers, cyclists and international pet export professionals.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>digital tools</dc:subject>
+      <dc:subject>Monte Carlo</dc:subject>
+      <dc:subject>statistical bootstrap</dc:subject>
+      <dc:subject>BikeLab Studio</dc:subject>
+      <category>Tools</category>
+    </item>
+
+    <item>
+      <title>Herramientas Digitales Por Encargo — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/herramientas-para-investigadores.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/herramientas-para-investigadores.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Herramientas estadísticas construidas a medida: Bootstrap no paramétrico, Monte Carlo, corrección de Bonferroni. Para investigadores latinoamericanos sin dependencia de SPSS o Stata.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>herramientas estadísticas</dc:subject>
+      <dc:subject>investigadores latinoamericanos</dc:subject>
+      <dc:subject>bootstrap no paramétrico</dc:subject>
+      <dc:subject>Monte Carlo</dc:subject>
+      <category>Por Encargo</category>
+    </item>
+
+    <item>
+      <title>Bespoke Digital Tools — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/researchers.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/researchers.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Bespoke digital tools built to your exact specification. Bootstrap, Monte Carlo, Bonferroni, Latin Hypercube. For Latin American researchers without SPSS or Stata dependency.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>bespoke statistical tools</dc:subject>
+      <dc:subject>Latin American researchers</dc:subject>
+      <dc:subject>non-parametric bootstrap</dc:subject>
+      <dc:subject>Monte Carlo</dc:subject>
+      <category>Bespoke Tools</category>
+    </item>
+
+    <item>
+      <title>Servicios — Carlos Eduardo Ravello Joo · Arquitectura Web Semántica, Identidad Digital</title>
+      <link>https://carlosravello.com/servicios.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/servicios.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Servicios de arquitectura semántica, identidad digital verificable y estrategia de contenido estructurado para marcas y profesionales en América Latina.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>arquitectura web semántica</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>Schema.org</dc:subject>
+      <dc:subject>posicionamiento estructural</dc:subject>
+      <category>Trabajo</category>
+    </item>
+
+    <item>
+      <title>Work — Carlos Eduardo Ravello Joo · Semantic Web Architecture, Digital Identity</title>
+      <link>https://carlosravello.com/services.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/services.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Semantic architecture services, verifiable digital identity and structured content strategy for brands and professionals in Latin America.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>semantic web architecture</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>Schema.org</dc:subject>
+      <dc:subject>structural positioning</dc:subject>
+      <category>Work</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         WRITING ARTICLES — May 10
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Autoridad antes que contenido — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/autoridad-antes-que-contenido.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/autoridad-antes-que-contenido.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>La autoridad semántica precede al contenido. Por qué los motores de búsqueda posicionan entidades antes que artículos, respaldado por el estudio de Princeton 2024 sobre GEO.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>autoridad semántica</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>Authority before content — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/authority-before-content.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/authority-before-content.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Semantic authority precedes content. Why search engines rank entities before articles — backed by Princeton 2024 research on Generative Engine Optimization.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>semantic authority</dc:subject>
+      <dc:subject>GEO</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <item>
+      <title>Lo que el observador hace existir — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/lo-que-el-observador-hace-existir.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/lo-que-el-observador-hace-existir.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>La atención del mercado no descubre lo que existe — lo construye. Arquitectura semántica, gravedad digital y posicionamiento estructural ante sistemas de IA generativa.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>observador cuántico</dc:subject>
+      <dc:subject>gravedad digital</dc:subject>
+      <dc:subject>arquitectura semántica</dc:subject>
+      <dc:subject>LLM</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>What the observer makes real — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/what-the-observer-makes-real.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/what-the-observer-makes-real.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Market attention does not discover what exists — it constructs it. Semantic architecture, digital gravity and structural positioning for generative AI systems.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>digital gravity</dc:subject>
+      <dc:subject>semantic architecture</dc:subject>
+      <dc:subject>LLM</dc:subject>
+      <dc:subject>generative AI</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <item>
+      <title>El perfil que no escribiste — Identidad digital, biometría ocular y vigilancia algorítmica</title>
+      <link>https://carlosravello.com/el-perfil-que-no-escribiste.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/el-perfil-que-no-escribiste.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Tu identidad digital no es lo que publicaste. Es lo que los sistemas predictivos infirieron sin pedirte permiso. Biometría ocular y vigilancia algorítmica.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>biometría ocular</dc:subject>
+      <dc:subject>vigilancia algorítmica</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>sistemas predictivos</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>The Profile You Didn't Write — Digital Identity, Ocular Biometrics and Algorithmic Surveillance</title>
+      <link>https://carlosravello.com/the-profile-you-didnt-write.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/the-profile-you-didnt-write.html</guid>
+      <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
+      <description>Your digital identity is not what you published. It's what predictive systems inferred about you without asking. Ocular biometrics and algorithmic surveillance.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>ocular biometrics</dc:subject>
+      <dc:subject>algorithmic surveillance</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>predictive systems</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <!-- ═══════════════════════════════════════════════
+         WRITING ARTICLES — May 08 & 07
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Metacognición 2.0: pensar sobre lo que piensan las máquinas — Carlos Ravello</title>
+      <link>https://carlosravello.com/metacognicion-2-0.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/metacognicion-2-0.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>Metacognición 2.0: la capacidad de modelar cómo los sistemas predictivos de IA te clasifican y diseñar tu identidad digital deliberadamente. El output es el que decidiste.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>metacognición 2.0</dc:subject>
+      <dc:subject>Modelo de Coherencia Dinámica</dc:subject>
+      <dc:subject>sistemas predictivos</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>Metacognition 2.0: thinking about what machines think — Carlos Ravello</title>
+      <link>https://carlosravello.com/metacognition-2-0.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/metacognition-2-0.html</guid>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <description>Metacognition 2.0: model how AI predictive systems classify you and design your digital identity deliberately. The output is the one you decided.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>metacognition 2.0</dc:subject>
+      <dc:subject>Dynamic Coherence Model</dc:subject>
+      <dc:subject>predictive systems</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <category>Writing</category>
+    </item>
+
+    <item>
+      <title>El modelo que no se actualiza desaparece — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <description>Los sistemas de referencia caducan. Por qué el modelo semántico debe actualizarse — y cómo la entidad que no evoluciona desaparece del grafo antes de desaparecer del mercado.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>alostasis</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>actualización semántica</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>The model that stops updating disappears — Carlos Eduardo Ravello Joo</title>
+      <link>https://carlosravello.com/the-model-that-stops-updating-disappears.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/the-model-that-stops-updating-disappears.html</guid>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <description>Reference systems expire. Why the semantic model must continuously update — and how the entity that stops evolving disappears from the graph before disappearing from the market.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>allostasis</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>semantic update</dc:subject>
+      <dc:subject>Knowledge Graph</dc:subject>
+      <category>Writing</category>
+    </item>
+
+  </channel>
+</rss>
