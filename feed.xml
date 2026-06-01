@@ -10,11 +10,79 @@
     <description>Arquitectura semántica, identidad digital verificable, GEO y herramientas estadísticas para investigadores. Publicaciones en español e inglés.</description>
     <language>es-PE</language>
     <copyright>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 29 May 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://carlosravello.com/feed.xml" rel="self" type="application/rss+xml"/>
     <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
     <dc:publisher>carlosravello.com</dc:publisher>
     <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+
+    <!-- ═══════════════════════════════════════════════
+         PAPER 05 — Opacidad como Propiedad Emergente (Jun 2026)
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>Opacidad como Propiedad Emergente: De los Sistemas Naturales a los Artificiales</title>
+      <link>https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Preprint académico. Todo sistema que persiste regula deliberadamente su gradiente de revelación. Ω = V/(M+I). DOI: 10.5281/zenodo.20483564.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>opacidad como propiedad emergente</dc:subject>
+      <dc:subject>gradiente de revelación</dc:subject>
+      <dc:subject>Modelo de Coherencia Dinámica</dc:subject>
+      <dc:subject>sistemas complejos</dc:subject>
+      <category>Producción Académica</category>
+    </item>
+
+    <item>
+      <title>Opacity as an Emergent Property: From Natural to Artificial Systems</title>
+      <link>https://carlosravello.com/research/opacity-emergent-property-en.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/opacity-emergent-property-en.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Academic preprint. Any system that persists deliberately regulates its revelation gradient. Ω = V/(M+I). DOI: 10.5281/zenodo.20483564.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved. Citation required. DOI mandatory in bibliography.</dc:rights>
+      <dc:subject>opacity as emergent property</dc:subject>
+      <dc:subject>revelation gradient</dc:subject>
+      <dc:subject>Dynamic Coherence Model</dc:subject>
+      <dc:subject>complex systems</dc:subject>
+      <category>Academic Research</category>
+    </item>
+
+    <item>
+      <title>La opacidad que sostiene — Por qué todo sistema que dura elige cuánto mostrar</title>
+      <link>https://carlosravello.com/opacidad-propiedad-emergente.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/opacidad-propiedad-emergente.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>La opacidad no es ocultamiento. Es la condición estructural de cualquier sistema que persiste: regular cuánto se revela y cuánto se guarda. Versión divulgación.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>opacidad</dc:subject>
+      <dc:subject>gradiente de revelación</dc:subject>
+      <dc:subject>identidad digital</dc:subject>
+      <dc:subject>sistemas complejos</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>The opacity that sustains — Why every system that lasts chooses how much to show</title>
+      <link>https://carlosravello.com/opacity-as-emergent-property.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/opacity-as-emergent-property.html</guid>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
+      <description>Opacity is not concealment. It is the structural condition of any system that persists: regulating how much is revealed and how much is held back. Essay version.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+      <dc:subject>opacity</dc:subject>
+      <dc:subject>revelation gradient</dc:subject>
+      <dc:subject>digital identity</dc:subject>
+      <dc:subject>complex systems</dc:subject>
+      <category>Writing</category>
+    </item>
 
     <!-- ═══════════════════════════════════════════════
          HOME
@@ -60,7 +128,7 @@
       <title>Producción Académica — Carlos Eduardo Ravello Joo</title>
       <link>https://carlosravello.com/produccion-academica.html</link>
       <guid isPermaLink="true">https://carlosravello.com/produccion-academica.html</guid>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
       <description>Preprints académicos con DOI verificable. Metacognición 2.0, identidad digital, biometría ocular, knowledge graph y arquitectura semántica. Indexados en Zenodo, OpenAIRE y Google Scholar.</description>
       <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
       <dc:publisher>carlosravello.com</dc:publisher>
@@ -76,7 +144,7 @@
       <title>Research — Carlos Eduardo Ravello Joo</title>
       <link>https://carlosravello.com/research.html</link>
       <guid isPermaLink="true">https://carlosravello.com/research.html</guid>
-      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0000</pubDate>
       <description>Academic preprints with verifiable DOI. Metacognition 2.0, digital identity, ocular biometrics, knowledge graph and semantic architecture. Indexed in Zenodo, OpenAIRE and Google Scholar.</description>
       <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
       <dc:publisher>carlosravello.com</dc:publisher>
@@ -559,74 +627,6 @@
       <dc:subject>algorithmic surveillance</dc:subject>
       <dc:subject>digital identity</dc:subject>
       <dc:subject>predictive systems</dc:subject>
-      <category>Writing</category>
-    </item>
-
-    <!-- ═══════════════════════════════════════════════
-         WRITING ARTICLES — May 08 & 07
-    ═══════════════════════════════════════════════ -->
-
-    <item>
-      <title>Metacognición 2.0: pensar sobre lo que piensan las máquinas — Carlos Ravello</title>
-      <link>https://carlosravello.com/metacognicion-2-0.html</link>
-      <guid isPermaLink="true">https://carlosravello.com/metacognicion-2-0.html</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>Metacognición 2.0: la capacidad de modelar cómo los sistemas predictivos de IA te clasifican y diseñar tu identidad digital deliberadamente. El output es el que decidiste.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
-      <dc:publisher>carlosravello.com</dc:publisher>
-      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
-      <dc:subject>metacognición 2.0</dc:subject>
-      <dc:subject>Modelo de Coherencia Dinámica</dc:subject>
-      <dc:subject>sistemas predictivos</dc:subject>
-      <dc:subject>identidad digital</dc:subject>
-      <category>Escritura</category>
-    </item>
-
-    <item>
-      <title>Metacognition 2.0: thinking about what machines think — Carlos Ravello</title>
-      <link>https://carlosravello.com/metacognition-2-0.html</link>
-      <guid isPermaLink="true">https://carlosravello.com/metacognition-2-0.html</guid>
-      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
-      <description>Metacognition 2.0: model how AI predictive systems classify you and design your digital identity deliberately. The output is the one you decided.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
-      <dc:publisher>carlosravello.com</dc:publisher>
-      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
-      <dc:subject>metacognition 2.0</dc:subject>
-      <dc:subject>Dynamic Coherence Model</dc:subject>
-      <dc:subject>predictive systems</dc:subject>
-      <dc:subject>digital identity</dc:subject>
-      <category>Writing</category>
-    </item>
-
-    <item>
-      <title>El modelo que no se actualiza desaparece — Carlos Eduardo Ravello Joo</title>
-      <link>https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</link>
-      <guid isPermaLink="true">https://carlosravello.com/el-modelo-que-no-se-actualiza-desaparece.html</guid>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <description>Los sistemas de referencia caducan. Por qué el modelo semántico debe actualizarse — y cómo la entidad que no evoluciona desaparece del grafo antes de desaparecer del mercado.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
-      <dc:publisher>carlosravello.com</dc:publisher>
-      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
-      <dc:subject>alostasis</dc:subject>
-      <dc:subject>identidad digital</dc:subject>
-      <dc:subject>actualización semántica</dc:subject>
-      <dc:subject>Knowledge Graph</dc:subject>
-      <category>Escritura</category>
-    </item>
-
-    <item>
-      <title>The model that stops updating disappears — Carlos Eduardo Ravello Joo</title>
-      <link>https://carlosravello.com/the-model-that-stops-updating-disappears.html</link>
-      <guid isPermaLink="true">https://carlosravello.com/the-model-that-stops-updating-disappears.html</guid>
-      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
-      <description>Reference systems expire. Why the semantic model must continuously update — and how the entity that stops evolving disappears from the graph before disappearing from the market.</description>
-      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
-      <dc:publisher>carlosravello.com</dc:publisher>
-      <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
-      <dc:subject>allostasis</dc:subject>
-      <dc:subject>digital identity</dc:subject>
-      <dc:subject>semantic update</dc:subject>
-      <dc:subject>Knowledge Graph</dc:subject>
       <category>Writing</category>
     </item>
 

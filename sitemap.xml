@@ -469,6 +469,85 @@
 
 
   <!-- ══════════════════════════════════════════════
+       PAPER 05 — Opacidad como Propiedad Emergente
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/opacidad-propiedad-emergente.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/opacidad-propiedad-emergente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/opacity-as-emergent-property.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/opacity-as-emergent-property.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/opacity-as-emergent-property.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/opacidad-propiedad-emergente.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/opacity-as-emergent-property.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/opacity-as-emergent-property.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/opacity-emergent-property-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/opacity-emergent-property-en.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/opacity-emergent-property-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/opacidad-propiedad-emergente-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Paper 05 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/opacidad-propiedad-emergente-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/opacity-emergent-property-carlos-eduardo-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Indices actualizados -->
+  <url>
+    <loc>https://carlosravello.com/produccion-academica.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
        FEEDS
   ══════════════════════════════════════════════ -->
   <url>
