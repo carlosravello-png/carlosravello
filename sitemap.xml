@@ -548,6 +548,64 @@
   </url>
 
   <!-- ══════════════════════════════════════════════
+       PAPER 06 — Pensamiento de Frontera / Boundary Thinking
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/pensamiento-de-frontera.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/pensamiento-de-frontera.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/boundary-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/boundary-thinking.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/boundary-thinking.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/pensamiento-de-frontera.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/boundary-thinking.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/boundary-thinking.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/boundary-thinking-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/boundary-thinking-en.html</loc>
+    <lastmod>2026-06-01</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/boundary-thinking-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Paper 06 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/pensamiento-de-frontera-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/boundary-thinking-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-06-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- ══════════════════════════════════════════════
        FEEDS
   ══════════════════════════════════════════════ -->
   <url>
