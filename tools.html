@@ -58,50 +58,79 @@
             "https://orcid.org/0009-0007-5631-7436",
             "https://scholar.google.com/citations?user=AxlI1dgAAAAJ",
             "https://www.researchgate.net/profile/Carlos-Ravello-Joo",
-            "https://www.wikidata.org/wiki/Q139714842",
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
-            "https://www.bikelabstudio.com/#carlos-ravello",
-            "https://zoovettravel.com/#carlos-ravello"
-          ,
             "https://www.crunchbase.com/person/carlos-eduardo-ravello-joo",
-            "https://independent.academia.edu/CarlosRJ4"]
-        },
-        {
-          "@type": "WebApplication",
-          "@id": "https://zoovettravel.com/pet-travel-planner/#app",
-          "name": "Pet Travel Planner — Zoovet Travel",
-          "url": "https://zoovettravel.com/pet-travel-planner/",
-          "author": { "@id": "https://carlosravello.com/#person" },
-          "creator": { "@id": "https://carlosravello.com/#person" },
-          "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
-          "applicationCategory": "HealthApplication",
-          "operatingSystem": "Web",
-          "inLanguage": ["es", "en", "fr"],
-          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "Trilingual tool that computes the ICD-Travel (Dynamic Coherence Index) across three diagnostic axes: animal physiological state, owner preparation, and destination compliance. Designed for families in the process of international relocation or travel with pets.",
-          "featureList": [
-            "Trilingual: Spanish, English and French",
-            "ICD-Travel computation across three independent axes",
-            "Official sources by destination country",
-            "Viability traffic light with technical justification",
-            "Free access, no registration"
+            "https://independent.academia.edu/CarlosRJ4"
           ],
-          "isBasedOn": { "@id": "https://carlosravello.com/#mcd" }
+          "owns": [
+            { "@id": "https://carlosravello.com/tools.html#pet-travel-planner" },
+            { "@id": "https://carlosravello.com/tools.html#kennel-calculator" }
+          ]
         },
         {
-          "@type": "WebApplication",
-          "@id": "https://zoovettravel.com/kennels-en.html#app",
-          "name": "Kennels Directory — Zoovet Travel",
-          "url": "https://zoovettravel.com/kennels-en.html",
+          "@type": "SoftwareApplication",
+          "@id": "https://carlosravello.com/tools.html#pet-travel-planner",
+          "name": "Pet Travel Planner ICD-Travel — Zoovet Travel",
+          "url": "https://zoovettravel.com/pet-travel-planner/",
+          "sameAs": [
+            "https://zoovettravel.com/pet-travel-planner/",
+            "https://zoovettravel.com/planificador-viaje-mascota/",
+            "https://zoovettravel.com/planificateur-voyage-animal/"
+          ],
           "author": { "@id": "https://carlosravello.com/#person" },
           "creator": { "@id": "https://carlosravello.com/#person" },
+          "copyrightHolder": { "@id": "https://carlosravello.com/#person" },
           "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
-          "applicationCategory": "HealthApplication",
+          "copyrightYear": 2026,
+          "copyrightNotice": "© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). All rights reserved. The code and database of this tool are the property of the author; reproduction, redistribution, reverse engineering or commercial use without written authorization is prohibited.",
+          "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web",
-          "inLanguage": ["es", "en", "fr"],
+          "inLanguage": ["en", "es", "fr"],
+          "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "Trilingual directory of kennels and pet boarding facilities for animals in international export or import processes. Filtered by species, IATA compliance, quarantine infrastructure and required zoosanitary certifications."
+          "description": "Trilingual deterministic rule engine for international pet travel planning. Users enter actual dates for the animal (microchip, rabies vaccine, deworming, FAVN sample, travel date); the tool compares them against regulatory thresholds per destination country loaded from a curated dataset (rules.json): minimum age, rabies vaccine validity and chronological order, FAVN waiting period, country-specific blocks. Produces a green/amber/red traffic light with technical justification per variable. No statistical computation — accuracy comes from the quality of the regulatory dataset.",
+          "featureList": [
+            "Deterministic rule engine: compares dates against regulatory thresholds by country",
+            "Green/amber/red viability traffic light",
+            "Detects biological blocks (minimum age) and temporal blocks (insufficient days)",
+            "Covers SENASA, FAVN, RNATT, IATA LAR, airline-specific requirements",
+            "Curated regulatory dataset by country (rules.json) — that dataset is the value",
+            "Trilingual: English, Spanish, French",
+            "Free access, no registration"
+          ]
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://carlosravello.com/tools.html#kennel-calculator",
+          "name": "IATA Kennel Size Calculator — Zoovet Travel",
+          "url": "https://zoovettravel.com/kennels-en.html",
+          "sameAs": [
+            "https://zoovettravel.com/kennels-en.html",
+            "https://zoovettravel.com/kennels.html",
+            "https://zoovettravel.com/kennels-fr.html"
+          ],
+          "author": { "@id": "https://carlosravello.com/#person" },
+          "creator": { "@id": "https://carlosravello.com/#person" },
+          "copyrightHolder": { "@id": "https://carlosravello.com/#person" },
+          "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
+          "copyrightYear": 2026,
+          "copyrightNotice": "© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). All rights reserved. The code and database of this tool are the property of the author; reproduction, redistribution, reverse engineering or commercial use without written authorization is prohibited.",
+          "applicationCategory": "UtilitiesApplication",
+          "operatingSystem": "Web",
+          "inLanguage": ["en", "es", "fr"],
+          "isAccessibleForFree": true,
+          "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+          "description": "Deterministic geometric calculator for IATA LAR 2026 kennel sizing for air transport of pets. Takes actual animal measurements (A = nose to tail base, B = floor to elbow, C = shoulder width, D = floor to head/ears) and applies IATA formulas: internal length = A + B/2, internal width = 2·C, internal height = D + 3 cm. For brachycephalic breeds applies a ×1.10 factor across all three dimensions and moves up one size. Selects the smallest size in the fixed L50–L120 series satisfying all three dimensions simultaneously. Includes a breed table with average measurements for auto-fill.",
+          "featureList": [
+            "Deterministic geometric calculation per IATA LAR 2026 formulas",
+            "L50–L120 size series: selects the minimum size meeting all three dimensions",
+            "×1.10 factor and size upgrade for brachycephalic breeds",
+            "Breed table with average measurements for auto-fill",
+            "No statistical computation — pure geometry on actual animal measurements",
+            "Trilingual: English, Spanish, French",
+            "Free access, no registration"
+          ]
         },
         {
           "@type": "WebApplication",
@@ -569,38 +598,40 @@
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">Pet Travel Planner</a></h3>
+                        <h3><a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">Pet Travel Planner ICD-Travel</a></h3>
                         <span class="tool-url">zoovettravel.com/pet-travel-planner/</span>
                     </div>
-                    <div class="tool-label">WebApplication · ICD-Travel · Trilingual ES / EN / FR · Free access</div>
-                    <p class="tool-problem">The problem it solves: taking a pet abroad involves dozens of variables that change by country, airline, species and calendar — FAVN serology with specific time windows, zoosanitary certificates with issuance deadlines, breed restrictions, quarantine protocols, ISO microchip. No tool unifies those variables into a verifiable pre-departure diagnostic. A family that discovers a protocol error at the airport already failed months earlier.</p>
-                    <p class="tool-tech">Computes the <strong>ICD-Travel (Dynamic Coherence Index)</strong> across three independent diagnostic axes: animal physiological state, owner preparation, and destination compliance. Each axis produces a signal that the planner combines into a viability traffic light with technical justification and verifiable official sources by country. Available in <a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Spanish</a> and <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">French</a>.</p>
+                    <div class="tool-label">Deterministic rule engine · Regulatory traffic light · Trilingual ES / EN / FR · Free access</div>
+                    <p class="tool-problem">The problem it solves: taking a pet abroad involves dozens of variables that change by country, airline, species and calendar — FAVN serology with specific time windows, zoosanitary certificates with issuance deadlines, breed restrictions, quarantine protocols, ISO microchip. A family that discovers a protocol error at the airport already failed months earlier. The error wasn't a knowledge gap — it was a timing gap.</p>
+                    <p class="tool-tech"><strong>Deterministic inverse-timeline rule engine.</strong> The user enters the animal's actual dates — microchip, rabies vaccine, deworming, FAVN sample, travel date — and the tool compares them against the regulatory thresholds for the destination country loaded from a curated dataset (rules.json): minimum age, rabies vaccine validity and chronological order, FAVN waiting period, country-specific blocks. Detects biological blocks (insufficient age) and temporal blocks (insufficient days) and produces a <strong>green/amber/red traffic light</strong> with technical justification per variable. No randomness — accuracy comes from the quality of the regulatory dataset. Available in <a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Spanish</a> and <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">French</a>.</p>
                     <div class="tags">
                         <span class="tag">ICD-Travel</span>
                         <span class="tag">Trilingual ES/EN/FR</span>
                         <span class="tag">SENASA · FAVN · RNATT</span>
-                        <span class="tag">Official sources by country</span>
-                        <span class="tag">Viability traffic light</span>
+                        <span class="tag">Deterministic rules by country</span>
+                        <span class="tag">Green/amber/red traffic light</span>
                     </div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:1.2rem;line-height:1.6;">© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). All rights reserved. Code and database property of the author; reproduction or commercial use without authorization is prohibited.</p>
                     <a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener" class="tool-cta">Use the tool →</a>
                 </div>
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener">Kennels Directory</a></h3>
-                        <span class="tool-url">zoovettravel.com/kennels/</span>
+                        <h3><a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener">IATA Kennel Size Calculator</a></h3>
+                        <span class="tool-url">zoovettravel.com/kennels-en.html</span>
                     </div>
-                    <div class="tool-label">WebApplication · Filtered directory · Trilingual ES / EN / FR · Free access</div>
-                    <p class="tool-problem">The problem it solves: a family in the process of international relocation needs kennels that meet specific criteria that most generic directories don't filter — IATA compliance, quarantine infrastructure, capacity to manage zoosanitary certificates, restricted breed acceptance. Finding an inadequate kennel weeks before the trip has concrete, irreversible consequences.</p>
-                    <p class="tool-tech">Trilingual directory with filtering by species, IATA compliance, quarantine infrastructure and type of zoosanitary certifications the facility can manage. Built as a reference for families actively in the process of international pet export or import — not as a generic commercial listing.</p>
+                    <div class="tool-label">Deterministic geometric calculator · IATA LAR 2026 · Trilingual ES / EN / FR · Free access</div>
+                    <p class="tool-problem">The problem it solves: the wrong kennel size is one of the most common reasons for pet boarding rejection at check-in. Generic breed-based tables give average sizes that ignore the actual animal's measurements. IATA requires calculation from individual measurements — and most families don't know the exact formulas or how to apply the brachycephalic correction factor.</p>
+                    <p class="tool-tech"><strong>Deterministic geometric calculator per IATA LAR 2026.</strong> The user enters the animal's actual measurements: A (nose to tail base), B (floor to elbow), C (shoulder width), D (floor to head or ears). The tool applies IATA formulas: internal length = A + B/2, internal width = 2·C, internal height = D + 3 cm. For brachycephalic breeds it applies a ×1.10 factor across all three dimensions and automatically moves up one size. Selects the smallest size in the fixed L50–L120 series satisfying all three dimensions simultaneously. Includes a breed table with average measurements for auto-fill. No randomness — the result is geometric and reproducible. Available in <a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener">Spanish</a> and <a href="https://zoovettravel.com/kennels-fr.html" target="_blank" rel="noopener">French</a>.</p>
                     <div class="tags">
+                        <span class="tag">IATA LAR 2026</span>
                         <span class="tag">Trilingual ES/EN/FR</span>
-                        <span class="tag">IATA filter</span>
-                        <span class="tag">Quarantine</span>
-                        <span class="tag">Restricted breeds</span>
-                        <span class="tag">Export · Import</span>
+                        <span class="tag">Brachycephalics ×1.10</span>
+                        <span class="tag">L50–L120 series</span>
+                        <span class="tag">Calculation from real measurements</span>
                     </div>
-                    <a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener" class="tool-cta">View directory →</a>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:1.2rem;line-height:1.6;">© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). All rights reserved. Code and database property of the author; reproduction or commercial use without authorization is prohibited.</p>
+                    <a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener" class="tool-cta">Calculate the size →</a>
                 </div>
 
             </section>

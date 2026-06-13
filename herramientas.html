@@ -58,14 +58,15 @@
             "https://orcid.org/0009-0007-5631-7436",
             "https://scholar.google.com/citations?user=AxlI1dgAAAAJ",
             "https://www.researchgate.net/profile/Carlos-Ravello-Joo",
-            "https://www.wikidata.org/wiki/Q139714842",
             "https://pe.linkedin.com/in/carlos-ravello-joo-3a1047262",
             "https://github.com/carlosravello-png",
-            "https://www.bikelabstudio.com/#carlos-ravello",
-            "https://zoovettravel.com/#carlos-ravello"
-          ,
             "https://www.crunchbase.com/person/carlos-eduardo-ravello-joo",
-            "https://independent.academia.edu/CarlosRJ4"]
+            "https://independent.academia.edu/CarlosRJ4"
+          ],
+          "owns": [
+            { "@id": "https://carlosravello.com/herramientas.html#pet-travel-planner" },
+            { "@id": "https://carlosravello.com/herramientas.html#kennel-calculator" }
+          ]
         },
         {
           "@type": "WebApplication",
@@ -178,40 +179,68 @@
           "inLanguage": "es"
         },
         {
-          "@type": "WebApplication",
-          "@id": "https://zoovettravel.com/planificador-viaje-mascota/#app",
-          "name": "Planificador de Viaje para Mascotas — Zoovet Travel",
+          "@type": "SoftwareApplication",
+          "@id": "https://carlosravello.com/herramientas.html#pet-travel-planner",
+          "name": "Planificador de Viaje para Mascotas ICD-Travel — Zoovet Travel",
           "url": "https://zoovettravel.com/planificador-viaje-mascota/",
+          "sameAs": [
+            "https://zoovettravel.com/planificador-viaje-mascota/",
+            "https://zoovettravel.com/pet-travel-planner/",
+            "https://zoovettravel.com/planificateur-voyage-animal/"
+          ],
           "author": { "@id": "https://carlosravello.com/#person" },
           "creator": { "@id": "https://carlosravello.com/#person" },
+          "copyrightHolder": { "@id": "https://carlosravello.com/#person" },
           "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
-          "applicationCategory": "HealthApplication",
+          "copyrightYear": 2026,
+          "copyrightNotice": "© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). Todos los derechos reservados. El código y la base de datos de esta herramienta son propiedad del autor; prohibida su reproducción, redistribución, ingeniería inversa o uso comercial sin autorización escrita.",
+          "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web",
           "inLanguage": ["es", "en", "fr"],
+          "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "Herramienta trilingüe que computa el Índice de Coherencia Dinámica ICD-Travel sobre tres ejes diagnósticos: estado fisiológico del animal, preparación del propietario y cumplimiento de requisitos del destino. Diseñada para familias en proceso de traslado o viaje internacional con mascotas.",
+          "description": "Motor de reglas determinista trilingüe para planificación de viaje internacional con mascotas. Compara las fechas reales del animal (microchip, vacuna antirrábica, desparasitación, muestra FAVN) contra umbrales regulatorios por país de destino cargados desde una base de datos curada (rules.json). Produce un semáforo de viabilidad verde/ámbar/rojo con identificación de bloqueos biológicos (edad mínima) y temporales (días insuficientes). Sin cálculo estadístico — la precisión proviene de la calidad del dataset regulatorio.",
           "featureList": [
-            "Diagnóstico trilingüe: español, inglés y francés",
-            "Cómputo de ICD-Travel en tres ejes independientes",
-            "Fuentes oficiales por país de destino verificadas",
-            "Semáforo de viabilidad con justificación técnica",
+            "Motor de reglas determinista: compara fechas contra umbrales regulatorios por país",
+            "Semáforo verde/ámbar/rojo de viabilidad de viaje",
+            "Detección de bloqueos biológicos (edad mínima) y temporales (días insuficientes)",
+            "Cobertura SENASA, FAVN, RNATT, IATA LAR, requisitos por aerolínea",
+            "Dataset regulatorio curado por país (rules.json) — ese dataset es el valor",
+            "Trilingüe: español, inglés, francés",
             "Acceso libre sin registro"
-          ],
-          "isBasedOn": { "@id": "https://carlosravello.com/#mcd" }
+          ]
         },
         {
-          "@type": "WebApplication",
-          "@id": "https://zoovettravel.com/kennels.html#app",
-          "name": "Directorio de Kennels — Zoovet Travel",
+          "@type": "SoftwareApplication",
+          "@id": "https://carlosravello.com/herramientas.html#kennel-calculator",
+          "name": "Calculadora de Talla de Jaula IATA — Zoovet Travel",
           "url": "https://zoovettravel.com/kennels.html",
+          "sameAs": [
+            "https://zoovettravel.com/kennels.html",
+            "https://zoovettravel.com/kennels-en.html",
+            "https://zoovettravel.com/kennels-fr.html"
+          ],
           "author": { "@id": "https://carlosravello.com/#person" },
           "creator": { "@id": "https://carlosravello.com/#person" },
+          "copyrightHolder": { "@id": "https://carlosravello.com/#person" },
           "publisher": { "@type": "Organization", "name": "Zoovet Travel", "url": "https://zoovettravel.com" },
-          "applicationCategory": "HealthApplication",
+          "copyrightYear": 2026,
+          "copyrightNotice": "© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). Todos los derechos reservados. El código y la base de datos de esta herramienta son propiedad del autor; prohibida su reproducción, redistribución, ingeniería inversa o uso comercial sin autorización escrita.",
+          "applicationCategory": "UtilitiesApplication",
           "operatingSystem": "Web",
           "inLanguage": ["es", "en", "fr"],
+          "isAccessibleForFree": true,
           "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-          "description": "Directorio trilingüe de kennels y hospedaje para mascotas en proceso de exportación o importación internacional. Filtrado por especie, cumplimiento IATA, infraestructura de cuarentena y certificaciones zoosanitarias requeridas."
+          "description": "Calculadora geométrica determinista de talla de jaula IATA LAR 2026 para transporte aéreo de mascotas. A partir de las medidas reales del animal (A = nariz a base de cola, B = suelo a codo, C = ancho de hombros, D = suelo a cabeza/orejas) aplica las fórmulas IATA: largo interno = A + B/2, ancho interno = 2·C, alto interno = D + 3 cm. Para razas braquicéfalas aplica factor ×1.10 en las tres dimensiones y sube una talla. Selecciona la talla más pequeña de la serie fija L50–L120 que cumple las tres dimensiones. Incluye tabla de razas con medidas promedio para autocompletar.",
+          "featureList": [
+            "Cálculo geométrico determinista según fórmulas IATA LAR 2026",
+            "Serie de tallas L50–L120: selecciona la mínima que cumple las tres dimensiones",
+            "Factor ×1.10 y subida de talla para razas braquicéfalas",
+            "Tabla de razas con medidas promedio para autocompletar",
+            "Sin cálculo estadístico — geometría pura sobre medidas reales del animal",
+            "Trilingüe: español, inglés, francés",
+            "Acceso libre sin registro"
+          ]
         },
         {
           "@type": "CreativeWork",
@@ -774,38 +803,40 @@
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Planificador de Viaje para Mascotas</a></h3>
+                        <h3><a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener">Planificador de Viaje para Mascotas ICD-Travel</a></h3>
                         <span class="tool-url">zoovettravel.com/planificador-viaje-mascota/</span>
                     </div>
-                    <div class="tool-label">WebApplication · ICD-Travel · Trilingüe ES / EN / FR · Acceso libre</div>
-                    <p class="tool-problem">El problema que resuelve: llevar una mascota al extranjero involucra docenas de variables que cambian por país, por aerolínea, por especie y por calendario — serología FAVN con ventana de tiempo específica, certificados zoosanitarios con plazos de emisión, restricciones de raza, protocolos de cuarentena, microchip ISO. No existe ninguna herramienta que unifique esas variables en un diagnóstico previo verificable. Una familia que descubre un error de protocolo en el aeropuerto ya falló meses antes.</p>
-                    <p class="tool-tech">Computa el <strong>Índice de Coherencia Dinámica ICD-Travel</strong> sobre tres ejes diagnósticos independientes: estado fisiológico del animal, preparación del propietario, y cumplimiento de requisitos del destino. Cada eje produce una señal que el planificador combina en un semáforo de viabilidad con justificación técnica y fuentes oficiales verificables por país. Disponible en <a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">inglés</a> y <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">francés</a>.</p>
+                    <div class="tool-label">Motor de reglas determinista · Semáforo regulatorio · Trilingüe ES / EN / FR · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: llevar una mascota al extranjero involucra docenas de variables que cambian por país, por aerolínea, por especie y por calendario — serología FAVN con ventana de tiempo específica, certificados zoosanitarios con plazos de emisión, restricciones de raza, protocolos de cuarentena, microchip ISO. Una familia que descubre un error de protocolo en el aeropuerto ya falló meses antes. El error no fue de conocimiento — fue de timing.</p>
+                    <p class="tool-tech"><strong>Motor de reglas determinista de timeline inverso.</strong> El usuario ingresa las fechas reales del animal — microchip, vacuna antirrábica, desparasitación, muestra FAVN, fecha de viaje — y la herramienta las compara contra los umbrales regulatorios del país de destino cargados desde una base de datos curada (rules.json): edad mínima, vigencia y orden cronológico de la antirrábica, periodo de espera FAVN, bloqueos país-específicos. Detecta bloqueos biológicos (edad insuficiente) y temporales (días insuficientes) y produce un <strong>semáforo verde/ámbar/rojo</strong> con justificación técnica por variable. Sin aleatoriedad — la precisión proviene de la calidad del dataset regulatorio. Disponible en <a href="https://zoovettravel.com/pet-travel-planner/" target="_blank" rel="noopener">inglés</a> y <a href="https://zoovettravel.com/planificateur-voyage-animal/" target="_blank" rel="noopener">francés</a>.</p>
                     <div class="tags">
                         <span class="tag">ICD-Travel</span>
                         <span class="tag">Trilingüe ES/EN/FR</span>
                         <span class="tag">SENASA · FAVN · RNATT</span>
-                        <span class="tag">Fuentes oficiales por país</span>
-                        <span class="tag">Semáforo de viabilidad</span>
+                        <span class="tag">Reglas deterministas por país</span>
+                        <span class="tag">Semáforo verde/ámbar/rojo</span>
                     </div>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:1.2rem;line-height:1.6;">© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). Todos los derechos reservados. Código y base de datos propiedad del autor; prohibida su reproducción o uso comercial sin autorización.</p>
                     <a href="https://zoovettravel.com/planificador-viaje-mascota/" target="_blank" rel="noopener" class="tool-cta">Usar la herramienta →</a>
                 </div>
 
                 <div class="tool">
                     <div class="tool-header">
-                        <h3><a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener">Directorio de Kennels</a></h3>
+                        <h3><a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener">Calculadora de Talla de Jaula IATA</a></h3>
                         <span class="tool-url">zoovettravel.com/kennels.html</span>
                     </div>
-                    <div class="tool-label">WebApplication · Directorio filtrado · Trilingüe ES / EN / FR · Acceso libre</div>
-                    <p class="tool-problem">El problema que resuelve: una familia en proceso de relocalización internacional necesita kennels que cumplan criterios específicos que la mayoría de directorios genéricos no filtra — cumplimiento IATA, infraestructura de cuarentena, capacidad de gestión de certificados zoosanitarios, aceptación de razas restringidas. Encontrar un kennel inadecuado a semanas del viaje tiene consecuencias concretas e irreversibles.</p>
-                    <p class="tool-tech">Directorio trilingüe con filtrado por especie, cumplimiento IATA, infraestructura de cuarentena y tipo de certificaciones zoosanitarias que el hospedaje puede gestionar. Construido como referencia para familias en proceso activo de exportación o importación internacional de mascotas — no como listado comercial genérico.</p>
+                    <div class="tool-label">Calculadora geométrica determinista · IATA LAR 2026 · Trilingüe ES / EN / FR · Acceso libre</div>
+                    <p class="tool-problem">El problema que resuelve: la talla de jaula incorrecta es uno de los motivos más frecuentes de rechazo en embarque de mascotas. Las tablas genéricas por raza dan tallas promedio que ignoran las medidas reales del animal. IATA exige cálculo por medidas individuales — y pocas familias conocen las fórmulas exactas ni saben cómo aplicar el factor para razas braquicéfalas.</p>
+                    <p class="tool-tech"><strong>Calculadora geométrica determinista según IATA LAR 2026.</strong> El usuario ingresa las medidas reales del animal: A (nariz a base de cola), B (suelo a codo), C (ancho de hombros), D (suelo a cabeza o orejas). La herramienta aplica las fórmulas IATA: largo interno = A + B/2, ancho interno = 2·C, alto interno = D + 3 cm. Para razas braquicéfalas aplica un factor ×1.10 en las tres dimensiones y sube automáticamente una talla. Selecciona la talla más pequeña de la serie fija L50–L120 que cumple las tres dimensiones simultáneamente. Incluye tabla de razas con medidas promedio para autocompletar. Sin aleatoriedad — el resultado es geométrico y reproducible. Disponible en <a href="https://zoovettravel.com/kennels-en.html" target="_blank" rel="noopener">inglés</a> y <a href="https://zoovettravel.com/kennels-fr.html" target="_blank" rel="noopener">francés</a>.</p>
                     <div class="tags">
+                        <span class="tag">IATA LAR 2026</span>
                         <span class="tag">Trilingüe ES/EN/FR</span>
-                        <span class="tag">Filtro IATA</span>
-                        <span class="tag">Cuarentena</span>
-                        <span class="tag">Razas restringidas</span>
-                        <span class="tag">Exportación · Importación</span>
+                        <span class="tag">Braquicéfalos ×1.10</span>
+                        <span class="tag">Serie L50–L120</span>
+                        <span class="tag">Cálculo por medidas reales</span>
                     </div>
-                    <a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener" class="tool-cta">Ver directorio →</a>
+                    <p style="font-size:0.78rem;color:var(--muted);margin-top:1.2rem;line-height:1.6;">© 2026 Carlos Eduardo Ravello Joo (ORCID 0009-0007-5631-7436). Todos los derechos reservados. Código y base de datos propiedad del autor; prohibida su reproducción o uso comercial sin autorización.</p>
+                    <a href="https://zoovettravel.com/kennels.html" target="_blank" rel="noopener" class="tool-cta">Calcular la talla →</a>
                 </div>
 
             </section>
