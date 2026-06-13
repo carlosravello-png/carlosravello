@@ -259,13 +259,16 @@
                               "url": "https://zoovettravel.com"
                         },
                         {
-                              "@id": "https://www.bikelabstudio.com/calculadora-sag#app"
+                              "@id": "https://www.bikelabstudio.com/articles/sag-calculator-es.html#app"
                         },
                         {
-                              "@id": "https://www.bikelabstudio.com/fit-analyzer#app"
+                              "@id": "https://www.bikelabstudio.com/articles/psi-calculator-es.html#app"
                         },
                         {
-                              "@id": "https://www.bikelabstudio.com/calculadora-bateria#app"
+                              "@id": "https://www.bikelabstudio.com/articles/fit-analyzer-es.html#app"
+                        },
+                        {
+                              "@id": "https://www.bikelabstudio.com/articles/di2-axs-diagnostic-es.html#app"
                         }
                   ],
                   "colleague": {
@@ -487,7 +490,16 @@
                   "isPartOf": {
                         "@id": "https://www.bikelabstudio.com/#website"
                   },
-                  "sameAs": "https://www.bikelabstudio.com/articles/white-paper-sag-model-es.html"
+                  "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "DOI",
+                        "value": "10.5281/zenodo.20672790"
+                  },
+                  "sameAs": [
+                        "https://doi.org/10.5281/zenodo.20672790",
+                        "https://www.bikelabstudio.com/articles/white-paper-sag-model-es.html"
+                  ],
+                  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
             },
             {
                   "@type": "WebApplication",
@@ -522,7 +534,16 @@
                   "isPartOf": {
                         "@id": "https://www.bikelabstudio.com/#website"
                   },
-                  "sameAs": "https://www.bikelabstudio.com/articles/white-paper-fit-analyzer-es.html"
+                  "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "DOI",
+                        "value": "10.5281/zenodo.20673166"
+                  },
+                  "sameAs": [
+                        "https://doi.org/10.5281/zenodo.20673166",
+                        "https://www.bikelabstudio.com/articles/white-paper-fit-analyzer-es.html"
+                  ],
+                  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
             },
             {
                   "@type": "WebApplication",
@@ -549,6 +570,84 @@
                         "@type": "Audience",
                         "audienceType": "Mecánicos de bicicleta, ciclistas con transmisión electrónica"
                   },
+                  "isPartOf": {
+                        "@id": "https://www.bikelabstudio.com/#website"
+                  },
+                  "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "DOI",
+                        "value": "10.5281/zenodo.20673193"
+                  },
+                  "sameAs": "https://doi.org/10.5281/zenodo.20673193",
+                  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            },
+            {
+                  "@type": "SoftwareApplication",
+                  "@id": "https://www.bikelabstudio.com/articles/psi-calculator-es.html#app",
+                  "name": "BikeLab PSI Calculator",
+                  "url": "https://www.bikelabstudio.com/articles/psi-calculator-es.html",
+                  "author": {
+                        "@id": "https://carlosravello.com/#person"
+                  },
+                  "creator": {
+                        "@id": "https://carlosravello.com/#person"
+                  },
+                  "applicationCategory": "SportsApplication",
+                  "operatingSystem": "Web",
+                  "programmingLanguage": [
+                        "HTML",
+                        "JavaScript",
+                        "Python"
+                  ],
+                  "description": "Calculadora de presión de llantas para ruta y gravel. Modelo de deflección constante (Berto 15% drop) calibrado con 321 mediciones de BicycleRollingResistance. Propagación de incertidumbre por Latin Hypercube Sampling, análisis de sensibilidad global Sobol y validación cruzada contra SILCA y Rene Herse.",
+                  "featureList": [
+                        "Modelo de deflección constante calibrado con 321 llantas",
+                        "Latin Hypercube Sampling (10 000 muestras por configuración)",
+                        "Análisis de sensibilidad global Sobol (81 920 evaluaciones)",
+                        "Techos ETRTO para aros hookless",
+                        "Validación cruzada contra SILCA y Rene Herse"
+                  ],
+                  "audience": {
+                        "@type": "Audience",
+                        "audienceType": "Ciclistas de ruta y gravel, mecánicos de bicicleta"
+                  },
+                  "isPartOf": {
+                        "@id": "https://www.bikelabstudio.com/#website"
+                  },
+                  "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "DOI",
+                        "value": "10.5281/zenodo.20673124"
+                  },
+                  "sameAs": [
+                        "https://doi.org/10.5281/zenodo.20673124",
+                        "https://www.bikelabstudio.com/articles/white-paper-psi-model-es.html"
+                  ],
+                  "license": "https://creativecommons.org/licenses/by-nc-nd/4.0/",
+                  "inLanguage": ["es", "en"]
+            },
+            {
+                  "@type": "TechArticle",
+                  "@id": "https://www.bikelabstudio.com/articles/white-paper-psi-model-es.html",
+                  "name": "Modelo de Deflección Constante para el Cálculo de Presión de Llantas en Ruta y Gravel",
+                  "url": "https://www.bikelabstudio.com/articles/white-paper-psi-model-es.html",
+                  "author": {
+                        "@id": "https://carlosravello.com/#person"
+                  },
+                  "identifier": {
+                        "@type": "PropertyValue",
+                        "propertyID": "DOI",
+                        "value": "10.5281/zenodo.20671797"
+                  },
+                  "sameAs": "https://doi.org/10.5281/zenodo.20671797",
+                  "publisher": {
+                        "@type": "Organization",
+                        "name": "BikeLab Studio",
+                        "url": "https://www.bikelabstudio.com"
+                  },
+                  "datePublished": "2026-06-01",
+                  "inLanguage": "es",
+                  "license": "https://creativecommons.org/licenses/by-nc/4.0/",
                   "isPartOf": {
                         "@id": "https://www.bikelabstudio.com/#website"
                   }
@@ -851,28 +950,6 @@
                         "@id": "https://carlosravello.com/#person"
                   },
                   "description": "Laboratorio de ingeniería ciclista en Perú. Diseño, arquitectura web y estrategia SEO: Carlos Eduardo Ravello Joo."
-            },
-            {
-                  "@type": "SoftwareApplication",
-                  "@id": "https://www.bikelabstudio.com/#sag-calculator",
-                  "name": "SAG Calculator — BikeLab Studio",
-                  "applicationCategory": "WebApplication",
-                  "operatingSystem": "Web",
-                  "creator": {
-                        "@id": "https://carlosravello.com/#person"
-                  },
-                  "description": "Calculadora de configuración de suspensión MTB con 10.000 iteraciones Monte Carlo computacional. Calibración estadística de presión, rebound y compresión para bicicletas de montaña de precisión.",
-                  "featureList": [
-                        "Monte Carlo computacional",
-                        "10.000 iteraciones",
-                        "Análisis de sensibilidad",
-                        "Bootstrap resampling"
-                  ],
-                  "url": "https://www.bikelabstudio.com/articles/sag-calculator-es.html",
-                  "inLanguage": [
-                        "es",
-                        "en"
-                  ]
             },
             {
                   "@type": "SoftwareApplication",
@@ -2194,6 +2271,18 @@
                     <p>Una operación minera artesanal necesita estimar viabilidad sin pagar cincuenta mil dólares en software que ninguna empresa pequeña puede sostener. <strong>Esa herramienta no existe. La construyo.</strong></p>
                     <p>Construyo también herramientas para investigadores — matrices de convergencia cultural con codificación binaria, <strong>calibración estadística de metodología</strong> con bootstrap no paramétrico e intervalos de confianza sobre corpus heterogéneos sin asumir distribución normal, corrección de Bonferroni para control de error tipo I en análisis múltiple. Para el investigador que necesita sostener un argumento hermenéutico con respaldo cuantitativo no paramétrico — esa herramienta no existe. La construyo.</p>
                     <p>Cada herramienta que construyo es un activo SEO propio — se indexa, captura la intención de búsqueda del profesional que tiene ese problema exacto, y convierte usuarios en clientes antes de que alguien haya hablado con nadie.</p>
+                </div>
+                <div class="bio" style="margin-top:2rem;border-top:1px solid var(--border);padding-top:2rem;">
+                    <p style="font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin-bottom:1rem;">Software científico con DOI permanente — BikeLab Studio</p>
+                    <p>El ciclismo está lleno de hojas de cálculo anónimas, números repetidos y consejos reciclados. Cuatro herramientas científicas completas: DOI permanente, código abierto, fecha de publicación, autoría verificable e indexación internacional. No opiniones. No marketing. Evidencia.</p>
+                    <ul style="list-style:none;padding:0;margin:1.5rem 0;">
+                        <li style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);"><a href="https://www.bikelabstudio.com/articles/sag-calculator-es.html" target="_blank" rel="noopener" style="color:var(--white);font-weight:600;">SAG Calculator</a> — Modelo físico de doble cámara, 10 000 iteraciones Monte Carlo y 132 suspensiones analizadas. Autor: Carlos Eduardo Ravello Joo. <a href="https://doi.org/10.5281/zenodo.20672790" target="_blank" rel="noopener" style="color:var(--accent);">DOI 10.5281/zenodo.20672790</a></li>
+                        <li style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);"><a href="https://www.bikelabstudio.com/articles/psi-calculator-es.html" target="_blank" rel="noopener" style="color:var(--white);font-weight:600;">PSI Calculator</a> — Muestreo Latin Hypercube y análisis de sensibilidad Sobol para estimar presión como función de carga y contacto real. 321 llantas calibradas. Autor: Carlos Eduardo Ravello Joo. <a href="https://doi.org/10.5281/zenodo.20673124" target="_blank" rel="noopener" style="color:var(--accent);">DOI 10.5281/zenodo.20673124</a></li>
+                        <li style="margin-bottom:1rem;padding-bottom:1rem;border-bottom:1px solid var(--border);"><a href="https://www.bikelabstudio.com/articles/fit-analyzer-es.html" target="_blank" rel="noopener" style="color:var(--white);font-weight:600;">FIT Analyzer</a> — Potencia, cinemática e incertidumbre estadística ejecutadas localmente en tu navegador. Autor: Carlos Eduardo Ravello Joo. <a href="https://doi.org/10.5281/zenodo.20673166" target="_blank" rel="noopener" style="color:var(--accent);">DOI 10.5281/zenodo.20673166</a></li>
+                        <li style="margin-bottom:0;"><a href="https://www.bikelabstudio.com/articles/di2-axs-diagnostic-es.html" target="_blank" rel="noopener" style="color:var(--white);font-weight:600;">Di2/AXS Diagnostic</a> — La lógica de diagnóstico del taller convertida en un árbol reproducible y verificable. Autor: Carlos Eduardo Ravello Joo. <a href="https://doi.org/10.5281/zenodo.20673193" target="_blank" rel="noopener" style="color:var(--accent);">DOI 10.5281/zenodo.20673193</a></li>
+                    </ul>
+                    <p style="margin-bottom:0.5rem;">Todo quedó publicado. Todo quedó fechado. Todo quedó firmado. Licencia <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener" style="color:var(--accent);">CC BY-NC-ND 4.0</a>.</p>
+                    <p>El código puede copiarse. La metodología puede estudiarse. La fecha de publicación ya no puede cambiarse. — <em>Carlos Eduardo Ravello Joo</em></p>
                 </div>
                 <a href="/herramientas-para-investigadores.html" class="writing-read">Instrumentos para investigadores →</a>
             </section>
