@@ -153,7 +153,40 @@
             "@type": "Place",
             "name": "Lima, Peru",
             "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" }
-          }
+          },
+          "worksFor": [
+            {
+              "@type": "Organization",
+              "@id": "https://www.bikelabstudio.com/#business",
+              "name": "BikeLab Studio",
+              "url": "https://www.bikelabstudio.com",
+              "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ISNI",
+                "value": "0000 0005 3051 4237"
+              },
+              "sameAs": "https://isni.org/isni/0000000530514237",
+              "founder": {"@id": "https://carlosravello.com/#person"}
+            },
+            {
+              "@type": ["Organization", "ProfessionalService"],
+              "@id": "https://zoovettravel.com/#organization",
+              "name": "Zoovet Travel",
+              "url": "https://zoovettravel.com",
+              "identifier": {
+                "@type": "PropertyValue",
+                "propertyID": "ISNI",
+                "value": "0000 0005 3051 3904",
+                "url": "https://isni.org/isni/0000000530513904"
+              },
+              "sameAs": "https://isni.org/isni/0000000530513904",
+              "taxID": "10433053678",
+              "founder": [
+                {"@id": "https://jessica-camacho.com/#person"},
+                {"@id": "https://carlosravello.com/#person"}
+              ]
+            }
+          ]
         },
         {
           "@type": "ItemList",

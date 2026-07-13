@@ -297,10 +297,22 @@
                               "founder": {"@id": "https://carlosravello.com/#person"}
                         },
                         {
-                              "@type": "Organization",
+                              "@type": ["Organization", "ProfessionalService"],
                               "@id": "https://zoovettravel.com/#organization",
                               "name": "Zoovet Travel",
-                              "url": "https://zoovettravel.com"
+                              "url": "https://zoovettravel.com",
+                              "identifier": {
+                                    "@type": "PropertyValue",
+                                    "propertyID": "ISNI",
+                                    "value": "0000 0005 3051 3904",
+                                    "url": "https://isni.org/isni/0000000530513904"
+                              },
+                              "sameAs": "https://isni.org/isni/0000000530513904",
+                              "taxID": "10433053678",
+                              "founder": [
+                                    {"@id": "https://jessica-camacho.com/#person"},
+                                    {"@id": "https://carlosravello.com/#person"}
+                              ]
                         }
                   ]
             },
