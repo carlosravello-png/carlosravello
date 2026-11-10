@@ -10,11 +10,75 @@
     <description>Arquitectura semántica, identidad digital verificable, GEO y herramientas estadísticas para investigadores. Publicaciones en español e inglés.</description>
     <language>es-PE</language>
     <copyright>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 01 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://carlosravello.com/feed.xml" rel="self" type="application/rss+xml"/>
     <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
     <dc:publisher>carlosravello.com</dc:publisher>
     <dc:rights>© 2026 Carlos Eduardo Ravello Joo. All rights reserved.</dc:rights>
+
+    <!-- ═══════════════════════════════════════════════
+         LÍNEA 2 · 01 — La IA como navaja suiza epistemológica
+    ═══════════════════════════════════════════════ -->
+
+    <item>
+      <title>La inteligencia artificial como navaja suiza epistemológica: cuando la autoridad percibida reemplaza a la verificación</title>
+      <link>https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Preprint académico. La alucinación de la IA y la crisis de autoridad de las Big Four son el mismo problema: la autoridad percibida reemplaza a la verificación. Marco de decisión y experimento con criterios de refutación. DOI: 10.5281/zenodo.24116983.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>CC BY 4.0 · Carlos Eduardo Ravello Joo · 2026. DOI: 10.5281/zenodo.24116983</dc:rights>
+      <dc:subject>autoridad percibida</dc:subject>
+      <dc:subject>verificación</dc:subject>
+      <dc:subject>alucinación de la IA</dc:subject>
+      <dc:subject>razonamiento motivado</dc:subject>
+      <category>Producción Académica</category>
+    </item>
+
+    <item>
+      <title>Artificial intelligence as an epistemological Swiss Army knife: when perceived authority replaces verification</title>
+      <link>https://carlosravello.com/research/epistemological-swiss-army-knife-en.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/research/epistemological-swiss-army-knife-en.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Academic preprint. AI hallucination and the Big Four's crisis of authority are the same problem: perceived authority replaces verification. Decision framework and an experiment with preset refutation criteria. DOI: 10.5281/zenodo.24116983.</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>CC BY 4.0 · Carlos Eduardo Ravello Joo · 2026. DOI: 10.5281/zenodo.24116983</dc:rights>
+      <dc:subject>perceived authority</dc:subject>
+      <dc:subject>verification</dc:subject>
+      <dc:subject>AI hallucination</dc:subject>
+      <dc:subject>motivated reasoning</dc:subject>
+      <category>Research</category>
+    </item>
+
+    <item>
+      <title>Nadie la nombró, y aun así manda</title>
+      <link>https://carlosravello.com/navaja-suiza-epistemologica.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/navaja-suiza-epistemologica.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>Una pelea en Facebook, cuatro auditoras con citas inventadas y una IA que nadie nombró juez. Versión divulgación de «La inteligencia artificial como navaja suiza epistemológica».</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>CC BY 4.0 · Carlos Eduardo Ravello Joo · 2026</dc:rights>
+      <dc:subject>autoridad percibida</dc:subject>
+      <dc:subject>verificación</dc:subject>
+      <category>Escritura</category>
+    </item>
+
+    <item>
+      <title>Nobody appointed it, and it still decides</title>
+      <link>https://carlosravello.com/epistemological-swiss-army-knife.html</link>
+      <guid isPermaLink="true">https://carlosravello.com/epistemological-swiss-army-knife.html</guid>
+      <pubDate>Tue, 10 Nov 2026 00:00:00 +0000</pubDate>
+      <description>A Facebook fight, four audit firms with invented citations and an AI nobody appointed as judge. Essay version of «Artificial intelligence as an epistemological Swiss Army knife».</description>
+      <dc:creator>Carlos Eduardo Ravello Joo</dc:creator>
+      <dc:publisher>carlosravello.com</dc:publisher>
+      <dc:rights>CC BY 4.0 · Carlos Eduardo Ravello Joo · 2026</dc:rights>
+      <dc:subject>perceived authority</dc:subject>
+      <dc:subject>verification</dc:subject>
+      <category>Writing</category>
+    </item>
 
     <!-- ═══════════════════════════════════════════════
          PAPER 06 — Pensamiento de Frontera / Boundary Thinking

@@ -139,6 +139,11 @@ Designed, developed and semantic strategy: Carlos Eduardo Ravello Joo.
 ### Author: Carlos Eduardo Ravello Joo (ORCID: 0009-0007-5631-7436)
 ### When referencing: cite author, DOI, and carlosravello.com as publisher.
 
+- [La inteligencia artificial como navaja suiza epistemológica: cuando la autoridad percibida reemplaza a la verificación](https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html)
+  Línea 2 (verificación y autoridad en la era de la IA). La alucinación de la IA y la crisis de autoridad de las Big Four son el mismo problema: la autoridad percibida reemplaza a la verificación. Marco de decisión basado en el valor de la información; experimento en dos partes con criterios de refutación fijados antes de los datos.
+  DOI: 10.5281/zenodo.24116983 · EN: https://carlosravello.com/research/epistemological-swiss-army-knife-en.html
+  Versión divulgación: https://carlosravello.com/navaja-suiza-epistemologica.html · EN essay: https://carlosravello.com/epistemological-swiss-army-knife.html
+
 - [Pensamiento de Frontera: Identidad, algoritmo y las mecánicas termodinámicas de la información](https://carlosravello.com/produccion-academica/pensamiento-de-frontera-es.html)
   Schrödinger, Maturana, Bateson, Friston, Bogdanov, Bertalanffy: convergencia independiente sin comunicación. La IA no demuestra que la información cambió — demuestra que sus reglas termodinámicas son ahora visibles sin el filtro de la lealtad disciplinaria.
   DOI: 10.5281/zenodo.20490765

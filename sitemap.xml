@@ -615,4 +615,63 @@
     <priority>0.5</priority>
   </url>
 
+  <!-- ══════════════════════════════════════════════
+       LÍNEA 2 · 01 — La IA como navaja suiza epistemológica
+  ══════════════════════════════════════════════ -->
+  <url>
+    <loc>https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/epistemological-swiss-army-knife-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/research/epistemological-swiss-army-knife-en.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/research/epistemological-swiss-army-knife-en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/produccion-academica/navaja-suiza-epistemologica-es.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- Línea 2 · 01 — PDFs -->
+  <url>
+    <loc>https://carlosravello.com/la-ia-como-navaja-suiza-epistemologica-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/ai-epistemological-swiss-army-knife-ravello-joo-2026.pdf</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Línea 2 · 01 — Versión divulgación -->
+  <url>
+    <loc>https://carlosravello.com/navaja-suiza-epistemologica.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/navaja-suiza-epistemologica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/epistemological-swiss-army-knife.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/navaja-suiza-epistemologica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <url>
+    <loc>https://carlosravello.com/epistemological-swiss-army-knife.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://carlosravello.com/navaja-suiza-epistemologica.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://carlosravello.com/epistemological-swiss-army-knife.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://carlosravello.com/navaja-suiza-epistemologica.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
 </urlset>
