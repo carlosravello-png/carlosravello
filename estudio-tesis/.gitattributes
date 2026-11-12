@@ -1,0 +1,3 @@
+# Esta carpeta es evidencia reproducible: git no debe tocar ningún byte (sin conversión LF/CRLF).
+# Así un clon en Windows conserva los mismos SHA-256 que el manifiesto.
+* -text

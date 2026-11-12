@@ -1,0 +1,106 @@
+PUCP: 32080 registros; borrados 55; no tesis 9729; tesis sin año 0; tesis fuera de 2018-2026 7120; nivel por respaldo dc_type 0; nivel sin dato 0; SHA-256 0008e002c6a0a5bb42dd9562ca54d08f31555f6a31eaf7a9bd6f50487b4794cf
+UCV: 189197 registros; borrados 38; no tesis 9745; tesis sin año 2; tesis fuera de 2018-2026 32459; nivel por respaldo dc_type 99; nivel sin dato 95; SHA-256 1dca7a63a93770e4145239f5632c36c44c8bce1811e3a41f8dfaefb4819e6995
+UNI: 29047 registros; borrados 1; no tesis 13525; tesis sin año 0; tesis fuera de 2018-2026 12485; nivel por respaldo dc_type 1; nivel sin dato 0; SHA-256 f590f0c60ebf884e3db904e72a83369f77549109dedcb8c451a04c1a6b18d00e
+UNMSM: 31054 registros; borrados 198; no tesis 10138; tesis sin año 0; tesis fuera de 2018-2026 8687; nivel por respaldo dc_type 1; nivel sin dato 0; SHA-256 d99b229030946d5f32faad6c3f3e248bbfbe1763aec9952a817247b8f38b89fa
+UNT: 26373 registros; borrados 237; no tesis 1670; tesis sin año 97; tesis fuera de 2018-2026 9826; nivel por respaldo dc_type 1608; nivel sin dato 0; SHA-256 0ff188a3c2aec19c9c75174a7ad3b1888c267637d0724651fbea0544f2520038
+UPC: 72106 registros; borrados 400; no tesis 58721; tesis sin año 81; tesis fuera de 2018-2026 3739; nivel por respaldo dc_type 2; nivel sin dato 1; SHA-256 b42a2e12e549d07687c39a771182048d176823d8fda45b1b59321fecb13be2b0
+UPN: 38889 registros; borrados 194; no tesis 14162; tesis sin año 0; tesis fuera de 2018-2026 2384; nivel por respaldo dc_type 49; nivel sin dato 0; SHA-256 ecc380d5b36f3a0708eeeb2d2cf0ee78297724c4ba913ff51383000436fc4054
+USMP: 21719 registros; borrados 66; no tesis 10229; tesis sin año 0; tesis fuera de 2018-2026 2034; nivel por respaldo dc_type 1; nivel sin dato 0; SHA-256 9cee2bbab8ca1a63bb8cd239f77b41f97b3d02183fac9a673312ed467b01c5a4
+
+Tesis 2018-2026 por universidad y carrera (todos los niveles):
+  PUCP	Derecho	832
+  PUCP	Ingenieria	2856
+  PUCP	Otra	10747
+  PUCP	Psicologia	739
+  PUCP	Salud	2
+  UCV	Derecho	12602
+  UCV	Ingenieria	26687
+  UCV	Otra	79391
+  UCV	Psicologia	14553
+  UCV	Salud	13680
+  UCV	Sin disciplina	40
+  UNI	Ingenieria	2090
+  UNI	Otra	902
+  UNI	Salud	44
+  UNMSM	Derecho	514
+  UNMSM	Ingenieria	1233
+  UNMSM	Otra	5767
+  UNMSM	Psicologia	350
+  UNMSM	Salud	4166
+  UNMSM	Sin disciplina	1
+  UNT	Derecho	681
+  UNT	Ingenieria	3285
+  UNT	Otra	7083
+  UNT	Psicologia	64
+  UNT	Salud	3413
+  UNT	Sin disciplina	17
+  UPC	Derecho	64
+  UPC	Ingenieria	2183
+  UPC	Otra	4706
+  UPC	Psicologia	911
+  UPC	Salud	1292
+  UPC	Sin disciplina	9
+  UPN	Derecho	1937
+  UPN	Ingenieria	7904
+  UPN	Otra	8995
+  UPN	Psicologia	2157
+  UPN	Salud	1115
+  UPN	Sin disciplina	41
+  USMP	Derecho	687
+  USMP	Ingenieria	721
+  USMP	Otra	4669
+  USMP	Psicologia	833
+  USMP	Salud	2479
+  USMP	Sin disciplina	1
+
+Posgrado 2018-2026 por universidad y carrera (maestro, doctor, de ellas con PDF abierto; segunda especialidad aparte):
+  universidad	carrera	maestro	doctor	abierto	segunda_esp
+  PUCP	Derecho	553	25	405	2
+  PUCP	Ingenieria	602	57	471	0
+  PUCP	Otra	6320	329	5173	79
+  PUCP	Psicologia	67	9	73	0
+  PUCP	Salud	2	0	2	0
+  UCV	Derecho	2534	411	2613	4
+  UCV	Ingenieria	1054	0	1013	15
+  UCV	Otra	37543	7007	39859	217
+  UCV	Psicologia	5946	301	5602	16
+  UCV	Salud	6934	3	6820	76
+  UCV	Sin disciplina	6	0	5	11
+  UNI	Ingenieria	244	14	96	5
+  UNI	Otra	575	74	397	0
+  UNI	Salud	44	0	36	0
+  UNMSM	Derecho	178	87	247	0
+  UNMSM	Ingenieria	135	104	223	0
+  UNMSM	Otra	2441	722	3058	18
+  UNMSM	Psicologia	113	26	123	13
+  UNMSM	Salud	568	162	705	43
+  UNMSM	Sin disciplina	0	1	1	0
+  UNT	Derecho	178	40	218	0
+  UNT	Ingenieria	199	74	272	0
+  UNT	Otra	1341	338	1676	603
+  UNT	Psicologia	64	0	64	0
+  UNT	Salud	336	86	419	795
+  UNT	Sin disciplina	3	0	3	4
+  UPC	Derecho	11	0	11	0
+  UPC	Ingenieria	1	0	1	0
+  UPC	Otra	235	0	233	0
+  UPC	Psicologia	1	0	1	0
+  UPC	Salud	12	0	12	0
+  UPN	Derecho	2	0	1	0
+  UPN	Ingenieria	48	0	36	0
+  UPN	Otra	576	0	431	0
+  USMP	Derecho	419	33	321	0
+  USMP	Ingenieria	5	2	4	0
+  USMP	Otra	1881	356	1865	41
+  USMP	Psicologia	150	33	157	0
+  USMP	Salud	504	34	519	73
+
+Posgrado (maestro + doctor) por universidad y año:
+  PUCP	2018:1363	2019:850	2020:716	2021:764	2022:728	2023:964	2024:991	2025:1044	2026:544
+  UCV	2018:5666	2019:4530	2020:5180	2021:7651	2022:12132	2023:9575	2024:7158	2025:7840	2026:2007
+  UNI	2018:125	2019:140	2020:89	2021:163	2022:99	2023:146	2024:133	2025:56
+  UNMSM	2018:437	2019:490	2020:328	2021:448	2022:485	2023:574	2024:620	2025:685	2026:470
+  UNT	2018:112	2019:605	2020:150	2021:65	2022:111	2023:303	2024:485	2025:532	2026:296
+  UPC	2018:87	2019:57	2020:25	2021:17	2022:14	2023:14	2024:16	2025:20	2026:10
+  UPN	2018:63	2019:45	2020:44	2021:50	2022:56	2023:69	2024:104	2025:126	2026:69
+  USMP	2018:312	2019:370	2020:324	2021:406	2022:426	2023:369	2024:452	2025:436	2026:322
